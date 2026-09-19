@@ -114,8 +114,8 @@ def validate_pack(pdir: Path) -> dict | None:
         elif qtype == "choice":
             check_keys(qpath, q, {"type", "instructions", "options"}, {"type", "instructions", "options"})
             options = q.get("options")
-            if not isinstance(options, dict) or not options:
-                err(qpath, "choice requires a non-empty options mapping")
+            if not isinstance(options, dict) or len(options) < 2:
+                err(qpath, "choice requires an options mapping with at least 2 labels")
             else:
                 if "unknown" not in options:
                     err(qpath, "choice options must include `unknown` (Jev cannot abstain)")
@@ -126,10 +126,10 @@ def validate_pack(pdir: Path) -> dict | None:
                         err(qpath, f"option `{key}` needs a one-line meaning")
                 labels[qid] = set(options)
         elif qtype == "score":
-            check_keys(qpath, q, {"type", "instructions", "levels"}, {"type", "instructions", "levels"})
+            check_keys(qpath, q, {"type", "instructions", "levels"}, {"type", "instructions", "levels", "level_descriptions"})
             levels = q.get("levels")
-            if not isinstance(levels, list) or not levels:
-                err(qpath, "score requires a non-empty levels list")
+            if not isinstance(levels, list) or not 2 <= len(levels) <= 10:
+                err(qpath, "score requires a levels list of 2-10 labels")
             else:
                 if "unknown" not in levels:
                     err(qpath, "score levels must include `unknown` (Jev cannot abstain)")
@@ -137,6 +137,16 @@ def validate_pack(pdir: Path) -> dict | None:
                     if not isinstance(lv, str) or not KEY_RE.match(lv):
                         err(qpath, f"level `{lv}` must be a snake_case string")
                 labels[qid] = set(levels)
+                descriptions = q.get("level_descriptions")
+                if descriptions is not None:
+                    if not isinstance(descriptions, dict):
+                        err(qpath, "level_descriptions must be a mapping of level -> text")
+                    else:
+                        for lv, text in descriptions.items():
+                            if lv not in labels[qid]:
+                                err(qpath, f"level_descriptions key `{lv}` is not a declared level")
+                            if not isinstance(text, str) or not text.strip():
+                                err(qpath, f"level_descriptions for `{lv}` must be a non-empty string")
         else:
             err(qpath, f"type must be noul | choice | score, got {qtype!r}")
             continue

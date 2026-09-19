@@ -48,8 +48,8 @@ thresholds:              # optional; per-question auto-accept floors
 | type | answer | required keys | notes |
 |---|---|---|---|
 | `noul` | boolean | `instructions` | Yes/no question. |
-| `choice` | one option key | `instructions`, `options` | `options` maps key → one-line meaning. |
-| `score` | one level | `instructions`, `levels` | Ordinal, low → high. |
+| `choice` | one option key | `instructions`, `options` | `options` maps key → one-line meaning; at least 2. |
+| `score` | one level | `instructions`, `levels` | Ordinal, low → high; 2–10 levels. Optional `level_descriptions`. |
 
 Rules, all CI-enforced:
 
@@ -61,6 +61,10 @@ Rules, all CI-enforced:
 3. Question ids are `snake_case`; option/level keys are `snake_case`.
 4. Underlying evidence must fit in the state: if a question needs information
    not present in `state.fields`, the question is wrong, not the case.
+5. `score` questions may add `level_descriptions`, a map from level label to a
+   situational description. Loaders send the description to the API instead of
+   the bare label; this measurably improves scoring. Keys must be declared
+   levels and values non-empty strings.
 
 ### Thresholds
 
