@@ -30,7 +30,7 @@ keep-separate, or a human curator when the evidence conflicts.
 
 ## Provenance
 
-All 105 cases were written for this pack (CC0-1.0). Names and organizations are
+All 210 cases were written for this pack (CC0-1.0). Names and organizations are
 fictional.
 
 ## Thresholds
@@ -41,6 +41,6 @@ merge decisions need confidence. 0.8 for `merge`/`keep_separate`, 0.6 for
 
 ## Evidence
 
-Recorded 2026-09-19 against `jev-1.13.0`: accuracy **0.890**, ECE 0.050,
+Recorded 2026-09-19 against `jev-1.13.0`: accuracy **0.879**, ECE 0.059,
 $0.000018/case. Full report: [evidence.md](evidence.md); raw recording:
 [predictions.jsonl](predictions.jsonl).

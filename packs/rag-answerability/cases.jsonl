@@ -98,3 +98,103 @@
 {"id": "ra-0098", "state": {"question": "Why was my listing rejected?", "context": "Listings are reviewed by the moderation team."}, "expect": {"answerable": false, "missing_info": "unknown"}}
 {"id": "ra-0099", "state": {"question": "What is the recommended setup for large fleets?", "context": "Deployments scale horizontally."}, "expect": {"answerable": false, "missing_info": "unknown"}}
 {"id": "ra-0100", "state": {"question": "Which payment methods are accepted?", "context": "Billing is handled by our payment partner."}, "expect": {"answerable": false, "missing_info": "unknown"}}
+{"id": "ra-0101", "state": {"question": "What is the cancellation deadline for the order?", "context": "Orders can be cancelled free of charge until 24 hours before dispatch."}, "expect": {"answerable": true, "missing_info": "none"}}
+{"id": "ra-0102", "state": {"question": "How do I set up a webhook endpoint?", "context": "Create the endpoint under Settings > Webhooks and paste the URL."}, "expect": {"answerable": true, "missing_info": "none"}}
+{"id": "ra-0103", "state": {"question": "What is the monthly cost of the starter plan?", "context": "The starter plan costs 9 dollars per month."}, "expect": {"answerable": true, "missing_info": "none"}}
+{"id": "ra-0104", "state": {"question": "How many users are included?", "context": "The plan includes seats for 25 users."}, "expect": {"answerable": true, "missing_info": "none"}}
+{"id": "ra-0105", "state": {"question": "What is the warranty period on the pump?", "context": "The pump is warranted for three years."}, "expect": {"answerable": true, "missing_info": "none"}}
+{"id": "ra-0106", "state": {"question": "How do I rotate the log files?", "context": "Rotate logs with logrotate; a config sample is in /etc/logrotate.d/app."}, "expect": {"answerable": true, "missing_info": "none"}}
+{"id": "ra-0107", "state": {"question": "When is the maintenance window?", "context": "Maintenance runs Sunday 01:00-03:00 UTC."}, "expect": {"answerable": true, "missing_info": "none"}}
+{"id": "ra-0108", "state": {"question": "What is the maximum attachment size for tickets?", "context": "Attachments up to 25 MB are accepted."}, "expect": {"answerable": true, "missing_info": "none"}}
+{"id": "ra-0109", "state": {"question": "How do I appeal a suspension?", "context": "Appeals are submitted through the compliance form within 30 days."}, "expect": {"answerable": true, "missing_info": "none"}}
+{"id": "ra-0110", "state": {"question": "What is the refund processing time?", "context": "Refunds post to the original card within 5 business days."}, "expect": {"answerable": true, "missing_info": "none"}}
+{"id": "ra-0111", "state": {"question": "How do I add an SSH key to the server?", "context": "Append the public key to ~/.ssh/authorized_keys on the target host."}, "expect": {"answerable": true, "missing_info": "none"}}
+{"id": "ra-0112", "state": {"question": "What is the minimum password length?", "context": "Passwords must be at least 12 characters."}, "expect": {"answerable": true, "missing_info": "none"}}
+{"id": "ra-0113", "state": {"question": "How do I export audit logs?", "context": "Export audit logs from Admin > Audit > Export as CSV."}, "expect": {"answerable": true, "missing_info": "none"}}
+{"id": "ra-0114", "state": {"question": "What is the SLA response time?", "context": "Enterprise support responds to critical issues within one hour."}, "expect": {"answerable": true, "missing_info": "none"}}
+{"id": "ra-0115", "state": {"question": "How many API requests per minute are allowed?", "context": "The default limit is 600 requests per minute."}, "expect": {"answerable": true, "missing_info": "none"}}
+{"id": "ra-0116", "state": {"question": "What is the delivery cutoff for same-day shipping?", "context": "Orders placed before 12:00 ship the same day."}, "expect": {"answerable": true, "missing_info": "none"}}
+{"id": "ra-0117", "state": {"question": "How do I delete my personal data?", "context": "Submit a deletion request from Privacy > My data > Delete."}, "expect": {"answerable": true, "missing_info": "none"}}
+{"id": "ra-0118", "state": {"question": "What is the exchange rate margin?", "context": "The platform applies a 0.5 percent margin over the interbank rate."}, "expect": {"answerable": true, "missing_info": "none"}}
+{"id": "ra-0119", "state": {"question": "When does the course start?", "context": "The course starts on 7 February."}, "expect": {"answerable": true, "missing_info": "none"}}
+{"id": "ra-0120", "state": {"question": "How do I enable notifications for failed jobs?", "context": "Turn on failure alerts in the job settings under Notifications."}, "expect": {"answerable": true, "missing_info": "none"}}
+{"id": "ra-0121", "state": {"question": "What is the capacity of the backup generator?", "context": "The generator delivers 120 kVA."}, "expect": {"answerable": true, "missing_info": "none"}}
+{"id": "ra-0122", "state": {"question": "How do I install the certificate on Windows?", "context": "Import the PFX into the machine store with certutil -importpfx."}, "expect": {"answerable": true, "missing_info": "none"}}
+{"id": "ra-0123", "state": {"question": "What is the late payment interest rate?", "context": "Late payments accrue 1.5 percent monthly interest."}, "expect": {"answerable": true, "missing_info": "none"}}
+{"id": "ra-0124", "state": {"question": "How do I merge two customer records?", "context": "Merge records from the customer profile using Merge duplicates."}, "expect": {"answerable": true, "missing_info": "none"}}
+{"id": "ra-0125", "state": {"question": "What is the maximum file count per upload?", "context": "Each upload accepts up to 500 files."}, "expect": {"answerable": true, "missing_info": "none"}}
+{"id": "ra-0126", "state": {"question": "What is the warranty claim window?", "context": "Claims must be filed within 24 months of purchase."}, "expect": {"answerable": true, "missing_info": "none"}}
+{"id": "ra-0127", "state": {"question": "How do I schedule a report?", "context": "Schedule reports from Reports > Schedule > New schedule."}, "expect": {"answerable": true, "missing_info": "none"}}
+{"id": "ra-0128", "state": {"question": "What is the battery life of the sensor?", "context": "The sensor battery lasts up to 24 months."}, "expect": {"answerable": true, "missing_info": "none"}}
+{"id": "ra-0129", "state": {"question": "How do I change the organization's timezone?", "context": "Update the timezone in Settings > General > Timezone."}, "expect": {"answerable": true, "missing_info": "none"}}
+{"id": "ra-0130", "state": {"question": "What is the maximum loan amount?", "context": "Loans are capped at 50,000 dollars."}, "expect": {"answerable": true, "missing_info": "none"}}
+{"id": "ra-0131", "state": {"question": "How do I revoke an API token?", "context": "Revoke tokens from Settings > API > Tokens > Revoke."}, "expect": {"answerable": true, "missing_info": "none"}}
+{"id": "ra-0132", "state": {"question": "What is the interest calculation method?", "context": "Interest is compounded daily and credited monthly."}, "expect": {"answerable": true, "missing_info": "none"}}
+{"id": "ra-0133", "state": {"question": "How do I configure a custom retry policy?", "context": "Set retries in the job config with max_retries and backoff_seconds."}, "expect": {"answerable": true, "missing_info": "none"}}
+{"id": "ra-0134", "state": {"question": "What is the delivery fee for orders under 20 dollars?", "context": "Orders under 20 dollars incur a 3 dollar delivery fee."}, "expect": {"answerable": true, "missing_info": "none"}}
+{"id": "ra-0135", "state": {"question": "How do I claim mileage expenses?", "context": "Submit mileage claims in the expenses tool with trip logs attached."}, "expect": {"answerable": true, "missing_info": "none"}}
+{"id": "ra-0136", "state": {"question": "What is the waiting period for benefits?", "context": "Benefits start after 30 days of employment."}, "expect": {"answerable": true, "missing_info": "none"}}
+{"id": "ra-0137", "state": {"question": "How do I reset the game progress?", "context": "Reset progress from Options > Save Data > Delete."}, "expect": {"answerable": true, "missing_info": "none"}}
+{"id": "ra-0138", "state": {"question": "What is the occupancy limit for the hall?", "context": "The hall is licensed for 250 people."}, "expect": {"answerable": true, "missing_info": "none"}}
+{"id": "ra-0139", "state": {"question": "How do I verify my domain for email sending?", "context": "Add the DKIM record to DNS and verify it from the sender dashboard."}, "expect": {"answerable": true, "missing_info": "none"}}
+{"id": "ra-0140", "state": {"question": "What is the size of the private subnet?", "context": "The private subnet uses a /24 range."}, "expect": {"answerable": true, "missing_info": "none"}}
+{"id": "ra-0141", "state": {"question": "Who approved the design change?", "context": "The design change was approved after review."}, "expect": {"answerable": false, "missing_info": "entity"}}
+{"id": "ra-0142", "state": {"question": "Which supplier delayed the shipment?", "context": "The shipment was delayed by a supplier issue."}, "expect": {"answerable": false, "missing_info": "entity"}}
+{"id": "ra-0143", "state": {"question": "Which consultant wrote the audit?", "context": "The audit was completed last month."}, "expect": {"answerable": false, "missing_info": "entity"}}
+{"id": "ra-0144", "state": {"question": "Who chairs the safety committee?", "context": "The safety committee meets monthly."}, "expect": {"answerable": false, "missing_info": "entity"}}
+{"id": "ra-0145", "state": {"question": "Which bank holds the escrow?", "context": "The escrow account is managed externally."}, "expect": {"answerable": false, "missing_info": "entity"}}
+{"id": "ra-0146", "state": {"question": "Who maintains the legacy system?", "context": "The legacy system still handles billing."}, "expect": {"answerable": false, "missing_info": "entity"}}
+{"id": "ra-0147", "state": {"question": "Which agency issued the permit?", "context": "The permit was issued in April."}, "expect": {"answerable": false, "missing_info": "entity"}}
+{"id": "ra-0148", "state": {"question": "Who translated the manual?", "context": "The manual is available in six languages."}, "expect": {"answerable": false, "missing_info": "entity"}}
+{"id": "ra-0149", "state": {"question": "Which firm designed the logo?", "context": "The logo was refreshed last year."}, "expect": {"answerable": false, "missing_info": "entity"}}
+{"id": "ra-0150", "state": {"question": "Who is the contact for escalations?", "context": "Escalations follow the support process."}, "expect": {"answerable": false, "missing_info": "entity"}}
+{"id": "ra-0151", "state": {"question": "Which department owns the budget?", "context": "The budget is reviewed quarterly."}, "expect": {"answerable": false, "missing_info": "entity"}}
+{"id": "ra-0152", "state": {"question": "Who audited the security controls?", "context": "The security controls were tested."}, "expect": {"answerable": false, "missing_info": "entity"}}
+{"id": "ra-0153", "state": {"question": "When does the beta end?", "context": "The beta runs for a limited period."}, "expect": {"answerable": false, "missing_info": "date"}}
+{"id": "ra-0154", "state": {"question": "When will the refund arrive?", "context": "Refunds are processed automatically."}, "expect": {"answerable": false, "missing_info": "date"}}
+{"id": "ra-0155", "state": {"question": "When is the next inspection due?", "context": "Inspections are scheduled regularly."}, "expect": {"answerable": false, "missing_info": "date"}}
+{"id": "ra-0156", "state": {"question": "When was the last backup taken?", "context": "Backups run automatically."}, "expect": {"answerable": false, "missing_info": "date"}}
+{"id": "ra-0157", "state": {"question": "When do the certificates expire?", "context": "Certificate expiry is monitored."}, "expect": {"answerable": false, "missing_info": "date"}}
+{"id": "ra-0158", "state": {"question": "When can I start the course?", "context": "Enrollment opens soon."}, "expect": {"answerable": false, "missing_info": "date"}}
+{"id": "ra-0159", "state": {"question": "How long is the onboarding period?", "context": "Onboarding includes several sessions."}, "expect": {"answerable": false, "missing_info": "date"}}
+{"id": "ra-0160", "state": {"question": "When is the maintenance window?", "context": "Maintenance happens during off-peak hours."}, "expect": {"answerable": false, "missing_info": "date"}}
+{"id": "ra-0161", "state": {"question": "When does the offer expire?", "context": "The offer is time-limited."}, "expect": {"answerable": false, "missing_info": "date"}}
+{"id": "ra-0162", "state": {"question": "When was the building renovated?", "context": "The building has been renovated recently."}, "expect": {"answerable": false, "missing_info": "date"}}
+{"id": "ra-0163", "state": {"question": "How many licenses do we have?", "context": "Licenses are listed in the admin console."}, "expect": {"answerable": false, "missing_info": "number"}}
+{"id": "ra-0164", "state": {"question": "What is the maximum batch size?", "context": "Batch size is configurable."}, "expect": {"answerable": false, "missing_info": "number"}}
+{"id": "ra-0165", "state": {"question": "How many attendees registered?", "context": "Registration is still open."}, "expect": {"answerable": false, "missing_info": "number"}}
+{"id": "ra-0166", "state": {"question": "What error budget remains?", "context": "The error budget is tracked weekly."}, "expect": {"answerable": false, "missing_info": "number"}}
+{"id": "ra-0167", "state": {"question": "How many support agents are on shift?", "context": "Support coverage runs around the clock."}, "expect": {"answerable": false, "missing_info": "number"}}
+{"id": "ra-0168", "state": {"question": "What is the fuel capacity of the tank?", "context": "The tank is inspected annually."}, "expect": {"answerable": false, "missing_info": "number"}}
+{"id": "ra-0169", "state": {"question": "How many vacation days carry over?", "context": "Carry-over follows the HR policy."}, "expect": {"answerable": false, "missing_info": "number"}}
+{"id": "ra-0170", "state": {"question": "What is the disk quota per user?", "context": "Quotas are managed by admins."}, "expect": {"answerable": false, "missing_info": "number"}}
+{"id": "ra-0171", "state": {"question": "How many votes were counted?", "context": "Votes were counted by observers."}, "expect": {"answerable": false, "missing_info": "number"}}
+{"id": "ra-0172", "state": {"question": "What is the interest rate on the loan?", "context": "Rates depend on the applicant's credit profile."}, "expect": {"answerable": false, "missing_info": "number"}}
+{"id": "ra-0173", "state": {"question": "How do I request a new laptop?", "context": "Laptops are provided by IT."}, "expect": {"answerable": false, "missing_info": "procedure"}}
+{"id": "ra-0174", "state": {"question": "How do I escalate a ticket?", "context": "Tickets can be escalated to a supervisor."}, "expect": {"answerable": false, "missing_info": "procedure"}}
+{"id": "ra-0175", "state": {"question": "How do I configure the VPN?", "context": "VPN credentials are distributed by IT."}, "expect": {"answerable": false, "missing_info": "procedure"}}
+{"id": "ra-0176", "state": {"question": "How do I apply for parental leave?", "context": "Parental leave is available to all employees."}, "expect": {"answerable": false, "missing_info": "procedure"}}
+{"id": "ra-0177", "state": {"question": "How do I transfer a domain?", "context": "Domain transfers are subject to ICANN rules."}, "expect": {"answerable": false, "missing_info": "procedure"}}
+{"id": "ra-0178", "state": {"question": "How do I set up a bank feed?", "context": "Bank feeds are supported by most banks."}, "expect": {"answerable": false, "missing_info": "procedure"}}
+{"id": "ra-0179", "state": {"question": "How do I claim a warranty repair?", "context": "Warranty repairs are free within the period."}, "expect": {"answerable": false, "missing_info": "procedure"}}
+{"id": "ra-0180", "state": {"question": "How do I add a second factor?", "context": "Two-factor authentication is required for admins."}, "expect": {"answerable": false, "missing_info": "procedure"}}
+{"id": "ra-0181", "state": {"question": "How do I archive a project?", "context": "Archived projects remain readable."}, "expect": {"answerable": false, "missing_info": "procedure"}}
+{"id": "ra-0182", "state": {"question": "How do I book a meeting room?", "context": "Meeting rooms are available on each floor."}, "expect": {"answerable": false, "missing_info": "procedure"}}
+{"id": "ra-0183", "state": {"question": "Is the product GDPR compliant?", "context": "The privacy policy describes data practices."}, "expect": {"answerable": false, "missing_info": "other"}}
+{"id": "ra-0184", "state": {"question": "Does the license cover commercial use?", "context": "The license terms are in the EULA."}, "expect": {"answerable": false, "missing_info": "other"}}
+{"id": "ra-0185", "state": {"question": "Is there an uptime guarantee for the free tier?", "context": "The SLA document describes credit schedules."}, "expect": {"answerable": false, "missing_info": "other"}}
+{"id": "ra-0186", "state": {"question": "Can I resell the reports?", "context": "Reports are generated for internal use."}, "expect": {"answerable": false, "missing_info": "other"}}
+{"id": "ra-0187", "state": {"question": "Does the plan include phone support?", "context": "Support channels are listed on the contact page."}, "expect": {"answerable": false, "missing_info": "other"}}
+{"id": "ra-0188", "state": {"question": "Is the data encrypted at rest?", "context": "Encryption keys are rotated regularly."}, "expect": {"answerable": false, "missing_info": "other"}}
+{"id": "ra-0189", "state": {"question": "Does the tool support Windows?", "context": "System requirements are updated with each release."}, "expect": {"answerable": false, "missing_info": "other"}}
+{"id": "ra-0190", "state": {"question": "Is there a student discount?", "context": "Discounts are announced on the blog."}, "expect": {"answerable": false, "missing_info": "other"}}
+{"id": "ra-0191", "state": {"question": "Can I bring my own cloud storage?", "context": "Storage options depend on the deployment."}, "expect": {"answerable": false, "missing_info": "other"}}
+{"id": "ra-0192", "state": {"question": "Is the API rate limit per account or per IP?", "context": "Rate limiting is described in the docs."}, "expect": {"answerable": false, "missing_info": "other"}}
+{"id": "ra-0193", "state": {"question": "Why was the invoice rejected?", "context": "Invoices undergo validation."}, "expect": {"answerable": false, "missing_info": "unknown"}}
+{"id": "ra-0194", "state": {"question": "What is the recommended dosage?", "context": "Dosage depends on many factors."}, "expect": {"answerable": false, "missing_info": "unknown"}}
+{"id": "ra-0195", "state": {"question": "Which option should I choose?", "context": "The options differ in scope."}, "expect": {"answerable": false, "missing_info": "unknown"}}
+{"id": "ra-0196", "state": {"question": "Is the migration risky?", "context": "Migrations should be planned carefully."}, "expect": {"answerable": false, "missing_info": "unknown"}}
+{"id": "ra-0197", "state": {"question": "What is the best approach?", "context": "Approaches vary by team."}, "expect": {"answerable": false, "missing_info": "unknown"}}
+{"id": "ra-0198", "state": {"question": "How urgent is this fix?", "context": "Priorities are set by the team."}, "expect": {"answerable": false, "missing_info": "unknown"}}
+{"id": "ra-0199", "state": {"question": "What is the expected impact?", "context": "Impact will be assessed."}, "expect": {"answerable": false, "missing_info": "unknown"}}
+{"id": "ra-0200", "state": {"question": "Which plan fits us?", "context": "Plans scale with usage."}, "expect": {"answerable": false, "missing_info": "unknown"}}

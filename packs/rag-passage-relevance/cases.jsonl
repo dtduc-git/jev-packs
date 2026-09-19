@@ -98,3 +98,103 @@
 {"id": "rpr-0098", "state": {"question": "How do I enable dark mode in the app?", "passage": "Dark mode is currently in beta."}, "expect": {"relevant": false, "quality": "weak"}}
 {"id": "rpr-0099", "state": {"question": "What is the speed limit on the highway?", "passage": ""}, "expect": {"relevant": false, "quality": "unknown"}}
 {"id": "rpr-0100", "state": {"question": "What does the warranty cover?", "passage": "The warranty covers manufacturing defects but not accidental damage."}, "expect": {"relevant": true, "quality": "strong"}}
+{"id": "rpr-0101", "state": {"question": "What is the check-in time at the hotel?", "passage": "Check-in starts at 15:00; early check-in is subject to availability."}, "expect": {"relevant": true, "quality": "strong"}}
+{"id": "rpr-0102", "state": {"question": "Who directed Parasite?", "passage": "Parasite was directed by Bong Joon-ho and won Best Picture in 2020."}, "expect": {"relevant": true, "quality": "strong"}}
+{"id": "rpr-0103", "state": {"question": "What is the pediatric dosage of amoxicillin?", "passage": "Pediatric amoxicillin is dosed at 45 mg/kg/day divided twice daily."}, "expect": {"relevant": true, "quality": "strong"}}
+{"id": "rpr-0104", "state": {"question": "How do I set a stop loss on the exchange?", "passage": "Open the order panel, choose Stop, and enter the trigger price."}, "expect": {"relevant": true, "quality": "strong"}}
+{"id": "rpr-0105", "state": {"question": "How long is the flight from Madrid to Bogota?", "passage": "The Madrid-Bogota flight takes about 10 hours 30 minutes."}, "expect": {"relevant": true, "quality": "strong"}}
+{"id": "rpr-0106", "state": {"question": "How deep is the Mariana Trench?", "passage": "The Mariana Trench reaches 10,935 meters at its deepest point."}, "expect": {"relevant": true, "quality": "strong"}}
+{"id": "rpr-0107", "state": {"question": "What is the interest rate on the savings account?", "passage": "The savings account pays 3.1 percent APY."}, "expect": {"relevant": true, "quality": "strong"}}
+{"id": "rpr-0108", "state": {"question": "How do I apply for a replacement driving licence?", "passage": "Apply online for a replacement licence and pay the 20 dollar fee."}, "expect": {"relevant": true, "quality": "strong"}}
+{"id": "rpr-0109", "state": {"question": "What is the water hardness in the region?", "passage": "Water hardness in the region averages 14 dH."}, "expect": {"relevant": true, "quality": "strong"}}
+{"id": "rpr-0110", "state": {"question": "When is the tax filing deadline?", "passage": "The filing deadline is 15 April."}, "expect": {"relevant": true, "quality": "strong"}}
+{"id": "rpr-0111", "state": {"question": "What temperature should PLA filament print at?", "passage": "PLA prints best between 190 and 220 C."}, "expect": {"relevant": true, "quality": "strong"}}
+{"id": "rpr-0112", "state": {"question": "Who invented the World Wide Web?", "passage": "Tim Berners-Lee invented the World Wide Web in 1989."}, "expect": {"relevant": true, "quality": "strong"}}
+{"id": "rpr-0113", "state": {"question": "How many calories are in a banana?", "passage": "A medium banana has about 105 calories."}, "expect": {"relevant": true, "quality": "strong"}}
+{"id": "rpr-0114", "state": {"question": "What is the return fee for oversized items?", "passage": "Oversized returns incur a 15 dollar pickup fee."}, "expect": {"relevant": true, "quality": "strong"}}
+{"id": "rpr-0115", "state": {"question": "How do I remove a member from the organization?", "passage": "Remove a member from Settings > Members > Remove."}, "expect": {"relevant": true, "quality": "strong"}}
+{"id": "rpr-0116", "state": {"question": "What is the melting point of tin?", "passage": "Tin melts at 231.93 C."}, "expect": {"relevant": true, "quality": "strong"}}
+{"id": "rpr-0117", "state": {"question": "Which port does the service listen on by default?", "passage": "The service listens on port 8080 by default."}, "expect": {"relevant": true, "quality": "strong"}}
+{"id": "rpr-0118", "state": {"question": "What is the cancellation fee for the gym?", "passage": "Cancellation costs 25 dollars after the first year."}, "expect": {"relevant": true, "quality": "strong"}}
+{"id": "rpr-0119", "state": {"question": "How long is the warranty on the motor?", "passage": "The motor is covered for five years."}, "expect": {"relevant": true, "quality": "strong"}}
+{"id": "rpr-0120", "state": {"question": "What is the exchange policy for online orders?", "passage": "Online orders can be exchanged within 30 days with a receipt."}, "expect": {"relevant": true, "quality": "strong"}}
+{"id": "rpr-0121", "state": {"question": "What is the maximum payload of the drone?", "passage": "The drone carries up to 2.5 kg."}, "expect": {"relevant": true, "quality": "strong"}}
+{"id": "rpr-0122", "state": {"question": "When does the scholarship application open?", "passage": "Applications open on 1 October."}, "expect": {"relevant": true, "quality": "strong"}}
+{"id": "rpr-0123", "state": {"question": "What is the average rainfall in March?", "passage": "March averages 62 mm of rain."}, "expect": {"relevant": true, "quality": "strong"}}
+{"id": "rpr-0124", "state": {"question": "How do I enable disk encryption on the server?", "passage": "Enable disk encryption with cryptsetup luksFormat on the target device."}, "expect": {"relevant": true, "quality": "strong"}}
+{"id": "rpr-0125", "state": {"question": "How fast does the shinkansen run between Osaka and Tokyo?", "passage": "The Nozomi shinkansen runs at up to 285 km/h."}, "expect": {"relevant": true, "quality": "strong"}}
+{"id": "rpr-0126", "state": {"question": "Which vitamin does skin produce in sunlight?", "passage": "Skin produces vitamin D when exposed to sunlight."}, "expect": {"relevant": true, "quality": "strong"}}
+{"id": "rpr-0127", "state": {"question": "What is the price of the family plan?", "passage": "The family plan costs 15 dollars per month for six accounts."}, "expect": {"relevant": true, "quality": "strong"}}
+{"id": "rpr-0128", "state": {"question": "How do I reset the smart lock PIN?", "passage": "Reset the PIN in the app under Lock > Settings > Reset PIN."}, "expect": {"relevant": true, "quality": "strong"}}
+{"id": "rpr-0129", "state": {"question": "What is the capacity of the ferry?", "passage": "The ferry carries 600 passengers and 120 cars."}, "expect": {"relevant": true, "quality": "strong"}}
+{"id": "rpr-0130", "state": {"question": "What is the refund timeline for returned items?", "passage": "Refunds are issued within 5 business days of the return scan."}, "expect": {"relevant": true, "quality": "strong"}}
+{"id": "rpr-0131", "state": {"question": "What is the best time of year to visit Kyoto?", "passage": "Spring and autumn are the most popular seasons for visiting Kyoto."}, "expect": {"relevant": true, "quality": "ok"}}
+{"id": "rpr-0132", "state": {"question": "How do I make bread without yeast?", "passage": "Without yeast you can use sourdough starter or chemical leaveners like baking soda."}, "expect": {"relevant": true, "quality": "ok"}}
+{"id": "rpr-0133", "state": {"question": "What are the symptoms of dehydration?", "passage": "Dehydration can cause thirst, dark urine and dizziness."}, "expect": {"relevant": true, "quality": "ok"}}
+{"id": "rpr-0134", "state": {"question": "How do I choose a running shoe?", "passage": "Gait analysis and arch type help narrow running shoe choices."}, "expect": {"relevant": true, "quality": "ok"}}
+{"id": "rpr-0135", "state": {"question": "What causes inflation?", "passage": "Inflation can result from demand growth exceeding supply."}, "expect": {"relevant": true, "quality": "ok"}}
+{"id": "rpr-0136", "state": {"question": "How do I learn to swim as an adult?", "passage": "Adult swim lessons and shallow-water practice build confidence."}, "expect": {"relevant": true, "quality": "ok"}}
+{"id": "rpr-0137", "state": {"question": "What should I pack for a safari?", "passage": "Neutral clothing, binoculars and sun protection are safari essentials."}, "expect": {"relevant": true, "quality": "ok"}}
+{"id": "rpr-0138", "state": {"question": "How do I fix a leaky faucet?", "passage": "Replacing the washer or cartridge usually stops a dripping faucet."}, "expect": {"relevant": true, "quality": "ok"}}
+{"id": "rpr-0139", "state": {"question": "What is the difference between a stock and a bond?", "passage": "Stocks are ownership stakes; bonds are loans to issuers."}, "expect": {"relevant": true, "quality": "ok"}}
+{"id": "rpr-0140", "state": {"question": "How do I get better at public speaking?", "passage": "Practice, feedback and preparation reduce public speaking anxiety."}, "expect": {"relevant": true, "quality": "ok"}}
+{"id": "rpr-0141", "state": {"question": "What is the process for adopting a dog?", "passage": "Adoption usually involves an application, a home check and a fee."}, "expect": {"relevant": true, "quality": "ok"}}
+{"id": "rpr-0142", "state": {"question": "How do I lower my electricity bill?", "passage": "Insulation, LED bulbs and thermostat schedules cut electricity use."}, "expect": {"relevant": true, "quality": "ok"}}
+{"id": "rpr-0143", "state": {"question": "What are the benefits of strength training?", "passage": "Strength training improves muscle mass, bone density and metabolism."}, "expect": {"relevant": true, "quality": "ok"}}
+{"id": "rpr-0144", "state": {"question": "How do I start a garden in a small space?", "passage": "Container and vertical gardens work well in small spaces."}, "expect": {"relevant": true, "quality": "ok"}}
+{"id": "rpr-0145", "state": {"question": "What makes a healthy breakfast?", "passage": "A balanced breakfast includes protein, fibre and fruit."}, "expect": {"relevant": true, "quality": "ok"}}
+{"id": "rpr-0146", "state": {"question": "How do I prepare for a job interview?", "passage": "Research the company and practice answers to common questions."}, "expect": {"relevant": true, "quality": "ok"}}
+{"id": "rpr-0147", "state": {"question": "What causes a blocked drain?", "passage": "Hair, grease and foreign objects commonly block drains."}, "expect": {"relevant": true, "quality": "ok"}}
+{"id": "rpr-0148", "state": {"question": "How do I save money on a tight budget?", "passage": "Tracking spending and cutting subscriptions frees up cash in a tight budget."}, "expect": {"relevant": true, "quality": "ok"}}
+{"id": "rpr-0149", "state": {"question": "What is the best way to learn a language?", "passage": "Daily practice and immersion accelerate language learning."}, "expect": {"relevant": true, "quality": "ok"}}
+{"id": "rpr-0150", "state": {"question": "How do I prevent jet lag?", "passage": "Adjusting sleep before travel and hydration reduce jet lag."}, "expect": {"relevant": true, "quality": "ok"}}
+{"id": "rpr-0151", "state": {"question": "What is the legal drinking age in Japan?", "passage": "Japan has strict drunk-driving penalties."}, "expect": {"relevant": false, "quality": "weak"}}
+{"id": "rpr-0152", "state": {"question": "How do I renew my passport?", "passage": "Passports are issued by the national authority."}, "expect": {"relevant": false, "quality": "weak"}}
+{"id": "rpr-0153", "state": {"question": "What is the temperature on Mars?", "passage": "Mars has a thin atmosphere mostly of carbon dioxide."}, "expect": {"relevant": false, "quality": "weak"}}
+{"id": "rpr-0154", "state": {"question": "How many bones are in the human body?", "passage": "The skeleton supports and protects the internal organs."}, "expect": {"relevant": false, "quality": "weak"}}
+{"id": "rpr-0155", "state": {"question": "What is the capital of Canada?", "passage": "Canada is the second-largest country by area."}, "expect": {"relevant": false, "quality": "weak"}}
+{"id": "rpr-0156", "state": {"question": "How do I make miso soup?", "passage": "Miso is a fermented soybean paste."}, "expect": {"relevant": false, "quality": "weak"}}
+{"id": "rpr-0157", "state": {"question": "What is the tallest waterfall in the world?", "passage": "Angel Falls is located in Venezuela."}, "expect": {"relevant": false, "quality": "weak"}}
+{"id": "rpr-0158", "state": {"question": "What is the warranty on the screen?", "passage": "Screens are inspected before shipping."}, "expect": {"relevant": false, "quality": "weak"}}
+{"id": "rpr-0159", "state": {"question": "How do I contact the billing team?", "passage": "Billing issues are handled by the finance department."}, "expect": {"relevant": false, "quality": "weak"}}
+{"id": "rpr-0160", "state": {"question": "How many people attended the festival?", "passage": "The festival featured 40 bands over three days."}, "expect": {"relevant": false, "quality": "weak"}}
+{"id": "rpr-0161", "state": {"question": "What is the nitrogen content of the fertilizer?", "passage": "The fertilizer supports strong root growth."}, "expect": {"relevant": false, "quality": "weak"}}
+{"id": "rpr-0162", "state": {"question": "When was the company's IPO?", "passage": "The company's shares trade on the NYSE."}, "expect": {"relevant": false, "quality": "weak"}}
+{"id": "rpr-0163", "state": {"question": "How do I unlock the bootloader?", "passage": "Unlocking the bootloader voids the warranty."}, "expect": {"relevant": false, "quality": "weak"}}
+{"id": "rpr-0164", "state": {"question": "What is the expiry date on the milk?", "passage": "The milk is pasteurized and homogenized."}, "expect": {"relevant": false, "quality": "weak"}}
+{"id": "rpr-0165", "state": {"question": "What is the bandwidth of the link?", "passage": "The link is monitored around the clock for availability."}, "expect": {"relevant": false, "quality": "weak"}}
+{"id": "rpr-0166", "state": {"question": "How do I report a pothole?", "passage": "The city repairs potholes within 10 days."}, "expect": {"relevant": false, "quality": "weak"}}
+{"id": "rpr-0167", "state": {"question": "What is the freezing point of mercury?", "passage": "Mercury is toxic and must be handled carefully."}, "expect": {"relevant": false, "quality": "weak"}}
+{"id": "rpr-0168", "state": {"question": "How do I change the account currency?", "passage": "Currency conversion fees may apply."}, "expect": {"relevant": false, "quality": "weak"}}
+{"id": "rpr-0169", "state": {"question": "What is the calorie content of the meal?", "passage": "The meal is high in protein."}, "expect": {"relevant": false, "quality": "weak"}}
+{"id": "rpr-0170", "state": {"question": "How do I enroll in autopay?", "passage": "Autopay prevents missed payments."}, "expect": {"relevant": false, "quality": "weak"}}
+{"id": "rpr-0171", "state": {"question": "What is the thread count of the sheets?", "passage": "The sheets are made of long-staple cotton."}, "expect": {"relevant": false, "quality": "weak"}}
+{"id": "rpr-0172", "state": {"question": "How do I calibrate the sensor?", "passage": "Sensors drift over time and need periodic attention."}, "expect": {"relevant": false, "quality": "weak"}}
+{"id": "rpr-0173", "state": {"question": "What is the largest desert in the world?", "passage": "The symphony performed to a sold-out hall."}, "expect": {"relevant": false, "quality": "junk"}}
+{"id": "rpr-0174", "state": {"question": "How do I update the firmware?", "passage": "Coffee prices rose 8 percent this year."}, "expect": {"relevant": false, "quality": "junk"}}
+{"id": "rpr-0175", "state": {"question": "Who won the election?", "passage": "The recipe calls for two cups of flour."}, "expect": {"relevant": false, "quality": "junk"}}
+{"id": "rpr-0176", "state": {"question": "What is the speed of the bullet train?", "passage": "Butterflies migrate thousands of kilometers."}, "expect": {"relevant": false, "quality": "junk"}}
+{"id": "rpr-0177", "state": {"question": "How do I catch a wild rabbit?", "passage": "The tax filing deadline is in April."}, "expect": {"relevant": false, "quality": "junk"}}
+{"id": "rpr-0178", "state": {"question": "What is the population of the island?", "passage": "Volcanic rock forms from cooled lava."}, "expect": {"relevant": false, "quality": "junk"}}
+{"id": "rpr-0179", "state": {"question": "How do I clean a cast iron pan?", "passage": "Interest rates were unchanged this month."}, "expect": {"relevant": false, "quality": "junk"}}
+{"id": "rpr-0180", "state": {"question": "What is the composition of the alloy?", "passage": "The novel won several literary awards."}, "expect": {"relevant": false, "quality": "junk"}}
+{"id": "rpr-0181", "state": {"question": "How do I build a treehouse?", "passage": "Insurance premiums vary by region."}, "expect": {"relevant": false, "quality": "junk"}}
+{"id": "rpr-0182", "state": {"question": "What is the average lifespan of the breed?", "passage": "The bridge was closed for maintenance."}, "expect": {"relevant": false, "quality": "junk"}}
+{"id": "rpr-0183", "state": {"question": "How do I replace a bike chain?", "passage": "The orchestra tours Europe in spring."}, "expect": {"relevant": false, "quality": "junk"}}
+{"id": "rpr-0184", "state": {"question": "What is the voltage of the battery pack?", "passage": "Bees pollinate a third of food crops."}, "expect": {"relevant": false, "quality": "junk"}}
+{"id": "rpr-0185", "state": {"question": "How do I install solar panels?", "passage": "The film premiered at a festival in Cannes."}, "expect": {"relevant": false, "quality": "junk"}}
+{"id": "rpr-0186", "state": {"question": "What is the tuition for the program?", "passage": "Mountains form at tectonic plate boundaries."}, "expect": {"relevant": false, "quality": "junk"}}
+{"id": "rpr-0187", "state": {"question": "How do I test the water quality?", "passage": "The stock market fell on Friday."}, "expect": {"relevant": false, "quality": "junk"}}
+{"id": "rpr-0188", "state": {"question": "What is the fuel consumption of the car?", "passage": "Penguins huddle to conserve heat."}, "expect": {"relevant": false, "quality": "junk"}}
+{"id": "rpr-0189", "state": {"question": "How do I paint a wall evenly?", "passage": "The treaty ended the war in 1918."}, "expect": {"relevant": false, "quality": "junk"}}
+{"id": "rpr-0190", "state": {"question": "What is the shelf life of the cheese?", "passage": "The company opened a new office in Madrid."}, "expect": {"relevant": false, "quality": "junk"}}
+{"id": "rpr-0191", "state": {"question": "How do I write a cover letter?", "passage": "Deserts cover a fifth of the land surface."}, "expect": {"relevant": false, "quality": "junk"}}
+{"id": "rpr-0192", "state": {"question": "What is the range of the electric car?", "passage": "The choir rehearses on Tuesdays."}, "expect": {"relevant": false, "quality": "junk"}}
+{"id": "rpr-0193", "state": {"question": "What is the altitude of the pass?", "passage": ""}, "expect": {"relevant": false, "quality": "unknown"}}
+{"id": "rpr-0194", "state": {"question": "How do I adjust the saddle height?", "passage": "\ufffd\ufffd"}, "expect": {"relevant": false, "quality": "unknown"}}
+{"id": "rpr-0195", "state": {"question": "What is the population density?", "passage": "[scanned page image only]"}, "expect": {"relevant": false, "quality": "unknown"}}
+{"id": "rpr-0196", "state": {"question": "How do I switch the language?", "passage": "....."}, "expect": {"relevant": false, "quality": "unknown"}}
+{"id": "rpr-0197", "state": {"question": "What is the weight limit of the bridge?", "passage": "[text corrupted]"}, "expect": {"relevant": false, "quality": "unknown"}}
+{"id": "rpr-0198", "state": {"question": "How do I request a wheelchair ramp?", "passage": "\u0000\u0000"}, "expect": {"relevant": false, "quality": "unknown"}}
+{"id": "rpr-0199", "state": {"question": "What is the interest on the loan?", "passage": "¿?"}, "expect": {"relevant": false, "quality": "unknown"}}
+{"id": "rpr-0200", "state": {"question": "How do I turn on subtitles?", "passage": "[content unavailable]"}, "expect": {"relevant": false, "quality": "unknown"}}

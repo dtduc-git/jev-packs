@@ -103,3 +103,108 @@
 {"id": "em-0103", "state": {"a": "Clara Nguyen — VP Engineering, Berlin", "b": "Clara Nguyen — engineering manager, Berlin; joined 2023"}, "expect": {"same_entity": true, "action": "curator"}}
 {"id": "em-0104", "state": {"a": "Redwood Capital — San Francisco; venture capital", "b": "Redwood Capital Partners — Palo Alto; VC firm"}, "expect": {"same_entity": true, "action": "curator"}}
 {"id": "em-0105", "state": {"a": "Delta Diagnostics — Warsaw; lab network", "b": "Delta Labs — Krakow; diagnostics"}, "expect": {"same_entity": true, "action": "curator"}}
+{"id": "em-0106", "state": {"a": "Cedar & Vine — wine bar, Melbourne; opened 2015", "b": "Cedar and Vine Wine Bar — Melbourne, AU; est. 2015"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0107", "state": {"a": "Hiroshi Tanaka — sushi chef, Kyoto; restaurant Kaze", "b": "H. Tanaka — chef at Kaze, Kyoto"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0108", "state": {"a": "Baltic Shipping OU — Tallinn; 12 vessels", "b": "Baltic Shipping — Tallinn, Estonia; fleet of 12 ships"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0109", "state": {"a": "Rosewood Inn — Cotswolds, UK; 18 rooms", "b": "Rosewood Inn — Cotswolds, United Kingdom; 18 rooms"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0110", "state": {"a": "Dr. Elena Petrova — dermatologist, Sofia", "b": "Elena Petrova, MD — dermatology, Sofia, Bulgaria"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0111", "state": {"a": "Northwind Bikes — bicycle shop, Copenhagen; founded 2009", "b": "Northwind Bicycle Co. — Copenhagen; est. 2009"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0112", "state": {"a": "Sierra Verde Landscaping — Phoenix; 30 crews", "b": "Sierra Verde — Phoenix, AZ; landscaping; 30 crews"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0113", "state": {"a": "Amelia Brooks — jazz vocalist, New Orleans; born 1982", "b": "A. Brooks — New Orleans jazz singer; born 1982"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0114", "state": {"a": "Tidewater Seafood — Charleston; dockside market", "b": "Tidewater Seafood Market — Charleston, SC; dockside"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0115", "state": {"a": "Kilkenny Woolen Mills — Kilkenny; founded 1976", "b": "Kilkenny Woollen Mills — Kilkenny, Ireland; est. 1976"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0116", "state": {"a": "Grand Teton Lodge — Jackson Hole; 120 rooms", "b": "Grand Teton Lodge — Wyoming; 120 rooms"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0117", "state": {"a": "Osei & Partners — law firm, Accra; 15 lawyers", "b": "Osei and Partners Legal — Accra, Ghana; 15 attorneys"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0118", "state": {"a": "Mango Tree Nursery — Chiang Mai; 200 species", "b": "Mango Tree Nursery — Chiang Mai, Thailand; 200 species"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0119", "state": {"a": "Whitfield Observatory — Yorkshire; opened 1892", "b": "Whitfield Observatory — Yorkshire, UK; est. 1892"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0120", "state": {"a": "Delta Robotics — Nagoya; founded 2017; 45 staff", "b": "Delta Robotics K.K. — Nagoya, Japan; founded 2017; 45 employees"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0121", "state": {"a": "Harbor Light Cafe — Halifax; open since 2001", "b": "Harbour Light Cafe — Halifax, Nova Scotia; est. 2001"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0122", "state": {"a": "Sandra Okafor — chocolatier, Lagos; shop ChocoLagos", "b": "S. Okafor — owner, ChocoLagos, Lagos"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0123", "state": {"a": "Pinecrest Ski Resort — Colorado; 40 runs", "b": "Pinecrest Ski Area — Colorado; 40 trails"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0124", "state": {"a": "Alto Verde Coffee — Medellin; founded 2010", "b": "Alto Verde Cafe — Medellin, Colombia; est. 2010"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0125", "state": {"a": "Ravi Krishnan — tabla player, Chennai", "b": "R. Krishnan — Chennai percussionist, tabla"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0126", "state": {"a": "Bluebell Montessori — Bristol; 90 children", "b": "Bluebell Montessori School — Bristol, UK; 90 pupils"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0127", "state": {"a": "Ironwood Furniture — Grand Rapids; since 1962", "b": "Ironwood Furniture Co. — Grand Rapids, MI; founded 1962"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0128", "state": {"a": "Cape Fear Brewing — Wilmington NC; taproom", "b": "Cape Fear Brewery — Wilmington, North Carolina; taproom"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0129", "state": {"a": "Dr. Mateo Alvarez — veterinarian, Valencia", "b": "Mateo Alvarez, DVM — veterinary clinic, Valencia, Spain"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0130", "state": {"a": "Thistle Lane Press — Edinburgh; poetry list", "b": "Thistle Lane Publishing — Edinburgh, Scotland; poetry"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0131", "state": {"a": "Kalahari Solar — Gaborone; 20 MW plant", "b": "Kalahari Solar Power — Gaborone, Botswana; 20 MW"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0132", "state": {"a": "Nakamura Ceramics — Kanazawa; family kiln", "b": "Nakamura Ceramics Studio — Kanazawa, Japan; family kiln"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0133", "state": {"a": "Red Canyon Outfitters — Sedona; guided hikes", "b": "Red Canyon Outfitters — Sedona, AZ; hiking guides"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0134", "state": {"a": "Adriana Silva — architect, Sao Paulo; studio ASilva", "b": "A. Silva — principal, ASilva Arquitetura, Sao Paulo"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0135", "state": {"a": "Cumberland Sound — Nashville; 12 artists", "b": "Cumberland Sound Records — Nashville, TN; 12 artists"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0136", "state": {"a": "Belfast Linen Works — Belfast; founded 1888", "b": "Belfast Linen Company — Belfast, Northern Ireland; est. 1888"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0137", "state": {"a": "Olive & Thyme — deli, Athens; since 1995", "b": "Olive and Thyme Deli — Athens, Greece; est. 1995"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0138", "state": {"a": "Fjord Kayaks — Bergen; rental fleet 40", "b": "Fjord Kayak Rental — Bergen, Norway; 40 kayaks"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0139", "state": {"a": "Dr. Fatima Zahra — ophthalmologist, Casablanca", "b": "F. Zahra, MD — eye clinic, Casablanca, Morocco"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0140", "state": {"a": "Copper Canyon Distillery — Tucson; founded 2014", "b": "Copper Canyon Distilling — Tucson, AZ; est. 2014"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0141", "state": {"a": "Mila Novak — violinist, Ljubljana; philharmonic", "b": "M. Novak — Ljubljana Philharmonic violinist"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0142", "state": {"a": "Great Lakes Freight — Duluth; 25 barges", "b": "Great Lakes Freight Co. — Duluth, MN; 25 barges"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0143", "state": {"a": "Sakura Language School — Osaka; 600 students", "b": "Sakura Language Academy — Osaka, Japan; 600 students"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0144", "state": {"a": "Andes Trekking — Cusco; licensed guides", "b": "Andes Trekking Company — Cusco, Peru; certified guides"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0145", "state": {"a": "Marlowe Detective Agency — London; 8 investigators", "b": "Marlowe Investigations — London, UK; 8 investigators"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0146", "state": {"a": "Casablanca Textiles — Fes; 200 workers", "b": "Casablanca Textiles SARL — Fes, Morocco; 200 employees"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0147", "state": {"a": "Penguin Point Aquarium — Cape Town; opened 2005", "b": "Penguin Point — Cape Town, South Africa; aquarium; est. 2005"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0148", "state": {"a": "Verdant Rooftops — Singapore; green roof installers", "b": "Verdant Rooftop Solutions — Singapore; green roofs"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0149", "state": {"a": "Old Quarter Tailors — Hanoi; 4 master tailors", "b": "Old Quarter Tailoring — Hanoi, Vietnam; four master tailors"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0150", "state": {"a": "Quill & Compass — travel bookstore, Dublin", "b": "Quill and Compass Books — Dublin, Ireland; travel books"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0151", "state": {"a": "Northwind Bikes — Copenhagen; bicycles", "b": "Northwind Motors — Copenhagen; car dealer"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0152", "state": {"a": "Sierra Verde Landscaping — Phoenix", "b": "Sierra Verde Homes — Phoenix; builder"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0153", "state": {"a": "Tidewater Seafood — Charleston", "b": "Tidewater Insurance — Charleston"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0154", "state": {"a": "Kilkenny Woolen Mills — Kilkenny; textiles", "b": "Kilkenny Pottery — Kilkenny"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0155", "state": {"a": "Grand Teton Lodge — Jackson Hole; hotel", "b": "Grand Teton Tours — Jackson Hole; excursions"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0156", "state": {"a": "Mango Tree Nursery — Chiang Mai; plants", "b": "Mango Tree Restaurant — Chiang Mai"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0157", "state": {"a": "Delta Robotics — Nagoya; industrial robots", "b": "Delta Logistics — Nagoya; freight"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0158", "state": {"a": "Harbor Light Cafe — Halifax", "b": "Harbor Light Marina — Halifax"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0159", "state": {"a": "Pinecrest Ski Resort — Colorado; 40 runs", "b": "Pinecrest Lodge — Colorado; hotel"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0160", "state": {"a": "Alto Verde Coffee — Medellin", "b": "Alto Verde Flowers — Medellin; florist"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0161", "state": {"a": "Bluebell Montessori — Bristol; school", "b": "Bluebell Nursery — Bristol; childcare"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0162", "state": {"a": "Ironwood Furniture — Grand Rapids", "b": "Ironwood Timber — Grand Rapids; lumber"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0163", "state": {"a": "Cape Fear Brewing — Wilmington", "b": "Cape Fear Distillery — Wilmington"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0164", "state": {"a": "Kalahari Solar — Gaborone; energy", "b": "Kalahari Mining — Gaborone; diamonds"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0165", "state": {"a": "Nakamura Ceramics — Kanazawa", "b": "Nakamura Sake — Kanazawa; brewery"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0166", "state": {"a": "Red Canyon Outfitters — Sedona", "b": "Red Canyon Ranch — Sedona; lodging"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0167", "state": {"a": "Cumberland Sound — Nashville; label", "b": "Cumberland Studios — Nashville; recording"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0168", "state": {"a": "Belfast Linen Works — Belfast", "b": "Belfast Shipyard — Belfast"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0169", "state": {"a": "Olive and Thyme — Athens; deli", "b": "Olive Grove Taverna — Athens; restaurant"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0170", "state": {"a": "Fjord Kayaks — Bergen; rentals", "b": "Fjord Ferries — Bergen; transport"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0171", "state": {"a": "Copper Canyon Distillery — Tucson", "b": "Copper Canyon Mining — Tucson"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0172", "state": {"a": "Great Lakes Freight — Duluth; cargo", "b": "Great Lakes Cruises — Duluth; tourism"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0173", "state": {"a": "Sakura Language School — Osaka", "b": "Sakura Kindergarten — Osaka"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0174", "state": {"a": "Andes Trekking — Cusco; guides", "b": "Andes Airlines — Cusco; air carrier"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0175", "state": {"a": "Marlowe Investigations — London; detectives", "b": "Marlowe Security — London; guards"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0176", "state": {"a": "Hiroshi Tanaka — chef, Kyoto", "b": "Hiroshi Tanaka — architect, Tokyo; born 1970"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0177", "state": {"a": "Amelia Brooks — jazz singer, New Orleans", "b": "Amelia Brooks — painter, Savannah"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0178", "state": {"a": "Ravi Krishnan — tabla player, Chennai", "b": "Ravi Krishnan — sitar player, Mumbai"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0179", "state": {"a": "Adriana Silva — architect, Sao Paulo", "b": "Adriana Silva — lawyer, Rio de Janeiro"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0180", "state": {"a": "Mila Novak — violinist, Ljubljana", "b": "Mila Novak — cellist, Maribor"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0181", "state": {"a": "Sandra Okafor — chocolatier, Lagos", "b": "Sandra Okafor — banker, Abuja"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0182", "state": {"a": "Dr. Elena Petrova — dermatologist, Sofia", "b": "Elena Petrova — dentist, Plovdiv"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0183", "state": {"a": "Dr. Mateo Alvarez — veterinarian, Valencia", "b": "Mateo Alvarez — pharmacist, Madrid"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0184", "state": {"a": "Dr. Fatima Zahra — ophthalmologist, Casablanca", "b": "Fatima Zahra — optician, Rabat"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0185", "state": {"a": "Rosewood Inn — Cotswolds", "b": "Rosewood Manor — Oxfordshire; hotel"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0186", "state": {"a": "Whitfield Observatory — Yorkshire", "b": "Whitfield Planetarium — Manchester"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0187", "state": {"a": "Penguin Point Aquarium — Cape Town", "b": "Penguin Point Beach — Cape Town; nature site"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0188", "state": {"a": "Verdant Rooftops — Singapore; green roofs", "b": "Verdant Farms — Singapore; vertical farming"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0189", "state": {"a": "Old Quarter Tailors — Hanoi", "b": "Old Quarter Gallery — Hanoi; art"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0190", "state": {"a": "Quill and Compass Books — Dublin; bookstore", "b": "Compass Travel Agency — Dublin; travel"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0191", "state": {"a": "Nordic Design Week — Helsinki; annual", "b": "Nordic Design Festival — Helsinki; yearly event"}, "expect": {"same_entity": true, "action": "curator"}}
+{"id": "em-0192", "state": {"a": "L. Petrov — chess coach, Sofia", "b": "Lazar Petrov — chess trainer, Plovdiv; born 1968"}, "expect": {"same_entity": true, "action": "curator"}}
+{"id": "em-0193", "state": {"a": "Sunrise Bakery — Lisbon; 2 shops", "b": "Sunrise Pastelaria — Lisbon; two locations"}, "expect": {"same_entity": true, "action": "curator"}}
+{"id": "em-0194", "state": {"a": "Atlas Freight — Rotterdam; Europe routes", "b": "Atlas Logistics — Antwerp; EU routes"}, "expect": {"same_entity": true, "action": "curator"}}
+{"id": "em-0195", "state": {"a": "M. Silva — real estate agent, Porto", "b": "Miguel Silva — property broker, Braga; license 12345"}, "expect": {"same_entity": true, "action": "curator"}}
+{"id": "em-0196", "state": {"a": "Golden Gate Dim Sum — San Francisco; Chinatown", "b": "Golden Gate Dumpling House — San Francisco; Chinatown"}, "expect": {"same_entity": true, "action": "curator"}}
+{"id": "em-0197", "state": {"a": "Alpine Dairy — Bern; organic", "b": "Alpine Dairy Cooperative — Zurich; organic"}, "expect": {"same_entity": true, "action": "curator"}}
+{"id": "em-0198", "state": {"a": "V. Kumar — ophthalmologist, Delhi; clinic Nova Eye", "b": "Vikram Kumar — eye surgeon, New Delhi; Nova Eye clinic"}, "expect": {"same_entity": true, "action": "curator"}}
+{"id": "em-0199", "state": {"a": "Northern Lights Tours — Tromso; fjord trips", "b": "Northern Lights Travel — Tromso; similar itineraries"}, "expect": {"same_entity": true, "action": "curator"}}
+{"id": "em-0200", "state": {"a": "J. Okafor — professor, Ibadan", "b": "Joseph Okafor — lecturer, Ibadan; different department"}, "expect": {"same_entity": true, "action": "curator"}}
+{"id": "em-0201", "state": {"a": "Tran Law Office — Da Nang", "b": "Tran & Associates — Da Nang; legal services"}, "expect": {"same_entity": true, "action": "curator"}}
+{"id": "em-0202", "state": {"a": "Blue Lagoon Diving — Malta", "b": "Blue Lagoon Divers — Gozo; diving school"}, "expect": {"same_entity": true, "action": "curator"}}
+{"id": "em-0203", "state": {"a": "P. Andersen Carpentry — Aarhus; founded 1999", "b": "Andersen Snedkeri — Aarhus; est. 2000"}, "expect": {"same_entity": true, "action": "curator"}}
+{"id": "em-0204", "state": {"a": "Cactus Flower Cafe — Tucson; opened 2012", "b": "Cactus Flower Coffeehouse — Tucson; opened 2013"}, "expect": {"same_entity": true, "action": "curator"}}
+{"id": "em-0205", "state": {"a": "H. Yamada — translator, Tokyo", "b": "Hiro Yamada — interpreter, Yokohama"}, "expect": {"same_entity": true, "action": "curator"}}
+{"id": "em-0206", "state": {"a": "Baltic Amber Jewelry — Riga; founded 2005", "b": "Baltic Amber Studio — Riga; est. 2005"}, "expect": {"same_entity": true, "action": "curator"}}
+{"id": "em-0207", "state": {"a": "C. Rossi — gondolier, Venice", "b": "Carlo Rossi — boatman, Venice; licensed 2011"}, "expect": {"same_entity": true, "action": "curator"}}
+{"id": "em-0208", "state": {"a": "Sawtooth Software — Boise", "b": "Sawtooth Systems — Boise; software"}, "expect": {"same_entity": true, "action": "curator"}}
+{"id": "em-0209", "state": {"a": "Lakeshore Realty — Chicago; 80 agents", "b": "Lakeshore Properties — Chicago; 82 agents"}, "expect": {"same_entity": true, "action": "curator"}}
+{"id": "em-0210", "state": {"a": "M. Dubois — pastry chef, Lyon", "b": "Marc Dubois — chocolatier, Lyon; same guild"}, "expect": {"same_entity": true, "action": "curator"}}

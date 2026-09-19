@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.0 — 2026-09-19
+
+- Expanded from 105 to 210 cases; evidence re-recorded.
+
 ## 0.2.0 — 2026-09-19
 
 - Expanded from 55 to 105 cases; evidence re-recorded.

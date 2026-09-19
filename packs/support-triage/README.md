@@ -28,7 +28,7 @@ refund requests and rank urgency.
 
 ## Provenance
 
-All 100 cases were written for this pack (CC0-1.0). No external dataset.
+All 200 cases were written for this pack (CC0-1.0). No external dataset.
 Messages are synthetic; any resemblance to real tickets is coincidental.
 
 ## Thresholds
@@ -39,6 +39,7 @@ to review.
 
 ## Evidence
 
-Recorded 2026-09-19 against `jev-1.13.0`: accuracy **0.847**, ECE 0.063,
-$0.000023/case. Full report: [evidence.md](evidence.md); raw recording:
-[predictions.jsonl](predictions.jsonl).
+Recorded 2026-09-19 against `jev-1.13.0`: accuracy **0.815**, ECE 0.089,
+$0.000023/case. `urgency` is the weakest question (0.59) — the ordinal scale is
+where the hard cases live. Full report: [evidence.md](evidence.md); raw
+recording: [predictions.jsonl](predictions.jsonl).

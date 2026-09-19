@@ -1,33 +1,33 @@
-# jevassert report — citation-support v0.2.0
+# jevassert report — citation-support v0.3.0
 
 - model: `jev-1.13.0` (recorded against `jev-1.13.0`)
-- cases: 100 (0 errors, 0 missing answers)
-- items: 200 — accuracy **0.890**, ECE **0.076**
-- bootstrap 95%: accuracy CI 0.850–0.930, ECE CI 0.041–0.104
-- cost: $0.000017/case ($0.0017 total)
-- latency: p50 323ms, p95 767ms
+- cases: 200 (0 errors, 0 missing answers)
+- items: 400 — accuracy **0.905**, ECE **0.032**
+- bootstrap 95%: accuracy CI 0.875–0.932, ECE CI 0.022–0.064
+- cost: $0.000017/case ($0.0035 total)
+- latency: p50 318ms, p95 410ms
 
 ## Per question
 
 | question | type | n | missing | accuracy | mean p(decision) | ECE | Brier |
 |---|---|---|---|---|---|---|---|
-| supports | noul | 100 | 0 | 0.980 | 0.935 | 0.045 | 0.017 |
-| coverage | score | 100 | 0 | 0.800 | 0.929 | 0.131 | — |
+| supports | noul | 200 | 0 | 0.990 | 0.933 | 0.057 | 0.013 |
+| coverage | score | 200 | 0 | 0.820 | 0.928 | 0.110 | — |
 
 ## Coverage at decision probability
 
 | accept if p >= | coverage | precision |
 |---|---|---|
-| 0.50 | 0.995 | 0.894 |
-| 0.60 | 0.980 | 0.903 |
-| 0.70 | 0.955 | 0.927 |
-| 0.80 | 0.925 | 0.935 |
-| 0.90 | 0.795 | 0.950 |
-| 0.95 | 0.605 | 0.967 |
+| 0.50 | 0.998 | 0.907 |
+| 0.60 | 0.978 | 0.916 |
+| 0.70 | 0.953 | 0.934 |
+| 0.80 | 0.907 | 0.945 |
+| 0.90 | 0.800 | 0.959 |
+| 0.95 | 0.615 | 0.976 |
 
 ## Author thresholds (pack threshold floors)
 
-- auto-accepted 181/200 (0.905), precision 0.928
+- auto-accepted 358/400 (0.895), precision 0.933
 - labels without a floor (usually `unknown`) always route to review
 
 ## Gates

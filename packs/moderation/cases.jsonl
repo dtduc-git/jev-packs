@@ -98,3 +98,103 @@
 {"id": "mod-0098", "state": {"text": "\ufffd\ufffd\ufffd \ufffd\ufffd"}, "expect": {"action": "unknown", "severity": "unknown", "targeted_group": false}}
 {"id": "mod-0099", "state": {"text": ""}, "expect": {"action": "unknown", "severity": "unknown", "targeted_group": false}}
 {"id": "mod-0100", "state": {"text": "[media only — transcript unavailable]"}, "expect": {"action": "unknown", "severity": "unknown", "targeted_group": false}}
+{"id": "mod-0101", "state": {"text": "The new pricing is too high for small teams."}, "expect": {"action": "allow", "severity": "none", "targeted_group": false}}
+{"id": "mod-0102", "state": {"text": "I wish the app supported dark mode."}, "expect": {"action": "allow", "severity": "none", "targeted_group": false}}
+{"id": "mod-0103", "state": {"text": "The conference venue was hard to find."}, "expect": {"action": "allow", "severity": "none", "targeted_group": false}}
+{"id": "mod-0104", "state": {"text": "This update removed a feature I used daily."}, "expect": {"action": "allow", "severity": "none", "targeted_group": false}}
+{"id": "mod-0105", "state": {"text": "The instructions could be clearer."}, "expect": {"action": "allow", "severity": "none", "targeted_group": false}}
+{"id": "mod-0106", "state": {"text": "The wait times are unacceptable lately."}, "expect": {"action": "allow", "severity": "low", "targeted_group": false}}
+{"id": "mod-0107", "state": {"text": "Honestly the sequel was a waste of time."}, "expect": {"action": "allow", "severity": "low", "targeted_group": false}}
+{"id": "mod-0108", "state": {"text": "Their support replied slowly but solved it."}, "expect": {"action": "allow", "severity": "none", "targeted_group": false}}
+{"id": "mod-0109", "state": {"text": "The city should fix the roads before the festival."}, "expect": {"action": "allow", "severity": "none", "targeted_group": false}}
+{"id": "mod-0110", "state": {"text": "The coach's tactics cost us the match."}, "expect": {"action": "allow", "severity": "low", "targeted_group": false}}
+{"id": "mod-0111", "state": {"text": "The film's pacing dragged in the middle."}, "expect": {"action": "allow", "severity": "none", "targeted_group": false}}
+{"id": "mod-0112", "state": {"text": "I am switching providers if this continues."}, "expect": {"action": "allow", "severity": "low", "targeted_group": false}}
+{"id": "mod-0113", "state": {"text": "The documentation contradicts the changelog."}, "expect": {"action": "allow", "severity": "none", "targeted_group": false}}
+{"id": "mod-0114", "state": {"text": "The new intern did a great job on the report."}, "expect": {"action": "allow", "severity": "none", "targeted_group": false}}
+{"id": "mod-0115", "state": {"text": "The tournament schedule is a mess."}, "expect": {"action": "allow", "severity": "low", "targeted_group": false}}
+{"id": "mod-0116", "state": {"text": "The train was late again this morning."}, "expect": {"action": "allow", "severity": "none", "targeted_group": false}}
+{"id": "mod-0117", "state": {"text": "The show was cancelled without explanation."}, "expect": {"action": "allow", "severity": "none", "targeted_group": false}}
+{"id": "mod-0118", "state": {"text": "The boss announced layoffs vaguely."}, "expect": {"action": "allow", "severity": "low", "targeted_group": false}}
+{"id": "mod-0119", "state": {"text": "The article missed important context."}, "expect": {"action": "allow", "severity": "none", "targeted_group": false}}
+{"id": "mod-0120", "state": {"text": "The menu has fewer vegan options than before."}, "expect": {"action": "allow", "severity": "none", "targeted_group": false}}
+{"id": "mod-0121", "state": {"text": "The gym is always crowded after work."}, "expect": {"action": "allow", "severity": "none", "targeted_group": false}}
+{"id": "mod-0122", "state": {"text": "The landlord takes too long with repairs."}, "expect": {"action": "allow", "severity": "low", "targeted_group": false}}
+{"id": "mod-0123", "state": {"text": "The airline lost my bag twice this year."}, "expect": {"action": "allow", "severity": "none", "targeted_group": false}}
+{"id": "mod-0124", "state": {"text": "The radio station plays the same songs daily."}, "expect": {"action": "allow", "severity": "none", "targeted_group": false}}
+{"id": "mod-0125", "state": {"text": "The website is unusable on mobile."}, "expect": {"action": "allow", "severity": "none", "targeted_group": false}}
+{"id": "mod-0126", "state": {"text": "The referee missed a clear offside."}, "expect": {"action": "allow", "severity": "low", "targeted_group": false}}
+{"id": "mod-0127", "state": {"text": "The professor grades too harshly."}, "expect": {"action": "allow", "severity": "low", "targeted_group": false}}
+{"id": "mod-0128", "state": {"text": "The park needs more benches."}, "expect": {"action": "allow", "severity": "none", "targeted_group": false}}
+{"id": "mod-0129", "state": {"text": "The app's export is slower than last year."}, "expect": {"action": "allow", "severity": "none", "targeted_group": false}}
+{"id": "mod-0130", "state": {"text": "I regret buying the extended warranty."}, "expect": {"action": "allow", "severity": "none", "targeted_group": false}}
+{"id": "mod-0131", "state": {"text": "The team played badly in the second half."}, "expect": {"action": "allow", "severity": "none", "targeted_group": false}}
+{"id": "mod-0132", "state": {"text": "The newsletter is mostly ads now."}, "expect": {"action": "allow", "severity": "none", "targeted_group": false}}
+{"id": "mod-0133", "state": {"text": "Whoever wrote this is an absolute moron."}, "expect": {"action": "review", "severity": "medium", "targeted_group": false}}
+{"id": "mod-0134", "state": {"text": "You are such a loser for liking this."}, "expect": {"action": "review", "severity": "medium", "targeted_group": false}}
+{"id": "mod-0135", "state": {"text": "Your article is worthless and you should quit."}, "expect": {"action": "review", "severity": "medium", "targeted_group": false}}
+{"id": "mod-0136", "state": {"text": "I hope your startup fails."}, "expect": {"action": "review", "severity": "medium", "targeted_group": false}}
+{"id": "mod-0137", "state": {"text": "This idiot reviewer clearly has no idea."}, "expect": {"action": "review", "severity": "medium", "targeted_group": false}}
+{"id": "mod-0138", "state": {"text": "You are a waste of space."}, "expect": {"action": "review", "severity": "medium", "targeted_group": false}}
+{"id": "mod-0139", "state": {"text": "Get a life, seriously."}, "expect": {"action": "review", "severity": "low", "targeted_group": false}}
+{"id": "mod-0140", "state": {"text": "You people ruin every discussion."}, "expect": {"action": "review", "severity": "medium", "targeted_group": false}}
+{"id": "mod-0141", "state": {"text": "I will make sure everyone knows you are a fraud."}, "expect": {"action": "review", "severity": "medium", "targeted_group": false}}
+{"id": "mod-0142", "state": {"text": "Cry more about your fake outrage."}, "expect": {"action": "review", "severity": "medium", "targeted_group": false}}
+{"id": "mod-0143", "state": {"text": "Only a moron would work at that company."}, "expect": {"action": "review", "severity": "medium", "targeted_group": false}}
+{"id": "mod-0144", "state": {"text": "Nobody likes you here."}, "expect": {"action": "review", "severity": "medium", "targeted_group": false}}
+{"id": "mod-0145", "state": {"text": "You belong in a clown show with that take."}, "expect": {"action": "review", "severity": "medium", "targeted_group": false}}
+{"id": "mod-0146", "state": {"text": "Shut up already, you are embarrassing."}, "expect": {"action": "review", "severity": "medium", "targeted_group": false}}
+{"id": "mod-0147", "state": {"text": "I will report you for harassment."}, "expect": {"action": "review", "severity": "low", "targeted_group": false}}
+{"id": "mod-0148", "state": {"text": "That influencer is a fraud."}, "expect": {"action": "review", "severity": "low", "targeted_group": false}}
+{"id": "mod-0149", "state": {"text": "Your whole family must be embarrassed by you."}, "expect": {"action": "review", "severity": "medium", "targeted_group": false}}
+{"id": "mod-0150", "state": {"text": "Stop crying and get good."}, "expect": {"action": "review", "severity": "low", "targeted_group": false}}
+{"id": "mod-0151", "state": {"text": "I hope you lose your job."}, "expect": {"action": "review", "severity": "medium", "targeted_group": false}}
+{"id": "mod-0152", "state": {"text": "You are clearly the dumbest person in this thread."}, "expect": {"action": "review", "severity": "medium", "targeted_group": false}}
+{"id": "mod-0153", "state": {"text": "Go away and never come back."}, "expect": {"action": "review", "severity": "low", "targeted_group": false}}
+{"id": "mod-0154", "state": {"text": "Your opinion is garbage and so are you."}, "expect": {"action": "review", "severity": "medium", "targeted_group": false}}
+{"id": "mod-0155", "state": {"text": "The mods should ban you for being annoying."}, "expect": {"action": "review", "severity": "low", "targeted_group": false}}
+{"id": "mod-0156", "state": {"text": "You sound like a paid shill."}, "expect": {"action": "review", "severity": "low", "targeted_group": false}}
+{"id": "mod-0157", "state": {"text": "Everyone can see you are a joke."}, "expect": {"action": "review", "severity": "medium", "targeted_group": false}}
+{"id": "mod-0158", "state": {"text": "You are pathetic."}, "expect": {"action": "review", "severity": "medium", "targeted_group": false}}
+{"id": "mod-0159", "state": {"text": "What an insufferable little man."}, "expect": {"action": "review", "severity": "medium", "targeted_group": false}}
+{"id": "mod-0160", "state": {"text": "People like you are why we cannot have nice things."}, "expect": {"action": "review", "severity": "low", "targeted_group": false}}
+{"id": "mod-0161", "state": {"text": "I will find out who you are."}, "expect": {"action": "remove", "severity": "high", "targeted_group": false}}
+{"id": "mod-0162", "state": {"text": "Send me your address or I will come find you."}, "expect": {"action": "remove", "severity": "high", "targeted_group": false}}
+{"id": "mod-0163", "state": {"text": "Die."}, "expect": {"action": "remove", "severity": "high", "targeted_group": false}}
+{"id": "mod-0164", "state": {"text": "I will break into your house."}, "expect": {"action": "remove", "severity": "high", "targeted_group": false}}
+{"id": "mod-0165", "state": {"text": "All women are hysterical."}, "expect": {"action": "remove", "severity": "medium", "targeted_group": true}}
+{"id": "mod-0166", "state": {"text": "Gay couples should not adopt children."}, "expect": {"action": "remove", "severity": "high", "targeted_group": true}}
+{"id": "mod-0167", "state": {"text": "People with disabilities are faking it for benefits."}, "expect": {"action": "remove", "severity": "high", "targeted_group": true}}
+{"id": "mod-0168", "state": {"text": "Immigrants are animals."}, "expect": {"action": "remove", "severity": "high", "targeted_group": true}}
+{"id": "mod-0169", "state": {"text": "Jews control the media."}, "expect": {"action": "remove", "severity": "high", "targeted_group": true}}
+{"id": "mod-0170", "state": {"text": "Muslims are all violent."}, "expect": {"action": "remove", "severity": "high", "targeted_group": true}}
+{"id": "mod-0171", "state": {"text": "Trans people should not exist."}, "expect": {"action": "remove", "severity": "high", "targeted_group": true}}
+{"id": "mod-0172", "state": {"text": "Black people are less intelligent."}, "expect": {"action": "remove", "severity": "high", "targeted_group": true}}
+{"id": "mod-0173", "state": {"text": "Old people should just disappear."}, "expect": {"action": "remove", "severity": "high", "targeted_group": true}}
+{"id": "mod-0174", "state": {"text": "Here is his bank account number and PIN."}, "expect": {"action": "remove", "severity": "high", "targeted_group": false}}
+{"id": "mod-0175", "state": {"text": "Buy this supplement, it cures all cancers with a 100 percent guarantee."}, "expect": {"action": "remove", "severity": "medium", "targeted_group": false}}
+{"id": "mod-0176", "state": {"text": "Click here to get free money, just enter your bank login."}, "expect": {"action": "remove", "severity": "high", "targeted_group": false}}
+{"id": "mod-0177", "state": {"text": "I will kill every one of you."}, "expect": {"action": "remove", "severity": "high", "targeted_group": false}}
+{"id": "mod-0178", "state": {"text": "Send nudes or I will release your private photos."}, "expect": {"action": "remove", "severity": "high", "targeted_group": false}}
+{"id": "mod-0179", "state": {"text": "Wire transfer to this account to unlock your inheritance."}, "expect": {"action": "remove", "severity": "high", "targeted_group": false}}
+{"id": "mod-0180", "state": {"text": "Let us burn down the clinic."}, "expect": {"action": "remove", "severity": "high", "targeted_group": false}}
+{"id": "mod-0181", "state": {"text": "Women are only good for cleaning."}, "expect": {"action": "remove", "severity": "medium", "targeted_group": true}}
+{"id": "mod-0182", "state": {"text": "Kill all the protesters."}, "expect": {"action": "remove", "severity": "high", "targeted_group": false}}
+{"id": "mod-0183", "state": {"text": "The Holocaust never happened, and the survivors are liars."}, "expect": {"action": "remove", "severity": "high", "targeted_group": true}}
+{"id": "mod-0184", "state": {"text": "People from that country are all criminals."}, "expect": {"action": "remove", "severity": "high", "targeted_group": true}}
+{"id": "mod-0185", "state": {"text": "Post her private photos, she deserves it."}, "expect": {"action": "remove", "severity": "high", "targeted_group": false}}
+{"id": "mod-0186", "state": {"text": "I will post your address if you keep talking."}, "expect": {"action": "remove", "severity": "high", "targeted_group": false}}
+{"id": "mod-0187", "state": {"text": "Join my pump-and-dump crypto group for guaranteed gains."}, "expect": {"action": "remove", "severity": "medium", "targeted_group": false}}
+{"id": "mod-0188", "state": {"text": "The disabled should be institutionalized."}, "expect": {"action": "remove", "severity": "high", "targeted_group": true}}
+{"id": "mod-0189", "state": {"text": "Mexicans are rapists."}, "expect": {"action": "remove", "severity": "high", "targeted_group": true}}
+{"id": "mod-0190", "state": {"text": "Subscribe to my channel or I will hack your account."}, "expect": {"action": "remove", "severity": "high", "targeted_group": false}}
+{"id": "mod-0191", "state": {"text": ""}, "expect": {"action": "unknown", "severity": "unknown", "targeted_group": false}}
+{"id": "mod-0192", "state": {"text": "\ufffd\ufffd\ufffd"}, "expect": {"action": "unknown", "severity": "unknown", "targeted_group": false}}
+{"id": "mod-0193", "state": {"text": "[encrypted message]"}, "expect": {"action": "unknown", "severity": "unknown", "targeted_group": false}}
+{"id": "mod-0194", "state": {"text": "...."}, "expect": {"action": "unknown", "severity": "unknown", "targeted_group": false}}
+{"id": "mod-0195", "state": {"text": "[sticker]"}, "expect": {"action": "unknown", "severity": "unknown", "targeted_group": false}}
+{"id": "mod-0196", "state": {"text": "?????"}, "expect": {"action": "unknown", "severity": "unknown", "targeted_group": false}}
+{"id": "mod-0197", "state": {"text": "[voice note 0:42, transcript disabled]"}, "expect": {"action": "unknown", "severity": "unknown", "targeted_group": false}}
+{"id": "mod-0198", "state": {"text": "\u0000\u0000\u0000"}, "expect": {"action": "unknown", "severity": "unknown", "targeted_group": false}}
+{"id": "mod-0199", "state": {"text": "[image with no alt text]"}, "expect": {"action": "unknown", "severity": "unknown", "targeted_group": false}}
+{"id": "mod-0200", "state": {"text": "[content redacted by legal hold]"}, "expect": {"action": "unknown", "severity": "unknown", "targeted_group": false}}

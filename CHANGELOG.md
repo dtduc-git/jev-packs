@@ -22,3 +22,7 @@ Repo-level changes; per-pack history lives in each pack's `CHANGELOG.md`.
   and re-recorded against `jev-1.13.0`: accuracy 0.793–0.905, ECE 0.040–0.088,
   ~$0.00002/case. Larger, harder sets replaced the seed evidence — numbers are
   lower and more trustworthy (e.g. `rag-answerability` 0.940 → 0.905).
+- **Packs doubled again to 200+ cases (v0.3.0; 1,210 cases, 2,820 items
+  total)** and re-recorded: accuracy 0.795–0.905, ECE 0.032–0.089,
+  ~$0.00002/case. Ordinal questions remain the weak spot (`urgency` 0.59,
+  `severity` 0.69, `missing_info` 0.82, `quality` 0.82).

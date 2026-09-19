@@ -98,3 +98,103 @@
 {"id": "st-0098", "state": {"message": "Your password policy rejects our 20-character passphrase. That is absurd."}, "expect": {"refund_request": false, "queue": "account", "urgency": "normal"}}
 {"id": "st-0099", "state": {"message": "After the migration all timestamps in reports are off by one hour."}, "expect": {"refund_request": false, "queue": "technical", "urgency": "high"}}
 {"id": "st-0100", "state": {"message": "Do you offer on-prem deployment for regulated customers?"}, "expect": {"refund_request": false, "queue": "other", "urgency": "low"}}
+{"id": "st-0101", "state": {"message": "Can we switch from monthly to annual billing mid-cycle?"}, "expect": {"refund_request": false, "queue": "billing", "urgency": "normal"}}
+{"id": "st-0102", "state": {"message": "Our PO number is missing from the latest invoice."}, "expect": {"refund_request": false, "queue": "billing", "urgency": "normal"}}
+{"id": "st-0103", "state": {"message": "Why was the EU VAT not applied to our invoice?"}, "expect": {"refund_request": false, "queue": "billing", "urgency": "normal"}}
+{"id": "st-0104", "state": {"message": "Our accountant needs a copy of the credit note issued last month."}, "expect": {"refund_request": false, "queue": "billing", "urgency": "low"}}
+{"id": "st-0105", "state": {"message": "Please refund the prorated amount after our downgrade."}, "expect": {"refund_request": true, "queue": "billing", "urgency": "high"}}
+{"id": "st-0106", "state": {"message": "The discount code SAVE20 was not applied to invoice 991. Please refund the difference."}, "expect": {"refund_request": true, "queue": "billing", "urgency": "high"}}
+{"id": "st-0107", "state": {"message": "Can we pay the annual invoice in two installments?"}, "expect": {"refund_request": false, "queue": "billing", "urgency": "low"}}
+{"id": "st-0108", "state": {"message": "Our card expired and billing failed. How do we update it?"}, "expect": {"refund_request": false, "queue": "billing", "urgency": "high"}}
+{"id": "st-0109", "state": {"message": "We were charged in USD but agreed to pay in CAD."}, "expect": {"refund_request": false, "queue": "billing", "urgency": "high"}}
+{"id": "st-0110", "state": {"message": "Please issue a refund for the unused seats."}, "expect": {"refund_request": true, "queue": "billing", "urgency": "high"}}
+{"id": "st-0111", "state": {"message": "What documents do you need for a tax exemption in Texas?"}, "expect": {"refund_request": false, "queue": "billing", "urgency": "low"}}
+{"id": "st-0112", "state": {"message": "The renewal invoice is 30 percent higher than our contract states."}, "expect": {"refund_request": false, "queue": "billing", "urgency": "high"}}
+{"id": "st-0113", "state": {"message": "Can you split the invoice across two cost centers?"}, "expect": {"refund_request": false, "queue": "billing", "urgency": "low"}}
+{"id": "st-0114", "state": {"message": "We need a W-8BEN form for our Ireland entity."}, "expect": {"refund_request": false, "queue": "billing", "urgency": "low"}}
+{"id": "st-0115", "state": {"message": "We filed a chargeback since the refund never arrived. Please also process it from your side."}, "expect": {"refund_request": true, "queue": "billing", "urgency": "high"}}
+{"id": "st-0116", "state": {"message": "Our finance team needs invoices sent to a different email."}, "expect": {"refund_request": false, "queue": "billing", "urgency": "low"}}
+{"id": "st-0117", "state": {"message": "Is there a fee for paying by wire transfer?"}, "expect": {"refund_request": false, "queue": "billing", "urgency": "low"}}
+{"id": "st-0118", "state": {"message": "We were double-billed for the add-on seats. Refund the duplicate."}, "expect": {"refund_request": true, "queue": "billing", "urgency": "high"}}
+{"id": "st-0119", "state": {"message": "Please cancel the upcoming renewal and refund the prepaid amount."}, "expect": {"refund_request": true, "queue": "billing", "urgency": "high"}}
+{"id": "st-0120", "state": {"message": "The tax ID on our invoice is wrong."}, "expect": {"refund_request": false, "queue": "billing", "urgency": "normal"}}
+{"id": "st-0121", "state": {"message": "How do we increase the API rate limit for a launch?"}, "expect": {"refund_request": false, "queue": "technical", "urgency": "normal"}}
+{"id": "st-0122", "state": {"message": "Webhook retries did not fire after our endpoint was down for maintenance."}, "expect": {"refund_request": false, "queue": "technical", "urgency": "high"}}
+{"id": "st-0123", "state": {"message": "The SDK throws a serialization error on Windows with Python 3.13."}, "expect": {"refund_request": false, "queue": "technical", "urgency": "normal"}}
+{"id": "st-0124", "state": {"message": "Requests time out after 30 seconds on large exports."}, "expect": {"refund_request": false, "queue": "technical", "urgency": "high"}}
+{"id": "st-0125", "state": {"message": "The service account token expired and our nightly job failed."}, "expect": {"refund_request": false, "queue": "technical", "urgency": "high"}}
+{"id": "st-0126", "state": {"message": "How do I verify the webhook signature in Node?"}, "expect": {"refund_request": false, "queue": "technical", "urgency": "normal"}}
+{"id": "st-0127", "state": {"message": "Pagination returns duplicate records on page 3."}, "expect": {"refund_request": false, "queue": "technical", "urgency": "normal"}}
+{"id": "st-0128", "state": {"message": "Our server clock is off by two minutes. Will HMAC signatures fail?"}, "expect": {"refund_request": false, "queue": "technical", "urgency": "normal"}}
+{"id": "st-0129", "state": {"message": "The TLS certificate on api.example.com expired."}, "expect": {"refund_request": false, "queue": "technical", "urgency": "critical"}}
+{"id": "st-0130", "state": {"message": "CORS blocks our browser app after the domain change."}, "expect": {"refund_request": false, "queue": "technical", "urgency": "high"}}
+{"id": "st-0131", "state": {"message": "How do I reset the sandbox data?"}, "expect": {"refund_request": false, "queue": "technical", "urgency": "low"}}
+{"id": "st-0132", "state": {"message": "Latency from the EU region doubled since Tuesday."}, "expect": {"refund_request": false, "queue": "technical", "urgency": "high"}}
+{"id": "st-0133", "state": {"message": "The Docker image tag latest now points to a broken build."}, "expect": {"refund_request": false, "queue": "technical", "urgency": "high"}}
+{"id": "st-0134", "state": {"message": "The Terraform provider fails with an invalid plan error on upgrade."}, "expect": {"refund_request": false, "queue": "technical", "urgency": "normal"}}
+{"id": "st-0135", "state": {"message": "Your Kubernetes operator keeps crashing with OOM."}, "expect": {"refund_request": false, "queue": "technical", "urgency": "high"}}
+{"id": "st-0136", "state": {"message": "SAML login fails with a clock skew error."}, "expect": {"refund_request": false, "queue": "account", "urgency": "high"}}
+{"id": "st-0137", "state": {"message": "SCIM provisioning stopped syncing new users."}, "expect": {"refund_request": false, "queue": "technical", "urgency": "high"}}
+{"id": "st-0138", "state": {"message": "Please allowlist our new office IP range."}, "expect": {"refund_request": false, "queue": "technical", "urgency": "normal"}}
+{"id": "st-0139", "state": {"message": "Which API version supports bulk export?"}, "expect": {"refund_request": false, "queue": "technical", "urgency": "low"}}
+{"id": "st-0140", "state": {"message": "The import rejects valid UTF-8 files with a BOM."}, "expect": {"refund_request": false, "queue": "technical", "urgency": "normal"}}
+{"id": "st-0141", "state": {"message": "Our Grafana integration shows no metrics since the update."}, "expect": {"refund_request": false, "queue": "technical", "urgency": "normal"}}
+{"id": "st-0142", "state": {"message": "How do I rotate the signing key without downtime?"}, "expect": {"refund_request": false, "queue": "technical", "urgency": "normal"}}
+{"id": "st-0143", "state": {"message": "Websocket connections drop every 60 seconds."}, "expect": {"refund_request": false, "queue": "technical", "urgency": "high"}}
+{"id": "st-0144", "state": {"message": "Can we get a dedicated IP for outgoing webhooks?"}, "expect": {"refund_request": false, "queue": "technical", "urgency": "low"}}
+{"id": "st-0145", "state": {"message": "The CLI ignores the --output flag on Windows."}, "expect": {"refund_request": false, "queue": "technical", "urgency": "normal"}}
+{"id": "st-0146", "state": {"message": "Please change the delivery address to our new office."}, "expect": {"refund_request": false, "queue": "shipping", "urgency": "normal"}}
+{"id": "st-0147", "state": {"message": "Can the order ship in two shipments?"}, "expect": {"refund_request": false, "queue": "shipping", "urgency": "low"}}
+{"id": "st-0148", "state": {"message": "Customs charged us duties twice on the same parcel. We want the extra charge refunded."}, "expect": {"refund_request": true, "queue": "billing", "urgency": "high"}}
+{"id": "st-0149", "state": {"message": "What is the delivery window for international orders?"}, "expect": {"refund_request": false, "queue": "shipping", "urgency": "low"}}
+{"id": "st-0150", "state": {"message": "The parcel has been stuck at the sorting center for a week."}, "expect": {"refund_request": false, "queue": "shipping", "urgency": "high"}}
+{"id": "st-0151", "state": {"message": "The box arrived crushed and the device is dented."}, "expect": {"refund_request": false, "queue": "shipping", "urgency": "high"}}
+{"id": "st-0152", "state": {"message": "I need the return shipping label for the defective unit."}, "expect": {"refund_request": false, "queue": "shipping", "urgency": "normal"}}
+{"id": "st-0153", "state": {"message": "Can I upgrade the order to express shipping?"}, "expect": {"refund_request": false, "queue": "shipping", "urgency": "normal"}}
+{"id": "st-0154", "state": {"message": "Who pays customs for a replacement shipment?"}, "expect": {"refund_request": false, "queue": "shipping", "urgency": "low"}}
+{"id": "st-0155", "state": {"message": "The courier needs a signature but nobody is home. Please reschedule."}, "expect": {"refund_request": false, "queue": "shipping", "urgency": "normal"}}
+{"id": "st-0156", "state": {"message": "We received someone else's order. Please refund us and arrange pickup."}, "expect": {"refund_request": true, "queue": "billing", "urgency": "high"}}
+{"id": "st-0157", "state": {"message": "The tracking number does not exist in the carrier system."}, "expect": {"refund_request": false, "queue": "shipping", "urgency": "normal"}}
+{"id": "st-0158", "state": {"message": "Please resend the shipment to the corrected postal code."}, "expect": {"refund_request": false, "queue": "shipping", "urgency": "normal"}}
+{"id": "st-0159", "state": {"message": "Is Saturday delivery available in our area?"}, "expect": {"refund_request": false, "queue": "shipping", "urgency": "low"}}
+{"id": "st-0160", "state": {"message": "The packaging leaks. This is the third damaged delivery this month."}, "expect": {"refund_request": false, "queue": "shipping", "urgency": "high"}}
+{"id": "st-0161", "state": {"message": "How do I transfer the admin role to a colleague?"}, "expect": {"refund_request": false, "queue": "account", "urgency": "normal"}}
+{"id": "st-0162", "state": {"message": "Please delete the user account for a former employee."}, "expect": {"refund_request": false, "queue": "account", "urgency": "high"}}
+{"id": "st-0163", "state": {"message": "Can you restore a user we deleted yesterday?"}, "expect": {"refund_request": false, "queue": "account", "urgency": "high"}}
+{"id": "st-0164", "state": {"message": "I need to change the email on my account."}, "expect": {"refund_request": false, "queue": "account", "urgency": "normal"}}
+{"id": "st-0165", "state": {"message": "I lost my 2FA device. How do I recover access?"}, "expect": {"refund_request": false, "queue": "account", "urgency": "high"}}
+{"id": "st-0166", "state": {"message": "Please sign out all sessions from other devices."}, "expect": {"refund_request": false, "queue": "account", "urgency": "high"}}
+{"id": "st-0167", "state": {"message": "How do I create a service account for CI?"}, "expect": {"refund_request": false, "queue": "account", "urgency": "low"}}
+{"id": "st-0168", "state": {"message": "We need an export of all audit events for the year."}, "expect": {"refund_request": false, "queue": "account", "urgency": "low"}}
+{"id": "st-0169", "state": {"message": "How do I enforce SSO for all members?"}, "expect": {"refund_request": false, "queue": "account", "urgency": "normal"}}
+{"id": "st-0170", "state": {"message": "Our workspace name has a typo. Can you fix it?"}, "expect": {"refund_request": false, "queue": "account", "urgency": "low"}}
+{"id": "st-0171", "state": {"message": "The invite link expired before my teammate accepted it."}, "expect": {"refund_request": false, "queue": "account", "urgency": "normal"}}
+{"id": "st-0172", "state": {"message": "How do I download all data for a GDPR request?"}, "expect": {"refund_request": false, "queue": "account", "urgency": "normal"}}
+{"id": "st-0173", "state": {"message": "The username change did not apply in the mobile app."}, "expect": {"refund_request": false, "queue": "account", "urgency": "normal"}}
+{"id": "st-0174", "state": {"message": "Please close the workspace for our subsidiary."}, "expect": {"refund_request": false, "queue": "account", "urgency": "normal"}}
+{"id": "st-0175", "state": {"message": "How do I remove a domain that is no longer ours?"}, "expect": {"refund_request": false, "queue": "account", "urgency": "low"}}
+{"id": "st-0176", "state": {"message": "I am the only admin left and I lost my password."}, "expect": {"refund_request": false, "queue": "account", "urgency": "high"}}
+{"id": "st-0177", "state": {"message": "Can I see which members have admin permissions?"}, "expect": {"refund_request": false, "queue": "account", "urgency": "low"}}
+{"id": "st-0178", "state": {"message": "How do I downgrade the plan to free at renewal?"}, "expect": {"refund_request": false, "queue": "account", "urgency": "low"}}
+{"id": "st-0179", "state": {"message": "The trial workspace expired before our evaluation ended."}, "expect": {"refund_request": false, "queue": "account", "urgency": "normal"}}
+{"id": "st-0180", "state": {"message": "We need to change the account owner's email address."}, "expect": {"refund_request": false, "queue": "account", "urgency": "normal"}}
+{"id": "st-0181", "state": {"message": "Do you sponsor conferences?"}, "expect": {"refund_request": false, "queue": "other", "urgency": "low"}}
+{"id": "st-0182", "state": {"message": "Requesting a press kit and logo for an article."}, "expect": {"refund_request": false, "queue": "other", "urgency": "low"}}
+{"id": "st-0183", "state": {"message": "Your signup flow is not screen-reader accessible."}, "expect": {"refund_request": false, "queue": "other", "urgency": "normal"}}
+{"id": "st-0184", "state": {"message": "Can we join the private beta for the new engine?"}, "expect": {"refund_request": false, "queue": "other", "urgency": "low"}}
+{"id": "st-0185", "state": {"message": "What is your roadmap for offline mode?"}, "expect": {"refund_request": false, "queue": "other", "urgency": "low"}}
+{"id": "st-0186", "state": {"message": "Please fill out our security questionnaire for vendor review."}, "expect": {"refund_request": false, "queue": "other", "urgency": "normal"}}
+{"id": "st-0187", "state": {"message": "Do you have a SOC 2 Type II report we can review?"}, "expect": {"refund_request": false, "queue": "other", "urgency": "low"}}
+{"id": "st-0188", "state": {"message": "We need a signed DPA before we can deploy."}, "expect": {"refund_request": false, "queue": "other", "urgency": "high"}}
+{"id": "st-0189", "state": {"message": "How do I subscribe to status page updates?"}, "expect": {"refund_request": false, "queue": "other", "urgency": "low"}}
+{"id": "st-0190", "state": {"message": "Do you offer training for new admins?"}, "expect": {"refund_request": false, "queue": "other", "urgency": "low"}}
+{"id": "st-0191", "state": {"message": "Can our agency resell your product?"}, "expect": {"refund_request": false, "queue": "other", "urgency": "low"}}
+{"id": "st-0192", "state": {"message": "Our legal entity renamed; what do you need to update the contract?"}, "expect": {"refund_request": false, "queue": "other", "urgency": "normal"}}
+{"id": "st-0193", "state": {"message": "We are evaluating three vendors; can we get a sandbox extension?"}, "expect": {"refund_request": false, "queue": "other", "urgency": "low"}}
+{"id": "st-0194", "state": {"message": "The website pricing page contradicts the checkout total."}, "expect": {"refund_request": false, "queue": "billing", "urgency": "normal"}}
+{"id": "st-0195", "state": {"message": "Where can I find your accessibility statement?"}, "expect": {"refund_request": false, "queue": "other", "urgency": "low"}}
+{"id": "st-0196", "state": {"message": "Do you have a partner program for consultants?"}, "expect": {"refund_request": false, "queue": "other", "urgency": "low"}}
+{"id": "st-0197", "state": {"message": "Can you provide a charity license for a nonprofit?"}, "expect": {"refund_request": false, "queue": "billing", "urgency": "low"}}
+{"id": "st-0198", "state": {"message": "We need an NDA signed before sharing logs."}, "expect": {"refund_request": false, "queue": "other", "urgency": "normal"}}
+{"id": "st-0199", "state": {"message": "?????"}, "expect": {"refund_request": false, "queue": "unknown", "urgency": "unknown"}}
+{"id": "st-0200", "state": {"message": "[voice transcript unavailable]"}, "expect": {"refund_request": false, "queue": "unknown", "urgency": "unknown"}}

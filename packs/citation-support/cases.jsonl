@@ -98,3 +98,103 @@
 {"id": "cs-0098", "state": {"claim": "The reactor was shut down after the alarm.", "quote": "\ufffd\ufffd\ufffd\ufffd"}, "expect": {"supports": false, "coverage": "unknown"}}
 {"id": "cs-0099", "state": {"claim": "The team set a new world record.", "quote": "[content removed by moderator]"}, "expect": {"supports": false, "coverage": "unknown"}}
 {"id": "cs-0100", "state": {"claim": "The merger will close in Q2.", "quote": "The merger [redacted] closing [redacted]."}, "expect": {"supports": false, "coverage": "unknown"}}
+{"id": "cs-0101", "state": {"claim": "The project finished two weeks ahead of schedule.", "quote": "The project wrapped up 14 days early."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0102", "state": {"claim": "The fund charges a 2 percent management fee.", "quote": "Management fees are 2 percent annually."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0103", "state": {"claim": "The bus runs every 15 minutes on weekdays.", "quote": "Weekday departures are every 15 minutes."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0104", "state": {"claim": "The river is 1,200 km long and flows north.", "quote": "The 1,200-kilometer river flows northward."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0105", "state": {"claim": "The algorithm runs in linear time.", "quote": "The algorithm completes in O(n) time."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0106", "state": {"claim": "The farm produces 30 tons of olives a year.", "quote": "Annual olive production reaches 30 tonnes."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0107", "state": {"claim": "The amendment extends the deadline to June.", "quote": "The deadline is extended to June under the amendment."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0108", "state": {"claim": "The app supports offline mode and sync.", "quote": "Offline mode with background sync is supported."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0109", "state": {"claim": "The study enrolled 200 patients at three hospitals.", "quote": "Two hundred patients were enrolled across three hospitals."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0110", "state": {"claim": "The tower is 180 meters tall and has 40 floors.", "quote": "Standing 180 meters, the tower has 40 floors."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0111", "state": {"claim": "The fine was reduced to 5,000 dollars on appeal.", "quote": "On appeal the fine was lowered to 5,000 dollars."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0112", "state": {"claim": "The lake covers 80 square kilometers.", "quote": "The lake's surface area is 80 square kilometers."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0113", "state": {"claim": "The drug must be stored below 8 degrees.", "quote": "Storage below 8 C is required."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0114", "state": {"claim": "The new router supports Wi-Fi 7.", "quote": "Wi-Fi 7 support is included in the new router."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0115", "state": {"claim": "The bakery sells out by 10 am most days.", "quote": "Most days the bakery sells out before 10:00."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0116", "state": {"claim": "The law caps fees at 3 percent.", "quote": "Fees are capped at 3 percent by law."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0117", "state": {"claim": "The mission lasted 14 days and orbited the Moon.", "quote": "The 14-day mission orbited the Moon."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0118", "state": {"claim": "The software is licensed per core, not per user.", "quote": "Licensing is per core rather than per user."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0119", "state": {"claim": "The clinic is open until 8 pm on Thursdays.", "quote": "Thursday hours run until 20:00."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0120", "state": {"claim": "The committee rejected both proposals.", "quote": "Both proposals were rejected by the committee."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0121", "state": {"claim": "The battery degrades 2 percent per year.", "quote": "Annual battery degradation is about 2 percent."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0122", "state": {"claim": "The treaty bans testing for 10 years.", "quote": "A 10-year testing ban is imposed by the treaty."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0123", "state": {"claim": "The film grossed 300 million worldwide.", "quote": "Worldwide gross reached 300 million."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0124", "state": {"claim": "The storm surge reached 4 meters.", "quote": "Surge heights peaked at 4 meters."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0125", "state": {"claim": "The university offers 40 scholarships a year.", "quote": "Forty scholarships are awarded annually."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0126", "state": {"claim": "The API returns decimal prices as strings.", "quote": "Prices are serialized as strings, including decimals."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0127", "state": {"claim": "The mine closed in 1998 after 60 years.", "quote": "After six decades, the mine shut in 1998."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0128", "state": {"claim": "The vaccine needs 70 percent coverage for herd immunity.", "quote": "Herd immunity requires 70 percent coverage."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0129", "state": {"claim": "The park bans drones without a permit.", "quote": "Drone flights require a permit in the park."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0130", "state": {"claim": "The furnace uses natural gas and electricity.", "quote": "The furnace runs on natural gas and electricity."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0131", "state": {"claim": "The road closes every winter due to snow.", "quote": "Winter snow closes the road annually."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0132", "state": {"claim": "The company matches donations up to 1,000 dollars.", "quote": "Donation matching is capped at 1,000 dollars."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0133", "state": {"claim": "The lake is stocked with trout each spring.", "quote": "Spring stocking adds trout to the lake."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0134", "state": {"claim": "The bridge can withstand magnitude 8 quakes.", "quote": "The bridge is designed for magnitude 8 earthquakes."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0135", "state": {"claim": "The vaccine reduces transmission by half.", "quote": "Transmission drops 50 percent with the vaccine."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0136", "state": {"claim": "The app collects no location data.", "quote": "No location data is collected by the app."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0137", "state": {"claim": "The flight was diverted to Lisbon due to fog.", "quote": "Fog forced the flight to divert to Lisbon."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0138", "state": {"claim": "The fund lost 12 percent in 2022.", "quote": "2022 returns were negative 12 percent."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0139", "state": {"claim": "The park has 300 species of birds.", "quote": "Three hundred bird species are recorded in the park."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0140", "state": {"claim": "The code freezes at midnight on Friday.", "quote": "The freeze begins Friday at midnight."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0141", "state": {"claim": "The plant cuts emissions 40 percent and water use 20 percent.", "quote": "Emissions fall 40 percent at the plant."}, "expect": {"supports": false, "coverage": "partial"}}
+{"id": "cs-0142", "state": {"claim": "The fund charges 2 percent and returns 7 percent.", "quote": "The fund charges 2 percent annually."}, "expect": {"supports": false, "coverage": "partial"}}
+{"id": "cs-0143", "state": {"claim": "The trail is 30 km and gains 1,500 m.", "quote": "The trail is 30 kilometers long."}, "expect": {"supports": false, "coverage": "partial"}}
+{"id": "cs-0144", "state": {"claim": "The device is water-resistant to 50 m and dustproof.", "quote": "The device resists water to 50 meters."}, "expect": {"supports": false, "coverage": "partial"}}
+{"id": "cs-0145", "state": {"claim": "The report recommends cuts and new taxes.", "quote": "The report recommends spending cuts."}, "expect": {"supports": false, "coverage": "partial"}}
+{"id": "cs-0146", "state": {"claim": "The team signed two strikers and a goalkeeper.", "quote": "The team signed two strikers."}, "expect": {"supports": false, "coverage": "partial"}}
+{"id": "cs-0147", "state": {"claim": "The building has 20 floors and 300 parking spots.", "quote": "The building has 20 floors."}, "expect": {"supports": false, "coverage": "partial"}}
+{"id": "cs-0148", "state": {"claim": "The law applies to employers and contractors.", "quote": "The law applies to employers."}, "expect": {"supports": false, "coverage": "partial"}}
+{"id": "cs-0149", "state": {"claim": "The study tracked 500 children for five years.", "quote": "The study tracked 500 children."}, "expect": {"supports": false, "coverage": "partial"}}
+{"id": "cs-0150", "state": {"claim": "The phone has 256 GB storage and 8 GB RAM.", "quote": "The phone ships with 256 GB of storage."}, "expect": {"supports": false, "coverage": "partial"}}
+{"id": "cs-0151", "state": {"claim": "The road reopened after repairs and resurfacing.", "quote": "The road reopened after repairs."}, "expect": {"supports": false, "coverage": "partial"}}
+{"id": "cs-0152", "state": {"claim": "The kit includes a pump, gauge and sealant.", "quote": "The kit includes a pump and gauge."}, "expect": {"supports": false, "coverage": "partial"}}
+{"id": "cs-0153", "state": {"claim": "The bank cut rates and waived fees.", "quote": "The bank cut interest rates."}, "expect": {"supports": false, "coverage": "partial"}}
+{"id": "cs-0154", "state": {"claim": "The museum added two wings and a cafe.", "quote": "The museum added two new wings."}, "expect": {"supports": false, "coverage": "partial"}}
+{"id": "cs-0155", "state": {"claim": "The policy covers theft and accidental damage.", "quote": "The policy covers theft."}, "expect": {"supports": false, "coverage": "partial"}}
+{"id": "cs-0156", "state": {"claim": "The train stops in Lyon and Marseille.", "quote": "The train stops in Lyon."}, "expect": {"supports": false, "coverage": "partial"}}
+{"id": "cs-0157", "state": {"claim": "The grant funds salaries and equipment.", "quote": "The grant funds salaries."}, "expect": {"supports": false, "coverage": "partial"}}
+{"id": "cs-0158", "state": {"claim": "The drug lowers cholesterol and blood pressure.", "quote": "The drug lowers cholesterol."}, "expect": {"supports": false, "coverage": "partial"}}
+{"id": "cs-0159", "state": {"claim": "The city planted 5,000 trees and 2,000 shrubs.", "quote": "The city planted 5,000 trees."}, "expect": {"supports": false, "coverage": "partial"}}
+{"id": "cs-0160", "state": {"claim": "The outage affected email and chat.", "quote": "The outage affected email."}, "expect": {"supports": false, "coverage": "partial"}}
+{"id": "cs-0161", "state": {"claim": "The contract covers maintenance and support.", "quote": "The contract covers maintenance."}, "expect": {"supports": false, "coverage": "partial"}}
+{"id": "cs-0162", "state": {"claim": "The airline added routes to Oslo and Dublin.", "quote": "The airline added a route to Oslo."}, "expect": {"supports": false, "coverage": "partial"}}
+{"id": "cs-0163", "state": {"claim": "The campus spans 40 hectares and six buildings.", "quote": "The campus spans 40 hectares."}, "expect": {"supports": false, "coverage": "partial"}}
+{"id": "cs-0164", "state": {"claim": "The recipe needs 500 g flour and 300 ml water.", "quote": "The recipe needs 500 grams of flour."}, "expect": {"supports": false, "coverage": "partial"}}
+{"id": "cs-0165", "state": {"claim": "The vaccine is 100 percent effective.", "quote": "The vaccine showed 60 percent efficacy in trials."}, "expect": {"supports": false, "coverage": "full"}}
+{"id": "cs-0166", "state": {"claim": "The species was declared extinct in 2020.", "quote": "The species was declared endangered in 2020."}, "expect": {"supports": false, "coverage": "full"}}
+{"id": "cs-0167", "state": {"claim": "The CEO resigned over the scandal.", "quote": "The board rejected the CEO's resignation."}, "expect": {"supports": false, "coverage": "full"}}
+{"id": "cs-0168", "state": {"claim": "The law takes effect immediately.", "quote": "The law takes effect in 2027."}, "expect": {"supports": false, "coverage": "full"}}
+{"id": "cs-0169", "state": {"claim": "The dam was removed to restore the river.", "quote": "The dam remains operational after the review."}, "expect": {"supports": false, "coverage": "full"}}
+{"id": "cs-0170", "state": {"claim": "The study proves causation.", "quote": "The study found an association, not causation."}, "expect": {"supports": false, "coverage": "full"}}
+{"id": "cs-0171", "state": {"claim": "The storm was the strongest in a century.", "quote": "The storm was the strongest since 1987."}, "expect": {"supports": false, "coverage": "full"}}
+{"id": "cs-0172", "state": {"claim": "The hospital closed its emergency department.", "quote": "The hospital expanded its emergency department."}, "expect": {"supports": false, "coverage": "full"}}
+{"id": "cs-0173", "state": {"claim": "The product passed all safety tests.", "quote": "The product failed two safety tests."}, "expect": {"supports": false, "coverage": "full"}}
+{"id": "cs-0174", "state": {"claim": "The city banned cars from the center.", "quote": "The city restricted cars but did not ban them."}, "expect": {"supports": false, "coverage": "full"}}
+{"id": "cs-0175", "state": {"claim": "The deal collapsed.", "quote": "The deal was signed last week."}, "expect": {"supports": false, "coverage": "full"}}
+{"id": "cs-0176", "state": {"claim": "The player was suspended for doping.", "quote": "The player was cleared of doping charges."}, "expect": {"supports": false, "coverage": "full"}}
+{"id": "cs-0177", "state": {"claim": "The factory will close, cutting 500 jobs.", "quote": "The factory will add 500 jobs in an expansion."}, "expect": {"supports": false, "coverage": "full"}}
+{"id": "cs-0178", "state": {"claim": "The committee found no evidence of fraud.", "quote": "The committee found evidence of fraud."}, "expect": {"supports": false, "coverage": "full"}}
+{"id": "cs-0179", "state": {"claim": "The drug is approved for children over six.", "quote": "The drug is approved only for adults."}, "expect": {"supports": false, "coverage": "full"}}
+{"id": "cs-0180", "state": {"claim": "The museum admission is free.", "quote": "Museum admission costs 20 dollars."}, "expect": {"supports": false, "coverage": "full"}}
+{"id": "cs-0181", "state": {"claim": "The bridge will get a new paint job.", "quote": "The zoo welcomed two elephant calves."}, "expect": {"supports": false, "coverage": "none"}}
+{"id": "cs-0182", "state": {"claim": "The judge dismissed the case.", "quote": "The recipe calls for fresh basil."}, "expect": {"supports": false, "coverage": "none"}}
+{"id": "cs-0183", "state": {"claim": "The satellite lost contact.", "quote": "The bakery won a regional award."}, "expect": {"supports": false, "coverage": "none"}}
+{"id": "cs-0184", "state": {"claim": "The city raised parking fees.", "quote": "The orchestra added a second performance."}, "expect": {"supports": false, "coverage": "none"}}
+{"id": "cs-0185", "state": {"claim": "The company recalled 10,000 units.", "quote": "The marathon route changed this year."}, "expect": {"supports": false, "coverage": "none"}}
+{"id": "cs-0186", "state": {"claim": "The volcano alert level was raised.", "quote": "The school district approved a new calendar."}, "expect": {"supports": false, "coverage": "none"}}
+{"id": "cs-0187", "state": {"claim": "The team qualified for the final.", "quote": "The hospital opened a new wing."}, "expect": {"supports": false, "coverage": "none"}}
+{"id": "cs-0188", "state": {"claim": "The currency fell to a record low.", "quote": "The film festival announced its lineup."}, "expect": {"supports": false, "coverage": "none"}}
+{"id": "cs-0189", "state": {"claim": "The mine flooded.", "quote": "The airline introduced a loyalty program."}, "expect": {"supports": false, "coverage": "none"}}
+{"id": "cs-0190", "state": {"claim": "The bank froze the accounts.", "quote": "The vineyard released a new vintage."}, "expect": {"supports": false, "coverage": "none"}}
+{"id": "cs-0191", "state": {"claim": "The orca pod returned to the bay.", "quote": "The software update fixed two bugs."}, "expect": {"supports": false, "coverage": "none"}}
+{"id": "cs-0192", "state": {"claim": "The nursery sold out of seedlings.", "quote": "The council debated zoning rules."}, "expect": {"supports": false, "coverage": "none"}}
+{"id": "cs-0193", "state": {"claim": "The reactor was refueled.", "quote": "The museum restored a painting."}, "expect": {"supports": false, "coverage": "none"}}
+{"id": "cs-0194", "state": {"claim": "The glacier calved a huge iceberg.", "quote": "The startup raised a seed round."}, "expect": {"supports": false, "coverage": "none"}}
+{"id": "cs-0195", "state": {"claim": "The dam will be completed in 2029.", "quote": "\ufffd\ufffd"}, "expect": {"supports": false, "coverage": "unknown"}}
+{"id": "cs-0196", "state": {"claim": "The fund returned 9 percent.", "quote": "[table image omitted]"}, "expect": {"supports": false, "coverage": "unknown"}}
+{"id": "cs-0197", "state": {"claim": "The medicine reduces fever.", "quote": "[redacted]"}, "expect": {"supports": false, "coverage": "unknown"}}
+{"id": "cs-0198", "state": {"claim": "The road will widen to four lanes.", "quote": "[figure unavailable]"}, "expect": {"supports": false, "coverage": "unknown"}}
+{"id": "cs-0199", "state": {"claim": "The bank raised its prime rate.", "quote": "...."}, "expect": {"supports": false, "coverage": "unknown"}}
+{"id": "cs-0200", "state": {"claim": "The island is a nature reserve.", "quote": "[content removed]"}, "expect": {"supports": false, "coverage": "unknown"}}

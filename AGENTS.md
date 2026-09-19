@@ -17,9 +17,9 @@ this repo except the CI validator.
 - Spec v0 + validator + CI + 6 seed packs (50–55 cases each, self-authored,
   CC0-1.0): support-triage, rag-passage-relevance, rag-answerability,
   citation-support, moderation, entity-merge.
-- **All 6 packs `verified` at v0.2.0, 100–105 cases each (605 cases /
-  1,410 items)**: recorded against `jev-1.13.0` (accuracy 0.793–0.905,
-  ECE 0.040–0.088, ~$0.00002/case). Each pack has `tested`, `evidence.md`
+- **All 6 packs `verified` at v0.3.0, 200–210 cases each (1,210 cases /
+  2,820 items)**: recorded against `jev-1.13.0` (accuracy 0.795–0.905,
+  ECE 0.032–0.089, ~$0.00002/case). Each pack has `tested`, `evidence.md`
   (jevassert-generated) and `predictions.jsonl` (raw recording).
 - Stability spot-check: `support-triage` recorded twice, identical (0/150
   discordant). Full `--repeat` stability runs are P1.

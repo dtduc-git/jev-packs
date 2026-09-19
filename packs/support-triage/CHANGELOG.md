@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.0 — 2026-09-19
+
+- Expanded from 100 to 200 cases; evidence re-recorded.
+
 ## 0.2.0 — 2026-09-19
 
 - Expanded from 50 to 100 cases (harder intents, multi-intent messages, unreadable edge cases); evidence re-recorded.
