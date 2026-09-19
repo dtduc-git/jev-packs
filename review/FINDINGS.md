@@ -58,10 +58,18 @@ Gold expects `other`/`unknown` where models pick a specific kind
 ("Which payment methods are accepted?" + "Billing is handled by an external
 payment processor" → gold `unknown`, models `other`/`entity`). The
 first-matching-kind rule does not settle deferrals that name a source.
+Deep-dive: "other" is the catch-all and both models avoid it, preferring a
+specific kind; `procedure` is over-applied to any "how does X work" context.
 
-**Proposal.** Sharpen the option meanings (the failure is what each kind
-*means* when the context defers rather than what is missing), decide the
-`other` vs `unknown` boundary with anchors per kind, re-label, re-record.
+**Proposal (drafted, not applied).** Give each option a one-line
+description that defines it *operationally* and states when it wins:
+`entity` (a named thing/person/source is missing), `date` (a time, duration
+or deadline), `number` (a quantity, cap or price), `procedure` (the steps to
+perform an action), `other` (a policy, clause, term or fact that is not
+entity/date/number/procedure — the catch-all when the context names a topic
+but not the fact), `unknown` (the context only defers — "depends", "varies",
+"handled elsewhere" — and even the kind cannot be named). Preview against the
+11 both-wrong cases before recording.
 
 ### support-triage — queue and urgency edges (6 both-wrong, p = 0.012 for the pack)
 
@@ -71,11 +79,21 @@ gold `shipping` (models billing/technical); "trial started on wrong date" →
 gold `account` (models unknown/billing). Urgency: "lost my 2FA device" →
 gold `high`, models `critical`/`normal`.
 
-**Proposal.** Queue option descriptions need one worked example each (the
-boundaries are team-routing conventions, not semantics). For urgency, extend
-the critical/high rule with self-inflicted lockouts ("access lost through a
-lost/expired device is high, not critical"). This is the one pack where
-Sonnet is reliably ahead — worth a careful pass.
+Deep-dive on the 31 Sonnet-only queue wins: Jev sends account-flavoured
+requests (data export, notification settings, project transfers, teammate
+offboarding) to `technical`, and pre-sales/evaluation questions ("SSO with
+Okta, evaluating tools") to `technical` where gold says `other`. Urgency:
+Jev over-escalates recoverable access problems ("reset my password", "restore
+my project from backup") to `critical`; gold keeps them `high`.
+
+**Proposal (drafted, not applied).** Queue option descriptions with one
+worked example each — `account` = user/workspace/team/settings management,
+`technical` = product behaviour and how-to, `billing` = invoices, charges and
+tax forms, `shipping` = physical delivery, `other` = pre-sales, evaluations
+and anything that fits no queue. Urgency: explicit clause that access
+problems a support action can restore (password resets, restores from
+backup, re-invites) are `high`, not `critical`; `critical` is reserved for
+outages and data loss in progress.
 
 ### rag-passage-relevance — quality anchors (2 both-wrong)
 
