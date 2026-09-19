@@ -1,0 +1,23 @@
+spec: 0
+id: rag-passage-relevance
+version: 0.1.0
+license: CC0-1.0
+tested: null
+description: >-
+  Judge whether one retrieved passage helps answer a question, and how useful
+  it is. Non-goals: answering the question, faithfulness checking, ranking
+  across multiple passages.
+state:
+  description: One question and one retrieved passage.
+  fields: [question, passage]
+questions:
+  relevant:
+    type: noul
+    instructions: "Does `passage` contain information that helps answer `question`?"
+  quality:
+    type: score
+    instructions: "How useful is `passage` for answering `question`?"
+    levels: [junk, weak, ok, strong, unknown]
+thresholds:
+  relevant: {true: 0.85, false: 0.85}
+  quality: {junk: 0.7, weak: 0.7, ok: 0.7, strong: 0.7}

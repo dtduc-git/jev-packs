@@ -1,0 +1,54 @@
+{
+  "spec": 0,
+  "updated": "2026-09-19",
+  "packs": [
+    {
+      "id": "support-triage",
+      "version": "0.1.0",
+      "path": "packs/support-triage",
+      "license": "CC0-1.0",
+      "status": "provisional",
+      "evidence": null
+    },
+    {
+      "id": "rag-passage-relevance",
+      "version": "0.1.0",
+      "path": "packs/rag-passage-relevance",
+      "license": "CC0-1.0",
+      "status": "provisional",
+      "evidence": null
+    },
+    {
+      "id": "rag-answerability",
+      "version": "0.1.0",
+      "path": "packs/rag-answerability",
+      "license": "CC0-1.0",
+      "status": "provisional",
+      "evidence": null
+    },
+    {
+      "id": "citation-support",
+      "version": "0.1.0",
+      "path": "packs/citation-support",
+      "license": "CC0-1.0",
+      "status": "provisional",
+      "evidence": null
+    },
+    {
+      "id": "moderation",
+      "version": "0.1.0",
+      "path": "packs/moderation",
+      "license": "CC0-1.0",
+      "status": "provisional",
+      "evidence": null
+    },
+    {
+      "id": "entity-merge",
+      "version": "0.1.0",
+      "path": "packs/entity-merge",
+      "license": "CC0-1.0",
+      "status": "provisional",
+      "evidence": null
+    }
+  ]
+}

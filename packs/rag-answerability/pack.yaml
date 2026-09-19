@@ -1,0 +1,30 @@
+spec: 0
+id: rag-answerability
+version: 0.1.0
+license: CC0-1.0
+tested: null
+description: >-
+  Decide whether a question is answerable from the retrieved context alone and,
+  when it is not, what kind of information is missing. Non-goals: answering the
+  question, judging passage relevance, rewriting queries.
+state:
+  description: One question and the full context retrieved for it.
+  fields: [question, context]
+questions:
+  answerable:
+    type: noul
+    instructions: "Can `question` be answered completely using only `context`?"
+  missing_info:
+    type: choice
+    instructions: "When the question cannot be answered completely, what kind of information is missing from `context`?"
+    options:
+      none: "Context is sufficient; nothing is missing."
+      entity: "A named person, organization, product or place."
+      date: "A date, duration or time period."
+      number: "A quantity, price, rate or count."
+      procedure: "Steps, rules or conditions for how to do something."
+      other: "Missing information that fits none of the categories above."
+      unknown: "Cannot tell what is missing."
+thresholds:
+  answerable: {true: 0.85, false: 0.85}
+  missing_info: {none: 0.8, entity: 0.7, date: 0.7, number: 0.7, procedure: 0.7, other: 0.7}

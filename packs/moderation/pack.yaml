@@ -1,0 +1,32 @@
+spec: 0
+id: moderation
+version: 0.1.0
+license: CC0-1.0
+tested: null
+description: >-
+  First-pass moderation of user-generated text under a standard platform policy:
+  action, severity, and whether a protected group is targeted. Non-goals: legal
+  review, appeals handling, age verification.
+state:
+  description: One piece of user-generated text.
+  fields: [text]
+questions:
+  action:
+    type: choice
+    instructions: "What should happen with this text under the policy described in this pack's README?"
+    options:
+      allow: "No policy concern."
+      review: "Borderline or suspicious; needs a human moderator."
+      remove: "Clear policy violation; remove it."
+      unknown: "Cannot classify confidently."
+  severity:
+    type: score
+    instructions: "How severe is the harm this text could cause if left visible?"
+    levels: [none, low, medium, high, unknown]
+  targeted_group:
+    type: noul
+    instructions: "Does the text attack or demean people based on a protected characteristic (race, ethnicity, religion, sex, sexual orientation, disability, national origin)?"
+thresholds:
+  action: {allow: 0.8, review: 0.6, remove: 0.8}
+  severity: {none: 0.7, low: 0.7, medium: 0.7, high: 0.7}
+  targeted_group: {true: 0.9, false: 0.9}

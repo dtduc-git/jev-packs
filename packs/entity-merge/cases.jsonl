@@ -1,0 +1,55 @@
+{"id": "em-0001", "state": {"a": "Acme Corporation — HQ Austin, TX; founded 1998; CEO Jane Roe", "b": "ACME Corp. — Austin, Texas; founded 1998; chief executive Jane Roe"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0002", "state": {"a": "Maria Silva — software engineer at DataCo; Lisbon, Portugal", "b": "M. Silva — engineer, DataCo; based in Lisbon"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0003", "state": {"a": "Apple Inc. — Cupertino, CA; ticker AAPL", "b": "Apple Computer, Inc. — Cupertino, California; NASDAQ: AAPL"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0004", "state": {"a": "Riverbend Park — 42 hectares; opened 1974; Riverside County", "b": "Riverbend Park, Riverside County — 42 ha; opened 1974"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0005", "state": {"a": "Dr. Kenji Watanabe — cardiologist, Osaka General Hospital", "b": "Kenji Watanabe MD — cardiology, Osaka General Hospital"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0006", "state": {"a": "Green Leaf Cafe — 12 Oak Street, Portland; open since 2011", "b": "Greenleaf Cafe — Portland, OR; 12 Oak St; est. 2011"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0007", "state": {"a": "Blue Ridge Hotel — Asheville, NC; 120 rooms", "b": "Blue Ridge Hotel & Spa — Asheville, North Carolina; 120 rooms"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0008", "state": {"a": "Nordic Systems AB — Stockholm; VAT SE556123456701", "b": "Nordic Systems — Stockholm, Sweden; org no 556123456701"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0009", "state": {"a": "John Smith — plumber, Springfield; phone 555-0142", "b": "J. Smith — Springfield plumber; 555-0142"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0010", "state": {"a": "Lakeside Library — 200 Main St, Madison; 45,000 volumes", "b": "Lakeside Public Library — Madison; Main Street 200; 45k books"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0011", "state": {"a": "Aurora Therapeutics — Boston; founded 2015; CEO Priya Nair", "b": "Aurora Therapeutics Inc. — Boston, MA; founded 2015; chief executive P. Nair"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0012", "state": {"a": "Mount Rainier — 4,392 m; Washington state", "b": "Rainier, Mount — elevation 4392 meters; Washington, USA"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0013", "state": {"a": "Pixel Forge Games — indie studio; Warsaw; founded 2018", "b": "PixelForge — game studio in Warsaw; est. 2018"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0014", "state": {"a": "Sofia Rossi — owner of Rossi Bakery, Florence", "b": "S. Rossi — Florence baker; owner, Rossi's Bakery"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0015", "state": {"a": "Harmony Health Clinic — Denver; 3 locations", "b": "Harmony Health — Denver, Colorado; three clinics"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0016", "state": {"a": "Trans-Pacific Airlines — Tokyo; IATA code TP", "b": "Transpacific Air — Tokyo, Japan; IATA: TP"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0017", "state": {"a": "Riverside Elementary School — 300 students; Columbus, OH", "b": "Riverside Elementary — Columbus, Ohio; enrollment 300"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0018", "state": {"a": "Vega Analytics GmbH — Munich; founded 2009; 80 employees", "b": "Vega Analytics — Munchen, Germany; founded 2009; 80 staff"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0019", "state": {"a": "Old Mill Brewery — Bend, Oregon; IPA flagship", "b": "Old Mill Brewing Co. — Bend, OR; known for its IPA"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0020", "state": {"a": "Agent Isabel Moreno — badge 4471; Narcotics Unit", "b": "I. Moreno — badge #4471, narcotics division"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0021", "state": {"a": "Acme Roofing — Austin, TX; roofing services", "b": "Acme Insurance — Austin, TX; auto insurance"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0022", "state": {"a": "Maria Silva — engineer, Lisbon", "b": "Maria Silva — pastry chef, Sao Paulo"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0023", "state": {"a": "John Smith — plumber, Springfield; born 1954", "b": "John Smith — dentist, Springfield; born 1981"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0024", "state": {"a": "Apple Inc. — Cupertino; consumer electronics", "b": "Apple Bank — New York; savings bank"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0025", "state": {"a": "Blue Ridge Hotel — Asheville, NC", "b": "Blue Ridge Motel — Boone, NC"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0026", "state": {"a": "Nordic Systems AB — Stockholm", "b": "Nordic Systema — Helsinki"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0027", "state": {"a": "St. Mary's Church — Boston", "b": "St. Mary's Hospital — Boston"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0028", "state": {"a": "Evergreen Landscaping — Seattle; founded 2010", "b": "Evergreen Tree Care — Portland; founded 2011"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0029", "state": {"a": "Sunset Diner — Santa Monica", "b": "Sunset Grill — Los Angeles"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0030", "state": {"a": "Lakeside Library — Madison", "b": "Lakeside High School — Madison"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0031", "state": {"a": "Toni Morrison — novelist, born 1931", "b": "Toni Morrison — sprinter, born 1997"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0032", "state": {"a": "Cambridge University — Cambridge, UK; founded 1209", "b": "Cambridge — city in Massachusetts, USA; founded 1630"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0033", "state": {"a": "Delta Air Lines — Atlanta; IATA DL", "b": "Delta Faucet Company — Indianapolis; plumbing fixtures"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0034", "state": {"a": "Mercury — planet closest to the Sun", "b": "Mercury — chemical element, symbol Hg"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0035", "state": {"a": "First National Bank — Cleveland, Ohio; founded 1865", "b": "First National Bank of Texas — Dallas; founded 1932"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0036", "state": {"a": "Cedar Point — amusement park, Sandusky, Ohio", "b": "Cedar Point — cape on the Patuxent River, Maryland"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0037", "state": {"a": "Emily Chen — Seattle, works at DataCo", "b": "Emily Chen — DataCo employee, based in Vancouver"}, "expect": {"same_entity": true, "action": "curator"}}
+{"id": "em-0038", "state": {"a": "Robert King — real estate agent, Miami", "b": "Bob King — property broker, Miami Beach"}, "expect": {"same_entity": true, "action": "curator"}}
+{"id": "em-0039", "state": {"a": "Zenith Labs — biotech, Cambridge UK", "b": "Zenith Laboratories — pharma, Cambridge, MA"}, "expect": {"same_entity": true, "action": "curator"}}
+{"id": "em-0040", "state": {"a": "Samuel Okafor — PM at TechOne since 2021", "b": "Sam Okafor — PM at TechOne, joined 2023"}, "expect": {"same_entity": true, "action": "curator"}}
+{"id": "em-0041", "state": {"a": "OrangeOrchard — food delivery, Berlin", "b": "Orange Orchard GmbH — logistics startup, Berlin"}, "expect": {"same_entity": true, "action": "curator"}}
+{"id": "em-0042", "state": {"a": "Lena Fischer — author, Munich; born 1975", "b": "L. Fischer — writer, Vienna; born 1975"}, "expect": {"same_entity": true, "action": "curator"}}
+{"id": "em-0043", "state": {"a": "Titan Construction — Dubai; projects in UAE", "b": "Titan Contracting — Abu Dhabi; UAE projects"}, "expect": {"same_entity": true, "action": "curator"}}
+{"id": "em-0044", "state": {"a": "Grace Park — violinist, Seoul Philharmonic", "b": "Grace Park — musician, Korean National Orchestra"}, "expect": {"same_entity": true, "action": "curator"}}
+{"id": "em-0045", "state": {"a": "Nova Retail Group — 120 stores, Canada", "b": "Nova Retail — 118 stores, Canada"}, "expect": {"same_entity": true, "action": "curator"}}
+{"id": "em-0046", "state": {"a": "A. B. — account suspended; last login 2024", "b": "A. B. — account flagged; email bounced"}, "expect": {"same_entity": false, "action": "curator"}}
+{"id": "em-0047", "state": {"a": "Entity #4471 — record partially corrupted", "b": "Entity 4471 — duplicate import, no attributes"}, "expect": {"same_entity": false, "action": "curator"}}
+{"id": "em-0048", "state": {"a": "Test User 1 — placeholder record", "b": "Test User — placeholder record"}, "expect": {"same_entity": false, "action": "curator"}}
+{"id": "em-0049", "state": {"a": "Mercado Central — market, Valencia; opened 1928", "b": "Central Market of Valencia — Valencia, Spain; opened 1928"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0050", "state": {"a": "Green Valley Farm — Sonoma; vineyard", "b": "Green Valley Ranch — Nevada; cattle ranch"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0051", "state": {"a": "Silvia Rossi — fashion designer, Milan", "b": "Sofia Rossi — bakery owner, Florence"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0052", "state": {"a": "Atlas Moving — San Francisco; 20 trucks", "b": "Atlas Moving & Storage — San Francisco; fleet of 22 vehicles"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0053", "state": {"a": "Metro Hospital — 500 beds, Chicago", "b": "Metro Hospital — Chicago; 500 beds; Level I trauma center"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0054", "state": {"a": "Ocean View Apartments — Miami, FL; 200 units", "b": "Ocean View Condos — Miami Beach, FL; 200 units"}, "expect": {"same_entity": true, "action": "curator"}}
+{"id": "em-0055", "state": {"a": "Zenith Fitness — yoga studio, Austin", "b": "Zenith Gym — CrossFit box, Dallas"}, "expect": {"same_entity": false, "action": "keep_separate"}}

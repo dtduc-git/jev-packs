@@ -1,0 +1,27 @@
+spec: 0
+id: entity-merge
+version: 0.1.0
+license: CC0-1.0
+tested: null
+description: >-
+  Decide whether two entity records describe the same real-world entity and
+  what the resolution pipeline should do. Non-goals: canonical name selection,
+  record merging itself, graph-wide deduplication.
+state:
+  description: Two entity records, each one line of name plus identifying facts.
+  fields: [a, b]
+questions:
+  same_entity:
+    type: noul
+    instructions: "Do `a` and `b` refer to the same real-world entity?"
+  action:
+    type: choice
+    instructions: "What should the entity resolution pipeline do with this pair?"
+    options:
+      merge: "Same entity; merge the records."
+      keep_separate: "Different entities; leave them separate."
+      curator: "Names and facts conflict or are insufficient; send to a human curator."
+      unknown: "Cannot process this pair."
+thresholds:
+  same_entity: {true: 0.85, false: 0.85}
+  action: {merge: 0.8, keep_separate: 0.8, curator: 0.6}

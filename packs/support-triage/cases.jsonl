@@ -1,0 +1,50 @@
+{"id": "st-0001", "state": {"message": "I was charged twice for my January invoice. Please refund the duplicate charge."}, "expect": {"refund_request": true, "queue": "billing", "urgency": "high"}}
+{"id": "st-0002", "state": {"message": "Where is my order? It was supposed to arrive three days ago and tracking has not moved."}, "expect": {"refund_request": false, "queue": "shipping", "urgency": "normal"}}
+{"id": "st-0003", "state": {"message": "The app crashes every time I upload a file larger than 10 MB."}, "expect": {"refund_request": false, "queue": "technical", "urgency": "high"}}
+{"id": "st-0004", "state": {"message": "How do I reset my password? I can no longer log in."}, "expect": {"refund_request": false, "queue": "account", "urgency": "normal"}}
+{"id": "st-0005", "state": {"message": "Just wanted to say the new dashboard looks great. Keep it up!"}, "expect": {"refund_request": false, "queue": "other", "urgency": "low"}}
+{"id": "st-0006", "state": {"message": "URGENT: our production integration is down and we are losing sales. Every webhook returns a 502 since 09:00."}, "expect": {"refund_request": false, "queue": "technical", "urgency": "critical"}}
+{"id": "st-0007", "state": {"message": "Please cancel my subscription and refund the last payment."}, "expect": {"refund_request": true, "queue": "billing", "urgency": "high"}}
+{"id": "st-0008", "state": {"message": "Can I change the shipping address on order 8891 before it ships?"}, "expect": {"refund_request": false, "queue": "shipping", "urgency": "high"}}
+{"id": "st-0009", "state": {"message": "Your docs are confusing to navigate. Not a complaint, just feedback."}, "expect": {"refund_request": false, "queue": "other", "urgency": "low"}}
+{"id": "st-0010", "state": {"message": "I want my money back for the annual plan. It does not do what I need."}, "expect": {"refund_request": true, "queue": "billing", "urgency": "normal"}}
+{"id": "st-0011", "state": {"message": "The login page shows invalid credentials even after I reset my password twice."}, "expect": {"refund_request": false, "queue": "account", "urgency": "high"}}
+{"id": "st-0012", "state": {"message": "Do you offer invoices with a VAT number for EU companies?"}, "expect": {"refund_request": false, "queue": "billing", "urgency": "low"}}
+{"id": "st-0013", "state": {"message": "My package arrived damaged. What are my options?"}, "expect": {"refund_request": false, "queue": "shipping", "urgency": "high"}}
+{"id": "st-0014", "state": {"message": "This is the third time I am writing about the broken export feature and nobody has responded."}, "expect": {"refund_request": false, "queue": "technical", "urgency": "high"}}
+{"id": "st-0015", "state": {"message": "I accidentally deleted my workspace this morning. Can you restore it?"}, "expect": {"refund_request": false, "queue": "account", "urgency": "high"}}
+{"id": "st-0016", "state": {"message": "asdfghjkl the checkout button does nothing lol"}, "expect": {"refund_request": false, "queue": "technical", "urgency": "normal"}}
+{"id": "st-0017", "state": {"message": "Can you send the tracking number again? I lost the original email."}, "expect": {"refund_request": false, "queue": "shipping", "urgency": "low"}}
+{"id": "st-0018", "state": {"message": "I need a refund for the duplicate order OR-2211 that I placed by mistake."}, "expect": {"refund_request": true, "queue": "billing", "urgency": "normal"}}
+{"id": "st-0019", "state": {"message": "Hi, is there a student discount available?"}, "expect": {"refund_request": false, "queue": "billing", "urgency": "low"}}
+{"id": "st-0020", "state": {"message": "Our API keys stopped working after we rotated them in your dashboard."}, "expect": {"refund_request": false, "queue": "technical", "urgency": "high"}}
+{"id": "st-0021", "state": {"message": "Please close my account immediately and delete all my personal data."}, "expect": {"refund_request": false, "queue": "account", "urgency": "high"}}
+{"id": "st-0022", "state": {"message": "The invoice PDF for December is missing our company address."}, "expect": {"refund_request": false, "queue": "billing", "urgency": "normal"}}
+{"id": "st-0023", "state": {"message": "!!!"}, "expect": {"refund_request": false, "queue": "unknown", "urgency": "unknown"}}
+{"id": "st-0024", "state": {"message": "Thanks for the quick fix yesterday, everything works again."}, "expect": {"refund_request": false, "queue": "other", "urgency": "low"}}
+{"id": "st-0025", "state": {"message": "I ordered size M but received size S. I want to return the item and get a refund."}, "expect": {"refund_request": true, "queue": "billing", "urgency": "normal"}}
+{"id": "st-0026", "state": {"message": "My trial ended but I was charged full price without warning. Give me my money back."}, "expect": {"refund_request": true, "queue": "billing", "urgency": "high"}}
+{"id": "st-0027", "state": {"message": "How do I export all my data before closing the workspace?"}, "expect": {"refund_request": false, "queue": "account", "urgency": "low"}}
+{"id": "st-0028", "state": {"message": "Webhooks have been timing out since your maintenance window last night."}, "expect": {"refund_request": false, "queue": "technical", "urgency": "high"}}
+{"id": "st-0029", "state": {"message": "The courier marked my parcel as delivered but I never received it."}, "expect": {"refund_request": false, "queue": "shipping", "urgency": "high"}}
+{"id": "st-0030", "state": {"message": "Do you support SSO with Okta? We are evaluating tools for a team of 200."}, "expect": {"refund_request": false, "queue": "other", "urgency": "low"}}
+{"id": "st-0031", "state": {"message": "I cannot believe you raised prices without notice. I want my money back for this month."}, "expect": {"refund_request": true, "queue": "billing", "urgency": "high"}}
+{"id": "st-0032", "state": {"message": "Can someone explain how the usage limits work? The pricing page is unclear."}, "expect": {"refund_request": false, "queue": "other", "urgency": "low"}}
+{"id": "st-0033", "state": {"message": "Refund request: my order was placed twice because of a browser glitch."}, "expect": {"refund_request": true, "queue": "billing", "urgency": "normal"}}
+{"id": "st-0034", "state": {"message": "Where can I download my receipts for the last quarter?"}, "expect": {"refund_request": false, "queue": "billing", "urgency": "low"}}
+{"id": "st-0035", "state": {"message": "Two-factor codes are arriving 10 minutes late and I cannot log in during work hours."}, "expect": {"refund_request": false, "queue": "account", "urgency": "high"}}
+{"id": "st-0036", "state": {"message": "I was kicked out of a live demo twice because the call dropped."}, "expect": {"refund_request": false, "queue": "other", "urgency": "normal"}}
+{"id": "st-0037", "state": {"message": "Please refund the shipping fee. The delivery took three weeks."}, "expect": {"refund_request": true, "queue": "billing", "urgency": "normal"}}
+{"id": "st-0038", "state": {"message": "Your mobile app drains my battery. I will uninstall it if this is not fixed."}, "expect": {"refund_request": false, "queue": "technical", "urgency": "normal"}}
+{"id": "st-0039", "state": {"message": "I need to update the credit card on file because the old one expired."}, "expect": {"refund_request": false, "queue": "billing", "urgency": "low"}}
+{"id": "st-0040", "state": {"message": "The CSV import silently drops rows that contain emoji. This is data loss for us."}, "expect": {"refund_request": false, "queue": "technical", "urgency": "high"}}
+{"id": "st-0041", "state": {"message": "Re: ticket 5521, I am still waiting for the replacement unit to be shipped."}, "expect": {"refund_request": false, "queue": "shipping", "urgency": "normal"}}
+{"id": "st-0042", "state": {"message": "Can I pause my subscription for two months instead of canceling it?"}, "expect": {"refund_request": false, "queue": "account", "urgency": "low"}}
+{"id": "st-0043", "state": {"message": "My teammate left the company. Please transfer her projects to me."}, "expect": {"refund_request": false, "queue": "account", "urgency": "normal"}}
+{"id": "st-0044", "state": {"message": "The pricing page says $29 but checkout shows $39. Fix this or refund the difference."}, "expect": {"refund_request": true, "queue": "billing", "urgency": "high"}}
+{"id": "st-0045", "state": {"message": "Emergency: the patient records export is failing at our clinic and staff cannot access files."}, "expect": {"refund_request": false, "queue": "technical", "urgency": "critical"}}
+{"id": "st-0046", "state": {"message": "How do I turn off the daily summary emails?"}, "expect": {"refund_request": false, "queue": "account", "urgency": "low"}}
+{"id": "st-0047", "state": {"message": "Is the outage on your status page affecting only the EU region?"}, "expect": {"refund_request": false, "queue": "technical", "urgency": "normal"}}
+{"id": "st-0048", "state": {"message": "I received a box of accessories instead of the laptop I ordered. I want my money back."}, "expect": {"refund_request": true, "queue": "billing", "urgency": "high"}}
+{"id": "st-0049", "state": {"message": "Question about GDPR: do you sign data processing agreements for EU customers?"}, "expect": {"refund_request": false, "queue": "other", "urgency": "low"}}
+{"id": "st-0050", "state": {"message": "There is a double charge on invoice INV-1042. Please reverse it."}, "expect": {"refund_request": true, "queue": "billing", "urgency": "normal"}}

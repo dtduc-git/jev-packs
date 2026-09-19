@@ -1,0 +1,43 @@
+# moderation
+
+Triage user-generated text: act now, flag for a human, or leave it alone — with
+a severity grade and a protected-group check.
+
+## Policy assumptions
+
+Labels follow a "standard platform" policy, stated here so the golden set is
+reproducible. This pack is not legal advice; consumers can fork it with their
+own policy text.
+
+- `allow` — criticism, profanity not aimed at a person, disagreement, satire
+  that no reasonable reader takes as a call to harm. Rudeness alone can still
+  be `allow` with `severity: low`.
+- `review` — insults toward individuals, harassment without explicit targeting
+  of a protected group, commercial spam, ambiguous or veiled threats, coded
+  references a human should read in context.
+- `remove` — credible threats, calls for violence, doxxing, sextortion,
+  scams, hate speech or demeaning generalizations targeting a protected group,
+  sexual content involving minors (none in this pack).
+- `targeted_group` is `true` only when the demeaning or attacking quality is
+  *because of* a protected characteristic. Insults aimed at a person's
+  politics, job or behavior are `false` even when harsh.
+- `severity`: `none` (no harm), `low` (rudeness, spam), `medium` (harassment,
+  demeaning generalization), `high` (threats, doxxing, hate with targeting).
+- Expected consistency: `allow` pairs with `severity: none` or `low`; `remove`
+  pairs with `medium` or `high`; `unknown` action pairs with `unknown` severity.
+
+## Provenance
+
+All 50 cases were written for this pack (CC0-1.0). All texts are synthetic;
+none quotes a real user or a real slur. Sensitive scenarios are abstracted on
+purpose.
+
+## Thresholds
+
+`targeted_group` is the strictest gate (0.9) because a false `true` suppresses
+legitimate criticism. `allow`/`remove` need 0.8, `review` 0.6. `unknown` has no
+floor.
+
+## Evidence
+
+None yet (`tested: null`).
