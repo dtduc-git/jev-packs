@@ -1,0 +1,96 @@
+{
+  "pack": "citation-support",
+  "record_model": "jev-1.13.0",
+  "tested": "jev-1.13.0",
+  "n_cases": 400,
+  "n_items": 800,
+  "case_errors": 0,
+  "missing_items": 0,
+  "accuracy": 0.91,
+  "accuracy_ci": [
+    0.89,
+    0.93
+  ],
+  "ece": 0.08079391045077829,
+  "ece_ci": [
+    0.05859084967320262,
+    0.10082343592076007
+  ],
+  "suggestion": null,
+  "mean_decision_prob": 0.8894060895492217,
+  "cost_per_case_usd": 0.0025045849999999997,
+  "total_cost_usd": 1.001834,
+  "p50_latency_ms": 1689.8,
+  "p95_latency_ms": 2640.8,
+  "per_question": {
+    "supports": {
+      "type": "noul",
+      "n": 400,
+      "missing": 0,
+      "accuracy": 0.975,
+      "mean_decision_prob": 0.917975,
+      "ece": 0.05702500000000001,
+      "brier": 0.023263250000000003
+    },
+    "coverage": {
+      "type": "score",
+      "n": 400,
+      "missing": 0,
+      "accuracy": 0.845,
+      "mean_decision_prob": 0.8608371790984435,
+      "ece": 0.16071804965972641,
+      "brier": null
+    }
+  },
+  "coverage": [
+    {
+      "threshold": 0.5,
+      "coverage": 0.9975,
+      "precision": 0.9122807017543859
+    },
+    {
+      "threshold": 0.6,
+      "coverage": 0.98125,
+      "precision": 0.9197452229299363
+    },
+    {
+      "threshold": 0.7,
+      "coverage": 0.9475,
+      "precision": 0.9261213720316622
+    },
+    {
+      "threshold": 0.8,
+      "coverage": 0.87375,
+      "precision": 0.9370529327610873
+    },
+    {
+      "threshold": 0.9,
+      "coverage": 0.62375,
+      "precision": 0.9899799599198397
+    },
+    {
+      "threshold": 0.95,
+      "coverage": 0.44625,
+      "precision": 1.0
+    }
+  ],
+  "threshold_coverage": {
+    "n_total": 800,
+    "n_auto": 729,
+    "coverage": 0.91125,
+    "precision": 0.9245541838134431
+  },
+  "gates": [],
+  "recorded_models": [
+    "claude-sonnet-5"
+  ],
+  "pricing": {
+    "input_usd_per_mtok": 2.0,
+    "output_usd_per_mtok": 10.0
+  },
+  "pack_version": "0.4.0",
+  "backend": "claude-sonnet-5",
+  "predictions": "results/claude-sonnet-5/citation-support.predictions.jsonl",
+  "predictions_sha256": "56d90845668e5529f9f63cdb3aa75e4ef55fc14d9c6b67018d0f7c3b93e6a6f7",
+  "recorded_at": "2026-09-19"
+}

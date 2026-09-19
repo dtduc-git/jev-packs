@@ -1,0 +1,96 @@
+{
+  "pack": "rag-passage-relevance",
+  "record_model": "jev-1.13.0",
+  "tested": "jev-1.13.0",
+  "n_cases": 400,
+  "n_items": 800,
+  "case_errors": 0,
+  "missing_items": 0,
+  "accuracy": 0.8925,
+  "accuracy_ci": [
+    0.87,
+    0.91375
+  ],
+  "ece": 0.0386748299319728,
+  "ece_ci": [
+    0.029387499999999993,
+    0.06456232993197279
+  ],
+  "suggestion": null,
+  "mean_decision_prob": 0.8573001700680273,
+  "cost_per_case_usd": 0.002618115,
+  "total_cost_usd": 1.047246,
+  "p50_latency_ms": 1673.0,
+  "p95_latency_ms": 2462.4,
+  "per_question": {
+    "relevant": {
+      "type": "noul",
+      "n": 400,
+      "missing": 0,
+      "accuracy": 0.96,
+      "mean_decision_prob": 0.9334250000000001,
+      "ece": 0.03312500000000001,
+      "brier": 0.03034825
+    },
+    "quality": {
+      "type": "score",
+      "n": 400,
+      "missing": 0,
+      "accuracy": 0.825,
+      "mean_decision_prob": 0.7811753401360544,
+      "ece": 0.09757534013605441,
+      "brier": null
+    }
+  },
+  "coverage": [
+    {
+      "threshold": 0.5,
+      "coverage": 0.99,
+      "precision": 0.8964646464646465
+    },
+    {
+      "threshold": 0.6,
+      "coverage": 0.89,
+      "precision": 0.9283707865168539
+    },
+    {
+      "threshold": 0.7,
+      "coverage": 0.805,
+      "precision": 0.9549689440993789
+    },
+    {
+      "threshold": 0.8,
+      "coverage": 0.7275,
+      "precision": 0.9639175257731959
+    },
+    {
+      "threshold": 0.9,
+      "coverage": 0.59375,
+      "precision": 0.9831578947368421
+    },
+    {
+      "threshold": 0.95,
+      "coverage": 0.5225,
+      "precision": 0.9880382775119617
+    }
+  ],
+  "threshold_coverage": {
+    "n_total": 800,
+    "n_auto": 628,
+    "coverage": 0.785,
+    "precision": 0.9554140127388535
+  },
+  "gates": [],
+  "recorded_models": [
+    "claude-sonnet-5"
+  ],
+  "pricing": {
+    "input_usd_per_mtok": 2.0,
+    "output_usd_per_mtok": 10.0
+  },
+  "pack_version": "0.4.0",
+  "backend": "claude-sonnet-5",
+  "predictions": "results/claude-sonnet-5/rag-passage-relevance.predictions.jsonl",
+  "predictions_sha256": "c5f8b9aae456391d4d4077417b7daf6920537ea1f960cb0cb7988f9002a46c37",
+  "recorded_at": "2026-09-19"
+}

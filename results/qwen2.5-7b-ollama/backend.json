@@ -1,0 +1,28 @@
+{
+  "schema": 0,
+  "id": "qwen2.5-7b-ollama",
+  "name": "Qwen2.5 7B Instruct (Ollama, local)",
+  "provider": "openai",
+  "model": "qwen2.5:7b",
+  "endpoint": "http://localhost:11434/v1",
+  "license": "Apache-2.0",
+  "submitted_by": "dtduc-git",
+  "created": "2026-09-19",
+  "tool": {
+    "name": "jevassert",
+    "version": "0.2.0"
+  },
+  "adapter": "system-one-adapter",
+  "settings": {
+    "structured_outputs": true,
+    "llm_answer_mode": "probabilities",
+    "normalize_probabilities": true,
+    "n_retry_malformed_structure": 2
+  },
+  "pricing_usd_per_mtok": {
+    "input": 0.0,
+    "output": 0.0
+  },
+  "notes": "Local open-weight baseline on Ollama (Q4_K_M); single run at default sampling; $0 API cost; latency measured on Apple Silicon, includes network-free local inference.",
+  "updated": "2026-09-19"
+}

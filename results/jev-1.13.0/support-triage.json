@@ -1,0 +1,106 @@
+{
+  "pack": "support-triage",
+  "record_model": "jev-1.13.0",
+  "tested": "jev-1.13.0",
+  "n_cases": 450,
+  "n_items": 1350,
+  "case_errors": 0,
+  "missing_items": 0,
+  "accuracy": 0.8874074074074074,
+  "accuracy_ci": [
+    0.8711111111111111,
+    0.9044444444444445
+  ],
+  "ece": 0.05867407407407408,
+  "ece_ci": [
+    0.044014814814814826,
+    0.07298518518518518
+  ],
+  "suggestion": null,
+  "mean_decision_prob": 0.9420814814814814,
+  "cost_per_case_usd": 2.765186666666667e-05,
+  "total_cost_usd": 0.01244334,
+  "p50_latency_ms": 324.7,
+  "p95_latency_ms": 397.7,
+  "per_question": {
+    "refund_request": {
+      "type": "noul",
+      "n": 450,
+      "missing": 0,
+      "accuracy": 0.98,
+      "mean_decision_prob": 0.9833555555555555,
+      "ece": 0.022644444444444467,
+      "brier": 0.013594
+    },
+    "queue": {
+      "type": "choice",
+      "n": 450,
+      "missing": 0,
+      "accuracy": 0.8488888888888889,
+      "mean_decision_prob": 0.913,
+      "ece": 0.06411111111111109,
+      "brier": null
+    },
+    "urgency": {
+      "type": "score",
+      "n": 450,
+      "missing": 0,
+      "accuracy": 0.8333333333333334,
+      "mean_decision_prob": 0.9298888888888889,
+      "ece": 0.09655555555555556,
+      "brier": null
+    }
+  },
+  "coverage": [
+    {
+      "threshold": 0.5,
+      "coverage": 0.9940740740740741,
+      "precision": 0.8897168405365127
+    },
+    {
+      "threshold": 0.6,
+      "coverage": 0.9651851851851851,
+      "precision": 0.9048349961627015
+    },
+    {
+      "threshold": 0.7,
+      "coverage": 0.9318518518518518,
+      "precision": 0.918918918918919
+    },
+    {
+      "threshold": 0.8,
+      "coverage": 0.8896296296296297,
+      "precision": 0.9367194004995837
+    },
+    {
+      "threshold": 0.9,
+      "coverage": 0.8348148148148148,
+      "precision": 0.9565217391304348
+    },
+    {
+      "threshold": 0.95,
+      "coverage": 0.7859259259259259,
+      "precision": 0.9651272384542884
+    }
+  ],
+  "threshold_coverage": {
+    "n_total": 1350,
+    "n_auto": 1251,
+    "coverage": 0.9266666666666666,
+    "precision": 0.9120703437250199
+  },
+  "gates": [],
+  "recorded_models": [
+    "jev-1.13.0"
+  ],
+  "pricing": {
+    "input_usd_per_mtok": 0.042,
+    "output_usd_per_mtok": 0.0
+  },
+  "pack_version": "0.6.0",
+  "backend": "jev-1.13.0",
+  "predictions": "packs/support-triage/predictions.jsonl",
+  "predictions_sha256": "3680ddf36543dcd849c0d03948a2c73481abcca9fed8dbaeae9e989204bad472",
+  "report": "packs/support-triage/evidence.md",
+  "recorded_at": "2026-09-19"
+}

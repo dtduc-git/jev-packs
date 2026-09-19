@@ -1,0 +1,105 @@
+{
+  "pack": "moderation",
+  "record_model": "jev-1.13.0",
+  "tested": "jev-1.13.0",
+  "n_cases": 450,
+  "n_items": 1347,
+  "case_errors": 1,
+  "missing_items": 3,
+  "accuracy": 0.8990348923533779,
+  "accuracy_ci": [
+    0.882702301410542,
+    0.9146250927988122
+  ],
+  "ece": 0.033452115812917585,
+  "ece_ci": [
+    0.02288047512991835,
+    0.05150705270972532
+  ],
+  "suggestion": null,
+  "mean_decision_prob": 0.8751893095768374,
+  "cost_per_case_usd": 0.004593893333333333,
+  "total_cost_usd": 2.067252,
+  "p50_latency_ms": 2116.7,
+  "p95_latency_ms": 4861.2,
+  "per_question": {
+    "action": {
+      "type": "choice",
+      "n": 449,
+      "missing": 1,
+      "accuracy": 0.8997772828507795,
+      "mean_decision_prob": 0.8695991091314031,
+      "ece": 0.0615812917594655,
+      "brier": null
+    },
+    "severity": {
+      "type": "score",
+      "n": 449,
+      "missing": 1,
+      "accuracy": 0.8084632516703786,
+      "mean_decision_prob": 0.7978619153674833,
+      "ece": 0.05465478841870823,
+      "brier": null
+    },
+    "targeted_group": {
+      "type": "noul",
+      "n": 449,
+      "missing": 1,
+      "accuracy": 0.9888641425389755,
+      "mean_decision_prob": 0.9581069042316258,
+      "ece": 0.030757238307349673,
+      "brier": 0.013343207126948775
+    }
+  },
+  "coverage": [
+    {
+      "threshold": 0.5,
+      "coverage": 0.9740163325909429,
+      "precision": 0.9092987804878049
+    },
+    {
+      "threshold": 0.6,
+      "coverage": 0.9205642167780252,
+      "precision": 0.9282258064516129
+    },
+    {
+      "threshold": 0.7,
+      "coverage": 0.8737936154417223,
+      "precision": 0.9345794392523364
+    },
+    {
+      "threshold": 0.8,
+      "coverage": 0.77728285077951,
+      "precision": 0.9531996179560649
+    },
+    {
+      "threshold": 0.9,
+      "coverage": 0.6644394951744618,
+      "precision": 0.9776536312849162
+    },
+    {
+      "threshold": 0.95,
+      "coverage": 0.5486265775798069,
+      "precision": 0.986468200270636
+    }
+  ],
+  "threshold_coverage": {
+    "n_total": 1347,
+    "n_auto": 1090,
+    "coverage": 0.8092056421677802,
+    "precision": 0.9376146788990826
+  },
+  "gates": [],
+  "recorded_models": [
+    "claude-sonnet-5"
+  ],
+  "pricing": {
+    "input_usd_per_mtok": 2.0,
+    "output_usd_per_mtok": 10.0
+  },
+  "pack_version": "0.6.0",
+  "backend": "claude-sonnet-5",
+  "predictions": "results/claude-sonnet-5/moderation.predictions.jsonl",
+  "predictions_sha256": "705079a86043367e53dbfc82efaf1a334e876140d783b2f18513a901d6c92fc5",
+  "recorded_at": "2026-09-19"
+}

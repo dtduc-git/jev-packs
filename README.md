@@ -1,8 +1,9 @@
-# jev-packs — evidence-gated registry of Jev question packs
+# jev-packs — golden-set benchmark and registry of Jev question packs
 
-Questions-as-data for [Jev](https://docs.typesafe.ai)-compatible decision endpoints:
-curated question sets, golden cases, pinned model versions and the measured
-evidence to back them.
+Questions-as-data for [Jev](https://docs.typesafe.ai)-compatible decision
+endpoints: curated question sets, golden cases, pinned model versions, measured
+evidence — and an independent benchmark ([**Jev Bench**](docs/index.html))
+scoring several backends on the same ground truth.
 
 A *pack* is a folder: questions in `pack.yaml`, labeled cases in `cases.jsonl`,
 and — once measured — an `evidence.md` produced by
@@ -11,7 +12,29 @@ runner for Jev. Any Jev-compatible client can load a pack; the canonical loader
 is `jevassert.packs`.
 
 > Suite: [`jevassert`](https://github.com/dtduc-git/jevassert) (runner) →
-> **`jev-packs`** (data + spec) → [`jev-table`](https://github.com/dtduc-git/jev-table) (app).
+> **`jev-packs`** (data + spec + benchmark) → [`jev-table`](https://github.com/dtduc-git/jev-table) (app).
+
+## Benchmark
+
+Vendor evals are vendor-run. This repo runs the other direction: the same
+questions and the same labels, several backends, recorded predictions
+committed, every number reproducible offline.
+
+- Results live in [`results/`](results/) — one directory per backend with its
+  raw recording, per-pack metrics (accuracy, ECE, cost, latency) and the exact
+  command to reproduce the column.
+- The scoreboard is [`docs/index.html`](docs/index.html), generated from
+  `results/`; CI fails when it is stale.
+- Backends so far: `jev-1.13.0` (TypeSafe API), `claude-sonnet-5` (Anthropic
+  API) and `qwen2.5-7b-ollama` (local open weights), all through the same
+  questions, cases and recording protocol.
+- First full matrix (2,990 cases): **Jev and Sonnet 5 are a statistical tie on
+  accuracy across all nine packs** (deltas ≤ 0.018, inside overlapping 95%
+  CIs), while Jev is **better calibrated on 7/9 packs** (e.g. citation-support
+  ECE 0.022 vs 0.081) and costs **~250× less per case** ($0.000014–0.000031 vs
+  ~$0.0036). The local 7B trails far behind (0.533–0.813). Numbers, recordings
+  and per-pack reports live in [`results/`](results/).
+- Rules, caveats and how to add a backend: [METHODOLOGY.md](METHODOLOGY.md).
 
 ## Why a registry
 
@@ -49,7 +72,7 @@ the full report and `predictions.jsonl` for the raw recording.
 
 | Pack | Source | Items | Accuracy | ECE | Cost/case |
 |---|---|---|---|---|---|
-| [`sms-spam`](packs/sms-spam) | SMS Spam Collection (CC BY 4.0) | 150 | **0.967** | 0.053 | $0.000014 |
+| [`sms-spam`](packs/sms-spam) | SMS Spam Collection (CC BY 4.0) | 150 | **0.953** | 0.040 | $0.000014 |
 | [`boolq-yes-no`](packs/boolq-yes-no) | BoolQ (CC BY-SA 3.0) | 150 | **0.887** | 0.063 | $0.000018 |
 | [`banking-intent`](packs/banking-intent) | Banking77 (CC BY 4.0) | 150 | **0.840** | 0.090 | $0.000029 |
 
@@ -92,13 +115,17 @@ Full schema and rules: [SPEC.md](SPEC.md). Writing a pack:
 ## Consuming a pack
 
 ```bash
-# with jevassert (runner not yet released — this is the contract)
-uvx jevassert check --pack packs/rag-passage-relevance
-uvx jevassert record --pack packs/rag-passage-relevance --live
+# replay committed evidence offline (deterministic, free)
+uvx jevassert check packs/rag-passage-relevance -p packs/rag-passage-relevance/predictions.jsonl
+
+# record fresh predictions for any Jev-compatible endpoint
+TYPESAFE_API_KEY=... uvx jevassert record packs/rag-passage-relevance -o new.jsonl
+# or, for the same pack against a local Jev-compatible replica:
+uvx jevassert record packs/rag-passage-relevance -o new.jsonl --base-url http://localhost:8000
 ```
 
-Until `jevassert` ships, packs are validated structurally by CI
-(`scripts/validate.py`) and can be loaded with any YAML/JSONL parser.
+Structure is validated in CI by `scripts/validate.py`; any YAML/JSONL parser can
+also load a pack.
 
 ## Non-goals
 

@@ -1,0 +1,96 @@
+{
+  "pack": "rag-answerability",
+  "record_model": "jev-1.13.0",
+  "tested": "jev-1.13.0",
+  "n_cases": 420,
+  "n_items": 840,
+  "case_errors": 0,
+  "missing_items": 0,
+  "accuracy": 0.9083333333333333,
+  "accuracy_ci": [
+    0.8892857142857142,
+    0.9285714285714286
+  ],
+  "ece": 0.05948809523809526,
+  "ece_ci": [
+    0.04089285714285715,
+    0.07315476190476192
+  ],
+  "suggestion": null,
+  "mean_decision_prob": 0.8944166666666666,
+  "cost_per_case_usd": 0.003694695238095238,
+  "total_cost_usd": 1.551772,
+  "p50_latency_ms": 2086.6,
+  "p95_latency_ms": 4309.1,
+  "per_question": {
+    "answerable": {
+      "type": "noul",
+      "n": 420,
+      "missing": 0,
+      "accuracy": 0.9595238095238096,
+      "mean_decision_prob": 0.9496190476190476,
+      "ece": 0.0318095238095238,
+      "brier": 0.02834047619047619
+    },
+    "missing_info": {
+      "type": "choice",
+      "n": 420,
+      "missing": 0,
+      "accuracy": 0.8571428571428571,
+      "mean_decision_prob": 0.8392142857142857,
+      "ece": 0.09711904761904765,
+      "brier": null
+    }
+  },
+  "coverage": [
+    {
+      "threshold": 0.5,
+      "coverage": 0.9964285714285714,
+      "precision": 0.910394265232975
+    },
+    {
+      "threshold": 0.6,
+      "coverage": 0.9654761904761905,
+      "precision": 0.9272503082614056
+    },
+    {
+      "threshold": 0.7,
+      "coverage": 0.9261904761904762,
+      "precision": 0.9460154241645244
+    },
+    {
+      "threshold": 0.8,
+      "coverage": 0.8357142857142857,
+      "precision": 0.9772079772079773
+    },
+    {
+      "threshold": 0.9,
+      "coverage": 0.6357142857142857,
+      "precision": 0.9887640449438202
+    },
+    {
+      "threshold": 0.95,
+      "coverage": 0.5523809523809524,
+      "precision": 0.9935344827586207
+    }
+  ],
+  "threshold_coverage": {
+    "n_total": 840,
+    "n_auto": 719,
+    "coverage": 0.8559523809523809,
+    "precision": 0.9652294853963839
+  },
+  "gates": [],
+  "recorded_models": [
+    "claude-sonnet-5"
+  ],
+  "pricing": {
+    "input_usd_per_mtok": 2.0,
+    "output_usd_per_mtok": 10.0
+  },
+  "pack_version": "0.5.0",
+  "backend": "claude-sonnet-5",
+  "predictions": "results/claude-sonnet-5/rag-answerability.predictions.jsonl",
+  "predictions_sha256": "558b24808a090ce21590915eb734635d8fa1b3067eb274d57759d127ad272402",
+  "recorded_at": "2026-09-19"
+}

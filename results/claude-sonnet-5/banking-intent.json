@@ -1,0 +1,87 @@
+{
+  "pack": "banking-intent",
+  "record_model": "jev-1.13.0",
+  "tested": "jev-1.13.0",
+  "n_cases": 150,
+  "n_items": 150,
+  "case_errors": 0,
+  "missing_items": 0,
+  "accuracy": 0.8466666666666667,
+  "accuracy_ci": [
+    0.7866666666666666,
+    0.9
+  ],
+  "ece": 0.11006616313566073,
+  "ece_ci": [
+    0.06902152882771381,
+    0.15239703965969287
+  ],
+  "suggestion": null,
+  "mean_decision_prob": 0.812882902467592,
+  "cost_per_case_usd": 0.00579216,
+  "total_cost_usd": 0.868824,
+  "p50_latency_ms": 2756.8,
+  "p95_latency_ms": 5731.0,
+  "per_question": {
+    "intent": {
+      "type": "choice",
+      "n": 150,
+      "missing": 0,
+      "accuracy": 0.8466666666666667,
+      "mean_decision_prob": 0.812882902467592,
+      "ece": 0.11006616313566073,
+      "brier": null
+    }
+  },
+  "coverage": [
+    {
+      "threshold": 0.5,
+      "coverage": 0.94,
+      "precision": 0.8865248226950354
+    },
+    {
+      "threshold": 0.6,
+      "coverage": 0.8466666666666667,
+      "precision": 0.9291338582677166
+    },
+    {
+      "threshold": 0.7,
+      "coverage": 0.76,
+      "precision": 0.9473684210526315
+    },
+    {
+      "threshold": 0.8,
+      "coverage": 0.6933333333333334,
+      "precision": 0.9519230769230769
+    },
+    {
+      "threshold": 0.9,
+      "coverage": 0.49333333333333335,
+      "precision": 0.972972972972973
+    },
+    {
+      "threshold": 0.95,
+      "coverage": 0.2866666666666667,
+      "precision": 0.9767441860465116
+    }
+  ],
+  "threshold_coverage": {
+    "n_total": 150,
+    "n_auto": 112,
+    "coverage": 0.7466666666666667,
+    "precision": 0.9642857142857143
+  },
+  "gates": [],
+  "recorded_models": [
+    "claude-sonnet-5"
+  ],
+  "pricing": {
+    "input_usd_per_mtok": 2.0,
+    "output_usd_per_mtok": 10.0
+  },
+  "pack_version": "0.2.0",
+  "backend": "claude-sonnet-5",
+  "predictions": "results/claude-sonnet-5/banking-intent.predictions.jsonl",
+  "predictions_sha256": "76b3e418c2ee65c726c1fee6f85bcd6b68d9dbd53ac6e58ab4db9daeff6b72d8",
+  "recorded_at": "2026-09-19"
+}

@@ -1,0 +1,88 @@
+{
+  "pack": "boolq-yes-no",
+  "record_model": "jev-1.13.0",
+  "tested": "jev-1.13.0",
+  "n_cases": 150,
+  "n_items": 150,
+  "case_errors": 0,
+  "missing_items": 0,
+  "accuracy": 0.8866666666666667,
+  "accuracy_ci": [
+    0.8333333333333334,
+    0.9333333333333333
+  ],
+  "ece": 0.06266666666666665,
+  "ece_ci": [
+    0.030866666666666667,
+    0.10520000000000002
+  ],
+  "suggestion": null,
+  "mean_decision_prob": 0.9064000000000001,
+  "cost_per_case_usd": 1.8098920000000002e-05,
+  "total_cost_usd": 0.0027148380000000002,
+  "p50_latency_ms": 312.5,
+  "p95_latency_ms": 711.0,
+  "per_question": {
+    "answer_yes": {
+      "type": "noul",
+      "n": 150,
+      "missing": 0,
+      "accuracy": 0.8866666666666667,
+      "mean_decision_prob": 0.9064000000000001,
+      "ece": 0.06266666666666665,
+      "brier": 0.08138000000000001
+    }
+  },
+  "coverage": [
+    {
+      "threshold": 0.5,
+      "coverage": 1.0,
+      "precision": 0.8866666666666667
+    },
+    {
+      "threshold": 0.6,
+      "coverage": 0.9666666666666667,
+      "precision": 0.896551724137931
+    },
+    {
+      "threshold": 0.7,
+      "coverage": 0.9,
+      "precision": 0.9259259259259259
+    },
+    {
+      "threshold": 0.8,
+      "coverage": 0.8333333333333334,
+      "precision": 0.952
+    },
+    {
+      "threshold": 0.9,
+      "coverage": 0.7,
+      "precision": 0.9523809523809523
+    },
+    {
+      "threshold": 0.95,
+      "coverage": 0.5933333333333334,
+      "precision": 0.9775280898876404
+    }
+  ],
+  "threshold_coverage": {
+    "n_total": 150,
+    "n_auto": 119,
+    "coverage": 0.7933333333333333,
+    "precision": 0.957983193277311
+  },
+  "gates": [],
+  "recorded_models": [
+    "jev-1.13.0"
+  ],
+  "pricing": {
+    "input_usd_per_mtok": 0.042,
+    "output_usd_per_mtok": 0.0
+  },
+  "pack_version": "0.1.0",
+  "backend": "jev-1.13.0",
+  "predictions": "packs/boolq-yes-no/predictions.jsonl",
+  "predictions_sha256": "59480b2e13a221f73bb79e711a420d6cae6754bc53eba280d378ff909f7a763e",
+  "report": "packs/boolq-yes-no/evidence.md",
+  "recorded_at": "2026-09-19"
+}

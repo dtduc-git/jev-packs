@@ -1,0 +1,88 @@
+{
+  "pack": "banking-intent",
+  "record_model": "jev-1.13.0",
+  "tested": "jev-1.13.0",
+  "n_cases": 150,
+  "n_items": 150,
+  "case_errors": 0,
+  "missing_items": 0,
+  "accuracy": 0.84,
+  "accuracy_ci": [
+    0.78,
+    0.8933333333333333
+  ],
+  "ece": 0.09006666666666668,
+  "ece_ci": [
+    0.05573333333333334,
+    0.1576
+  ],
+  "suggestion": null,
+  "mean_decision_prob": 0.9300666666666666,
+  "cost_per_case_usd": 2.906988e-05,
+  "total_cost_usd": 0.004360482,
+  "p50_latency_ms": 324.3,
+  "p95_latency_ms": 749.9,
+  "per_question": {
+    "intent": {
+      "type": "choice",
+      "n": 150,
+      "missing": 0,
+      "accuracy": 0.84,
+      "mean_decision_prob": 0.9300666666666666,
+      "ece": 0.09006666666666668,
+      "brier": null
+    }
+  },
+  "coverage": [
+    {
+      "threshold": 0.5,
+      "coverage": 0.98,
+      "precision": 0.8435374149659864
+    },
+    {
+      "threshold": 0.6,
+      "coverage": 0.9333333333333333,
+      "precision": 0.8714285714285714
+    },
+    {
+      "threshold": 0.7,
+      "coverage": 0.8933333333333333,
+      "precision": 0.8731343283582089
+    },
+    {
+      "threshold": 0.8,
+      "coverage": 0.8533333333333334,
+      "precision": 0.875
+    },
+    {
+      "threshold": 0.9,
+      "coverage": 0.8,
+      "precision": 0.9083333333333333
+    },
+    {
+      "threshold": 0.95,
+      "coverage": 0.7866666666666666,
+      "precision": 0.9152542372881356
+    }
+  ],
+  "threshold_coverage": {
+    "n_total": 150,
+    "n_auto": 129,
+    "coverage": 0.86,
+    "precision": 0.9069767441860465
+  },
+  "gates": [],
+  "recorded_models": [
+    "jev-1.13.0"
+  ],
+  "pricing": {
+    "input_usd_per_mtok": 0.042,
+    "output_usd_per_mtok": 0.0
+  },
+  "pack_version": "0.2.0",
+  "backend": "jev-1.13.0",
+  "predictions": "packs/banking-intent/predictions.jsonl",
+  "predictions_sha256": "50058bbea1065e4123b56bdeae47a03156043e18d29c91faecd8c7bc507e65e1",
+  "report": "packs/banking-intent/evidence.md",
+  "recorded_at": "2026-09-19"
+}

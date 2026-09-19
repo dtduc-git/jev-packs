@@ -1,0 +1,97 @@
+{
+  "pack": "rag-answerability",
+  "record_model": "jev-1.13.0",
+  "tested": "jev-1.13.0",
+  "n_cases": 420,
+  "n_items": 840,
+  "case_errors": 0,
+  "missing_items": 0,
+  "accuracy": 0.9083333333333333,
+  "accuracy_ci": [
+    0.8892857142857142,
+    0.9273809523809524
+  ],
+  "ece": 0.0215,
+  "ece_ci": [
+    0.015904761904761935,
+    0.04266666666666666
+  ],
+  "suggestion": null,
+  "mean_decision_prob": 0.8986190476190477,
+  "cost_per_case_usd": 2.4794800000000002e-05,
+  "total_cost_usd": 0.010413816000000001,
+  "p50_latency_ms": 306.8,
+  "p95_latency_ms": 727.1,
+  "per_question": {
+    "answerable": {
+      "type": "noul",
+      "n": 420,
+      "missing": 0,
+      "accuracy": 0.9595238095238096,
+      "mean_decision_prob": 0.9071428571428571,
+      "ece": 0.052380952380952396,
+      "brier": 0.03274904761904762
+    },
+    "missing_info": {
+      "type": "choice",
+      "n": 420,
+      "missing": 0,
+      "accuracy": 0.8571428571428571,
+      "mean_decision_prob": 0.890095238095238,
+      "ece": 0.03709523809523809,
+      "brier": null
+    }
+  },
+  "coverage": [
+    {
+      "threshold": 0.5,
+      "coverage": 0.9809523809523809,
+      "precision": 0.9174757281553398
+    },
+    {
+      "threshold": 0.6,
+      "coverage": 0.9333333333333333,
+      "precision": 0.9375
+    },
+    {
+      "threshold": 0.7,
+      "coverage": 0.8833333333333333,
+      "precision": 0.9460916442048517
+    },
+    {
+      "threshold": 0.8,
+      "coverage": 0.8238095238095238,
+      "precision": 0.9653179190751445
+    },
+    {
+      "threshold": 0.9,
+      "coverage": 0.736904761904762,
+      "precision": 0.9773828756058158
+    },
+    {
+      "threshold": 0.95,
+      "coverage": 0.594047619047619,
+      "precision": 0.9799599198396793
+    }
+  ],
+  "threshold_coverage": {
+    "n_total": 840,
+    "n_auto": 672,
+    "coverage": 0.8,
+    "precision": 0.9627976190476191
+  },
+  "gates": [],
+  "recorded_models": [
+    "jev-1.13.0"
+  ],
+  "pricing": {
+    "input_usd_per_mtok": 0.042,
+    "output_usd_per_mtok": 0.0
+  },
+  "pack_version": "0.5.0",
+  "backend": "jev-1.13.0",
+  "predictions": "packs/rag-answerability/predictions.jsonl",
+  "predictions_sha256": "e6ef108144584772ef4c0aa358821bed3c1c45324bc8135e1964c1b0a96f919f",
+  "report": "packs/rag-answerability/evidence.md",
+  "recorded_at": "2026-09-19"
+}

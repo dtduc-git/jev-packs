@@ -2,6 +2,25 @@
 
 Repo-level changes; per-pack history lives in each pack's `CHANGELOG.md`.
 
+## 2026-09-19 (benchmark)
+
+- **`results/` introduced** — independent benchmark columns recorded on the
+  same packs. Additive extension: no pack field or `spec` change; existing
+  consumers ignore unknown paths.
+- `scripts/record-backend.py` records a backend (TypeSafe API or any LLM via
+  TypeSafe's official `system-one-adapter`) and writes
+  `results/<backend>/{backend.json,<pack>.json,<pack>.md,<pack>.predictions.jsonl}`.
+  Predictions are committed; every published number replays offline
+  (`scripts/verify_results.py`).
+- `scripts/validate.py` now validates `results/` (structure, prediction hashes,
+  recorded models match the recording).
+- `scripts/build_scoreboard.py` generates `docs/index.html` (Jev Bench) from
+  `results/`; CI fails when it is stale.
+- `jevassert` 0.2.0: `record --backend openai|anthropic` (via system-one-adapter),
+  `check --input-price/--output-price`, reports the actual recorded models.
+- METHODOLOGY.md added — what is measured, backend protocol, caveats, and how
+  to contribute a column.
+
 ## 2026-09-19
 
 - Initial release: spec v0 ([SPEC.md](SPEC.md)), validator, CI, and six seed

@@ -1,0 +1,88 @@
+{
+  "pack": "sms-spam",
+  "record_model": "jev-1.13.0",
+  "tested": "jev-1.13.0",
+  "n_cases": 150,
+  "n_items": 150,
+  "case_errors": 0,
+  "missing_items": 0,
+  "accuracy": 0.9533333333333334,
+  "accuracy_ci": [
+    0.9133333333333333,
+    0.9866666666666667
+  ],
+  "ece": 0.040133333333333354,
+  "ece_ci": [
+    0.03186666666666671,
+    0.07419999999999999
+  ],
+  "suggestion": null,
+  "mean_decision_prob": 0.9234666666666668,
+  "cost_per_case_usd": 1.3833120000000003e-05,
+  "total_cost_usd": 0.0020749680000000004,
+  "p50_latency_ms": 183.1,
+  "p95_latency_ms": 358.4,
+  "per_question": {
+    "spam": {
+      "type": "noul",
+      "n": 150,
+      "missing": 0,
+      "accuracy": 0.9533333333333334,
+      "mean_decision_prob": 0.9234666666666668,
+      "ece": 0.040133333333333354,
+      "brier": 0.03697333333333334
+    }
+  },
+  "coverage": [
+    {
+      "threshold": 0.5,
+      "coverage": 1.0,
+      "precision": 0.9533333333333334
+    },
+    {
+      "threshold": 0.6,
+      "coverage": 0.9666666666666667,
+      "precision": 0.9724137931034482
+    },
+    {
+      "threshold": 0.7,
+      "coverage": 0.94,
+      "precision": 0.9716312056737588
+    },
+    {
+      "threshold": 0.8,
+      "coverage": 0.8933333333333333,
+      "precision": 0.9776119402985075
+    },
+    {
+      "threshold": 0.9,
+      "coverage": 0.8333333333333334,
+      "precision": 0.984
+    },
+    {
+      "threshold": 0.95,
+      "coverage": 0.66,
+      "precision": 0.98989898989899
+    }
+  ],
+  "threshold_coverage": {
+    "n_total": 150,
+    "n_auto": 125,
+    "coverage": 0.8333333333333334,
+    "precision": 0.984
+  },
+  "gates": [],
+  "recorded_models": [
+    "jev-1.13.0"
+  ],
+  "pricing": {
+    "input_usd_per_mtok": 0.042,
+    "output_usd_per_mtok": 0.0
+  },
+  "pack_version": "0.1.0",
+  "backend": "jev-1.13.0",
+  "predictions": "packs/sms-spam/predictions.jsonl",
+  "predictions_sha256": "20f1c8884685874cdea6ada4ffc3125d28964e5e412572eafcb5e1b3485e7c0a",
+  "report": "packs/sms-spam/evidence.md",
+  "recorded_at": "2026-09-19"
+}

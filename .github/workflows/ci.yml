@@ -13,3 +13,5 @@ jobs:
       - uses: astral-sh/setup-uv@v5
       - name: Validate packs (spec v0)
         run: uv run --no-project --with pyyaml python scripts/validate.py
+      - name: Scoreboard is current
+        run: python3 scripts/build_scoreboard.py --check

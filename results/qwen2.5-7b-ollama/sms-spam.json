@@ -1,0 +1,87 @@
+{
+  "pack": "sms-spam",
+  "record_model": "jev-1.13.0",
+  "tested": "jev-1.13.0",
+  "n_cases": 150,
+  "n_items": 150,
+  "case_errors": 0,
+  "missing_items": 0,
+  "accuracy": 0.8133333333333334,
+  "accuracy_ci": [
+    0.7466666666666667,
+    0.8733333333333333
+  ],
+  "ece": 0.1073910954848222,
+  "ece_ci": [
+    0.06638079652428107,
+    0.17616436873714514
+  ],
+  "suggestion": null,
+  "mean_decision_prob": 0.9034334232469554,
+  "cost_per_case_usd": 0.0,
+  "total_cost_usd": 0.0,
+  "p50_latency_ms": 4687.7,
+  "p95_latency_ms": 5685.6,
+  "per_question": {
+    "spam": {
+      "type": "noul",
+      "n": 150,
+      "missing": 0,
+      "accuracy": 0.8133333333333334,
+      "mean_decision_prob": 0.9034334232469554,
+      "ece": 0.1073910954848222,
+      "brier": 0.13533119898518495
+    }
+  },
+  "coverage": [
+    {
+      "threshold": 0.5,
+      "coverage": 1.0,
+      "precision": 0.8133333333333334
+    },
+    {
+      "threshold": 0.6,
+      "coverage": 0.9733333333333334,
+      "precision": 0.821917808219178
+    },
+    {
+      "threshold": 0.7,
+      "coverage": 0.9133333333333333,
+      "precision": 0.8540145985401459
+    },
+    {
+      "threshold": 0.8,
+      "coverage": 0.86,
+      "precision": 0.875968992248062
+    },
+    {
+      "threshold": 0.9,
+      "coverage": 0.6333333333333333,
+      "precision": 0.9263157894736842
+    },
+    {
+      "threshold": 0.95,
+      "coverage": 0.52,
+      "precision": 0.9358974358974359
+    }
+  ],
+  "threshold_coverage": {
+    "n_total": 150,
+    "n_auto": 95,
+    "coverage": 0.6333333333333333,
+    "precision": 0.9263157894736842
+  },
+  "gates": [],
+  "recorded_models": [
+    "qwen2.5:7b"
+  ],
+  "pricing": {
+    "input_usd_per_mtok": 0.0,
+    "output_usd_per_mtok": 0.0
+  },
+  "pack_version": "0.1.0",
+  "backend": "qwen2.5-7b-ollama",
+  "predictions": "results/qwen2.5-7b-ollama/sms-spam.predictions.jsonl",
+  "predictions_sha256": "2227ef6bbe9caf6668a272ab4cee4bf81577ab2aebd65dbe2d1bcdd4df0b20eb",
+  "recorded_at": "2026-09-19"
+}

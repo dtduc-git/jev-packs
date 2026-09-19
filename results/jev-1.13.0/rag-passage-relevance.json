@@ -1,0 +1,97 @@
+{
+  "pack": "rag-passage-relevance",
+  "record_model": "jev-1.13.0",
+  "tested": "jev-1.13.0",
+  "n_cases": 400,
+  "n_items": 800,
+  "case_errors": 0,
+  "missing_items": 0,
+  "accuracy": 0.89875,
+  "accuracy_ci": [
+    0.87875,
+    0.92
+  ],
+  "ece": 0.035250000000000004,
+  "ece_ci": [
+    0.020462499999999974,
+    0.05348750000000002
+  ],
+  "suggestion": null,
+  "mean_decision_prob": 0.9259999999999999,
+  "cost_per_case_usd": 1.7551170000000004e-05,
+  "total_cost_usd": 0.007020468000000001,
+  "p50_latency_ms": 312.8,
+  "p95_latency_ms": 390.0,
+  "per_question": {
+    "relevant": {
+      "type": "noul",
+      "n": 400,
+      "missing": 0,
+      "accuracy": 0.9675,
+      "mean_decision_prob": 0.957425,
+      "ece": 0.016925000000000013,
+      "brier": 0.02430325
+    },
+    "quality": {
+      "type": "score",
+      "n": 400,
+      "missing": 0,
+      "accuracy": 0.83,
+      "mean_decision_prob": 0.894575,
+      "ece": 0.06457500000000004,
+      "brier": null
+    }
+  },
+  "coverage": [
+    {
+      "threshold": 0.5,
+      "coverage": 0.99875,
+      "precision": 0.899874843554443
+    },
+    {
+      "threshold": 0.6,
+      "coverage": 0.95625,
+      "precision": 0.9176470588235294
+    },
+    {
+      "threshold": 0.7,
+      "coverage": 0.91375,
+      "precision": 0.9316005471956225
+    },
+    {
+      "threshold": 0.8,
+      "coverage": 0.86125,
+      "precision": 0.9462989840348331
+    },
+    {
+      "threshold": 0.9,
+      "coverage": 0.8025,
+      "precision": 0.9595015576323987
+    },
+    {
+      "threshold": 0.95,
+      "coverage": 0.72,
+      "precision": 0.9722222222222222
+    }
+  ],
+  "threshold_coverage": {
+    "n_total": 800,
+    "n_auto": 697,
+    "coverage": 0.87125,
+    "precision": 0.9311334289813487
+  },
+  "gates": [],
+  "recorded_models": [
+    "jev-1.13.0"
+  ],
+  "pricing": {
+    "input_usd_per_mtok": 0.042,
+    "output_usd_per_mtok": 0.0
+  },
+  "pack_version": "0.4.0",
+  "backend": "jev-1.13.0",
+  "predictions": "packs/rag-passage-relevance/predictions.jsonl",
+  "predictions_sha256": "89b62359a2a8267ee49d26052936842ca9914b920e3da1b830eb5cdf352aa8ab",
+  "report": "packs/rag-passage-relevance/evidence.md",
+  "recorded_at": "2026-09-19"
+}

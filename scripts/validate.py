@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import hashlib
 import json
 import re
 import sys
@@ -12,10 +13,12 @@ import yaml
 
 ROOT = Path(__file__).resolve().parent.parent
 PACKS_DIR = ROOT / "packs"
+RESULTS_DIR = ROOT / "results"
 INDEX = ROOT / "index.json"
 MIN_CASES = 50
 
 ID_RE = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
+BACKEND_ID_RE = re.compile(r"^[a-z0-9]+(?:[.-][a-z0-9]+)*$")
 KEY_RE = re.compile(r"^[a-z0-9]+(?:_[a-z0-9]+)*$")
 SEMVER_RE = re.compile(r"^\d+\.\d+\.\d+$")
 TESTED_RE = re.compile(r"^jev-\d+\.\d+\.\d+$")
@@ -220,6 +223,118 @@ def validate_pack(pdir: Path) -> dict | None:
     return pack
 
 
+def validate_results(packs: dict[str, dict]) -> int:
+    """Validate benchmark results/ (see METHODOLOGY.md). Returns backends checked."""
+    if not RESULTS_DIR.is_dir():
+        return 0
+    backends = 0
+    for slug_dir in sorted(p for p in RESULTS_DIR.iterdir() if p.is_dir()):
+        rel = str(slug_dir.relative_to(ROOT))
+        meta_path = slug_dir / "backend.json"
+        if not BACKEND_ID_RE.match(slug_dir.name):
+            err(rel, "backend directory name must be lowercase letters/digits with - or . (model names may carry versions)")
+        if not meta_path.is_file():
+            err(rel, "missing backend.json")
+            continue
+        try:
+            meta = json.loads(meta_path.read_text())
+        except json.JSONDecodeError as exc:
+            err(f"{rel}/backend.json", f"invalid JSON: {exc}")
+            continue
+        if not isinstance(meta, dict):
+            err(f"{rel}/backend.json", "must be an object")
+            continue
+        check_keys(
+            f"{rel}/backend.json",
+            meta,
+            {
+                "schema", "id", "name", "provider", "model", "endpoint", "license",
+                "submitted_by", "created", "updated", "tool", "pricing_usd_per_mtok", "notes",
+            },
+            {
+                "schema", "id", "name", "provider", "model", "endpoint", "license",
+                "submitted_by", "created", "updated", "tool", "adapter", "settings",
+                "pricing_usd_per_mtok", "notes",
+            },
+        )
+        if meta.get("schema") != 0:
+            err(f"{rel}/backend.json", f"schema must be 0, got {meta.get('schema')!r}")
+        if meta.get("id") != slug_dir.name:
+            err(f"{rel}/backend.json", "id must equal the directory name")
+        for key in ("name", "model", "license", "submitted_by", "created"):
+            if not isinstance(meta.get(key), str) or not meta[key].strip():
+                err(f"{rel}/backend.json", f"`{key}` must be a non-empty string")
+        if meta.get("provider") not in ("openai", "anthropic", "bedrock", "typesafe"):
+            err(f"{rel}/backend.json", f"provider must be openai | anthropic | bedrock | typesafe, got {meta.get('provider')!r}")
+        pricing = meta.get("pricing_usd_per_mtok")
+        if not isinstance(pricing, dict):
+            err(f"{rel}/backend.json", "pricing_usd_per_mtok must be an object")
+        else:
+            check_keys(f"{rel}/backend.json/pricing", pricing, {"input", "output"}, {"input", "output"})
+            for side in ("input", "output"):
+                value = pricing.get(side)
+                if not isinstance(value, (int, float)) or value < 0:
+                    err(f"{rel}/backend.json/pricing", f"`{side}` must be a non-negative number")
+
+        json_files = sorted(slug_dir.glob("*.json"))
+        json_files = [p for p in json_files if p.name != "backend.json"]
+        if not json_files:
+            err(rel, "no pack results — results/<backend>/<pack>.json expected")
+        for result_path in json_files:
+            rrel = str(result_path.relative_to(ROOT))
+            try:
+                result = json.loads(result_path.read_text())
+            except json.JSONDecodeError as exc:
+                err(rrel, f"invalid JSON: {exc}")
+                continue
+            if not isinstance(result, dict):
+                err(rrel, "must be an object")
+                continue
+            pack_id = result_path.stem
+            result_keys = {
+                "backend", "pack", "pack_version", "predictions", "predictions_sha256",
+                "recorded_models", "n_cases", "n_items", "accuracy", "ece", "recorded_at",
+                "record_model", "tested", "accuracy_ci", "ece_ci", "suggestion",
+                "mean_decision_prob", "cost_per_case_usd", "total_cost_usd",
+                "p50_latency_ms", "p95_latency_ms", "per_question", "coverage",
+                "threshold_coverage", "gates", "pricing", "case_errors", "missing_items",
+                "report",
+            }
+            check_keys(
+                rrel,
+                result,
+                {
+                    "backend", "pack", "pack_version", "predictions", "predictions_sha256",
+                    "recorded_models", "n_cases", "n_items", "accuracy", "ece", "recorded_at",
+                },
+                result_keys,
+            )
+            if result.get("backend") != slug_dir.name:
+                err(rrel, "backend must match the results/<backend> directory")
+            if pack_id not in packs:
+                err(rrel, f"pack `{pack_id}` has no directory in packs/")
+            predictions = ROOT / str(result.get("predictions"))
+            if not predictions.is_file():
+                err(rrel, f"predictions file not found: {result.get('predictions')!r}")
+                continue
+            digest = hashlib.sha256(predictions.read_bytes()).hexdigest()
+            if result.get("predictions_sha256") != digest:
+                err(rrel, "predictions_sha256 does not match the committed recording")
+            models = sorted(
+                {
+                    record.get("model")
+                    for record in (
+                        json.loads(line) for line in predictions.read_text().splitlines() if line.strip()
+                    )
+                    if isinstance(record.get("model"), str)
+                }
+            )
+            if result.get("recorded_models") != models:
+                err(rrel, f"recorded_models {result.get('recorded_models')!r} != models in recording {models!r}")
+        backends += 1
+    return backends
+
+
 def main() -> int:
     if not PACKS_DIR.is_dir():
         print("no packs/ directory", file=sys.stderr)
@@ -280,12 +395,14 @@ def main() -> int:
             for pid in sorted(packs.keys() - listed):
                 err("index.json", f"pack `{pid}` is not listed")
 
+    backends = validate_results(packs)
+
     if errors:
         for e in errors:
             print(f"ERROR {e}")
-        print(f"\n{len(errors)} error(s), {len(packs)} pack(s) checked")
+        print(f"\n{len(errors)} error(s), {len(packs)} pack(s), {backends} backend(s) checked")
         return 1
-    print(f"OK: {len(packs)} pack(s), all valid (spec v0)")
+    print(f"OK: {len(packs)} pack(s), {backends} backend(s), all valid")
     return 0
 
 

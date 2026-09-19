@@ -50,3 +50,15 @@ jobs:
           path: |
             ${{ matrix.pack }}-evidence.md
             ${{ matrix.pack }}-junit.xml
+
+  verify-results:
+    # Needs jevassert 0.2.0+ (--input-price/--output-price). Release jevassert
+    # before merging result columns recorded with it.
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+      - name: Install jevassert
+        run: uv tool install jevassert==0.2.0
+      - name: Replay committed benchmark results offline
+        run: python3 scripts/verify_results.py

@@ -1,0 +1,97 @@
+{
+  "pack": "entity-merge",
+  "record_model": "jev-1.13.0",
+  "tested": "jev-1.13.0",
+  "n_cases": 420,
+  "n_items": 840,
+  "case_errors": 0,
+  "missing_items": 0,
+  "accuracy": 0.8571428571428571,
+  "accuracy_ci": [
+    0.8321428571428572,
+    0.8797619047619047
+  ],
+  "ece": 0.017047619047619037,
+  "ece_ci": [
+    0.021119047619047614,
+    0.0542738095238095
+  ],
+  "suggestion": null,
+  "mean_decision_prob": 0.8436190476190476,
+  "cost_per_case_usd": 1.7878500000000002e-05,
+  "total_cost_usd": 0.00750897,
+  "p50_latency_ms": 307.9,
+  "p95_latency_ms": 384.7,
+  "per_question": {
+    "same_entity": {
+      "type": "noul",
+      "n": 420,
+      "missing": 0,
+      "accuracy": 0.8761904761904762,
+      "mean_decision_prob": 0.8318571428571429,
+      "ece": 0.048333333333333374,
+      "brier": 0.09662238095238096
+    },
+    "action": {
+      "type": "choice",
+      "n": 420,
+      "missing": 0,
+      "accuracy": 0.8380952380952381,
+      "mean_decision_prob": 0.8553809523809524,
+      "ece": 0.04409523809523811,
+      "brier": null
+    }
+  },
+  "coverage": [
+    {
+      "threshold": 0.5,
+      "coverage": 0.9892857142857143,
+      "precision": 0.8567990373044525
+    },
+    {
+      "threshold": 0.6,
+      "coverage": 0.9166666666666666,
+      "precision": 0.8753246753246753
+    },
+    {
+      "threshold": 0.7,
+      "coverage": 0.8130952380952381,
+      "precision": 0.9092240117130308
+    },
+    {
+      "threshold": 0.8,
+      "coverage": 0.7083333333333334,
+      "precision": 0.9243697478991597
+    },
+    {
+      "threshold": 0.9,
+      "coverage": 0.4773809523809524,
+      "precision": 0.9551122194513716
+    },
+    {
+      "threshold": 0.95,
+      "coverage": 0.3107142857142857,
+      "precision": 0.9808429118773946
+    }
+  ],
+  "threshold_coverage": {
+    "n_total": 840,
+    "n_auto": 562,
+    "coverage": 0.669047619047619,
+    "precision": 0.9181494661921709
+  },
+  "gates": [],
+  "recorded_models": [
+    "jev-1.13.0"
+  ],
+  "pricing": {
+    "input_usd_per_mtok": 0.042,
+    "output_usd_per_mtok": 0.0
+  },
+  "pack_version": "0.4.0",
+  "backend": "jev-1.13.0",
+  "predictions": "packs/entity-merge/predictions.jsonl",
+  "predictions_sha256": "8a83766c32c54afd1232008459017292cebb4d24cdf5854f31782da5c6076d05",
+  "report": "packs/entity-merge/evidence.md",
+  "recorded_at": "2026-09-19"
+}

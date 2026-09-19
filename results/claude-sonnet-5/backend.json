@@ -1,0 +1,28 @@
+{
+  "schema": 0,
+  "id": "claude-sonnet-5",
+  "name": "Claude Sonnet 5 (Anthropic API)",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "endpoint": "https://api.typesafe.ai",
+  "license": "proprietary (Anthropic)",
+  "submitted_by": "dtduc-git",
+  "created": "2026-09-19",
+  "tool": {
+    "name": "jevassert",
+    "version": "0.2.0"
+  },
+  "adapter": "system-one-adapter",
+  "settings": {
+    "structured_outputs": true,
+    "llm_answer_mode": "probabilities",
+    "normalize_probabilities": true,
+    "n_retry_malformed_structure": 2
+  },
+  "pricing_usd_per_mtok": {
+    "input": 2.0,
+    "output": 10.0
+  },
+  "notes": "Latest-generation Claude via the Anthropic API. Single run at default sampling; adapter structured outputs (probabilities mode); list pricing $2/$10 per MTok input/output. One moderation case fails structured parsing deterministically (mod-0279) and is reported as a case error.",
+  "updated": "2026-09-19"
+}

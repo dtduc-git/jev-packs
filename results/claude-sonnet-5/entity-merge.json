@@ -1,0 +1,96 @@
+{
+  "pack": "entity-merge",
+  "record_model": "jev-1.13.0",
+  "tested": "jev-1.13.0",
+  "n_cases": 420,
+  "n_items": 840,
+  "case_errors": 0,
+  "missing_items": 0,
+  "accuracy": 0.8607142857142858,
+  "accuracy_ci": [
+    0.8369047619047619,
+    0.8845238095238095
+  ],
+  "ece": 0.06458333333333328,
+  "ece_ci": [
+    0.04474999999999999,
+    0.0842857142857143
+  ],
+  "suggestion": null,
+  "mean_decision_prob": 0.8326785714285715,
+  "cost_per_case_usd": 0.0031852809523809523,
+  "total_cost_usd": 1.337818,
+  "p50_latency_ms": 2312.3,
+  "p95_latency_ms": 4020.5,
+  "per_question": {
+    "same_entity": {
+      "type": "noul",
+      "n": 420,
+      "missing": 0,
+      "accuracy": 0.8547619047619047,
+      "mean_decision_prob": 0.8830476190476191,
+      "ece": 0.07457142857142855,
+      "brier": 0.09623571428571427
+    },
+    "action": {
+      "type": "choice",
+      "n": 420,
+      "missing": 0,
+      "accuracy": 0.8666666666666667,
+      "mean_decision_prob": 0.7823095238095238,
+      "ece": 0.13369047619047617,
+      "brier": null
+    }
+  },
+  "coverage": [
+    {
+      "threshold": 0.5,
+      "coverage": 0.986904761904762,
+      "precision": 0.8673100120627262
+    },
+    {
+      "threshold": 0.6,
+      "coverage": 0.8952380952380953,
+      "precision": 0.8882978723404256
+    },
+    {
+      "threshold": 0.7,
+      "coverage": 0.8011904761904762,
+      "precision": 0.9257057949479941
+    },
+    {
+      "threshold": 0.8,
+      "coverage": 0.7214285714285714,
+      "precision": 0.933993399339934
+    },
+    {
+      "threshold": 0.9,
+      "coverage": 0.5059523809523809,
+      "precision": 0.9576470588235294
+    },
+    {
+      "threshold": 0.95,
+      "coverage": 0.2892857142857143,
+      "precision": 0.9423868312757202
+    }
+  ],
+  "threshold_coverage": {
+    "n_total": 840,
+    "n_auto": 617,
+    "coverage": 0.7345238095238096,
+    "precision": 0.9319286871961102
+  },
+  "gates": [],
+  "recorded_models": [
+    "claude-sonnet-5"
+  ],
+  "pricing": {
+    "input_usd_per_mtok": 2.0,
+    "output_usd_per_mtok": 10.0
+  },
+  "pack_version": "0.4.0",
+  "backend": "claude-sonnet-5",
+  "predictions": "results/claude-sonnet-5/entity-merge.predictions.jsonl",
+  "predictions_sha256": "8e1f3f3c397fe82af61b4038fe49993bf6e653109ad2f0e93dab7523a3e859b5",
+  "recorded_at": "2026-09-19"
+}

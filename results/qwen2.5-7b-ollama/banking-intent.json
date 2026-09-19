@@ -1,0 +1,87 @@
+{
+  "pack": "banking-intent",
+  "record_model": "jev-1.13.0",
+  "tested": "jev-1.13.0",
+  "n_cases": 150,
+  "n_items": 150,
+  "case_errors": 0,
+  "missing_items": 0,
+  "accuracy": 0.5333333333333333,
+  "accuracy_ci": [
+    0.46,
+    0.6133333333333333
+  ],
+  "ece": 0.19453891016625188,
+  "ece_ci": [
+    0.10467842497860129,
+    0.2403123499863447
+  ],
+  "suggestion": null,
+  "mean_decision_prob": 0.5802140730891597,
+  "cost_per_case_usd": 0.0,
+  "total_cost_usd": 0.0,
+  "p50_latency_ms": 32128.2,
+  "p95_latency_ms": 34271.8,
+  "per_question": {
+    "intent": {
+      "type": "choice",
+      "n": 150,
+      "missing": 0,
+      "accuracy": 0.5333333333333333,
+      "mean_decision_prob": 0.5802140730891597,
+      "ece": 0.19453891016625188,
+      "brier": null
+    }
+  },
+  "coverage": [
+    {
+      "threshold": 0.5,
+      "coverage": 0.5933333333333334,
+      "precision": 0.6404494382022472
+    },
+    {
+      "threshold": 0.6,
+      "coverage": 0.4066666666666667,
+      "precision": 0.7377049180327869
+    },
+    {
+      "threshold": 0.7,
+      "coverage": 0.3933333333333333,
+      "precision": 0.7457627118644068
+    },
+    {
+      "threshold": 0.8,
+      "coverage": 0.32,
+      "precision": 0.75
+    },
+    {
+      "threshold": 0.9,
+      "coverage": 0.25333333333333335,
+      "precision": 0.7368421052631579
+    },
+    {
+      "threshold": 0.95,
+      "coverage": 0.24,
+      "precision": 0.75
+    }
+  ],
+  "threshold_coverage": {
+    "n_total": 150,
+    "n_auto": 51,
+    "coverage": 0.34,
+    "precision": 0.8627450980392157
+  },
+  "gates": [],
+  "recorded_models": [
+    "qwen2.5:7b"
+  ],
+  "pricing": {
+    "input_usd_per_mtok": 0.0,
+    "output_usd_per_mtok": 0.0
+  },
+  "pack_version": "0.2.0",
+  "backend": "qwen2.5-7b-ollama",
+  "predictions": "results/qwen2.5-7b-ollama/banking-intent.predictions.jsonl",
+  "predictions_sha256": "cfd81e1b74cc466f4d80b769ea98ae0e1f558d63a3878330e69f17ad7cf1680a",
+  "recorded_at": "2026-09-19"
+}

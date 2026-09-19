@@ -1,0 +1,96 @@
+{
+  "pack": "rag-passage-relevance",
+  "record_model": "jev-1.13.0",
+  "tested": "jev-1.13.0",
+  "n_cases": 400,
+  "n_items": 800,
+  "case_errors": 0,
+  "missing_items": 0,
+  "accuracy": 0.5525,
+  "accuracy_ci": [
+    0.52125,
+    0.58875
+  ],
+  "ece": 0.32641858977868643,
+  "ece_ci": [
+    0.2977025724830872,
+    0.35502678857247183
+  ],
+  "suggestion": null,
+  "mean_decision_prob": 0.8789185897786865,
+  "cost_per_case_usd": 0.0,
+  "total_cost_usd": 0.0,
+  "p50_latency_ms": 8843.8,
+  "p95_latency_ms": 10097.1,
+  "per_question": {
+    "relevant": {
+      "type": "noul",
+      "n": 400,
+      "missing": 0,
+      "accuracy": 0.915,
+      "mean_decision_prob": 0.954525,
+      "ece": 0.039525000000000005,
+      "brier": 0.06353675
+    },
+    "quality": {
+      "type": "score",
+      "n": 400,
+      "missing": 0,
+      "accuracy": 0.19,
+      "mean_decision_prob": 0.803312179557373,
+      "ece": 0.613312179557373,
+      "brier": null
+    }
+  },
+  "coverage": [
+    {
+      "threshold": 0.5,
+      "coverage": 0.9675,
+      "precision": 0.5671834625322998
+    },
+    {
+      "threshold": 0.6,
+      "coverage": 0.89,
+      "precision": 0.5969101123595506
+    },
+    {
+      "threshold": 0.7,
+      "coverage": 0.82125,
+      "precision": 0.639269406392694
+    },
+    {
+      "threshold": 0.8,
+      "coverage": 0.76375,
+      "precision": 0.67430441898527
+    },
+    {
+      "threshold": 0.9,
+      "coverage": 0.67125,
+      "precision": 0.7392923649906891
+    },
+    {
+      "threshold": 0.95,
+      "coverage": 0.63,
+      "precision": 0.7579365079365079
+    }
+  ],
+  "threshold_coverage": {
+    "n_total": 800,
+    "n_auto": 632,
+    "coverage": 0.79,
+    "precision": 0.6392405063291139
+  },
+  "gates": [],
+  "recorded_models": [
+    "qwen2.5:7b"
+  ],
+  "pricing": {
+    "input_usd_per_mtok": 0.0,
+    "output_usd_per_mtok": 0.0
+  },
+  "pack_version": "0.4.0",
+  "backend": "qwen2.5-7b-ollama",
+  "predictions": "results/qwen2.5-7b-ollama/rag-passage-relevance.predictions.jsonl",
+  "predictions_sha256": "1eecab584f2a1e9194ae4aeda15e7541b919093e426f2387ca5740e5ed867a0f",
+  "recorded_at": "2026-09-19"
+}

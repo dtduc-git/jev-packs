@@ -31,6 +31,32 @@ packs, or spec changes (rare, discussed in an issue first).
 - If a case cannot be labeled from its state, fix the case, not the question.
 - Never add a question the state can't answer.
 
+## Adding a benchmark backend
+
+Any reachable backend that can answer SPEC v0 packs is welcome as a results
+column — a local open-weight model, a hosted API, a Jev-compatible replica.
+
+1. Record with `jevassert` (see [METHODOLOGY.md](METHODOLOGY.md)). For an
+   LLM through the official adapter:
+
+   ```bash
+   uv run --no-project --with pyyaml --with '../jevassert[adapter]' \
+     python scripts/record-backend.py \
+       --slug qwen2.5-7b-ollama \
+       --name "Qwen2.5 7B Instruct (Ollama, local)" \
+       --backend openai --model qwen2.5:7b \
+       --base-url http://localhost:11434/v1 \
+       --license Apache-2.0 --packs sms-spam
+   ```
+
+2. Commit `results/<slug>/` — including the `.predictions.jsonl` recordings;
+   results without recordings are not merged.
+3. State honest, current pricing in `backend.json` (`$0` for local models),
+   the model license, and any deviation from the standard recording protocol.
+4. Run `python scripts/validate.py` and open a PR. CI checks structure, hashes
+   and the scoreboard; a maintainer spots-checks a sample of the recording
+   against the cases before merging.
+
 ## Evidence
 
 Packs stay `provisional` until someone records `evidence.md` with

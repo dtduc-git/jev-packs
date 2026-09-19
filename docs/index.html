@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang='en'><head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<title>Jev Bench — independent results for Jev-compatible decision backends</title>
+<style>
+body{font:15px/1.5 -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;max-width:1100px;margin:2rem auto;padding:0 1rem;color:#1a1a1a}h1{margin-bottom:.2rem}h2{margin-top:2.2rem;border-bottom:1px solid #ddd;padding-bottom:.3rem}a{color:#0b5cad;text-decoration:none}a:hover{text-decoration:underline}table{border-collapse:collapse;width:100%;font-size:13.5px}th,td{border:1px solid #ddd;padding:.45rem .6rem;text-align:left;vertical-align:top}th{background:#f6f8fa}.sub{color:#666;font-size:12px}.ci{color:#666;font-size:12px}code{background:#f3f4f6;padding:.1rem .3rem;border-radius:3px;font-size:13px}.note{color:#555;font-size:13px}</style></head><body>
+<h1>Jev Bench</h1>
+<p class='note'>Independent, reproducible results for Jev-compatible decision backends on <a href='https://github.com/dtduc-git/jev-packs'>jev-packs</a> golden sets. Generated from <code>results/</code> (2026-09-19). Every number replays offline from the committed recordings — see <a href='https://github.com/dtduc-git/jev-packs/blob/master/METHODOLOGY.md'>METHODOLOGY.md</a>. Community-run; not affiliated with TypeSafe AI.</p>
+<h2>Results</h2>
+<table><thead><tr><th>pack</th>
+<th>TypeSafe Jev 1.13.0 (API)<br><span class='sub'><code>jev-1.13.0</code></span></th>
+<th>Claude Sonnet 5 (Anthropic API)<br><span class='sub'><code>claude-sonnet-5</code></span></th>
+<th>Qwen2.5 7B Instruct (Ollama, local)<br><span class='sub'><code>qwen2.5:7b</code></span></th>
+</tr></thead><tbody>
+<tr><td><a href='https://github.com/dtduc-git/jev-packs/blob/master/packs/support-triage'>support-triage</a> <span class='sub'>v0.6.0 — 1350 items</span></td>
+<td><strong>0.887</strong> <span class='ci'>(0.871–0.904)</span><br><span class='sub'>ECE 0.059</span><br><span class='sub'>$0.000028/case</span><br><span class='sub'><a href='https://github.com/dtduc-git/jev-packs/blob/master/packs/support-triage/evidence.md'>report</a> · <a href='https://github.com/dtduc-git/jev-packs/blob/master/results/jev-1.13.0/support-triage.json'>json</a></span></td>
+<td><strong>0.905</strong> <span class='ci'>(0.890–0.921)</span><br><span class='sub'>ECE 0.072</span><br><span class='sub'>$0.005089/case</span><br><span class='sub'><a href='https://github.com/dtduc-git/jev-packs/blob/master/results/claude-sonnet-5/support-triage.md'>report</a> · <a href='https://github.com/dtduc-git/jev-packs/blob/master/results/claude-sonnet-5/support-triage.json'>json</a></span></td>
+<td>—</td>
+</tr>
+<tr><td><a href='https://github.com/dtduc-git/jev-packs/blob/master/packs/rag-passage-relevance'>rag-passage-relevance</a> <span class='sub'>v0.4.0 — 800 items</span></td>
+<td><strong>0.899</strong> <span class='ci'>(0.879–0.920)</span><br><span class='sub'>ECE 0.035</span><br><span class='sub'>$0.000018/case</span><br><span class='sub'><a href='https://github.com/dtduc-git/jev-packs/blob/master/packs/rag-passage-relevance/evidence.md'>report</a> · <a href='https://github.com/dtduc-git/jev-packs/blob/master/results/jev-1.13.0/rag-passage-relevance.json'>json</a></span></td>
+<td><strong>0.892</strong> <span class='ci'>(0.870–0.914)</span><br><span class='sub'>ECE 0.039</span><br><span class='sub'>$0.002618/case</span><br><span class='sub'><a href='https://github.com/dtduc-git/jev-packs/blob/master/results/claude-sonnet-5/rag-passage-relevance.md'>report</a> · <a href='https://github.com/dtduc-git/jev-packs/blob/master/results/claude-sonnet-5/rag-passage-relevance.json'>json</a></span></td>
+<td><strong>0.552</strong> <span class='ci'>(0.521–0.589)</span><br><span class='sub'>ECE 0.326</span><br><span class='sub'>$0/case</span><br><span class='sub'><a href='https://github.com/dtduc-git/jev-packs/blob/master/results/qwen2.5-7b-ollama/rag-passage-relevance.md'>report</a> · <a href='https://github.com/dtduc-git/jev-packs/blob/master/results/qwen2.5-7b-ollama/rag-passage-relevance.json'>json</a></span></td>
+</tr>
+<tr><td><a href='https://github.com/dtduc-git/jev-packs/blob/master/packs/rag-answerability'>rag-answerability</a> <span class='sub'>v0.5.0 — 840 items</span></td>
+<td><strong>0.908</strong> <span class='ci'>(0.889–0.927)</span><br><span class='sub'>ECE 0.021</span><br><span class='sub'>$0.000025/case</span><br><span class='sub'><a href='https://github.com/dtduc-git/jev-packs/blob/master/packs/rag-answerability/evidence.md'>report</a> · <a href='https://github.com/dtduc-git/jev-packs/blob/master/results/jev-1.13.0/rag-answerability.json'>json</a></span></td>
+<td><strong>0.908</strong> <span class='ci'>(0.889–0.929)</span><br><span class='sub'>ECE 0.059</span><br><span class='sub'>$0.003695/case</span><br><span class='sub'><a href='https://github.com/dtduc-git/jev-packs/blob/master/results/claude-sonnet-5/rag-answerability.md'>report</a> · <a href='https://github.com/dtduc-git/jev-packs/blob/master/results/claude-sonnet-5/rag-answerability.json'>json</a></span></td>
+<td>—</td>
+</tr>
+<tr><td><a href='https://github.com/dtduc-git/jev-packs/blob/master/packs/citation-support'>citation-support</a> <span class='sub'>v0.4.0 — 800 items</span></td>
+<td><strong>0.919</strong> <span class='ci'>(0.900–0.938)</span><br><span class='sub'>ECE 0.022</span><br><span class='sub'>$0.000017/case</span><br><span class='sub'><a href='https://github.com/dtduc-git/jev-packs/blob/master/packs/citation-support/evidence.md'>report</a> · <a href='https://github.com/dtduc-git/jev-packs/blob/master/results/jev-1.13.0/citation-support.json'>json</a></span></td>
+<td><strong>0.910</strong> <span class='ci'>(0.890–0.930)</span><br><span class='sub'>ECE 0.081</span><br><span class='sub'>$0.002505/case</span><br><span class='sub'><a href='https://github.com/dtduc-git/jev-packs/blob/master/results/claude-sonnet-5/citation-support.md'>report</a> · <a href='https://github.com/dtduc-git/jev-packs/blob/master/results/claude-sonnet-5/citation-support.json'>json</a></span></td>
+<td>—</td>
+</tr>
+<tr><td><a href='https://github.com/dtduc-git/jev-packs/blob/master/packs/moderation'>moderation</a> <span class='sub'>v0.6.0 — 1347 items</span></td>
+<td><strong>0.906</strong> <span class='ci'>(0.890–0.921)</span><br><span class='sub'>ECE 0.027</span><br><span class='sub'>$0.000031/case</span><br><span class='sub'><a href='https://github.com/dtduc-git/jev-packs/blob/master/packs/moderation/evidence.md'>report</a> · <a href='https://github.com/dtduc-git/jev-packs/blob/master/results/jev-1.13.0/moderation.json'>json</a></span></td>
+<td><strong>0.899</strong> <span class='ci'>(0.883–0.915)</span><br><span class='sub'>ECE 0.033</span><br><span class='sub'>$0.004594/case</span><br><span class='sub'><a href='https://github.com/dtduc-git/jev-packs/blob/master/results/claude-sonnet-5/moderation.md'>report</a> · <a href='https://github.com/dtduc-git/jev-packs/blob/master/results/claude-sonnet-5/moderation.json'>json</a></span></td>
+<td>—</td>
+</tr>
+<tr><td><a href='https://github.com/dtduc-git/jev-packs/blob/master/packs/entity-merge'>entity-merge</a> <span class='sub'>v0.4.0 — 840 items</span></td>
+<td><strong>0.857</strong> <span class='ci'>(0.832–0.880)</span><br><span class='sub'>ECE 0.017</span><br><span class='sub'>$0.000018/case</span><br><span class='sub'><a href='https://github.com/dtduc-git/jev-packs/blob/master/packs/entity-merge/evidence.md'>report</a> · <a href='https://github.com/dtduc-git/jev-packs/blob/master/results/jev-1.13.0/entity-merge.json'>json</a></span></td>
+<td><strong>0.861</strong> <span class='ci'>(0.837–0.885)</span><br><span class='sub'>ECE 0.065</span><br><span class='sub'>$0.003185/case</span><br><span class='sub'><a href='https://github.com/dtduc-git/jev-packs/blob/master/results/claude-sonnet-5/entity-merge.md'>report</a> · <a href='https://github.com/dtduc-git/jev-packs/blob/master/results/claude-sonnet-5/entity-merge.json'>json</a></span></td>
+<td>—</td>
+</tr>
+<tr><td><a href='https://github.com/dtduc-git/jev-packs/blob/master/packs/sms-spam'>sms-spam</a> <span class='sub'>v0.1.0 — 150 items</span></td>
+<td><strong>0.953</strong> <span class='ci'>(0.913–0.987)</span><br><span class='sub'>ECE 0.040</span><br><span class='sub'>$0.000014/case</span><br><span class='sub'><a href='https://github.com/dtduc-git/jev-packs/blob/master/packs/sms-spam/evidence.md'>report</a> · <a href='https://github.com/dtduc-git/jev-packs/blob/master/results/jev-1.13.0/sms-spam.json'>json</a></span></td>
+<td><strong>0.947</strong> <span class='ci'>(0.907–0.980)</span><br><span class='sub'>ECE 0.039</span><br><span class='sub'>$0.001547/case</span><br><span class='sub'><a href='https://github.com/dtduc-git/jev-packs/blob/master/results/claude-sonnet-5/sms-spam.md'>report</a> · <a href='https://github.com/dtduc-git/jev-packs/blob/master/results/claude-sonnet-5/sms-spam.json'>json</a></span></td>
+<td><strong>0.813</strong> <span class='ci'>(0.747–0.873)</span><br><span class='sub'>ECE 0.107</span><br><span class='sub'>$0/case</span><br><span class='sub'><a href='https://github.com/dtduc-git/jev-packs/blob/master/results/qwen2.5-7b-ollama/sms-spam.md'>report</a> · <a href='https://github.com/dtduc-git/jev-packs/blob/master/results/qwen2.5-7b-ollama/sms-spam.json'>json</a></span></td>
+</tr>
+<tr><td><a href='https://github.com/dtduc-git/jev-packs/blob/master/packs/banking-intent'>banking-intent</a> <span class='sub'>v0.2.0 — 150 items</span></td>
+<td><strong>0.840</strong> <span class='ci'>(0.780–0.893)</span><br><span class='sub'>ECE 0.090</span><br><span class='sub'>$0.000029/case</span><br><span class='sub'><a href='https://github.com/dtduc-git/jev-packs/blob/master/packs/banking-intent/evidence.md'>report</a> · <a href='https://github.com/dtduc-git/jev-packs/blob/master/results/jev-1.13.0/banking-intent.json'>json</a></span></td>
+<td><strong>0.847</strong> <span class='ci'>(0.787–0.900)</span><br><span class='sub'>ECE 0.110</span><br><span class='sub'>$0.005792/case</span><br><span class='sub'><a href='https://github.com/dtduc-git/jev-packs/blob/master/results/claude-sonnet-5/banking-intent.md'>report</a> · <a href='https://github.com/dtduc-git/jev-packs/blob/master/results/claude-sonnet-5/banking-intent.json'>json</a></span></td>
+<td><strong>0.533</strong> <span class='ci'>(0.460–0.613)</span><br><span class='sub'>ECE 0.195</span><br><span class='sub'>$0/case</span><br><span class='sub'><a href='https://github.com/dtduc-git/jev-packs/blob/master/results/qwen2.5-7b-ollama/banking-intent.md'>report</a> · <a href='https://github.com/dtduc-git/jev-packs/blob/master/results/qwen2.5-7b-ollama/banking-intent.json'>json</a></span></td>
+</tr>
+<tr><td><a href='https://github.com/dtduc-git/jev-packs/blob/master/packs/boolq-yes-no'>boolq-yes-no</a> <span class='sub'>v0.1.0 — 150 items</span></td>
+<td><strong>0.887</strong> <span class='ci'>(0.833–0.933)</span><br><span class='sub'>ECE 0.063</span><br><span class='sub'>$0.000018/case</span><br><span class='sub'><a href='https://github.com/dtduc-git/jev-packs/blob/master/packs/boolq-yes-no/evidence.md'>report</a> · <a href='https://github.com/dtduc-git/jev-packs/blob/master/results/jev-1.13.0/boolq-yes-no.json'>json</a></span></td>
+<td><strong>0.893</strong> <span class='ci'>(0.847–0.940)</span><br><span class='sub'>ECE 0.092</span><br><span class='sub'>$0.001920/case</span><br><span class='sub'><a href='https://github.com/dtduc-git/jev-packs/blob/master/results/claude-sonnet-5/boolq-yes-no.md'>report</a> · <a href='https://github.com/dtduc-git/jev-packs/blob/master/results/claude-sonnet-5/boolq-yes-no.json'>json</a></span></td>
+<td>—</td>
+</tr>
+</tbody></table>
+<p class='note'>Accuracy over all labeled items with bootstrap 95% CI; ECE is expected calibration error (lower is better); cost is per case at the prices in each backend.json. Click through for per-question breakdowns.</p>
+<h2>Backends</h2>
+<table><thead><tr><th>backend</th><th>provider</th><th>model</th><th>license</th><th>endpoint</th><th>pricing / MTok</th><th>notes</th></tr></thead><tbody>
+<tr><td><code>jev-1.13.0</code></td><td>typesafe</td><td><code>jev-1.13.0</code></td><td>proprietary (TypeSafe early access)</td><td><code>https://api.typesafe.ai</code></td><td>in $0.042 · out $0.0</td><td>Primary backend: TypeSafe-hosted Jev, recorded via jevassert.</td></tr>
+<tr><td><code>claude-sonnet-5</code></td><td>anthropic</td><td><code>claude-sonnet-5</code></td><td>proprietary (Anthropic)</td><td><code>https://api.typesafe.ai</code></td><td>in $2.0 · out $10.0</td><td>Latest-generation Claude via the Anthropic API. Single run at default sampling; adapter structured outputs (probabilities mode); list pricing $2/$10 per MTok input/output. One moderation case fails structured parsing deterministically (mod-0279) and is reported as a case error.</td></tr>
+<tr><td><code>qwen2.5-7b-ollama</code></td><td>openai</td><td><code>qwen2.5:7b</code></td><td>Apache-2.0</td><td><code>http://localhost:11434/v1</code></td><td>in $0.0 · out $0.0</td><td>Local open-weight baseline on Ollama (Q4_K_M); single run at default sampling; $0 API cost; latency measured on Apple Silicon, includes network-free local inference.</td></tr>
+</tbody></table>
+<p class='note'>Every backend uses the same questions and the same golden cases; LLM backends go through TypeSafe's official <a href='https://github.com/typesafe-ai/system-one-adapter-python'>system-one-adapter</a> with identical settings, so the comparison is like for like.</p>
+<h2>Reproduce</h2>
+<p class='note'>Recording needs the backend's runtime (a local server or API key); checking a committed recording is offline, free and deterministic:</p>
+<pre><code>
+uvx jevassert check packs/sms-spam -p results/&lt;backend&gt;/sms-spam.predictions.jsonl
+</code></pre>
+<p class='note'>To add a backend, see <a href='https://github.com/dtduc-git/jev-packs/blob/master/CONTRIBUTING.md'>CONTRIBUTING.md</a> and open a PR with <code>results/&lt;your-backend&gt;/</code>.</p>
+<h2>Files</h2>
+<ul class='note'>
+<li><a href='https://github.com/dtduc-git/jev-packs/blob/master/METHODOLOGY.md'>Methodology</a> — what is measured, how, and the caveats.</li>
+<li><a href='https://github.com/dtduc-git/jev-packs'>jev-packs</a> — the packs and the format.</li>
+<li><a href='https://github.com/dtduc-git/jevassert'>jevassert</a> — the record/replay runner that produces every number.</li>
+</ul>
+</body></html>
