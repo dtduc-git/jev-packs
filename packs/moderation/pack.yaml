@@ -1,6 +1,6 @@
 spec: 0
 id: moderation
-version: 0.4.0
+version: 0.5.0
 license: CC0-1.0
 tested: jev-1.13.0
 description: >-
@@ -13,7 +13,7 @@ state:
 questions:
   action:
     type: choice
-    instructions: "What should happen with this text under the policy described in this pack's README?"
+    instructions: "What should happen with this text under the policy described in this pack's README? Apply the first matching action: remove for credible threats, calls for violence, doxxing, sextortion, scams, phishing, fraud, and hate or demeaning generalizations targeting a protected group; review for insults or harassment of individuals, spam, veiled threats and borderline coded language; allow for criticism, disagreement and profanity not aimed at a person; unknown for unreadable input."
     options:
       allow: "No policy concern."
       review: "Borderline or suspicious; needs a human moderator."
@@ -21,13 +21,13 @@ questions:
       unknown: "Cannot classify confidently."
   severity:
     type: score
-    instructions: "How severe is the harm this text could cause if left visible?"
+    instructions: "How severe is the harm this text could cause if left visible? Apply the first matching level: high for threats, doxxing, hate with protected targeting, or fraud; medium for a targeted insult or harassment of a person, or a demeaning generalization; low for rudeness, profanity or spam without a target; none for no harm."
     levels: [none, low, medium, high, unknown]
     level_descriptions:
       none: "No harm: criticism, disagreement or a neutral comment."
       low: "Mild: rudeness, profanity not aimed at a person, or spam."
-      medium: "Harassment or insults aimed at a person; demeaning generalization."
-      high: "Threats, doxxing, hate with targeting, or fraud."
+      medium: "A targeted insult or harassment of a person; a demeaning generalization."
+      high: "Threats, doxxing, hate with protected targeting, or fraud."
       unknown: "Cannot judge severity."
   targeted_group:
     type: noul

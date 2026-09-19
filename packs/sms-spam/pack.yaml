@@ -1,0 +1,17 @@
+spec: 0
+id: sms-spam
+version: 0.1.0
+license: CC-BY-4.0
+tested: jev-1.13.0
+description: >-
+  Classify an SMS message as spam (unsolicited bulk or fraudulent messaging).
+  Non-goals: phishing subtyping, sender reputation, language detection.
+state:
+  description: One SMS message, whitespace-normalized.
+  fields: [message]
+questions:
+  spam:
+    type: noul
+    instructions: "Is this message spam: unsolicited bulk messaging, a chain message, a scam or a fraudulent offer?"
+thresholds:
+  spam: {true: 0.9, false: 0.9}

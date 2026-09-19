@@ -4,7 +4,7 @@
   "packs": [
     {
       "id": "support-triage",
-      "version": "0.4.0",
+      "version": "0.5.0",
       "path": "packs/support-triage",
       "license": "CC0-1.0",
       "status": "verified",
@@ -36,7 +36,7 @@
     },
     {
       "id": "moderation",
-      "version": "0.4.0",
+      "version": "0.5.0",
       "path": "packs/moderation",
       "license": "CC0-1.0",
       "status": "verified",
@@ -49,6 +49,30 @@
       "license": "CC0-1.0",
       "status": "verified",
       "evidence": "packs/entity-merge/evidence.md"
+    },
+    {
+      "id": "sms-spam",
+      "version": "0.1.0",
+      "path": "packs/sms-spam",
+      "license": "CC-BY-4.0",
+      "status": "verified",
+      "evidence": "packs/sms-spam/evidence.md"
+    },
+    {
+      "id": "banking-intent",
+      "version": "0.1.0",
+      "path": "packs/banking-intent",
+      "license": "CC-BY-4.0",
+      "status": "verified",
+      "evidence": "packs/banking-intent/evidence.md"
+    },
+    {
+      "id": "boolq-yes-no",
+      "version": "0.1.0",
+      "path": "packs/boolq-yes-no",
+      "license": "CC-BY-SA-3.0",
+      "status": "verified",
+      "evidence": "packs/boolq-yes-no/evidence.md"
     }
   ]
 }

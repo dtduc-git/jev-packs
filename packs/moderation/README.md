@@ -5,9 +5,9 @@ a severity grade and a protected-group check.
 
 ## Policy assumptions
 
-Labels follow a "standard platform" policy, stated here so the golden set is
-reproducible. This pack is not legal advice; consumers can fork it with their
-own policy text.
+Labels follow a "standard platform" policy, stated here and encoded as ordered
+decision rules in `pack.yaml` (the first matching level wins). This pack is not
+legal advice; consumers can fork it with their own policy text.
 
 - `allow` — criticism, profanity not aimed at a person, disagreement, satire
   that no reasonable reader takes as a call to harm. Rudeness alone can still
@@ -44,8 +44,7 @@ floor.
 
 ## Evidence
 
-Recorded 2026-09-19 against `jev-1.13.0`: accuracy **0.791**, ECE 0.087,
-$0.000022/case. `targeted_group` is the strongest question (0.99); `action`
-(0.68) and `severity` (0.70) are the weak spots — ordinal gradations are the
-hard part. Full report: [evidence.md](evidence.md); raw recording:
-[predictions.jsonl](predictions.jsonl).
+Recorded 2026-09-19 against `jev-1.13.0`: accuracy **0.872**, ECE 0.050,
+$0.000028/case. The 0.5.0 ordered-rule rewrite lifted `action` from 0.68 to
+0.93; `severity` (0.70) remains the hard part. Full report:
+[evidence.md](evidence.md); raw recording: [predictions.jsonl](predictions.jsonl).

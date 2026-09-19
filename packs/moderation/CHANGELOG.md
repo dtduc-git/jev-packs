@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.5.0 — 2026-09-19
+
+- `action` and `severity` criteria rewritten as ordered decision rules
+  (first matching level wins); added 30 boundary cases (veiled threats,
+  demeaning generalizations vs simple insults, wishes of harm, self-harm
+  instructions); evidence re-recorded.
+
 ## 0.4.0 — 2026-09-19
 
 - Doubled from 200 to 400 cases; evidence re-recorded.

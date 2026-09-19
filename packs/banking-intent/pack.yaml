@@ -1,0 +1,49 @@
+spec: 0
+id: banking-intent
+version: 0.1.0
+license: CC-BY-4.0
+tested: jev-1.13.0
+description: >-
+  Route a retail-banking support message to one of 15 intents. Non-goals:
+  resolving the request, sentiment, fraud scoring.
+state:
+  description: One customer support message.
+  fields: [message]
+questions:
+  intent:
+    type: choice
+    instructions: "Which intent best matches the customer's request?"
+    options:
+      card_arrival: "Where the card is; card has not arrived."
+      card_not_working: "The card is declined, blocked or not working."
+      lost_or_stolen_card: "The card was lost or stolen."
+      pending_card_payment: "A card payment is pending or stuck."
+      transaction_charged_twice: "The same transaction appears twice."
+      transfer_timing: "How long a transfer takes."
+      transfer_not_received_by_recipient: "The recipient has not received the transfer."
+      declined_transfer: "A transfer was declined or failed."
+      topping_up_by_card: "Topping up the account with a card."
+      exchange_rate: "Exchange rates or currency conversion."
+      cash_withdrawal_not_recognised: "An unrecognised cash withdrawal."
+      balance_not_updated_after_bank_transfer: "Balance did not update after a transfer."
+      pin_blocked: "The PIN is blocked or the card needs a PIN reset."
+      extra_charge_on_statement: "An unexpected or extra charge on a statement."
+      request_refund: "Asking for a refund."
+      unknown: "None of the above, or cannot tell."
+thresholds:
+  intent:
+    card_arrival: 0.7
+    card_not_working: 0.7
+    lost_or_stolen_card: 0.7
+    pending_card_payment: 0.7
+    transaction_charged_twice: 0.7
+    transfer_timing: 0.7
+    transfer_not_received_by_recipient: 0.7
+    declined_transfer: 0.7
+    topping_up_by_card: 0.7
+    exchange_rate: 0.7
+    cash_withdrawal_not_recognised: 0.7
+    balance_not_updated_after_bank_transfer: 0.7
+    pin_blocked: 0.7
+    extra_charge_on_statement: 0.7
+    request_refund: 0.7

@@ -29,19 +29,29 @@ on which model version?" This repo is the place that answers with numbers:
 
 ## Packs
 
-All six packs are **verified**: recorded against `jev-1.13.0` with
+All nine packs are **verified**: recorded against `jev-1.13.0` with
 [`jevassert`](https://github.com/dtduc-git/jevassert). Numbers are single-run
-measurements over the pack's golden cases — see each pack's `evidence.md` for
+measurements over each pack's golden cases — see each pack's `evidence.md` for
 the full report and `predictions.jsonl` for the raw recording.
+
+### Hand-written packs (CC0-1.0)
 
 | Pack | Questions | Items | Accuracy | ECE | Cost/case |
 |---|---|---|---|---|---|
 | [`citation-support`](packs/citation-support) | supports, coverage | 800 | **0.919** | 0.022 | $0.000017 |
 | [`rag-passage-relevance`](packs/rag-passage-relevance) | relevance, passage quality | 800 | **0.899** | 0.035 | $0.000018 |
+| [`moderation`](packs/moderation) | action, severity, targeted group | 1,290 | **0.872** | 0.050 | $0.000028 |
 | [`rag-answerability`](packs/rag-answerability) | answerable-from-context, missing info | 800 | **0.861** | 0.051 | $0.000020 |
 | [`entity-merge`](packs/entity-merge) | same entity?, resolution action | 840 | **0.857** | 0.017 | $0.000018 |
-| [`support-triage`](packs/support-triage) | refund intent, queue, urgency | 1,200 | **0.797** | 0.095 | $0.000023 |
-| [`moderation`](packs/moderation) | action, severity, targeted group | 1,200 | **0.791** | 0.087 | $0.000022 |
+| [`support-triage`](packs/support-triage) | refund intent, queue, urgency | 1,290 | **0.843** | 0.059 | $0.000027 |
+
+### Dataset-derived packs (upstream license, attribution in each README)
+
+| Pack | Source | Items | Accuracy | ECE | Cost/case |
+|---|---|---|---|---|---|
+| [`sms-spam`](packs/sms-spam) | SMS Spam Collection (CC BY 4.0) | 150 | **0.967** | 0.053 | $0.000014 |
+| [`boolq-yes-no`](packs/boolq-yes-no) | BoolQ (CC BY-SA 3.0) | 150 | **0.887** | 0.063 | $0.000018 |
+| [`banking-intent`](packs/banking-intent) | Banking77 (CC BY 4.0) | 150 | **0.853** | 0.077 | $0.000028 |
 
 `provisional` = cases are curated but no `jevassert` evidence exists yet;
 `verified` requires a recorded `evidence.md`. See [index.json](index.json).
@@ -98,6 +108,7 @@ Until `jevassert` ships, packs are validated structurally by CI
 
 ## License
 
-[CC0-1.0](LICENSE) for the whole repo (spec, cases, docs). Dataset-derived
-packs, if accepted, keep their upstream license and attribute it in the pack
-README.
+[CC0-1.0](LICENSE) for hand-written content (spec, cases, docs). Dataset-derived
+packs keep their upstream license — SMS Spam and Banking77 are CC BY 4.0,
+BoolQ is CC BY-SA 3.0 (share-alike) — with attribution and a reproducible
+`scripts/build-<pack>.py`. Raw source data is never committed.

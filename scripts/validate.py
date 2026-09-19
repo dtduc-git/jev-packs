@@ -102,8 +102,9 @@ def validate_pack(pdir: Path) -> dict | None:
     labels: dict[str, set[str]] = {}
     for qid, q in questions.items():
         qpath = f"{rel}/questions/{qid}"
-        if not KEY_RE.match(qid):
-            err(qpath, "question id must be snake_case")
+        if not isinstance(qid, str) or not KEY_RE.match(qid):
+            err(qpath, f"question id must be a snake_case string (YAML parsed {qid!r}; quote it if it looks like a boolean)")
+            continue
         if not isinstance(q, dict):
             err(qpath, "question must be a mapping")
             continue

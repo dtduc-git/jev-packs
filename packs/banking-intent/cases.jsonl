@@ -1,0 +1,150 @@
+{"id": "bnk-0001", "state": {"message": "Why can't I see my top up?"}, "expect": {"intent": "topping_up_by_card"}}
+{"id": "bnk-0002", "state": {"message": "While I was drunk, I goofed my PIN number and your machine ate my card. How can I get it back?"}, "expect": {"intent": "pin_blocked"}}
+{"id": "bnk-0003", "state": {"message": "Has there been any activity on my card today?"}, "expect": {"intent": "lost_or_stolen_card"}}
+{"id": "bnk-0004", "state": {"message": "Why is there a €1 charge on my statement?"}, "expect": {"intent": "extra_charge_on_statement"}}
+{"id": "bnk-0005", "state": {"message": "Balance is not up to date."}, "expect": {"intent": "balance_not_updated_after_bank_transfer"}}
+{"id": "bnk-0006", "state": {"message": "Can you tell me whats going on with my card it seems to be not working?"}, "expect": {"intent": "card_not_working"}}
+{"id": "bnk-0007", "state": {"message": "Please help me.  My card is missing."}, "expect": {"intent": "lost_or_stolen_card"}}
+{"id": "bnk-0008", "state": {"message": "Out of the blue, my card stopped working."}, "expect": {"intent": "card_not_working"}}
+{"id": "bnk-0009", "state": {"message": "My Netflix subscription says that there is an issue with my card information, but I thought everything was fine. Why would it be declined?"}, "expect": {"intent": "card_not_working"}}
+{"id": "bnk-0010", "state": {"message": "I AM MISSING CASH FROM MY BANK ACCOUNT ACCORDING TO MY APP"}, "expect": {"intent": "cash_withdrawal_not_recognised"}}
+{"id": "bnk-0011", "state": {"message": "How soon will my balance be updated to reflect my transfer?"}, "expect": {"intent": "balance_not_updated_after_bank_transfer"}}
+{"id": "bnk-0012", "state": {"message": "I tried to transfer but it was declined"}, "expect": {"intent": "declined_transfer"}}
+{"id": "bnk-0013", "state": {"message": "My card payment has been on pending forever. What is the problem? It should have gone through at some time by now."}, "expect": {"intent": "pending_card_payment"}}
+{"id": "bnk-0014", "state": {"message": "Hello, a few days ago I transferred my rent check to my landlord, however, he is saying that it has not gone though. On my end everything looks fine and I double checked the account number. Is there anything else that could be holding up the check?"}, "expect": {"intent": "transfer_not_received_by_recipient"}}
+{"id": "bnk-0015", "state": {"message": "Does this app have the same exchange rate as third parties?"}, "expect": {"intent": "exchange_rate"}}
+{"id": "bnk-0016", "state": {"message": "There is an urgent thing that I need to transfer from China. Approximately how long will it take?"}, "expect": {"intent": "transfer_timing"}}
+{"id": "bnk-0017", "state": {"message": "Looks like my card payment was duplicated after all. I went to pay at the store earlier, got declined once,second time it works. App still stays pending for one of the payments. Can you please remove one of them as it's wrong and was declined?"}, "expect": {"intent": "transaction_charged_twice"}}
+{"id": "bnk-0018", "state": {"message": "I need your help immediately.  There is a 500£ cash withdrawal that I know nothing about.  I think my account has become compromised."}, "expect": {"intent": "cash_withdrawal_not_recognised"}}
+{"id": "bnk-0019", "state": {"message": "I need to cancel a payment. Something i purchased a while ago still has not arrived and i'm not going to pay them if they won't send me what I purchased."}, "expect": {"intent": "request_refund"}}
+{"id": "bnk-0020", "state": {"message": "I have a duplicate payment on my account"}, "expect": {"intent": "transaction_charged_twice"}}
+{"id": "bnk-0021", "state": {"message": "How can I report that my card was stolen? I made a police report first."}, "expect": {"intent": "lost_or_stolen_card"}}
+{"id": "bnk-0022", "state": {"message": "I blocked my card by mistake, how do I unblock it?"}, "expect": {"intent": "pin_blocked"}}
+{"id": "bnk-0023", "state": {"message": "How long should I have to wait before I see the transfer in my account?"}, "expect": {"intent": "transfer_timing"}}
+{"id": "bnk-0024", "state": {"message": "I tried topping up using my card, but the money is gone?"}, "expect": {"intent": "topping_up_by_card"}}
+{"id": "bnk-0025", "state": {"message": "Do you have info about the card on delivery?"}, "expect": {"intent": "card_arrival"}}
+{"id": "bnk-0026", "state": {"message": "THere is some cash that is showing up on my app."}, "expect": {"intent": "cash_withdrawal_not_recognised"}}
+{"id": "bnk-0027", "state": {"message": "There is a single payment on my card which shows as pending."}, "expect": {"intent": "pending_card_payment"}}
+{"id": "bnk-0028", "state": {"message": "Is there a reason my payments are pending?"}, "expect": {"intent": "pending_card_payment"}}
+{"id": "bnk-0029", "state": {"message": "Why did my transfer get declined?"}, "expect": {"intent": "declined_transfer"}}
+{"id": "bnk-0030", "state": {"message": "For a week now, I have tried to use my card and it is still not working."}, "expect": {"intent": "card_not_working"}}
+{"id": "bnk-0031", "state": {"message": "I have exceeded all my PIN tries"}, "expect": {"intent": "pin_blocked"}}
+{"id": "bnk-0032", "state": {"message": "I need a new PIN number."}, "expect": {"intent": "pin_blocked"}}
+{"id": "bnk-0033", "state": {"message": "Can I get an update on my replacement card?"}, "expect": {"intent": "card_arrival"}}
+{"id": "bnk-0034", "state": {"message": "I just bought an item and changed my mind.  I have not received it yet how can I get refunded.  Thank you."}, "expect": {"intent": "request_refund"}}
+{"id": "bnk-0035", "state": {"message": "wheres my money receipt"}, "expect": {"intent": "transfer_not_received_by_recipient"}}
+{"id": "bnk-0036", "state": {"message": "I would like my refund for this item I bought."}, "expect": {"intent": "request_refund"}}
+{"id": "bnk-0037", "state": {"message": "Can you tell me how to top up on my card?"}, "expect": {"intent": "topping_up_by_card"}}
+{"id": "bnk-0038", "state": {"message": "I bought an item and now I want a refund."}, "expect": {"intent": "request_refund"}}
+{"id": "bnk-0039", "state": {"message": "Why is there a cash withdrawal I didn't make?"}, "expect": {"intent": "cash_withdrawal_not_recognised"}}
+{"id": "bnk-0040", "state": {"message": "I was charged more than once in a single transaction"}, "expect": {"intent": "transaction_charged_twice"}}
+{"id": "bnk-0041", "state": {"message": "Explain to me why a transfer would be declined."}, "expect": {"intent": "declined_transfer"}}
+{"id": "bnk-0042", "state": {"message": "I see I was charged $1 for a transaction."}, "expect": {"intent": "extra_charge_on_statement"}}
+{"id": "bnk-0043", "state": {"message": "How do I fix a broken card?"}, "expect": {"intent": "card_not_working"}}
+{"id": "bnk-0044", "state": {"message": "There is an unexplained $1 charge on my statement, can you please explain this to me?"}, "expect": {"intent": "extra_charge_on_statement"}}
+{"id": "bnk-0045", "state": {"message": "When I tried to top up using my card, all of the money disappeared."}, "expect": {"intent": "topping_up_by_card"}}
+{"id": "bnk-0046", "state": {"message": "My balance doesn't include my latest transfer"}, "expect": {"intent": "balance_not_updated_after_bank_transfer"}}
+{"id": "bnk-0047", "state": {"message": "Card payment is still pending, why is that the case?"}, "expect": {"intent": "pending_card_payment"}}
+{"id": "bnk-0048", "state": {"message": "Why do I have two charges It should only be one charge?"}, "expect": {"intent": "transaction_charged_twice"}}
+{"id": "bnk-0049", "state": {"message": "Why is my PIN blocked?"}, "expect": {"intent": "pin_blocked"}}
+{"id": "bnk-0050", "state": {"message": "I think somebody made an unauthorized copy of my card.  My account has a cash withdrawal for 500£ that I did not make.  Please help."}, "expect": {"intent": "cash_withdrawal_not_recognised"}}
+{"id": "bnk-0051", "state": {"message": "A pending charge of 1L appears on my statement.  Please explain as I have not made a purchase for that amount"}, "expect": {"intent": "extra_charge_on_statement"}}
+{"id": "bnk-0052", "state": {"message": "The $1.00 has still not been reverted as indicated in the previous email."}, "expect": {"intent": "extra_charge_on_statement"}}
+{"id": "bnk-0053", "state": {"message": "My recent transfer didn't go through - why not?"}, "expect": {"intent": "declined_transfer"}}
+{"id": "bnk-0054", "state": {"message": "Hi, I made a transfer from France two days ago and thought it would be here by now. Can you give me an update please?"}, "expect": {"intent": "balance_not_updated_after_bank_transfer"}}
+{"id": "bnk-0055", "state": {"message": "How long will it take to transfer from europe?"}, "expect": {"intent": "transfer_timing"}}
+{"id": "bnk-0056", "state": {"message": "How do I track the card you sent me?"}, "expect": {"intent": "card_arrival"}}
+{"id": "bnk-0057", "state": {"message": "There's an unauthorized cash withdraw"}, "expect": {"intent": "cash_withdrawal_not_recognised"}}
+{"id": "bnk-0058", "state": {"message": "What is the return policy?"}, "expect": {"intent": "request_refund"}}
+{"id": "bnk-0059", "state": {"message": "Does the exchange rate change?"}, "expect": {"intent": "exchange_rate"}}
+{"id": "bnk-0060", "state": {"message": "My card hasn't arrived."}, "expect": {"intent": "card_arrival"}}
+{"id": "bnk-0061", "state": {"message": "I have been charged twice on my statement."}, "expect": {"intent": "transaction_charged_twice"}}
+{"id": "bnk-0062", "state": {"message": "Can you tell me what the cash withdrawal is in my statement?"}, "expect": {"intent": "cash_withdrawal_not_recognised"}}
+{"id": "bnk-0063", "state": {"message": "Can my account be topped up by my friends?"}, "expect": {"intent": "topping_up_by_card"}}
+{"id": "bnk-0064", "state": {"message": "How long before transferred money shows up?"}, "expect": {"intent": "balance_not_updated_after_bank_transfer"}}
+{"id": "bnk-0065", "state": {"message": "How long does it typically take to make a transfer from a UK bank? I just made one and it hasn't shown up in my account yet."}, "expect": {"intent": "balance_not_updated_after_bank_transfer"}}
+{"id": "bnk-0066", "state": {"message": "Why am I being charged for the same thing twice?"}, "expect": {"intent": "transaction_charged_twice"}}
+{"id": "bnk-0067", "state": {"message": "I need to make a transfer from Europe, how many days does this take?"}, "expect": {"intent": "transfer_timing"}}
+{"id": "bnk-0068", "state": {"message": "Why hasn't a transaction I did to my friend arrived yet?"}, "expect": {"intent": "transfer_not_received_by_recipient"}}
+{"id": "bnk-0069", "state": {"message": "Can you tell me what the problem with my card is? It was declined at a restaurant today."}, "expect": {"intent": "card_not_working"}}
+{"id": "bnk-0070", "state": {"message": "I've lost my card. What can I do about that?"}, "expect": {"intent": "lost_or_stolen_card"}}
+{"id": "bnk-0071", "state": {"message": "How long do transfers from Europe take?"}, "expect": {"intent": "transfer_timing"}}
+{"id": "bnk-0072", "state": {"message": "I have double-checked all of my recipient details but for some reason all of my transfers keep getting declined. I have no clue as to why."}, "expect": {"intent": "declined_transfer"}}
+{"id": "bnk-0073", "state": {"message": "Please help me, its urgent. Someone has withdrawn money from my account as few hours before my wallet has been. Now i want to stop withdrawal of more money."}, "expect": {"intent": "cash_withdrawal_not_recognised"}}
+{"id": "bnk-0074", "state": {"message": "I can't see if the transfer I did a couple days ago is in my account yet. I double checked my info before sending, too. Can you check this?"}, "expect": {"intent": "transfer_not_received_by_recipient"}}
+{"id": "bnk-0075", "state": {"message": "How are exchange rates calculated at this bank?"}, "expect": {"intent": "exchange_rate"}}
+{"id": "bnk-0076", "state": {"message": "I get a \"decline\" message when doing a transfer"}, "expect": {"intent": "declined_transfer"}}
+{"id": "bnk-0077", "state": {"message": "My card doesn't seem to work."}, "expect": {"intent": "card_not_working"}}
+{"id": "bnk-0078", "state": {"message": "How long does it take for money to reach my account?"}, "expect": {"intent": "balance_not_updated_after_bank_transfer"}}
+{"id": "bnk-0079", "state": {"message": "I made a transfer from France two days ago now but there hasn't made it there yet. Do international transfers take longer?"}, "expect": {"intent": "balance_not_updated_after_bank_transfer"}}
+{"id": "bnk-0080", "state": {"message": "How long will a transaction to a friend take?"}, "expect": {"intent": "transfer_not_received_by_recipient"}}
+{"id": "bnk-0081", "state": {"message": "It says \"pending payment?\" Why is it saying this?"}, "expect": {"intent": "pending_card_payment"}}
+{"id": "bnk-0082", "state": {"message": "A transaction on my card shows as pending."}, "expect": {"intent": "pending_card_payment"}}
+{"id": "bnk-0083", "state": {"message": "Why can't the recepient of my money transaction see it?"}, "expect": {"intent": "transfer_not_received_by_recipient"}}
+{"id": "bnk-0084", "state": {"message": "It is common for an international transfer to take 2 days or longer? I made a transfer from France 2 days ago and I have not seen it yet."}, "expect": {"intent": "balance_not_updated_after_bank_transfer"}}
+{"id": "bnk-0085", "state": {"message": "I think there is a mistake.  I am being charged twice."}, "expect": {"intent": "transaction_charged_twice"}}
+{"id": "bnk-0086", "state": {"message": "How long does it take to get a refund on something I bought?"}, "expect": {"intent": "request_refund"}}
+{"id": "bnk-0087", "state": {"message": "There is a withdrawal in my account I didn't make."}, "expect": {"intent": "cash_withdrawal_not_recognised"}}
+{"id": "bnk-0088", "state": {"message": "What is the refund procedure?"}, "expect": {"intent": "request_refund"}}
+{"id": "bnk-0089", "state": {"message": "Can you tell me if I can track the card you sent me?"}, "expect": {"intent": "card_arrival"}}
+{"id": "bnk-0090", "state": {"message": "Can i top up by card?"}, "expect": {"intent": "topping_up_by_card"}}
+{"id": "bnk-0091", "state": {"message": "explain the interbank exchange rate"}, "expect": {"intent": "exchange_rate"}}
+{"id": "bnk-0092", "state": {"message": "My card appears to have never arrived?"}, "expect": {"intent": "card_arrival"}}
+{"id": "bnk-0093", "state": {"message": "I received the wrong color and size, can I return it?"}, "expect": {"intent": "request_refund"}}
+{"id": "bnk-0094", "state": {"message": "I hope you can help me. Someone has stolen my wallet and now I have noticed that they have been taking money from my account."}, "expect": {"intent": "cash_withdrawal_not_recognised"}}
+{"id": "bnk-0095", "state": {"message": "How do you decide what the exchange rates are?"}, "expect": {"intent": "exchange_rate"}}
+{"id": "bnk-0096", "state": {"message": "What do I do if my card has been lost or stolen?"}, "expect": {"intent": "lost_or_stolen_card"}}
+{"id": "bnk-0097", "state": {"message": "How do I reverse a transaction on my account?"}, "expect": {"intent": "request_refund"}}
+{"id": "bnk-0098", "state": {"message": "Why did I get declined during a transfer?"}, "expect": {"intent": "declined_transfer"}}
+{"id": "bnk-0099", "state": {"message": "My card has not been delivered yet and its been a week since I ordered it, please help"}, "expect": {"intent": "card_arrival"}}
+{"id": "bnk-0100", "state": {"message": "Hi. Please can you help me fix a double charge on my card? I'm looking at my transactions and this restaurant I went to earlier in the week has charged me twice! Please remove the additional charge for me."}, "expect": {"intent": "transaction_charged_twice"}}
+{"id": "bnk-0101", "state": {"message": "Have you sent out my card yet?"}, "expect": {"intent": "card_arrival"}}
+{"id": "bnk-0102", "state": {"message": "What is this extra fee on my statement."}, "expect": {"intent": "extra_charge_on_statement"}}
+{"id": "bnk-0103", "state": {"message": "Card payment is showing as pending"}, "expect": {"intent": "pending_card_payment"}}
+{"id": "bnk-0104", "state": {"message": "How do I check security settings on my card?"}, "expect": {"intent": "card_not_working"}}
+{"id": "bnk-0105", "state": {"message": "How long until transfers from Europe go through?"}, "expect": {"intent": "transfer_timing"}}
+{"id": "bnk-0106", "state": {"message": "I have not received the completed transaction."}, "expect": {"intent": "transfer_not_received_by_recipient"}}
+{"id": "bnk-0107", "state": {"message": "In the US, how long is the wait for a transfer?"}, "expect": {"intent": "transfer_timing"}}
+{"id": "bnk-0108", "state": {"message": "I have a duplicate payment on my card."}, "expect": {"intent": "transaction_charged_twice"}}
+{"id": "bnk-0109", "state": {"message": "Can my account be topped-up by friends of mine."}, "expect": {"intent": "topping_up_by_card"}}
+{"id": "bnk-0110", "state": {"message": "Can my friends top up my account?"}, "expect": {"intent": "topping_up_by_card"}}
+{"id": "bnk-0111", "state": {"message": "How long does it take for a transfer to show up in my account?"}, "expect": {"intent": "transfer_timing"}}
+{"id": "bnk-0112", "state": {"message": "Can I have a refund for one of your products?"}, "expect": {"intent": "request_refund"}}
+{"id": "bnk-0113", "state": {"message": "How are your exchange rates calculated?"}, "expect": {"intent": "exchange_rate"}}
+{"id": "bnk-0114", "state": {"message": "What do I do if my card is stolen?"}, "expect": {"intent": "lost_or_stolen_card"}}
+{"id": "bnk-0115", "state": {"message": "How does someone else top up my account"}, "expect": {"intent": "topping_up_by_card"}}
+{"id": "bnk-0116", "state": {"message": "What is the present state of the exchange rate?"}, "expect": {"intent": "exchange_rate"}}
+{"id": "bnk-0117", "state": {"message": "What do you think of the exchange rate?"}, "expect": {"intent": "exchange_rate"}}
+{"id": "bnk-0118", "state": {"message": "How can I the person see my money transaction?"}, "expect": {"intent": "transfer_not_received_by_recipient"}}
+{"id": "bnk-0119", "state": {"message": "What should I do if I think my card was stolen?"}, "expect": {"intent": "lost_or_stolen_card"}}
+{"id": "bnk-0120", "state": {"message": "I need a quick transfer from China.  How long would that take?"}, "expect": {"intent": "transfer_timing"}}
+{"id": "bnk-0121", "state": {"message": "It appears my transfer was declined."}, "expect": {"intent": "declined_transfer"}}
+{"id": "bnk-0122", "state": {"message": "Hello I made a bank account transfer from the UK. The transfer was a couple hours ago, nothing has shown up yet.  Can you check to see if everything okay. Please."}, "expect": {"intent": "balance_not_updated_after_bank_transfer"}}
+{"id": "bnk-0123", "state": {"message": "When will the transaction be done?"}, "expect": {"intent": "transfer_not_received_by_recipient"}}
+{"id": "bnk-0124", "state": {"message": "When is a payment I made with my card going to clear>"}, "expect": {"intent": "pending_card_payment"}}
+{"id": "bnk-0125", "state": {"message": "There is a  €1 fee on my account I didn't authorize"}, "expect": {"intent": "extra_charge_on_statement"}}
+{"id": "bnk-0126", "state": {"message": "Why do you keep declining my transfers? it's always been working really well so far but when I tried to buy something just now the card got declined . I tried couple of times already  but same thing is happening ."}, "expect": {"intent": "declined_transfer"}}
+{"id": "bnk-0127", "state": {"message": "I mistook my pin and now I am locked.  Can you unlock me?"}, "expect": {"intent": "pin_blocked"}}
+{"id": "bnk-0128", "state": {"message": "I am locked out from entering my pin."}, "expect": {"intent": "pin_blocked"}}
+{"id": "bnk-0129", "state": {"message": "I have used all of my PIN tries. What should I do now?"}, "expect": {"intent": "pin_blocked"}}
+{"id": "bnk-0130", "state": {"message": "Why is my card payment pending?"}, "expect": {"intent": "pending_card_payment"}}
+{"id": "bnk-0131", "state": {"message": "Today I used my card at a restaurant and it was declined. Why?"}, "expect": {"intent": "card_not_working"}}
+{"id": "bnk-0132", "state": {"message": "I can't input my pin again."}, "expect": {"intent": "pin_blocked"}}
+{"id": "bnk-0133", "state": {"message": "Someone took my card without permission"}, "expect": {"intent": "lost_or_stolen_card"}}
+{"id": "bnk-0134", "state": {"message": "help, lost my card"}, "expect": {"intent": "lost_or_stolen_card"}}
+{"id": "bnk-0135", "state": {"message": "What is this extra €1 fee about?"}, "expect": {"intent": "extra_charge_on_statement"}}
+{"id": "bnk-0136", "state": {"message": "WHAT IS THE REASON FOR THAT"}, "expect": {"intent": "card_not_working"}}
+{"id": "bnk-0137", "state": {"message": "My transfer hasn't arrived"}, "expect": {"intent": "transfer_not_received_by_recipient"}}
+{"id": "bnk-0138", "state": {"message": "My transfer was declined, why is that?"}, "expect": {"intent": "declined_transfer"}}
+{"id": "bnk-0139", "state": {"message": "Is the exchange rate current?"}, "expect": {"intent": "exchange_rate"}}
+{"id": "bnk-0140", "state": {"message": "I lost my card n need a new one."}, "expect": {"intent": "lost_or_stolen_card"}}
+{"id": "bnk-0141", "state": {"message": "I don't have my card after 1 week. What are my next steps?"}, "expect": {"intent": "card_arrival"}}
+{"id": "bnk-0142", "state": {"message": "What should I do if I have used all of my PIN tries?"}, "expect": {"intent": "pin_blocked"}}
+{"id": "bnk-0143", "state": {"message": "How can I transfer money using my credit card?"}, "expect": {"intent": "topping_up_by_card"}}
+{"id": "bnk-0144", "state": {"message": "When will I get my new card?"}, "expect": {"intent": "card_arrival"}}
+{"id": "bnk-0145", "state": {"message": "What is the extra €1 on my statement for?"}, "expect": {"intent": "extra_charge_on_statement"}}
+{"id": "bnk-0146", "state": {"message": "Is the 1 pound charge I can see an error or an incorrect entry?"}, "expect": {"intent": "extra_charge_on_statement"}}
+{"id": "bnk-0147", "state": {"message": "Hello. I checked my transactions and saw I was double charged for a restaurant visit. Can I get my money back?"}, "expect": {"intent": "transaction_charged_twice"}}
+{"id": "bnk-0148", "state": {"message": "What is the formula for your exchange rate?"}, "expect": {"intent": "exchange_rate"}}
+{"id": "bnk-0149", "state": {"message": "What does it mean if it says that my payment is pending?"}, "expect": {"intent": "pending_card_payment"}}
+{"id": "bnk-0150", "state": {"message": "Its been 3 days, How long will my transfer take to get to my wallet?"}, "expect": {"intent": "transfer_timing"}}

@@ -398,3 +398,33 @@
 {"id": "st-0398", "state": {"message": "[transcript truncated at 0:00]"}, "expect": {"refund_request": false, "queue": "unknown", "urgency": "unknown"}}
 {"id": "st-0399", "state": {"message": "[unsupported characters: \ufffd\ufffd\ufffd\ufffd]"}, "expect": {"refund_request": false, "queue": "unknown", "urgency": "unknown"}}
 {"id": "st-0400", "state": {"message": "[empty]"}, "expect": {"refund_request": false, "queue": "unknown", "urgency": "unknown"}}
+{"id": "st-0401", "state": {"message": "URGENT!!! The export is slow today."}, "expect": {"refund_request": false, "queue": "technical", "urgency": "normal"}}
+{"id": "st-0402", "state": {"message": "I might cancel if prices rise again."}, "expect": {"refund_request": false, "queue": "billing", "urgency": "normal"}}
+{"id": "st-0403", "state": {"message": "Someone is using our account and we cannot log in."}, "expect": {"refund_request": false, "queue": "account", "urgency": "critical"}}
+{"id": "st-0404", "state": {"message": "Our trial ends tomorrow and we have not decided yet."}, "expect": {"refund_request": false, "queue": "account", "urgency": "normal"}}
+{"id": "st-0405", "state": {"message": "Invoice 44 is overdue because I forgot. Will you cut service?"}, "expect": {"refund_request": false, "queue": "billing", "urgency": "normal"}}
+{"id": "st-0406", "state": {"message": "The dashboard is slow but works."}, "expect": {"refund_request": false, "queue": "technical", "urgency": "normal"}}
+{"id": "st-0407", "state": {"message": "We are being robbed blind by these duplicate charges."}, "expect": {"refund_request": false, "queue": "billing", "urgency": "high"}}
+{"id": "st-0408", "state": {"message": "Please refund the annual plan whenever you get to it, no rush."}, "expect": {"refund_request": true, "queue": "billing", "urgency": "high"}}
+{"id": "st-0409", "state": {"message": "Our office internet is down; can you check if your service is up?"}, "expect": {"refund_request": false, "queue": "technical", "urgency": "normal"}}
+{"id": "st-0410", "state": {"message": "I was charged twice again. This is the last straw."}, "expect": {"refund_request": false, "queue": "billing", "urgency": "high"}}
+{"id": "st-0411", "state": {"message": "Can we extend the deadline for the discount? It expires tonight."}, "expect": {"refund_request": false, "queue": "billing", "urgency": "normal"}}
+{"id": "st-0412", "state": {"message": "Webhooks have been missing since the migration."}, "expect": {"refund_request": false, "queue": "technical", "urgency": "critical"}}
+{"id": "st-0413", "state": {"message": "Our backup export is corrupted and we need it for an audit tomorrow."}, "expect": {"refund_request": false, "queue": "technical", "urgency": "critical"}}
+{"id": "st-0414", "state": {"message": "Lawyer here: your service leaked our data. Expect a letter."}, "expect": {"refund_request": false, "queue": "other", "urgency": "critical"}}
+{"id": "st-0415", "state": {"message": "Two-factor codes never arrive and we cannot log in."}, "expect": {"refund_request": false, "queue": "account", "urgency": "high"}}
+{"id": "st-0416", "state": {"message": "I cannot find my order number. Not urgent."}, "expect": {"refund_request": false, "queue": "shipping", "urgency": "normal"}}
+{"id": "st-0417", "state": {"message": "Some of our scheduled reports failed silently last night."}, "expect": {"refund_request": false, "queue": "technical", "urgency": "high"}}
+{"id": "st-0418", "state": {"message": "The payment for our renewal failed. Will service stop?"}, "expect": {"refund_request": false, "queue": "billing", "urgency": "high"}}
+{"id": "st-0419", "state": {"message": "Please close my account. This is not urgent."}, "expect": {"refund_request": false, "queue": "account", "urgency": "normal"}}
+{"id": "st-0420", "state": {"message": "Our entire team is locked out after the SSO change."}, "expect": {"refund_request": false, "queue": "account", "urgency": "critical"}}
+{"id": "st-0421", "state": {"message": "Mobile push notifications arrive 10 minutes late."}, "expect": {"refund_request": false, "queue": "technical", "urgency": "normal"}}
+{"id": "st-0422", "state": {"message": "A customer's data is visible in another tenant's export."}, "expect": {"refund_request": false, "queue": "technical", "urgency": "critical"}}
+{"id": "st-0423", "state": {"message": "Can you resend the activation email? No hurry."}, "expect": {"refund_request": false, "queue": "account", "urgency": "low"}}
+{"id": "st-0424", "state": {"message": "We see ghost charges appearing every hour."}, "expect": {"refund_request": false, "queue": "billing", "urgency": "high"}}
+{"id": "st-0425", "state": {"message": "Production is degraded to 50 percent capacity."}, "expect": {"refund_request": false, "queue": "technical", "urgency": "critical"}}
+{"id": "st-0426", "state": {"message": "I forgot my password and the reset is slow."}, "expect": {"refund_request": false, "queue": "account", "urgency": "high"}}
+{"id": "st-0427", "state": {"message": "Your status page says resolved but we still see errors."}, "expect": {"refund_request": false, "queue": "technical", "urgency": "critical"}}
+{"id": "st-0428", "state": {"message": "Requesting a copy of the security whitepaper."}, "expect": {"refund_request": false, "queue": "other", "urgency": "low"}}
+{"id": "st-0429", "state": {"message": "Please refund our deposit. We changed vendors."}, "expect": {"refund_request": true, "queue": "billing", "urgency": "high"}}
+{"id": "st-0430", "state": {"message": "The app logs us out every hour and we lose unsaved drafts."}, "expect": {"refund_request": false, "queue": "technical", "urgency": "critical"}}

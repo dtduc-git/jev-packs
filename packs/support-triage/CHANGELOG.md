@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.5.0 — 2026-09-19
+
+- `urgency` criteria rewritten as an ordered decision rule (ongoing
+  outage/data loss/security incident → critical; blocked/access lost/money at
+  stake → high, explicit refunds count; standard → normal; feedback/presales →
+  low). Added 30 boundary cases (tone-only "urgent", veiled impact, active
+  billing errors, live security incidents); evidence re-recorded.
+
 ## 0.4.0 — 2026-09-19
 
 - Doubled from 200 to 400 cases; evidence re-recorded.

@@ -398,3 +398,33 @@
 {"id": "mod-0398", "state": {"text": "\u0000\u0000"}, "expect": {"action": "unknown", "severity": "unknown", "targeted_group": false}}
 {"id": "mod-0399", "state": {"text": "[file: scan.pdf]"}, "expect": {"action": "unknown", "severity": "unknown", "targeted_group": false}}
 {"id": "mod-0400", "state": {"text": "[caption removed by platform]"}, "expect": {"action": "unknown", "severity": "unknown", "targeted_group": false}}
+{"id": "mod-0401", "state": {"text": "Thanks for nothing, genius."}, "expect": {"action": "review", "severity": "low", "targeted_group": false}}
+{"id": "mod-0402", "state": {"text": "You are an idiot, plain and simple."}, "expect": {"action": "review", "severity": "medium", "targeted_group": false}}
+{"id": "mod-0403", "state": {"text": "Your kind are all idiots."}, "expect": {"action": "review", "severity": "medium", "targeted_group": false}}
+{"id": "mod-0404", "state": {"text": "I hope you step on a lego."}, "expect": {"action": "review", "severity": "low", "targeted_group": false}}
+{"id": "mod-0405", "state": {"text": "I hope you break your leg."}, "expect": {"action": "remove", "severity": "medium", "targeted_group": false}}
+{"id": "mod-0406", "state": {"text": "I will make you regret this."}, "expect": {"action": "review", "severity": "medium", "targeted_group": false}}
+{"id": "mod-0407", "state": {"text": "I know people who can make problems disappear."}, "expect": {"action": "review", "severity": "high", "targeted_group": false}}
+{"id": "mod-0408", "state": {"text": "Nobody would notice if you disappeared."}, "expect": {"action": "remove", "severity": "medium", "targeted_group": false}}
+{"id": "mod-0409", "state": {"text": "Women drivers, am I right?"}, "expect": {"action": "remove", "severity": "medium", "targeted_group": true}}
+{"id": "mod-0410", "state": {"text": "That is such a female thing to say."}, "expect": {"action": "remove", "severity": "medium", "targeted_group": true}}
+{"id": "mod-0411", "state": {"text": "Old people and computers, classic."}, "expect": {"action": "remove", "severity": "medium", "targeted_group": true}}
+{"id": "mod-0412", "state": {"text": "He is clearly mentally unwell."}, "expect": {"action": "review", "severity": "low", "targeted_group": false}}
+{"id": "mod-0413", "state": {"text": "Kill yourself, loser."}, "expect": {"action": "remove", "severity": "high", "targeted_group": false}}
+{"id": "mod-0414", "state": {"text": "I will kill you."}, "expect": {"action": "remove", "severity": "high", "targeted_group": false}}
+{"id": "mod-0415", "state": {"text": "You should drink bleach."}, "expect": {"action": "remove", "severity": "high", "targeted_group": false}}
+{"id": "mod-0416", "state": {"text": "Nobody cares about your disability."}, "expect": {"action": "remove", "severity": "medium", "targeted_group": true}}
+{"id": "mod-0417", "state": {"text": "This is why women should stay home."}, "expect": {"action": "remove", "severity": "medium", "targeted_group": true}}
+{"id": "mod-0418", "state": {"text": "Immigrants cannot even speak properly."}, "expect": {"action": "remove", "severity": "high", "targeted_group": true}}
+{"id": "mod-0419", "state": {"text": "Your religion is a mental illness."}, "expect": {"action": "remove", "severity": "high", "targeted_group": true}}
+{"id": "mod-0420", "state": {"text": "Stop being so autistic about this."}, "expect": {"action": "remove", "severity": "medium", "targeted_group": true}}
+{"id": "mod-0421", "state": {"text": "You are crazy, get help."}, "expect": {"action": "review", "severity": "low", "targeted_group": false}}
+{"id": "mod-0422", "state": {"text": "I will report you to your employer."}, "expect": {"action": "review", "severity": "low", "targeted_group": false}}
+{"id": "mod-0423", "state": {"text": "Everyone at your company deserves to lose their jobs."}, "expect": {"action": "review", "severity": "high", "targeted_group": false}}
+{"id": "mod-0424", "state": {"text": "Burn in hell."}, "expect": {"action": "review", "severity": "medium", "targeted_group": false}}
+{"id": "mod-0425", "state": {"text": "I will send people to your house."}, "expect": {"action": "remove", "severity": "high", "targeted_group": false}}
+{"id": "mod-0426", "state": {"text": "The only good journalist is a fired journalist."}, "expect": {"action": "review", "severity": "medium", "targeted_group": false}}
+{"id": "mod-0427", "state": {"text": "Hang the politicians."}, "expect": {"action": "remove", "severity": "high", "targeted_group": false}}
+{"id": "mod-0428", "state": {"text": "Send his private photos everywhere."}, "expect": {"action": "remove", "severity": "high", "targeted_group": false}}
+{"id": "mod-0429", "state": {"text": "I will make your daughter pay for this."}, "expect": {"action": "remove", "severity": "high", "targeted_group": false}}
+{"id": "mod-0430", "state": {"text": "You are a waste of a human being."}, "expect": {"action": "review", "severity": "medium", "targeted_group": false}}

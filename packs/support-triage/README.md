@@ -19,11 +19,11 @@ refund requests and rank urgency.
 - `queue` follows the fix, not the symptom: anything that ends in money moving
   back goes to `billing` (including returns and fee reversals); delivery and
   address issues go to `shipping`.
-- `urgency` follows the pack.yaml `level_descriptions` anchors literally:
-  `critical` = ongoing outage or data loss; `high` = work blocked, money at
-  stake or access lost; `normal` = standard request without impact; `low` =
-  feedback, pre-sales, cosmetic. The sender's own tone does not raise urgency
-  by itself.
+- `urgency` follows the ordered anchors in `level_descriptions`: `critical` =
+  ongoing outage, active data loss, or a live security incident; `high` = work
+  blocked, access lost, or money at stake (an explicit refund request counts);
+  `normal` = standard request without impact; `low` = feedback, pre-sales,
+  cosmetic. Tone alone never sets urgency.
 - Gold cases are labeled from `message` alone, with no ticket history.
 
 ## Provenance
@@ -39,7 +39,7 @@ to review.
 
 ## Evidence
 
-Recorded 2026-09-19 against `jev-1.13.0`: accuracy **0.797**, ECE 0.095,
-$0.000023/case. `urgency` is the weakest question (0.56) — the ordinal scale is
-where the hard cases live. Full report: [evidence.md](evidence.md); raw
-recording: [predictions.jsonl](predictions.jsonl).
+Recorded 2026-09-19 against `jev-1.13.0`: accuracy **0.843**, ECE 0.059,
+$0.000027/case. The 0.5.0 ordered-rule rewrite lifted `urgency` from 0.56 to
+0.69. Full report: [evidence.md](evidence.md); raw recording:
+[predictions.jsonl](predictions.jsonl).

@@ -1,0 +1,17 @@
+spec: 0
+id: boolq-yes-no
+version: 0.1.0
+license: CC-BY-SA-3.0
+tested: jev-1.13.0
+description: >-
+  Reading comprehension: does the passage answer the question with yes?
+  Non-goals: extracting the answer span, judging answer quality.
+state:
+  description: One natural question and one Wikipedia passage.
+  fields: [question, passage]
+questions:
+  answer_yes:
+    type: noul
+    instructions: "According to `passage`, is the answer to `question` yes?"
+thresholds:
+  answer_yes: {true: 0.85, false: 0.85}

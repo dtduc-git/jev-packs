@@ -31,3 +31,12 @@ Repo-level changes; per-pack history lives in each pack's `CHANGELOG.md`.
   climbed to 0.919; triage urgency (0.56), moderation action (0.68) and
   answerability missing-info (0.78) are now the clearest improvement targets.
   Statistical margin at this size: CI95 ≈ ±5pp per question.
+- **Dataset-derived packs**: `sms-spam` (SMS Spam Collection, CC BY 4.0;
+  0.967), `boolq-yes-no` (BoolQ, CC BY-SA 3.0; 0.887) and `banking-intent`
+  (Banking77, CC BY 4.0; 0.853) — 150 cases each, built by reproducible
+  `scripts/build-*.py`, raw data never committed.
+- **Ordered-rule criteria rewrite (v0.5.0)** for `support-triage` urgency and
+  `moderation` action/severity, plus 30 boundary cases each: triage accuracy
+  0.797 → 0.843 (`urgency` 0.56 → 0.69), moderation 0.791 → 0.872 (`action`
+  0.68 → 0.93). Criteria wording moved the numbers more than 2,420 extra
+  cases did.
