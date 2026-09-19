@@ -2,6 +2,24 @@
 
 Repo-level changes; per-pack history lives in each pack's `CHANGELOG.md`.
 
+## 2026-09-19 (disagreement harvest)
+
+- `scripts/disagreements.py` — harvest case-level disagreements between two
+  recorded backends into `review/<a>-vs-<b>/` (three buckets: backend-A-only
+  correct, backend-B-only correct, both-wrong) with McNemar p per pack.
+- First harvest (Jev 1.13.0 vs Claude Sonnet 5, 6,427 items): 458
+  disagreements, 33 both-wrong. Full analysis: `review/FINDINGS.md`.
+- **`citation-support` v0.5.0**: the harvest showed all 22 both-wrong cases
+  were contradictions double-missed because `coverage`'s polarity-blind rule
+  lived only in the README. The instruction now states it. Verified: both-wrong
+  22 → 0, Jev 0.919 → 0.979, Sonnet 0.910 → 0.941, and the pack now separates
+  the models (McNemar p < 0.001).
+- `refresh.py` now also syncs `index.json` `version` with `pack.yaml` when a
+  refresh follows a pack bump.
+- Remaining clusters (moderation severity, answerability missing_info,
+  triage queue/urgency, rag-passage anchors) are proposed in
+  `review/FINDINGS.md`, not yet applied.
+
 ## 2026-09-19 (benchmark)
 
 - **`results/` introduced** — independent benchmark columns recorded on the

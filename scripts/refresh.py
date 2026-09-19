@@ -24,6 +24,8 @@ import json
 import re
 import subprocess
 import sys
+
+import yaml
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -185,7 +187,9 @@ def main() -> int:
     index = json.loads(INDEX.read_text(encoding="utf-8"))
     entries = {entry["id"]: entry for entry in index["packs"]}
     for pack_id in refreshed:
+        pack_meta = yaml.safe_load((PACKS_DIR / pack_id / "pack.yaml").read_text())
         entries[pack_id]["status"] = "verified"
+        entries[pack_id]["version"] = pack_meta["version"]
         entries[pack_id]["evidence"] = f"packs/{pack_id}/evidence.md"
     index["updated"] = dt.date.today().isoformat()
     INDEX.write_text(json.dumps(index, indent=2) + "\n", encoding="utf-8")

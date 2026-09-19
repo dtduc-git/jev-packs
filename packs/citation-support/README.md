@@ -39,6 +39,6 @@ synthetic.
 
 ## Evidence
 
-Recorded 2026-09-19 against `jev-1.13.0`: accuracy **0.919**, ECE 0.022,
-$0.000017/case. Full report: [evidence.md](evidence.md); raw recording:
-[predictions.jsonl](predictions.jsonl).
+Recorded 2026-09-19 against `jev-1.13.0` (v0.5.0 criteria): accuracy **0.979**,
+ECE 0.034, $0.000019/case. Full report: [evidence.md](evidence.md); raw
+recording: [predictions.jsonl](predictions.jsonl).

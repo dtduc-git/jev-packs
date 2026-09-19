@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.5.0 — 2026-09-19
+
+- `coverage` instruction and level descriptions now state the polarity-blind
+  rule explicitly ("a quote that states the opposite of a claim detail still
+  addresses that detail"). Motivation: a Jev-vs-Claude disagreement harvest
+  found all 22 contradiction cases double-missed by both models — they read
+  `coverage` as support-coverage. Labels unchanged; the semantics was always
+  this, the prompt now says it.
+
 ## 0.4.0 — 2026-09-19
 
 - Doubled from 200 to 400 cases; evidence re-recorded.

@@ -84,6 +84,26 @@ key, or a TypeSafe key. The exact command is in each `backend.json` (fields
 4. Open a PR. CI validates structure and hashes; a maintainer spot-checks the
    recording before merging.
 
+## Harvesting disagreements
+
+Two credible backends disagreeing is the cheapest source of boundary cases:
+
+```sh
+uv run --no-project --with pyyaml --with '../jevassert[adapter]' \
+  python scripts/disagreements.py --a jev-1.13.0 --b claude-sonnet-5
+```
+
+Writes `review/<a>-vs-<b>/<pack>.jsonl` — every disagreeing item with both
+answers, probabilities and the state — plus a `summary.json` with McNemar p
+per pack, and prints the table. Items fall into three buckets: A-only correct,
+B-only correct, both-wrong. The **both-wrong** pile is reviewed first: each
+case is either a gold error, a criteria ambiguity, or a genuinely ambiguous
+case that should become `unknown`. Fixes that change criteria or labels bump
+the pack version and invalidate that pack's rows; re-record the affected
+backends and re-run the harvest — success is both-wrong → 0 and the pack
+separating models on merit. The first harvest and its outcomes are written up
+in `review/FINDINGS.md`.
+
 ## Caveats
 
 - Single run per (backend, pack), at the provider's default sampling settings.

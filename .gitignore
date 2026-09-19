@@ -2,3 +2,6 @@
 __pycache__/
 *.pyc
 .venv/
+
+# disagreement harvest dumps (regenerate with scripts/disagreements.py)
+review/**/*.jsonl

@@ -1,0 +1,112 @@
+{
+  "a": "jev-1.13.0",
+  "b": "claude-sonnet-5",
+  "packs": {
+    "banking-intent": {
+      "n_items": 150,
+      "accuracy_a": 0.84,
+      "accuracy_b": 0.8466666666666667,
+      "a_only": 6,
+      "b_only": 7,
+      "both_wrong": 2,
+      "missing_b": 0,
+      "mcnemar_p": 1.0,
+      "disagreement_file": "review/jev-1.13.0-vs-claude-sonnet-5/banking-intent.jsonl"
+    },
+    "boolq-yes-no": {
+      "n_items": 150,
+      "accuracy_a": 0.8866666666666667,
+      "accuracy_b": 0.8933333333333333,
+      "a_only": 4,
+      "b_only": 5,
+      "both_wrong": 0,
+      "missing_b": 0,
+      "mcnemar_p": 1.0,
+      "disagreement_file": "review/jev-1.13.0-vs-claude-sonnet-5/boolq-yes-no.jsonl"
+    },
+    "citation-support": {
+      "n_items": 800,
+      "accuracy_a": 0.97875,
+      "accuracy_b": 0.94125,
+      "a_only": 42,
+      "b_only": 12,
+      "both_wrong": 0,
+      "missing_b": 0,
+      "mcnemar_p": 5.2094472007935266e-05,
+      "disagreement_file": "review/jev-1.13.0-vs-claude-sonnet-5/citation-support.jsonl"
+    },
+    "entity-merge": {
+      "n_items": 840,
+      "accuracy_a": 0.8571428571428571,
+      "accuracy_b": 0.8607142857142858,
+      "a_only": 23,
+      "b_only": 26,
+      "both_wrong": 0,
+      "missing_b": 0,
+      "mcnemar_p": 0.7754496546815659,
+      "disagreement_file": "review/jev-1.13.0-vs-claude-sonnet-5/entity-merge.jsonl"
+    },
+    "moderation": {
+      "n_items": 1347,
+      "accuracy_a": 0.9057164068299925,
+      "accuracy_b": 0.8990348923533779,
+      "a_only": 50,
+      "b_only": 41,
+      "both_wrong": 12,
+      "missing_b": 3,
+      "mcnemar_p": 0.4018127960698799,
+      "disagreement_file": "review/jev-1.13.0-vs-claude-sonnet-5/moderation.jsonl"
+    },
+    "rag-answerability": {
+      "n_items": 840,
+      "accuracy_a": 0.9083333333333333,
+      "accuracy_b": 0.9083333333333333,
+      "a_only": 29,
+      "b_only": 29,
+      "both_wrong": 11,
+      "missing_b": 0,
+      "mcnemar_p": 1.0,
+      "disagreement_file": "review/jev-1.13.0-vs-claude-sonnet-5/rag-answerability.jsonl"
+    },
+    "rag-passage-relevance": {
+      "n_items": 800,
+      "accuracy_a": 0.89875,
+      "accuracy_b": 0.8925,
+      "a_only": 32,
+      "b_only": 27,
+      "both_wrong": 2,
+      "missing_b": 0,
+      "mcnemar_p": 0.6029232012571503,
+      "disagreement_file": "review/jev-1.13.0-vs-claude-sonnet-5/rag-passage-relevance.jsonl"
+    },
+    "sms-spam": {
+      "n_items": 150,
+      "accuracy_a": 0.9533333333333334,
+      "accuracy_b": 0.9466666666666667,
+      "a_only": 5,
+      "b_only": 4,
+      "both_wrong": 0,
+      "missing_b": 0,
+      "mcnemar_p": 1.0,
+      "disagreement_file": "review/jev-1.13.0-vs-claude-sonnet-5/sms-spam.jsonl"
+    },
+    "support-triage": {
+      "n_items": 1350,
+      "accuracy_a": 0.8874074074074074,
+      "accuracy_b": 0.9051851851851852,
+      "a_only": 30,
+      "b_only": 54,
+      "both_wrong": 6,
+      "missing_b": 0,
+      "mcnemar_p": 0.011634454119925829,
+      "disagreement_file": "review/jev-1.13.0-vs-claude-sonnet-5/support-triage.jsonl"
+    }
+  },
+  "totals": {
+    "items": 6427,
+    "a_only": 221,
+    "b_only": 205,
+    "both_wrong": 33,
+    "missing_b": 3
+  }
+}

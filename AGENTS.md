@@ -66,9 +66,15 @@ alternative backends, published as `docs/index.html` (Jev Bench).
 - Release `jevassert` 0.2.0 (adapter backends + prices), then the verify-results
   CI job can go green (it pins 0.2.0).
 - Benchmark matrix complete: 3 backends × 9 packs (Jev 1.13.0, Claude Sonnet 5,
-  qwen2.5:7b local). Result: Jev ≈ Sonnet 5 accuracy, better calibration on
-  8/9, ~250× cheaper; local 7B far behind. One deterministic case error on
-  `moderation` (mod-0279) is recorded honestly.
+  qwen2.5:7b local). Result: tie on 8/9 packs; citation-support v0.5.0 criteria
+  fix separated the models (Jev 0.979 vs 0.941, p<0.001) after a disagreement
+  harvest; Jev better calibrated on 8/9 and ~250× cheaper; local 7B far behind.
+  One deterministic case error on `moderation` (mod-0279) is recorded honestly.
+- **Disagreement flywheel**: `scripts/disagreements.py --a <slug> --b <slug>`
+  writes `review/<a>-vs-<b>/`; analysis in `review/FINDINGS.md`. Remaining
+  clusters to fix in order: moderation severity, answerability missing_info,
+  triage queue/urgency, rag-passage quality anchors. Each fix = criteria +
+  relabel + re-record both backends (~$1 Sonnet, ~$0.02 Jev).
 - Next: commit + push both repos, enable GitHub Pages (master `/docs`), publish
   the matrix. If more budget appears: Opus 5 / Fable 5.1 columns; Bedrock access
   is accepted at the agreement level but still account-gated.

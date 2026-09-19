@@ -28,12 +28,15 @@ committed, every number reproducible offline.
 - Backends so far: `jev-1.13.0` (TypeSafe API), `claude-sonnet-5` (Anthropic
   API) and `qwen2.5-7b-ollama` (local open weights), all through the same
   questions, cases and recording protocol.
-- First full matrix (2,990 cases): **Jev and Sonnet 5 are a statistical tie on
-  accuracy across all nine packs** (deltas ≤ 0.018, inside overlapping 95%
-  CIs), while Jev is **better calibrated on 8/9 packs** (e.g. citation-support
-  ECE 0.022 vs 0.081) and costs **~250× less per case** ($0.000014–0.000031 vs
-  ~$0.0036). The local 7B trails far behind (0.533–0.813). Numbers, recordings
-  and per-pack reports live in [`results/`](results/).
+- First full matrix (2,990 cases): Jev and Sonnet 5 tie on accuracy on 8/9
+  packs (deltas ≤ 0.018, overlapping 95% CIs). A disagreement harvest then
+  exposed one ambiguous criterion; after the v0.5.0 fix `citation-support`
+  separates the models — Jev **0.979** vs Sonnet 0.941 (McNemar p < 0.001).
+  Overall Jev is **better calibrated on 8/9 packs** (e.g. citation-support ECE
+  0.034 vs 0.057) at **~250× lower cost** ($0.000014–0.000031 vs ~$0.0036 per
+  case). The local 7B trails far behind (0.533–0.813). Numbers, recordings and
+  per-pack reports live in [`results/`](results/); the criteria-gap analysis
+  that produced the fix is in [review/FINDINGS.md](review/FINDINGS.md).
 - Rules, caveats and how to add a backend: [METHODOLOGY.md](METHODOLOGY.md).
 
 ## Why a registry
@@ -61,7 +64,7 @@ the full report and `predictions.jsonl` for the raw recording.
 
 | Pack | Questions | Items | Accuracy | ECE | Cost/case |
 |---|---|---|---|---|---|
-| [`citation-support`](packs/citation-support) | supports, coverage | 800 | **0.919** | 0.022 | $0.000017 |
+| [`citation-support`](packs/citation-support) | supports, coverage | 800 | **0.979** | 0.034 | $0.000019 |
 | [`rag-answerability`](packs/rag-answerability) | answerable-from-context, missing info | 840 | **0.908** | 0.021 | $0.000025 |
 | [`moderation`](packs/moderation) | action, severity, targeted group | 1,350 | **0.906** | 0.027 | $0.000031 |
 | [`rag-passage-relevance`](packs/rag-passage-relevance) | relevance, passage quality | 800 | **0.899** | 0.035 | $0.000018 |

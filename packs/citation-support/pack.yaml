@@ -1,6 +1,6 @@
 spec: 0
 id: citation-support
-version: 0.4.0
+version: 0.5.0
 license: CC0-1.0
 tested: jev-1.13.0
 description: >-
@@ -16,12 +16,12 @@ questions:
     instructions: "Does `quote` support `claim` as written, without overreach or contradiction?"
   coverage:
     type: score
-    instructions: "How much of `claim`'s key content appears in `quote`?"
+    instructions: "How much of `claim`'s key content does `quote` address? Addressing is polarity-blind: a quote that states the opposite of a claim detail still addresses that detail; only details that the quote never mentions at all are absent."
     levels: [none, partial, full, unknown]
     level_descriptions:
-      none: "None of the claim's key details appear in the quote."
-      partial: "Some key details appear; others are absent."
-      full: "Every key detail (numbers, names, direction) appears."
+      none: "No key detail of the claim is addressed anywhere in the quote."
+      partial: "Some key details are addressed; at least one is never mentioned."
+      full: "Every key detail (numbers, names, direction) is addressed, even when the quote contradicts it."
       unknown: "Quote is empty, garbled or redacted beyond use."
 thresholds:
   supports: {true: 0.85, false: 0.85}
