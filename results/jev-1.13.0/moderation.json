@@ -6,88 +6,88 @@
   "n_items": 1350,
   "case_errors": 0,
   "missing_items": 0,
-  "accuracy": 0.9059259259259259,
+  "accuracy": 0.917037037037037,
   "accuracy_ci": [
-    0.8896296296296297,
-    0.9207407407407407
+    0.9014814814814814,
+    0.9325925925925926
   ],
-  "ece": 0.02737777777777778,
+  "ece": 0.012503703703703706,
   "ece_ci": [
-    0.01849629629629631,
-    0.042785185185185176
+    0.008355555555555528,
+    0.02935555555555555
   ],
   "suggestion": null,
-  "mean_decision_prob": 0.9272592592592592,
-  "cost_per_case_usd": 3.073709333333334e-05,
-  "total_cost_usd": 0.013831692000000001,
-  "p50_latency_ms": 326.5,
-  "p95_latency_ms": 1036.0,
+  "mean_decision_prob": 0.9258814814814815,
+  "cost_per_case_usd": 4.3505093333333335e-05,
+  "total_cost_usd": 0.019577292,
+  "p50_latency_ms": 333.8,
+  "p95_latency_ms": 428.0,
   "per_question": {
     "action": {
       "type": "choice",
       "n": 450,
       "missing": 0,
       "accuracy": 0.9155555555555556,
-      "mean_decision_prob": 0.9059111111111111,
-      "ece": 0.015422222222222207,
+      "mean_decision_prob": 0.9069333333333334,
+      "ece": 0.010399999999999979,
       "brier": null
     },
     "severity": {
       "type": "score",
       "n": 450,
       "missing": 0,
-      "accuracy": 0.8111111111111111,
-      "mean_decision_prob": 0.9169999999999999,
-      "ece": 0.10588888888888888,
+      "accuracy": 0.8466666666666667,
+      "mean_decision_prob": 0.9119555555555555,
+      "ece": 0.06728888888888888,
       "brier": null
     },
     "targeted_group": {
       "type": "noul",
       "n": 450,
       "missing": 0,
-      "accuracy": 0.9911111111111112,
-      "mean_decision_prob": 0.9588666666666666,
-      "ece": 0.032244444444444444,
-      "brier": 0.008168222222222223
+      "accuracy": 0.9888888888888889,
+      "mean_decision_prob": 0.9587555555555556,
+      "ece": 0.030133333333333335,
+      "brier": 0.008202222222222224
     }
   },
   "coverage": [
     {
       "threshold": 0.5,
-      "coverage": 0.9874074074074074,
-      "precision": 0.9122280570142536
+      "coverage": 0.9903703703703703,
+      "precision": 0.9244577412116679
     },
     {
       "threshold": 0.6,
-      "coverage": 0.9614814814814815,
-      "precision": 0.9206471494607088
+      "coverage": 0.9525925925925925,
+      "precision": 0.9409020217729394
     },
     {
       "threshold": 0.7,
-      "coverage": 0.9214814814814815,
-      "precision": 0.9332797427652733
+      "coverage": 0.9118518518518518,
+      "precision": 0.9528838342810723
     },
     {
       "threshold": 0.8,
-      "coverage": 0.8792592592592593,
-      "precision": 0.9469250210614996
+      "coverage": 0.8718518518518519,
+      "precision": 0.9651656754460493
     },
     {
       "threshold": 0.9,
-      "coverage": 0.7955555555555556,
-      "precision": 0.9636871508379888
+      "coverage": 0.797037037037037,
+      "precision": 0.9767657992565055
     },
     {
       "threshold": 0.95,
-      "coverage": 0.705925925925926,
-      "precision": 0.9790136411332634
+      "coverage": 0.72,
+      "precision": 0.9814814814814815
     }
   ],
   "threshold_coverage": {
     "n_total": 1350,
-    "n_auto": 1163,
-    "coverage": 0.8614814814814815,
-    "precision": 0.9286328460877042
+    "n_auto": 1148,
+    "coverage": 0.8503703703703703,
+    "precision": 0.9477351916376306
   },
   "gates": [],
   "recorded_models": [
@@ -97,10 +97,10 @@
     "input_usd_per_mtok": 0.042,
     "output_usd_per_mtok": 0.0
   },
-  "pack_version": "0.6.0",
+  "pack_version": "0.8.0",
   "backend": "jev-1.13.0",
   "predictions": "packs/moderation/predictions.jsonl",
-  "predictions_sha256": "e0cd186fa323a3a69c1da5714a8de7c78423e67130cf5f713651dfc17ef2a262",
+  "predictions_sha256": "a45e1d4c835bfc870658bbf688d024ee2ad6afb4665b932a6219dab9e2842f8e",
   "report": "packs/moderation/evidence.md",
   "recorded_at": "2026-09-19"
 }

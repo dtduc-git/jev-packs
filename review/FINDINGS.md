@@ -3,10 +3,11 @@
 Tool: `scripts/disagreements.py`. Raw dumps: `review/<a>-vs-<b>/<pack>.jsonl`
 (gitignored); machine summary: `summary.json` next to this file.
 
-6427 items, 458 case-level disagreements (7.1%): 221 Jev-only correct,
-205 Sonnet-only correct, 33 both-wrong, 3 missing (one Sonnet case error on
-moderation). Only one pack separates the models significantly on accuracy:
-`citation-support` (fixed below) and `support-triage` (Sonnet ahead, p=0.012).
+6427 items, 491 case-level disagreements (7.6%): 241 Jev-only correct,
+222 Sonnet-only correct, 28 both-wrong, 3 missing (one Sonnet case error on
+moderation). Two packs separate the models on accuracy after the fixes below:
+`citation-support` (Jev ahead, p < 0.001) and `support-triage` (Sonnet ahead,
+p = 0.012).
 
 ## Fixed: citation-support v0.5.0 — coverage was ambiguous
 
@@ -24,20 +25,32 @@ polarity-blind rule explicitly. Labels unchanged.
 **p < 0.001**, previously p = 0.281). One wording fix removed a systematic
 false signal and turned a tie into a real measurement — the flywheel working.
 
+## Fixed: moderation v0.8.0 — severity rules contradicted the labels
+
+**Finding.** All 12 both-wrong cases were `severity`. The rule sent every
+targeted insult to `medium`, while the labels (and reviewers) treat sarcasm,
+light mockery, third-party/role insults and **reporting threats**
+("I will report you") as `low`; protected-group hate and collective insults
+had no explicit home either.
+
+**Iterations.** v0.7.0 made reporting threats and mockery explicit but
+over-broadened `low` (protected hate dropped high→medium; 46 regressions vs
+35 improvements on Jev — data rejected it). v0.8.0 separates the tiers by
+policy: criminalizing/dehumanizing/exclusionary protected-group statements and
+threats against a person **or their livelihood** = high; harsh insults and
+hostile dismissals of the reader/author/collective, stereotypes,
+spam, "wish the brand fails" = medium; profanity, light mockery, third-party
+and role insults, reporting threats = low; criticism without an insult = none.
+
+**Verified result.** Jev 0.906 → **0.917** (McNemar p = 0.044), ECE
+0.027 → **0.013**; both-wrong 12 → 7. Remaining 7 need policy decisions, not
+wording: veiled menace with no named act (mod-0050), the gold inconsistency
+between "my boss is an idiot" (low) and "whoever wrote this is an absolute
+moron" (medium) (mod-0017 vs mod-0133), opinion-vs-hate boundary (mod-0166),
+and business threats (mod-0442). **Sonnet's moderation row is stale**
+(recorded against v0.7.0); refreshing it needs ~$2 of API credit.
+
 ## Remaining clusters (proposals, not yet applied)
-
-### moderation — severity boundaries (12 both-wrong, 91 total disagreements)
-
-`none` / `low` / `medium` are fuzzy for insults and *reporting* threats:
-"I will report you to the authorities" → gold `low`, Jev `high`, Sonnet
-`none`; "I hope your channel dies" → gold `medium`, Jev `high`, Sonnet `low`;
-"Thanks for nothing, genius" → gold `low`, Jev `medium`, Sonnet `none`.
-
-**Proposal.** A severity pass with operational rules, like the urgency pass
-that moved triage 0.69 → 0.83: decide explicitly whether *reporting* threats
-(platform/employer/authorities) count as `low` (gold says yes), define
-`medium` as wishing harm, and make `none` unreachable for directed insults.
-Re-label against the new rules, bump the pack, re-record.
 
 ### rag-answerability — missing_info kind boundaries (11 both-wrong)
 
@@ -76,7 +89,8 @@ upstream noise, documented in the pack README. No action.
 
 ## Suggested order
 
-1. moderation severity (biggest cluster, highest use)
+1. ~~moderation severity~~ done (v0.8.0; Jev +0.011, both-wrong 12 → 7;
+   Sonnet row awaits a ~$2 refresh)
 2. rag-answerability missing_info (option meanings)
 3. support-triage queue/urgency (only significant pack gap)
 4. rag-passage-quality anchors (optional)

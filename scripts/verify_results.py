@@ -17,14 +17,21 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 RESULTS_DIR = ROOT / "results"
+INDEX = ROOT / "index.json"
+
+
+def current_versions() -> dict[str, str]:
+    index = json.loads(INDEX.read_text())
+    return {entry["id"]: entry["version"] for entry in index["packs"]}
 
 
 def main() -> int:
     if not RESULTS_DIR.is_dir():
         print("no results/ directory — nothing to verify")
         return 0
+    versions = current_versions()
     failures: list[str] = []
-    checked = 0
+    checked = skipped = 0
     with tempfile.TemporaryDirectory() as tmp:
         for backend_dir in sorted(p for p in RESULTS_DIR.iterdir() if p.is_dir()):
             backend = json.loads((backend_dir / "backend.json").read_text())
@@ -34,6 +41,13 @@ def main() -> int:
                     continue
                 result = json.loads(result_path.read_text())
                 pack = result["pack"]
+                if result.get("pack_version") and result["pack_version"] != versions.get(pack):
+                    print(
+                        f"skip {backend_dir.name}/{pack}: recorded on pack "
+                        f"v{result['pack_version']}, now v{versions.get(pack)} (stale history)"
+                    )
+                    skipped += 1
+                    continue
                 predictions = ROOT / result["predictions"]
                 report = (
                     ROOT / str(result["report"])
@@ -69,7 +83,7 @@ def main() -> int:
         for failure in failures:
             print(f"ERROR {failure}", file=sys.stderr)
         return 1
-    print(f"OK: {checked} result report(s) reproduce")
+    print(f"OK: {checked} result report(s) reproduce" + (f", {skipped} stale skipped" if skipped else ""))
     return 0
 
 

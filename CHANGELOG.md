@@ -16,9 +16,17 @@ Repo-level changes; per-pack history lives in each pack's `CHANGELOG.md`.
   the models (McNemar p < 0.001).
 - `refresh.py` now also syncs `index.json` `version` with `pack.yaml` when a
   refresh follows a pack bump.
-- Remaining clusters (moderation severity, answerability missing_info,
-  triage queue/urgency, rag-passage anchors) are proposed in
-  `review/FINDINGS.md`, not yet applied.
+- Remaining clusters (answerability missing_info, triage queue/urgency,
+  rag-passage anchors) are proposed in `review/FINDINGS.md`, not yet applied.
+- **`moderation` v0.8.0**: severity rules rewritten in two data-checked
+  iterations (v0.7.0 fixed reporting threats/mockery but was rejected by a
+  46-vs-35 regression comparison; v0.8.0 splits protected-hate, collective
+  insults and livelihood threats correctly). Jev 0.906 → 0.917 (p = 0.044),
+  ECE 0.027 → 0.013, both-wrong 12 → 7. Sonnet's moderation row is stale
+  (v0.7.0) until a ~$2 refresh.
+- `build_scoreboard.py` and `verify_results.py` now mark and skip stale rows
+  (result `pack_version` behind the current pack) instead of failing or
+  silently mixing versions.
 
 ## 2026-09-19 (benchmark)
 

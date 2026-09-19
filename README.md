@@ -35,8 +35,10 @@ committed, every number reproducible offline.
   Overall Jev is **better calibrated on 8/9 packs** (e.g. citation-support ECE
   0.034 vs 0.057) at **~250× lower cost** ($0.000014–0.000031 vs ~$0.0036 per
   case). The local 7B trails far behind (0.533–0.813). Numbers, recordings and
-  per-pack reports live in [`results/`](results/); the criteria-gap analysis
-  that produced the fix is in [review/FINDINGS.md](review/FINDINGS.md).
+  per-pack reports live in [`results/`](results/); the same loop then
+  tightened `moderation` severity (Jev 0.906 → 0.917 on its v0.8.0 rules;
+  Sonnet's row is stale until refreshed). The criteria-gap analysis is in
+  [review/FINDINGS.md](review/FINDINGS.md).
 - Rules, caveats and how to add a backend: [METHODOLOGY.md](METHODOLOGY.md).
 
 ## Why a registry
@@ -66,7 +68,7 @@ the full report and `predictions.jsonl` for the raw recording.
 |---|---|---|---|---|---|
 | [`citation-support`](packs/citation-support) | supports, coverage | 800 | **0.979** | 0.034 | $0.000019 |
 | [`rag-answerability`](packs/rag-answerability) | answerable-from-context, missing info | 840 | **0.908** | 0.021 | $0.000025 |
-| [`moderation`](packs/moderation) | action, severity, targeted group | 1,350 | **0.906** | 0.027 | $0.000031 |
+| [`moderation`](packs/moderation) | action, severity, targeted group | 1,350 | **0.917** | 0.013 | $0.000044 |
 | [`rag-passage-relevance`](packs/rag-passage-relevance) | relevance, passage quality | 800 | **0.899** | 0.035 | $0.000018 |
 | [`entity-merge`](packs/entity-merge) | same entity?, resolution action | 840 | **0.857** | 0.017 | $0.000018 |
 | [`support-triage`](packs/support-triage) | refund intent, queue, urgency | 1,350 | **0.887** | 0.059 | $0.000028 |

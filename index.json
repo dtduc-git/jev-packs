@@ -36,7 +36,7 @@
     },
     {
       "id": "moderation",
-      "version": "0.6.0",
+      "version": "0.8.0",
       "path": "packs/moderation",
       "license": "CC0-1.0",
       "status": "verified",

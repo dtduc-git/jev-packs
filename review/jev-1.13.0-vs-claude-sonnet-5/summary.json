@@ -48,13 +48,13 @@
     },
     "moderation": {
       "n_items": 1347,
-      "accuracy_a": 0.9057164068299925,
-      "accuracy_b": 0.8990348923533779,
-      "a_only": 50,
-      "b_only": 41,
-      "both_wrong": 12,
+      "accuracy_a": 0.9168522642910171,
+      "accuracy_b": 0.9079435783221975,
+      "a_only": 70,
+      "b_only": 58,
+      "both_wrong": 7,
       "missing_b": 3,
-      "mcnemar_p": 0.4018127960698799,
+      "mcnemar_p": 0.33093582894221385,
       "disagreement_file": "review/jev-1.13.0-vs-claude-sonnet-5/moderation.jsonl"
     },
     "rag-answerability": {
@@ -104,9 +104,9 @@
   },
   "totals": {
     "items": 6427,
-    "a_only": 221,
-    "b_only": 205,
-    "both_wrong": 33,
+    "a_only": 241,
+    "b_only": 222,
+    "both_wrong": 28,
     "missing_b": 3
   }
 }

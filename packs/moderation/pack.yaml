@@ -1,6 +1,6 @@
 spec: 0
 id: moderation
-version: 0.6.0
+version: 0.8.0
 license: CC0-1.0
 tested: jev-1.13.0
 description: >-
@@ -21,13 +21,14 @@ questions:
       unknown: "Cannot classify confidently."
   severity:
     type: score
-    instructions: "How severe is the harm this text could cause if left visible? If the text is unreadable (empty, garbled, media-only) or the action is unknown, choose unknown. Otherwise apply the first matching level: high for threats, veiled threats, doxxing, hate with protected targeting, fraud, or wishes of serious harm; medium for a targeted insult or harassment of a person, or a demeaning generalization; low for profanity or mild hostility without a target; none for criticism, complaints, disagreement or a neutral comment."
+    instructions: >-
+      How severe is the harm this text could cause if left visible? If the text is unreadable (empty, garbled, media-only) or the action is unknown, choose unknown. Otherwise apply the first matching level, in this order: high for credible threats or veiled threats of physical harm or illegal acts against a person or their livelihood, doxxing, sextortion, fraud, statements that criminalize, dehumanize or call for excluding a protected group ("X are all thieves", "X should not be allowed to ..."), or wishes of serious harm to a person including losing their livelihood; medium for harsh insults or hostile dismissals aimed at the reader, the author or a specific collective ("you are pathetic", "everyone in that company is a liar", "nobody asked for your opinion"), harassment, demeaning stereotypes about a protected group that stop short of criminalizing or excluding ("women cannot code"), demeaning generalizations about identity or character, spam, or wishes that a channel, brand or business fails; low for profanity, sarcasm or light mockery that is not a harsh insult ("thanks for nothing, genius"), insults aimed at third parties, roles or occupations ("my boss is an idiot", "bankers are parasites"), or reporting threats that promise no harm from the text itself ("I will report you", "I will tell your employer"); none for criticism, complaints or disagreement about products, services, policies or ideas — including criticism of a role's actions without an insult ("the referee should be fired") — and neutral comments; no profanity.
     levels: [none, low, medium, high, unknown]
     level_descriptions:
-      none: "No harm: criticism, complaints, disagreement or a neutral comment."
-      low: "Mild: profanity or mild hostility without a target."
-      medium: "A targeted insult or harassment of a person; a demeaning generalization."
-      high: "Threats or veiled threats, doxxing, hate with protected targeting, fraud, or wishes of serious harm."
+      none: "Criticism, complaints or disagreement about products, services, policies or ideas, without an insult and without profanity; neutral comments."
+      low: "Profanity, sarcasm or light mockery that is not a harsh insult, insults of third parties, roles or occupations, or reporting threats promising no harm."
+      medium: "Harsh insults or hostile dismissals of the reader, author or a specific collective; harassment; demeaning stereotypes or generalizations; spam; wishing a channel, brand or business to fail."
+      high: "Threats or veiled threats of harm or illegal acts against a person or their livelihood, doxxing, sextortion, fraud, criminalizing/dehumanizing/exclusionary statements about a protected group, or wishes of serious harm to a person."
       unknown: "Cannot judge severity: unreadable input, or the action itself is unknown."
   targeted_group:
     type: noul

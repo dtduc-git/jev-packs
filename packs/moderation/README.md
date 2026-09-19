@@ -21,12 +21,15 @@ legal advice; consumers can fork it with their own policy text.
 - `targeted_group` is `true` only when the demeaning or attacking quality is
   *because of* a protected characteristic. Insults aimed at a person's
   politics, job or behavior are `false` even when harsh.
-- `severity`: `none` (criticism, complaints, disagreement), `low` (profanity
-  or mild hostility without a target), `medium` (targeted insult/harassment,
-  demeaning generalization), `high` (threats or veiled threats, doxxing, hate
-  with protected targeting, fraud, wishes of serious harm). Unreadable input,
-  and any text whose action is `unknown`, has `severity: unknown`. The
-  pack.yaml `level_descriptions` mirror these anchors.
+- `severity`: `none` (criticism without an insult), `low` (profanity, light
+  mockery, third-party/role insults, reporting threats), `medium` (harsh
+  insults or hostile dismissals of the reader/author/a collective, harassment,
+  demeaning stereotypes or generalizations, spam, wishing a channel/brand to
+  fail), `high` (threats against a person or their livelihood, doxxing,
+  sextortion, fraud, criminalizing/dehumanizing/exclusionary protected-group
+  statements, wishes of serious harm). Unreadable input, and any text whose
+  action is `unknown`, has `severity: unknown`. The pack.yaml
+  `level_descriptions` mirror these anchors.
 - `unknown` action is for input that cannot be classified at all: empty,
   garbled, redacted or encoding-damaged text. Ambiguity elsewhere resolves to
   `review`, which is what `review` is for.

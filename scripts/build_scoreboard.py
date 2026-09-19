@@ -60,7 +60,7 @@ def latency(value: float | None) -> str:
     return f"{value / 1000:.1f}s" if value >= 1000 else f"{value:.0f}ms"
 
 
-def accuracy_cell(result: dict[str, Any], slug: str) -> str:
+def accuracy_cell(result: dict[str, Any], slug: str, current_version: str) -> str:
     accuracy = result.get("accuracy")
     if not isinstance(accuracy, (int, float)) or result.get("n_items", 0) == 0:
         return "—"
@@ -73,6 +73,11 @@ def accuracy_cell(result: dict[str, Any], slug: str) -> str:
         cell += f"<br><span class='sub'>ECE {ece:.3f}</span>"
     cell += f"<br><span class='sub'>{money(result.get('cost_per_case_usd'))}/case</span>"
     cell += f"<br><span class='sub'>p95 {latency(result.get('p95_latency_ms'))}</span>"
+    if result.get("pack_version") and result["pack_version"] != current_version:
+        cell += (
+            f"<br><span class='stale'>stale — recorded on pack v{result['pack_version']}, "
+            f"now v{current_version}</span>"
+        )
     report = result.get("report") or f"results/{slug}/{result['pack']}.md"
     cell += f"<br><span class='sub'><a href='{REPO}/{html.escape(report)}'>report</a>"
     cell += f" · <a href='{REPO}/results/{slug}/{result['pack']}.json'>json</a></span>"
@@ -101,6 +106,7 @@ def render() -> str:
         "th,td{border:1px solid #ddd;padding:.45rem .6rem;text-align:left;vertical-align:top}"
         "th{background:#f6f8fa}"
         ".sub{color:#666;font-size:12px}.ci{color:#666;font-size:12px}"
+        ".stale{color:#b45309;font-size:12px}"
         "code{background:#f3f4f6;padding:.1rem .3rem;border-radius:3px;font-size:13px}"
         ".note{color:#555;font-size:13px}"
         "</style></head><body>")
@@ -139,7 +145,7 @@ def render() -> str:
             )
             for slug in ordered_slugs:
                 cell = results.get(pack_id, {}).get(slug)
-                lines.append(f"<td>{accuracy_cell(cell, slug) if cell else '—'}</td>")
+                lines.append(f"<td>{accuracy_cell(cell, slug, version) if cell else '—'}</td>")
             lines.append("</tr>")
         lines.append("</tbody></table>")
         lines.append(
