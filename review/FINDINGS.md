@@ -3,11 +3,11 @@
 Tool: `scripts/disagreements.py`. Raw dumps: `review/<a>-vs-<b>/<pack>.jsonl`
 (gitignored); machine summary: `summary.json` next to this file.
 
-6427 items, 491 case-level disagreements (7.6%): 241 Jev-only correct,
-222 Sonnet-only correct, 28 both-wrong, 3 missing (one Sonnet case error on
-moderation). Two packs separate the models on accuracy after the fixes below:
-`citation-support` (Jev ahead, p < 0.001) and `support-triage` (Sonnet ahead,
-p = 0.012).
+6427 items, 445 case-level disagreements (6.9%): 222 Jev-only correct,
+205 Sonnet-only correct, 18 both-wrong, 3 missing (one Sonnet case error on
+moderation). After five criteria passes: Jev ahead on `citation-support`
+(p < 0.001) and `rag-passage-relevance` (p = 0.041); Sonnet ahead on
+`support-triage` (p = 0.019); six packs tie. Both-wrong went 55 → 18.
 
 ## Fixed: citation-support v0.5.0 — coverage was ambiguous
 
@@ -50,69 +50,62 @@ moron" (medium) (mod-0017 vs mod-0133), opinion-vs-hate boundary (mod-0166),
 and business threats (mod-0442). **Sonnet's moderation row is stale**
 (recorded against v0.7.0); refreshing it needs ~$2 of API credit.
 
-## Remaining clusters (proposals, not yet applied)
+## Fixed: rag-answerability v0.6.0 — missing_info other/unknown boundary
 
-### rag-answerability — missing_info kind boundaries (11 both-wrong)
+**Finding.** All 11 both-wrong cases sat on `other` vs `unknown` and on
+specific kinds: gold says "process/review/varies with no source" = `unknown`
+(e.g. "Billing is handled by an external payment processor") while "points to
+where the answer lives or gives a related fact" = `other` (e.g. "the license
+terms are in the EULA"). Neither model could see the rule; `other` had no
+operational definition at all.
 
-Gold expects `other`/`unknown` where models pick a specific kind
-("Which payment methods are accepted?" + "Billing is handled by an external
-payment processor" → gold `unknown`, models `other`/`entity`). The
-first-matching-kind rule does not settle deferrals that name a source.
-Deep-dive: "other" is the catch-all and both models avoid it, preferring a
-specific kind; `procedure` is over-applied to any "how does X work" context.
+**Iterations.** The first rewrite lured both models into over-using `other`
+(Jev −0.020 with 44 regressions). The second states that the *missing
+element* decides the kind and prefaces the ordered list, so specific kinds win
+whenever they fit.
 
-**Proposal (drafted, not applied).** Give each option a one-line
-description that defines it *operationally* and states when it wins:
-`entity` (a named thing/person/source is missing), `date` (a time, duration
-or deadline), `number` (a quantity, cap or price), `procedure` (the steps to
-perform an action), `other` (a policy, clause, term or fact that is not
-entity/date/number/procedure — the catch-all when the context names a topic
-but not the fact), `unknown` (the context only defers — "depends", "varies",
-"handled elsewhere" — and even the kind cannot be named). Preview against the
-11 both-wrong cases before recording.
+**Verified result.** Jev 0.908 → **0.930** (p = 0.004), both-wrong 11 → 1;
+Sonnet 0.927, tie (p = 0.894).
 
-### support-triage — queue and urgency edges (6 both-wrong, p = 0.012 for the pack)
+## Fixed: support-triage v0.7.0 — queue scope and recoverable access
 
-Queue: "audit log" → gold `other` (models account/technical); "data region"
-→ gold `other` (models technical/account); "shipping cost double the rate" →
-gold `shipping` (models billing/technical); "trial started on wrong date" →
-gold `account` (models unknown/billing). Urgency: "lost my 2FA device" →
-gold `high`, models `critical`/`normal`.
+**Finding.** Sonnet led 54–30 (p = 0.012): Jev sent account-flavoured
+requests (data export, notification settings, project transfers) to
+`technical`, pre-sales/compliance to `technical` where gold says `other`, and
+over-escalated recoverable access loss ("reset my password", "restore my
+project") to `critical`.
 
-Deep-dive on the 31 Sonnet-only queue wins: Jev sends account-flavoured
-requests (data export, notification settings, project transfers, teammate
-offboarding) to `technical`, and pre-sales/evaluation questions ("SSO with
-Okta, evaluating tools") to `technical` where gold says `other`. Urgency:
-Jev over-escalates recoverable access problems ("reset my password", "restore
-my project from backup") to `critical`; gold keeps them `high`.
+**Fix.** Queue options carry their scope (account = user/workspace/team/
+settings/data export; other = pre-sales, evaluations, compliance checks);
+urgency states recoverable access is `high`, not `critical`; refunds include
+charge reversals.
 
-**Proposal (drafted, not applied).** Queue option descriptions with one
-worked example each — `account` = user/workspace/team/settings management,
-`technical` = product behaviour and how-to, `billing` = invoices, charges and
-tax forms, `shipping` = physical delivery, `other` = pre-sales, evaluations
-and anything that fits no queue. Urgency: explicit clause that access
-problems a support action can restore (password resets, restores from
-backup, re-invites) are `high`, not `critical`; `critical` is reserved for
-outages and data loss in progress.
+**Verified result.** Jev 0.887 → 0.898 (p = 0.093); both-wrong 6 → 5. Sonnet
+also improved (0.905 → 0.913) and still leads (p = 0.019): the remaining gap
+is real model behaviour on routing conventions, not a data defect — leave it
+visible rather than tune until it flatters Jev.
 
-### rag-passage-relevance — quality anchors (2 both-wrong)
+## Fixed: rag-passage-relevance v0.5.0 — stated vs inferred
 
-"Library open Mon–Sat" vs question about Sundays → gold `weak`, models
-`strong`/`ok`. Low priority; add one anchor per level if revisited.
+**Finding.** The two both-wrong cases were inference traps ("library open
+Mon–Sat" for a Sunday question; "password printed on the router" for a
+how-to-join question): the asked fact is never stated, only related facts
+that let a human infer. Models rated them `ok`/`strong`.
 
-### banking-intent — dataset noise (2 both-wrong)
+**Fix.** Judge what the passage states, not what can be inferred; `weak`
+anchor now says "asked fact not stated"; `ok` names its usable pieces.
 
-Gold comes from Banking77; confusion between near-synonymous intents is
-upstream noise, documented in the pack README. No action.
+**Verified result.** Jev 0.899 → **0.921** (p = 0.0005), and the pack now
+separates the models in Jev's favour (0.921 vs 0.899, p = 0.041).
 
-## Suggested order
+## Remaining ideas
 
-1. ~~moderation severity~~ done (v0.8.0; Jev +0.011, both-wrong 12 → 7;
-   Sonnet row awaits a ~$2 refresh)
-2. rag-answerability missing_info (option meanings)
-3. support-triage queue/urgency (only significant pack gap)
-4. rag-passage-quality anchors (optional)
+- `banking-intent` (2 both-wrong): upstream Banking77 label noise between
+  near-synonymous intents; documented in the pack README, no action.
+- `support-triage`: Sonnet's genuine lead (p = 0.019) — keep as a finding;
+  a further pass should start from the remaining 47 Sonnet-only cases and
+  only if policy (not wording) can be made clearer.
+- The next frontier of resolution is harder cases, not more backends: sample
+  disagreements with p < 0.7, label them by hand, and add them as a pack
+  version once the budget allows another recording round.
 
-Each pass = criteria wording + gold realignment + re-record (Jev ~$0.02,
-Sonnet ~$1) + re-run this harvest; success criterion is both_wrong → 0 and
-the pack separating models on merit.

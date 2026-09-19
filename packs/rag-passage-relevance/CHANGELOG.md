@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.5.0 — 2026-09-19
+
+- `quality` anchors clarified after a Jev-vs-Claude harvest: judge what the
+  passage states, not what can be inferred — the asked fact must be stated to
+  exceed `weak` (an hours table implies a Sunday closure but does not state
+  it). `ok` now names the usable pieces explicitly (value, range, schedule,
+  steps, pointer). No labels changed.
+
 ## 0.4.0 — 2026-09-19
 
 - Doubled from 200 to 400 cases; evidence re-recorded.

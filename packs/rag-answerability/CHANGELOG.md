@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.6.0 — 2026-09-19
+
+- `missing_info` `other`/`unknown` boundary made explicit after a Jev-vs-Claude
+  harvest left 11 both-wrong cases there: `other` = the context points to where
+  the answer lives (document, rule, label, release notes, standard, provider)
+  or gives a related fact; `unknown` = the context only states a process,
+  review or variability and names no source. No labels changed.
+
 ## 0.5.0 — 2026-09-19
 
 - 0.5.0: answerable/missing_info criteria rewritten (concise-but-sufficient counts as complete; cross-question consistency; procedure = action not stated; unknown = only defers); 20 boundary cases added; evidence re-recorded.

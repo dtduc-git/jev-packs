@@ -1,6 +1,6 @@
 spec: 0
 id: rag-passage-relevance
-version: 0.4.0
+version: 0.5.0
 license: CC0-1.0
 tested: jev-1.13.0
 description: >-
@@ -16,12 +16,12 @@ questions:
     instructions: "Does `passage` contain information that helps answer `question`?"
   quality:
     type: score
-    instructions: "How useful is `passage` for answering `question`?"
+    instructions: "How useful is `passage` for answering `question`? Judge what the passage states, not what can be inferred from it: if the asked fact is not stated, the level is at most weak even when the passage lets you infer the answer."
     levels: [junk, weak, ok, strong, unknown]
     level_descriptions:
       junk: "Different subject; nothing about the question's topic."
-      weak: "Same subject, but nothing usable to answer the question."
-      ok: "Useful partial information: a piece, a pointer or a range."
+      weak: "Same subject, but the asked fact is not stated — only related facts, even if they let you infer the answer."
+      ok: "A usable piece of the answer: a value, a range, a schedule, steps, or an explicit pointer to where it is handled."
       strong: "Contains the answer or everything needed to answer."
       unknown: "Passage unusable or unreadable."
 thresholds:

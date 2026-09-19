@@ -23,9 +23,12 @@ decides whether the surviving context is enough.
   - `number` — how much/many: a quantity, price, rate or count.
   - `procedure` — how: steps, conditions or rules (context says something
     exists but not how to do it).
-  - `other` — real gaps that fit none of the above (e.g. encryption at rest vs
-    in transit, policy questions).
-  - `unknown` — the context is too vague to say what is missing.
+  - `other` — the context points to where the answer lives (a document, rule,
+    label, release notes, standard, provider) or gives a related fact, but not
+    the needed one.
+  - `unknown` — the context only states a process, review or variability
+    ("depends", "varies", "is handled", "is being reviewed") and names no
+    source for the fact.
 - Context is exactly what retrieval returned; a question answerable only with
   world knowledge is `false`.
 

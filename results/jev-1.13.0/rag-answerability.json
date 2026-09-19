@@ -6,79 +6,79 @@
   "n_items": 840,
   "case_errors": 0,
   "missing_items": 0,
-  "accuracy": 0.9083333333333333,
+  "accuracy": 0.9297619047619048,
   "accuracy_ci": [
-    0.8892857142857142,
-    0.9273809523809524
+    0.9119047619047619,
+    0.9464285714285714
   ],
-  "ece": 0.0215,
+  "ece": 0.02661904761904764,
   "ece_ci": [
-    0.015904761904761935,
-    0.04266666666666666
+    0.019059523809523804,
+    0.04455952380952381
   ],
   "suggestion": null,
-  "mean_decision_prob": 0.8986190476190477,
-  "cost_per_case_usd": 2.4794800000000002e-05,
-  "total_cost_usd": 0.010413816000000001,
-  "p50_latency_ms": 306.8,
-  "p95_latency_ms": 727.1,
+  "mean_decision_prob": 0.9046428571428571,
+  "cost_per_case_usd": 3.15568e-05,
+  "total_cost_usd": 0.013253856000000001,
+  "p50_latency_ms": 319.8,
+  "p95_latency_ms": 407.9,
   "per_question": {
     "answerable": {
       "type": "noul",
       "n": 420,
       "missing": 0,
-      "accuracy": 0.9595238095238096,
-      "mean_decision_prob": 0.9071428571428571,
-      "ece": 0.052380952380952396,
-      "brier": 0.03274904761904762
+      "accuracy": 0.9642857142857143,
+      "mean_decision_prob": 0.9075238095238094,
+      "ece": 0.0567619047619048,
+      "brier": 0.03278190476190476
     },
     "missing_info": {
       "type": "choice",
       "n": 420,
       "missing": 0,
-      "accuracy": 0.8571428571428571,
-      "mean_decision_prob": 0.890095238095238,
-      "ece": 0.03709523809523809,
+      "accuracy": 0.8952380952380953,
+      "mean_decision_prob": 0.9017619047619048,
+      "ece": 0.02314285714285712,
       "brier": null
     }
   },
   "coverage": [
     {
       "threshold": 0.5,
-      "coverage": 0.9809523809523809,
-      "precision": 0.9174757281553398
+      "coverage": 0.9928571428571429,
+      "precision": 0.9304556354916067
     },
     {
       "threshold": 0.6,
-      "coverage": 0.9333333333333333,
-      "precision": 0.9375
+      "coverage": 0.9464285714285714,
+      "precision": 0.9459119496855346
     },
     {
       "threshold": 0.7,
-      "coverage": 0.8833333333333333,
-      "precision": 0.9460916442048517
+      "coverage": 0.9047619047619048,
+      "precision": 0.9565789473684211
     },
     {
       "threshold": 0.8,
-      "coverage": 0.8238095238095238,
-      "precision": 0.9653179190751445
+      "coverage": 0.8392857142857143,
+      "precision": 0.9716312056737588
     },
     {
       "threshold": 0.9,
-      "coverage": 0.736904761904762,
-      "precision": 0.9773828756058158
+      "coverage": 0.7273809523809524,
+      "precision": 0.9787234042553191
     },
     {
       "threshold": 0.95,
-      "coverage": 0.594047619047619,
-      "precision": 0.9799599198396793
+      "coverage": 0.5833333333333334,
+      "precision": 0.9836734693877551
     }
   ],
   "threshold_coverage": {
     "n_total": 840,
-    "n_auto": 672,
-    "coverage": 0.8,
-    "precision": 0.9627976190476191
+    "n_auto": 678,
+    "coverage": 0.8071428571428572,
+    "precision": 0.9734513274336283
   },
   "gates": [],
   "recorded_models": [
@@ -88,10 +88,10 @@
     "input_usd_per_mtok": 0.042,
     "output_usd_per_mtok": 0.0
   },
-  "pack_version": "0.5.0",
+  "pack_version": "0.6.0",
   "backend": "jev-1.13.0",
   "predictions": "packs/rag-answerability/predictions.jsonl",
-  "predictions_sha256": "e6ef108144584772ef4c0aa358821bed3c1c45324bc8135e1964c1b0a96f919f",
+  "predictions_sha256": "88d364072a4aaf5148f6d193a6470f573e17d08b554a0d54472507eaea3ddf27",
   "report": "packs/rag-answerability/evidence.md",
   "recorded_at": "2026-09-19"
 }

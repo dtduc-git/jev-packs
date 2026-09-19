@@ -1,6 +1,6 @@
 spec: 0
 id: rag-answerability
-version: 0.5.0
+version: 0.6.0
 license: CC0-1.0
 tested: jev-1.13.0
 description: >-
@@ -16,15 +16,15 @@ questions:
     instructions: "Can `question` be answered completely using only `context`? A concise but sufficient answer — the facts, numbers or the action to take — counts as complete; it need not spell out every detail."
   missing_info:
     type: choice
-    instructions: "When `answerable` is false, what kind of information is missing from `context`? Use `none` whenever the question is answerable. Otherwise apply the first matching kind: entity, date, number, procedure, other, or unknown when the context only defers ('depends', 'varies') and nothing specific can be named."
+    instructions: "When `answerable` is false, what kind of information is missing from `context`? Use `none` whenever the question is answerable. Otherwise identify the missing element and apply the first matching kind: entity (a named person, organization, product, place or source), date (a date, duration or period), number (a quantity, price, rate or count), procedure (steps, conditions or rules for doing something), other (the missing element is a policy, condition, status or similar fact that fits no specific kind, and the context points to where it lives — a document, rule, label, release notes, standard, provider), or unknown (the context only names a process, review or variability — 'depends', 'varies', 'is handled', 'is being reviewed' — with no source for the fact). Prefer a specific kind whenever the missing element is one."
     options:
       none: "Context is sufficient; answerable is true."
-      entity: "A named person, organization, product or place."
+      entity: "A named person, organization, product, place or source."
       date: "A date, duration or time period."
       number: "A quantity, price, rate or count."
-      procedure: "The action or steps are not stated; the context only says something exists, is supported or is available."
-      other: "A specific missing element that fits none of the categories above."
-      unknown: "The context only defers ('depends', 'varies'); what is missing cannot be named."
+      procedure: "Steps, conditions or rules for doing something are not stated; the context only says something exists, is supported or is available."
+      other: "The missing element is a policy, condition, status or similar fact that fits no specific kind, and the context points to where it lives (a document, rule, label, release notes, standard, provider)."
+      unknown: "The context only names a process, review or variability ('depends', 'varies', 'is handled', 'is being reviewed') with no source for the fact."
 thresholds:
   answerable: {true: 0.85, false: 0.85}
   missing_info: {none: 0.8, entity: 0.7, date: 0.7, number: 0.7, procedure: 0.7, other: 0.7}

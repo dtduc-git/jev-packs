@@ -6,79 +6,79 @@
   "n_items": 800,
   "case_errors": 0,
   "missing_items": 0,
-  "accuracy": 0.89875,
+  "accuracy": 0.92125,
   "accuracy_ci": [
-    0.87875,
-    0.92
+    0.9025,
+    0.94
   ],
-  "ece": 0.035250000000000004,
+  "ece": 0.020999999999999974,
   "ece_ci": [
-    0.020462499999999974,
-    0.05348750000000002
+    0.016337499999999974,
+    0.04223750000000001
   ],
   "suggestion": null,
-  "mean_decision_prob": 0.9259999999999999,
-  "cost_per_case_usd": 1.7551170000000004e-05,
-  "total_cost_usd": 0.007020468000000001,
-  "p50_latency_ms": 312.8,
-  "p95_latency_ms": 390.0,
+  "mean_decision_prob": 0.927625,
+  "cost_per_case_usd": 2.0281170000000003e-05,
+  "total_cost_usd": 0.008112468000000001,
+  "p50_latency_ms": 322.5,
+  "p95_latency_ms": 434.7,
   "per_question": {
     "relevant": {
       "type": "noul",
       "n": 400,
       "missing": 0,
-      "accuracy": 0.9675,
-      "mean_decision_prob": 0.957425,
-      "ece": 0.016925000000000013,
-      "brier": 0.02430325
+      "accuracy": 0.97,
+      "mean_decision_prob": 0.957025,
+      "ece": 0.014624999999999999,
+      "brier": 0.024392750000000005
     },
     "quality": {
       "type": "score",
       "n": 400,
       "missing": 0,
-      "accuracy": 0.83,
-      "mean_decision_prob": 0.894575,
-      "ece": 0.06457500000000004,
+      "accuracy": 0.8725,
+      "mean_decision_prob": 0.898225,
+      "ece": 0.036275000000000016,
       "brier": null
     }
   },
   "coverage": [
     {
       "threshold": 0.5,
-      "coverage": 0.99875,
-      "precision": 0.899874843554443
+      "coverage": 0.99375,
+      "precision": 0.9232704402515723
     },
     {
       "threshold": 0.6,
-      "coverage": 0.95625,
-      "precision": 0.9176470588235294
+      "coverage": 0.955,
+      "precision": 0.9345549738219895
     },
     {
       "threshold": 0.7,
       "coverage": 0.91375,
-      "precision": 0.9316005471956225
+      "precision": 0.9493844049247606
     },
     {
       "threshold": 0.8,
-      "coverage": 0.86125,
-      "precision": 0.9462989840348331
+      "coverage": 0.86875,
+      "precision": 0.9568345323741008
     },
     {
       "threshold": 0.9,
-      "coverage": 0.8025,
-      "precision": 0.9595015576323987
+      "coverage": 0.805,
+      "precision": 0.967391304347826
     },
     {
       "threshold": 0.95,
-      "coverage": 0.72,
-      "precision": 0.9722222222222222
+      "coverage": 0.73,
+      "precision": 0.9726027397260274
     }
   ],
   "threshold_coverage": {
     "n_total": 800,
-    "n_auto": 697,
-    "coverage": 0.87125,
-    "precision": 0.9311334289813487
+    "n_auto": 692,
+    "coverage": 0.865,
+    "precision": 0.9494219653179191
   },
   "gates": [],
   "recorded_models": [
@@ -88,10 +88,10 @@
     "input_usd_per_mtok": 0.042,
     "output_usd_per_mtok": 0.0
   },
-  "pack_version": "0.4.0",
+  "pack_version": "0.5.0",
   "backend": "jev-1.13.0",
   "predictions": "packs/rag-passage-relevance/predictions.jsonl",
-  "predictions_sha256": "89b62359a2a8267ee49d26052936842ca9914b920e3da1b830eb5cdf352aa8ab",
+  "predictions_sha256": "3e51eb04080928c5678c7859d04f50209d20b6f8b2a0b099d5a0cc7309fc05a7",
   "report": "packs/rag-passage-relevance/evidence.md",
-  "recorded_at": "2026-09-19"
+  "recorded_at": "2026-09-20"
 }

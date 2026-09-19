@@ -1,6 +1,6 @@
 spec: 0
 id: support-triage
-version: 0.6.0
+version: 0.7.0
 license: CC0-1.0
 tested: jev-1.13.0
 description: >-
@@ -13,24 +13,24 @@ state:
 questions:
   refund_request:
     type: noul
-    instructions: "Does the message explicitly ask for a refund, return, or money back?"
+    instructions: "Does the message explicitly ask for a refund, a return, a charge reversal (for example 'please reverse the double charge') or money back?"
   queue:
     type: choice
     instructions: "Which team should handle this message?"
     options:
-      billing: "Payments, invoices, charges or refunds."
-      technical: "Product errors, outages, integrations or configuration."
-      shipping: "Delivery, tracking, address or packaging."
-      account: "Login, password, plan, permissions or deletion."
-      other: "Does not fit any queue above."
+      billing: "Payments, invoices, charges, tax forms or refunds."
+      technical: "Product errors, outages, integrations or how-to for using a feature."
+      shipping: "Delivery, tracking, address or packaging of physical goods."
+      account: "Login, password, plan, team members, workspace settings, data export or deletion."
+      other: "Pre-sales questions, evaluations, compliance checks (audit logs, data regions) or anything that fits no queue above."
       unknown: "Cannot tell from the message."
   urgency:
     type: score
-    instructions: "How soon does this message need a human response? critical when a capability the sender depends on is completely unavailable right now, data is being lost right now, or a live security incident is ongoing (unauthorized access, leaked credentials, a data breach); high when the message reports something that is not working, failing, delayed, missing, or costing money (bugs, defects, delivery problems, stuck requests and explicit refund requests all count); normal for requests, questions, feedback, feature requests and everything else with no malfunction; unknown when the message is unreadable. Calm phrasing never lowers urgency and dramatic phrasing never raises it."
+    instructions: "How soon does this message need a human response? critical when a capability the sender depends on is completely unavailable right now with no routine fix, data is being lost right now, or a live security incident is ongoing (unauthorized access, leaked credentials, a data breach); high when the message reports something that is not working, failing, delayed, missing, or costing money (bugs, defects, delivery problems, stuck requests and explicit refund requests all count), including access problems a routine support action can restore (password resets, restore from backup, re-invites); normal for requests, questions, feedback, feature requests and everything else with no malfunction; unknown when the message is unreadable. Calm phrasing never lowers urgency and dramatic phrasing never raises it."
     levels: [normal, high, critical, unknown]
     level_descriptions:
-      critical: "A needed capability is completely unavailable right now, data is being lost right now, or a live security incident is ongoing."
-      high: "Something is not working, failing, delayed, missing or costing money."
+      critical: "A needed capability is completely unavailable right now with no routine fix, data is being lost right now, or a live security incident is ongoing."
+      high: "Something is not working, failing, delayed, missing or costing money; includes access problems a routine support action can restore."
       normal: "A request, question, feedback or feature request with no malfunction."
       unknown: "Cannot tell from the message."
 thresholds:

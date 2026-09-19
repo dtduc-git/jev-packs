@@ -6,79 +6,79 @@
   "n_items": 800,
   "case_errors": 0,
   "missing_items": 0,
-  "accuracy": 0.5525,
+  "accuracy": 0.5575,
   "accuracy_ci": [
-    0.52125,
-    0.58875
+    0.525,
+    0.5925
   ],
-  "ece": 0.32641858977868643,
+  "ece": 0.3189938907348041,
   "ece_ci": [
-    0.2977025724830872,
-    0.35502678857247183
+    0.2882123160907199,
+    0.348073226449678
   ],
   "suggestion": null,
-  "mean_decision_prob": 0.8789185897786865,
+  "mean_decision_prob": 0.8764938907348041,
   "cost_per_case_usd": 0.0,
   "total_cost_usd": 0.0,
-  "p50_latency_ms": 8843.8,
-  "p95_latency_ms": 10097.1,
+  "p50_latency_ms": 13300.5,
+  "p95_latency_ms": 15136.7,
   "per_question": {
     "relevant": {
       "type": "noul",
       "n": 400,
       "missing": 0,
       "accuracy": 0.915,
-      "mean_decision_prob": 0.954525,
-      "ece": 0.039525000000000005,
-      "brier": 0.06353675
+      "mean_decision_prob": 0.9548000000000001,
+      "ece": 0.0398,
+      "brier": 0.0603555
     },
     "quality": {
       "type": "score",
       "n": 400,
       "missing": 0,
-      "accuracy": 0.19,
-      "mean_decision_prob": 0.803312179557373,
-      "ece": 0.613312179557373,
+      "accuracy": 0.2,
+      "mean_decision_prob": 0.7981877814696082,
+      "ece": 0.5981877814696082,
       "brier": null
     }
   },
   "coverage": [
     {
       "threshold": 0.5,
-      "coverage": 0.9675,
-      "precision": 0.5671834625322998
+      "coverage": 0.95375,
+      "precision": 0.5714285714285714
     },
     {
       "threshold": 0.6,
-      "coverage": 0.89,
-      "precision": 0.5969101123595506
+      "coverage": 0.88375,
+      "precision": 0.6039603960396039
     },
     {
       "threshold": 0.7,
-      "coverage": 0.82125,
-      "precision": 0.639269406392694
+      "coverage": 0.83375,
+      "precision": 0.6356821589205397
     },
     {
       "threshold": 0.8,
-      "coverage": 0.76375,
-      "precision": 0.67430441898527
+      "coverage": 0.765,
+      "precision": 0.6797385620915033
     },
     {
       "threshold": 0.9,
-      "coverage": 0.67125,
-      "precision": 0.7392923649906891
+      "coverage": 0.6575,
+      "precision": 0.7509505703422054
     },
     {
       "threshold": 0.95,
-      "coverage": 0.63,
-      "precision": 0.7579365079365079
+      "coverage": 0.61625,
+      "precision": 0.7748478701825557
     }
   ],
   "threshold_coverage": {
     "n_total": 800,
-    "n_auto": 632,
-    "coverage": 0.79,
-    "precision": 0.6392405063291139
+    "n_auto": 630,
+    "coverage": 0.7875,
+    "precision": 0.6365079365079365
   },
   "gates": [],
   "recorded_models": [
@@ -88,9 +88,9 @@
     "input_usd_per_mtok": 0.0,
     "output_usd_per_mtok": 0.0
   },
-  "pack_version": "0.4.0",
+  "pack_version": "0.5.0",
   "backend": "qwen2.5-7b-ollama",
   "predictions": "results/qwen2.5-7b-ollama/rag-passage-relevance.predictions.jsonl",
-  "predictions_sha256": "1eecab584f2a1e9194ae4aeda15e7541b919093e426f2387ca5740e5ed867a0f",
-  "recorded_at": "2026-09-19"
+  "predictions_sha256": "a1b167d248e2d6939d5ed110361aac73b3acca40fc86a529377af4cf8f4de3df",
+  "recorded_at": "2026-09-20"
 }

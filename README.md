@@ -28,16 +28,17 @@ committed, every number reproducible offline.
 - Backends so far: `jev-1.13.0` (TypeSafe API), `claude-sonnet-5` (Anthropic
   API) and `qwen2.5-7b-ollama` (local open weights), all through the same
   questions, cases and recording protocol.
-- First full matrix (2,990 cases): Jev and Sonnet 5 tie on accuracy on 8/9
-  packs (deltas ≤ 0.018, overlapping 95% CIs). A disagreement harvest then
-  exposed one ambiguous criterion; after the v0.5.0 fix `citation-support`
-  separates the models — Jev **0.979** vs Sonnet 0.941 (McNemar p < 0.001).
-  Overall Jev is **better calibrated on 8/9 packs** (e.g. citation-support ECE
-  0.034 vs 0.057) at **~250× lower cost** ($0.000014–0.000031 vs ~$0.0036 per
-  case). The local 7B trails far behind (0.533–0.813). Numbers, recordings and
-  per-pack reports live in [`results/`](results/); the same loop then
-  tightened `moderation` severity (Jev 0.906 → 0.917 on its v0.8.0 rules;
-  Sonnet's row is stale until refreshed). The criteria-gap analysis is in
+- Disagreement harvest → five criteria passes (citation-support v0.5.0,
+  moderation v0.8.0, rag-answerability v0.6.0, support-triage v0.7.0,
+  rag-passage-relevance v0.5.0) removed systematic gold noise: both-wrong
+  cases fell **55 → 18** and Jev gained 0.4–6.0pp on those packs. Latest
+  matrix: Jev ahead on `citation-support` (0.979 vs 0.941, p < 0.001) and
+  `rag-passage-relevance` (0.921 vs 0.899, p = 0.041); Sonnet ahead on
+  `support-triage` (0.913 vs 0.898, p = 0.019); six packs are statistical
+  ties. Jev is **better calibrated on 8/9 packs** and **~250× cheaper per
+  case** ($0.000014–0.000044 vs ~$0.0036); the local 7B trails far behind
+  (0.533–0.813). Numbers in [`results/`](results/); the full flywheel —
+  harvest, review, criteria fixes, verification — is written up in
   [review/FINDINGS.md](review/FINDINGS.md).
 - Rules, caveats and how to add a backend: [METHODOLOGY.md](METHODOLOGY.md).
 
@@ -67,11 +68,11 @@ the full report and `predictions.jsonl` for the raw recording.
 | Pack | Questions | Items | Accuracy | ECE | Cost/case |
 |---|---|---|---|---|---|
 | [`citation-support`](packs/citation-support) | supports, coverage | 800 | **0.979** | 0.034 | $0.000019 |
-| [`rag-answerability`](packs/rag-answerability) | answerable-from-context, missing info | 840 | **0.908** | 0.021 | $0.000025 |
+| [`rag-answerability`](packs/rag-answerability) | answerable-from-context, missing info | 840 | **0.930** | 0.027 | $0.000032 |
 | [`moderation`](packs/moderation) | action, severity, targeted group | 1,350 | **0.917** | 0.013 | $0.000044 |
-| [`rag-passage-relevance`](packs/rag-passage-relevance) | relevance, passage quality | 800 | **0.899** | 0.035 | $0.000018 |
+| [`rag-passage-relevance`](packs/rag-passage-relevance) | relevance, passage quality | 800 | **0.921** | 0.021 | $0.000020 |
 | [`entity-merge`](packs/entity-merge) | same entity?, resolution action | 840 | **0.857** | 0.017 | $0.000018 |
-| [`support-triage`](packs/support-triage) | refund intent, queue, urgency | 1,350 | **0.887** | 0.059 | $0.000028 |
+| [`support-triage`](packs/support-triage) | refund intent, queue, urgency | 1,350 | **0.898** | 0.057 | $0.000031 |
 
 ### Dataset-derived packs (upstream license, attribution in each README)
 

@@ -17,11 +17,14 @@ or truncate it.
   subject but helps answer nothing is `false`.
 - `quality`:
   - `strong` — contains the answer or everything needed to answer.
-  - `ok` — contains usable partial information (a piece, a pointer, a range).
-  - `weak` — same subject, nothing usable.
+  - `ok` — a usable piece of the answer: a value, a range, a schedule, steps,
+    or an explicit pointer to where it is handled.
+  - `weak` — same subject, but the asked fact is not stated (only related
+    facts, even if they let you infer the answer).
   - `junk` — different subject.
   - `unknown` — passage unusable or unreadable (empty, garbled, encoding
     damage), so usefulness cannot be judged.
+- Judge what the passage states, not what can be inferred from it.
 - Expected consistency: `relevant` is `true` exactly when `quality` is `ok` or
   `strong`. Gold cases include the awkward middle on purpose.
 - Labeled from the pair alone; the passage is not assumed to come from any

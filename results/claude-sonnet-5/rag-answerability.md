@@ -1,33 +1,33 @@
-# jevassert report — rag-answerability v0.5.0
+# jevassert report — rag-answerability v0.6.0
 
 - model: `claude-sonnet-5` (pack pinned to `jev-1.13.0`)
 - cases: 420 (0 errors, 0 missing answers)
-- items: 840 — accuracy **0.908**, ECE **0.059**
-- bootstrap 95%: accuracy CI 0.889–0.929, ECE CI 0.041–0.073
-- cost: $0.003695/case ($1.5518 total)
-- latency: p50 2087ms, p95 4309ms
+- items: 840 — accuracy **0.927**, ECE **0.034**
+- bootstrap 95%: accuracy CI 0.910–0.945, ECE CI 0.030–0.061
+- cost: $0.004341/case ($1.8232 total)
+- latency: p50 2295ms, p95 5179ms
 
 ## Per question
 
 | question | type | n | missing | accuracy | mean p(decision) | ECE | Brier |
 |---|---|---|---|---|---|---|---|
-| answerable | noul | 420 | 0 | 0.960 | 0.950 | 0.032 | 0.028 |
-| missing_info | choice | 420 | 0 | 0.857 | 0.839 | 0.097 | — |
+| answerable | noul | 420 | 0 | 0.962 | 0.953 | 0.026 | 0.032 |
+| missing_info | choice | 420 | 0 | 0.893 | 0.836 | 0.079 | — |
 
 ## Coverage at decision probability
 
 | accept if p >= | coverage | precision |
 |---|---|---|
-| 0.50 | 0.996 | 0.910 |
-| 0.60 | 0.965 | 0.927 |
-| 0.70 | 0.926 | 0.946 |
-| 0.80 | 0.836 | 0.977 |
-| 0.90 | 0.636 | 0.989 |
-| 0.95 | 0.552 | 0.994 |
+| 0.50 | 0.998 | 0.930 |
+| 0.60 | 0.976 | 0.935 |
+| 0.70 | 0.938 | 0.943 |
+| 0.80 | 0.810 | 0.966 |
+| 0.90 | 0.617 | 0.990 |
+| 0.95 | 0.552 | 1.000 |
 
 ## Author thresholds (pack threshold floors)
 
-- auto-accepted 719/840 (0.856), precision 0.965
+- auto-accepted 709/840 (0.844), precision 0.962
 - labels without a floor (usually `unknown`) always route to review
 
 ## Gates

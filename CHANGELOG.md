@@ -22,8 +22,17 @@ Repo-level changes; per-pack history lives in each pack's `CHANGELOG.md`.
   iterations (v0.7.0 fixed reporting threats/mockery but was rejected by a
   46-vs-35 regression comparison; v0.8.0 splits protected-hate, collective
   insults and livelihood threats correctly). Jev 0.906 → 0.917 (p = 0.044),
-  ECE 0.027 → 0.013, both-wrong 12 → 7. Sonnet's moderation row is stale
-  (v0.7.0) until a ~$2 refresh.
+  ECE 0.027 → 0.013, both-wrong 12 → 7.
+- **`rag-answerability` v0.6.0**: `other`/`unknown` boundary defined
+  operationally (process deferral vs pointer to where the answer lives).
+  Jev 0.908 → 0.930 (p = 0.004), both-wrong 11 → 1. A rejected first rewrite
+  (over-using `other`, −0.020) is documented in review/FINDINGS.md.
+- **`support-triage` v0.7.0**: queue scopes and recoverable-access urgency
+  made explicit. Jev 0.887 → 0.898; Sonnet still leads (p = 0.019), kept
+  visible as a model finding.
+- **`rag-passage-relevance` v0.5.0**: judge stated, not inferred. Jev
+  0.899 → 0.921 (p = 0.0005) and the pack now separates the models (p = 0.041).
+- **Totals after five passes**: both-wrong cases 55 → 18 across the matrix.
 - `build_scoreboard.py` and `verify_results.py` now mark and skip stale rows
   (result `pack_version` behind the current pack) instead of failing or
   silently mixing versions.

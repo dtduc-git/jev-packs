@@ -13,19 +13,25 @@ refund requests and rank urgency.
 
 ### Labeling rules
 
-- `refund_request` is **explicit only**: the sender asks for a refund, return or
-  money back. "The item arrived damaged", "pricing is unfair" or "I might
-  cancel" are `false`; "I want my money back" is `true`.
+- `refund_request` is **explicit only**: the sender asks for a refund, a
+  return, a charge reversal or money back. "The item arrived damaged",
+  "pricing is unfair" or "I might cancel" are `false`; "I want my money back"
+  is `true`.
 - `queue` follows the fix, not the symptom: anything that ends in money moving
   back goes to `billing` (including returns and fee reversals); delivery and
-  address issues go to `shipping`.
+  address issues go to `shipping`; user, workspace, team and settings
+  management (including data export and deletion) goes to `account`; pre-sales
+  questions, evaluations and compliance checks (audit logs, data regions) go
+  to `other`.
 - `urgency` uses three operational levels: `critical` = a capability the
-  sender depends on is completely unavailable right now, data is being lost,
-  or a live security incident; `high` = something is not working, failing,
-  delayed, missing or costing money (bugs, delivery problems, stuck requests,
-  refunds); `normal` = requests, questions, feedback, feature requests. Tone
-  never changes the level. (The former `low` level was removed: feedback has
-  the same operational urgency as any other request.)
+  sender depends on is completely unavailable right now with no routine fix,
+  data is being lost, or a live security incident; `high` = something is not
+  working, failing, delayed, missing or costing money (bugs, delivery
+  problems, stuck requests, refunds), **including access a routine support
+  action can restore** (password reset, restore from backup, re-invite);
+  `normal` = requests, questions, feedback, feature requests. Tone never
+  changes the level. (The former `low` level was removed: feedback has the
+  same operational urgency as any other request.)
 - Gold cases are labeled from `message` alone, with no ticket history.
 
 ## Provenance

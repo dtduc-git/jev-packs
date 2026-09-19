@@ -1,10 +1,10 @@
 {
   "spec": 0,
-  "updated": "2026-09-19",
+  "updated": "2026-09-20",
   "packs": [
     {
       "id": "support-triage",
-      "version": "0.6.0",
+      "version": "0.7.0",
       "path": "packs/support-triage",
       "license": "CC0-1.0",
       "status": "verified",
@@ -12,7 +12,7 @@
     },
     {
       "id": "rag-passage-relevance",
-      "version": "0.4.0",
+      "version": "0.5.0",
       "path": "packs/rag-passage-relevance",
       "license": "CC0-1.0",
       "status": "verified",
@@ -20,7 +20,7 @@
     },
     {
       "id": "rag-answerability",
-      "version": "0.5.0",
+      "version": "0.6.0",
       "path": "packs/rag-answerability",
       "license": "CC0-1.0",
       "status": "verified",

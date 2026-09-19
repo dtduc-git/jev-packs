@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.7.0 — 2026-09-19
+
+- Criteria clarified after a Jev-vs-Claude harvest (Sonnet ahead 54-30 on this
+  pack): `queue` option descriptions now carry their scope (account =
+  user/workspace/team/settings/data export; other = pre-sales, evaluations,
+  compliance checks such as audit logs and data regions); `urgency` states
+  that access a routine support action can restore (password reset, restore
+  from backup, re-invite) is `high`, not `critical`; `refund_request` includes
+  explicit charge reversals. No labels changed.
+
 ## 0.6.0 — 2026-09-19
 
 - `urgency` redesigned to three operational levels (`normal`, `high`,

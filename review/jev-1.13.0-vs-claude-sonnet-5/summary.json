@@ -49,34 +49,34 @@
     "moderation": {
       "n_items": 1347,
       "accuracy_a": 0.9168522642910171,
-      "accuracy_b": 0.9079435783221975,
-      "a_only": 70,
-      "b_only": 58,
-      "both_wrong": 7,
+      "accuracy_b": 0.9227913882702301,
+      "a_only": 43,
+      "b_only": 51,
+      "both_wrong": 6,
       "missing_b": 3,
-      "mcnemar_p": 0.33093582894221385,
+      "mcnemar_p": 0.47049211489037057,
       "disagreement_file": "review/jev-1.13.0-vs-claude-sonnet-5/moderation.jsonl"
     },
     "rag-answerability": {
       "n_items": 840,
-      "accuracy_a": 0.9083333333333333,
-      "accuracy_b": 0.9083333333333333,
+      "accuracy_a": 0.9297619047619048,
+      "accuracy_b": 0.9273809523809524,
       "a_only": 29,
-      "b_only": 29,
-      "both_wrong": 11,
+      "b_only": 27,
+      "both_wrong": 1,
       "missing_b": 0,
-      "mcnemar_p": 1.0,
+      "mcnemar_p": 0.8938530948350217,
       "disagreement_file": "review/jev-1.13.0-vs-claude-sonnet-5/rag-answerability.jsonl"
     },
     "rag-passage-relevance": {
       "n_items": 800,
-      "accuracy_a": 0.89875,
-      "accuracy_b": 0.8925,
-      "a_only": 32,
-      "b_only": 27,
-      "both_wrong": 2,
+      "accuracy_a": 0.92125,
+      "accuracy_b": 0.89875,
+      "a_only": 44,
+      "b_only": 26,
+      "both_wrong": 4,
       "missing_b": 0,
-      "mcnemar_p": 0.6029232012571503,
+      "mcnemar_p": 0.04139142867391546,
       "disagreement_file": "review/jev-1.13.0-vs-claude-sonnet-5/rag-passage-relevance.jsonl"
     },
     "sms-spam": {
@@ -92,21 +92,21 @@
     },
     "support-triage": {
       "n_items": 1350,
-      "accuracy_a": 0.8874074074074074,
-      "accuracy_b": 0.9051851851851852,
-      "a_only": 30,
-      "b_only": 54,
-      "both_wrong": 6,
+      "accuracy_a": 0.8977777777777778,
+      "accuracy_b": 0.9133333333333333,
+      "a_only": 26,
+      "b_only": 47,
+      "both_wrong": 5,
       "missing_b": 0,
-      "mcnemar_p": 0.011634454119925829,
+      "mcnemar_p": 0.018617751433194638,
       "disagreement_file": "review/jev-1.13.0-vs-claude-sonnet-5/support-triage.jsonl"
     }
   },
   "totals": {
     "items": 6427,
-    "a_only": 241,
-    "b_only": 222,
-    "both_wrong": 28,
+    "a_only": 222,
+    "b_only": 205,
+    "both_wrong": 18,
     "missing_b": 3
   }
 }
