@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.5.0 — 2026-09-19
+
+- 0.5.0: answerable/missing_info criteria rewritten (concise-but-sufficient counts as complete; cross-question consistency; procedure = action not stated; unknown = only defers); 20 boundary cases added; evidence re-recorded.
+
 ## 0.4.0 — 2026-09-19
 
 - Doubled from 200 to 400 cases; evidence re-recorded.

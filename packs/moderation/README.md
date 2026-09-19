@@ -21,9 +21,12 @@ legal advice; consumers can fork it with their own policy text.
 - `targeted_group` is `true` only when the demeaning or attacking quality is
   *because of* a protected characteristic. Insults aimed at a person's
   politics, job or behavior are `false` even when harsh.
-- `severity`: `none` (no harm), `low` (rudeness, spam), `medium` (harassment,
-  demeaning generalization), `high` (threats, doxxing, hate with targeting).
-  The pack.yaml `level_descriptions` mirror these anchors.
+- `severity`: `none` (criticism, complaints, disagreement), `low` (profanity
+  or mild hostility without a target), `medium` (targeted insult/harassment,
+  demeaning generalization), `high` (threats or veiled threats, doxxing, hate
+  with protected targeting, fraud, wishes of serious harm). Unreadable input,
+  and any text whose action is `unknown`, has `severity: unknown`. The
+  pack.yaml `level_descriptions` mirror these anchors.
 - `unknown` action is for input that cannot be classified at all: empty,
   garbled, redacted or encoding-damaged text. Ambiguity elsewhere resolves to
   `review`, which is what `review` is for.
@@ -44,7 +47,8 @@ floor.
 
 ## Evidence
 
-Recorded 2026-09-19 against `jev-1.13.0`: accuracy **0.872**, ECE 0.050,
-$0.000028/case. The 0.5.0 ordered-rule rewrite lifted `action` from 0.68 to
-0.93; `severity` (0.70) remains the hard part. Full report:
-[evidence.md](evidence.md); raw recording: [predictions.jsonl](predictions.jsonl).
+Recorded 2026-09-19 against `jev-1.13.0`: accuracy **0.906**, ECE 0.027,
+$0.000031/case. The 0.6.0 severity rewrite lifted `severity` from 0.70 to
+0.81; `action` (0.92) and `targeted_group` (0.99) remain the strong questions.
+Full report: [evidence.md](evidence.md); raw recording:
+[predictions.jsonl](predictions.jsonl).

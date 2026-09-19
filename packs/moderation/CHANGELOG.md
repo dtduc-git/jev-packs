@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.6.0 — 2026-09-19
+
+- 0.6.0: severity criteria tightened (criticism/complaints -> none; unreadable -> unknown); 41 complaint cases reclassified low -> none; 20 boundary cases added; evidence re-recorded.
+
 ## 0.5.0 — 2026-09-19
 
 - `action` and `severity` criteria rewritten as ordered decision rules

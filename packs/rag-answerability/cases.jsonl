@@ -398,3 +398,23 @@
 {"id": "ra-0398", "state": {"question": "What is the ideal temperature?", "context": "Ideal conditions vary."}, "expect": {"answerable": false, "missing_info": "unknown"}}
 {"id": "ra-0399", "state": {"question": "Should we migrate now?", "context": "Migrations depend on context."}, "expect": {"answerable": false, "missing_info": "unknown"}}
 {"id": "ra-0400", "state": {"question": "How much should I save?", "context": "Savings goals vary."}, "expect": {"answerable": false, "missing_info": "unknown"}}
+{"id": "ra-0401", "state": {"question": "How do I add a user?", "context": "Add users under Settings > Members."}, "expect": {"answerable": true, "missing_info": "none"}}
+{"id": "ra-0402", "state": {"question": "How do I export data?", "context": "Export is available from the Data menu."}, "expect": {"answerable": false, "missing_info": "procedure"}}
+{"id": "ra-0403", "state": {"question": "How do I enable alerts?", "context": "Enable alerts in the project settings."}, "expect": {"answerable": true, "missing_info": "none"}}
+{"id": "ra-0404", "state": {"question": "How do I renew the certificate?", "context": "Certificates can be renewed."}, "expect": {"answerable": false, "missing_info": "procedure"}}
+{"id": "ra-0405", "state": {"question": "How do I clear the cache?", "context": "Clear the cache from Settings > Advanced > Clear cache."}, "expect": {"answerable": true, "missing_info": "none"}}
+{"id": "ra-0406", "state": {"question": "How do I delete a workspace?", "context": "Workspace deletion is under Settings."}, "expect": {"answerable": false, "missing_info": "procedure"}}
+{"id": "ra-0407", "state": {"question": "How do I set the retention period?", "context": "Set the retention period in the policy editor."}, "expect": {"answerable": true, "missing_info": "none"}}
+{"id": "ra-0408", "state": {"question": "How do I invite a member?", "context": "Members can be invited from the team page."}, "expect": {"answerable": false, "missing_info": "procedure"}}
+{"id": "ra-0409", "state": {"question": "How do I change the logo?", "context": "Upload a new logo under Branding."}, "expect": {"answerable": true, "missing_info": "none"}}
+{"id": "ra-0410", "state": {"question": "How do I rotate keys?", "context": "Key rotation is supported."}, "expect": {"answerable": false, "missing_info": "procedure"}}
+{"id": "ra-0411", "state": {"question": "What is the right approach?", "context": "It depends on your goals."}, "expect": {"answerable": false, "missing_info": "unknown"}}
+{"id": "ra-0412", "state": {"question": "How long will approval take?", "context": "Approval times vary."}, "expect": {"answerable": false, "missing_info": "unknown"}}
+{"id": "ra-0413", "state": {"question": "Which vendor should we pick?", "context": "Vendors differ in coverage."}, "expect": {"answerable": false, "missing_info": "unknown"}}
+{"id": "ra-0414", "state": {"question": "Is it worth migrating?", "context": "Migration value depends on scale."}, "expect": {"answerable": false, "missing_info": "unknown"}}
+{"id": "ra-0415", "state": {"question": "How much will traffic grow?", "context": "Growth depends on marketing."}, "expect": {"answerable": false, "missing_info": "unknown"}}
+{"id": "ra-0416", "state": {"question": "Is the dataset complete?", "context": "The dataset covers several countries."}, "expect": {"answerable": false, "missing_info": "other"}}
+{"id": "ra-0417", "state": {"question": "Does it support HIPAA?", "context": "Compliance certifications are listed."}, "expect": {"answerable": false, "missing_info": "other"}}
+{"id": "ra-0418", "state": {"question": "Is the office pet-friendly?", "context": "Office policies are in the handbook."}, "expect": {"answerable": false, "missing_info": "other"}}
+{"id": "ra-0419", "state": {"question": "Can I use it offline?", "context": "Offline use depends on the license tier."}, "expect": {"answerable": false, "missing_info": "other"}}
+{"id": "ra-0420", "state": {"question": "What is the maximum retention?", "context": "Retention limits are configurable."}, "expect": {"answerable": false, "missing_info": "number"}}

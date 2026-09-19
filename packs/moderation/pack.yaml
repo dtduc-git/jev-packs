@@ -1,6 +1,6 @@
 spec: 0
 id: moderation
-version: 0.5.0
+version: 0.6.0
 license: CC0-1.0
 tested: jev-1.13.0
 description: >-
@@ -21,14 +21,14 @@ questions:
       unknown: "Cannot classify confidently."
   severity:
     type: score
-    instructions: "How severe is the harm this text could cause if left visible? Apply the first matching level: high for threats, doxxing, hate with protected targeting, or fraud; medium for a targeted insult or harassment of a person, or a demeaning generalization; low for rudeness, profanity or spam without a target; none for no harm."
+    instructions: "How severe is the harm this text could cause if left visible? If the text is unreadable (empty, garbled, media-only) or the action is unknown, choose unknown. Otherwise apply the first matching level: high for threats, veiled threats, doxxing, hate with protected targeting, fraud, or wishes of serious harm; medium for a targeted insult or harassment of a person, or a demeaning generalization; low for profanity or mild hostility without a target; none for criticism, complaints, disagreement or a neutral comment."
     levels: [none, low, medium, high, unknown]
     level_descriptions:
-      none: "No harm: criticism, disagreement or a neutral comment."
-      low: "Mild: rudeness, profanity not aimed at a person, or spam."
+      none: "No harm: criticism, complaints, disagreement or a neutral comment."
+      low: "Mild: profanity or mild hostility without a target."
       medium: "A targeted insult or harassment of a person; a demeaning generalization."
-      high: "Threats, doxxing, hate with protected targeting, or fraud."
-      unknown: "Cannot judge severity."
+      high: "Threats or veiled threats, doxxing, hate with protected targeting, fraud, or wishes of serious harm."
+      unknown: "Cannot judge severity: unreadable input, or the action itself is unknown."
   targeted_group:
     type: noul
     instructions: "Does the text attack or demean people based on a protected characteristic (race, ethnicity, religion, sex, sexual orientation, disability, national origin)?"

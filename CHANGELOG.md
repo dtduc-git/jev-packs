@@ -40,3 +40,9 @@ Repo-level changes; per-pack history lives in each pack's `CHANGELOG.md`.
   0.797 → 0.843 (`urgency` 0.56 → 0.69), moderation 0.791 → 0.872 (`action`
   0.68 → 0.93). Criteria wording moved the numbers more than 2,420 extra
   cases did.
+- **Second criteria pass (v0.5.0/v0.6.0)**: `rag-answerability` 0.861 → 0.908
+  (`missing_info` 0.78 → 0.86, McNemar p < 0.0001 — concise-but-sufficient
+  rule, cross-question consistency, procedure-vs-availability); `moderation`
+  severity criteria tightened, 41 mislabeled complaint cases reclassified
+  (`severity` 0.70 → 0.81, overall 0.906). Running total: 9 packs, 2,950
+  cases, 6,370 items, all verified against `jev-1.13.0`.

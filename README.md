@@ -39,9 +39,9 @@ the full report and `predictions.jsonl` for the raw recording.
 | Pack | Questions | Items | Accuracy | ECE | Cost/case |
 |---|---|---|---|---|---|
 | [`citation-support`](packs/citation-support) | supports, coverage | 800 | **0.919** | 0.022 | $0.000017 |
+| [`rag-answerability`](packs/rag-answerability) | answerable-from-context, missing info | 840 | **0.908** | 0.021 | $0.000025 |
+| [`moderation`](packs/moderation) | action, severity, targeted group | 1,350 | **0.906** | 0.027 | $0.000031 |
 | [`rag-passage-relevance`](packs/rag-passage-relevance) | relevance, passage quality | 800 | **0.899** | 0.035 | $0.000018 |
-| [`moderation`](packs/moderation) | action, severity, targeted group | 1,290 | **0.872** | 0.050 | $0.000028 |
-| [`rag-answerability`](packs/rag-answerability) | answerable-from-context, missing info | 800 | **0.861** | 0.051 | $0.000020 |
 | [`entity-merge`](packs/entity-merge) | same entity?, resolution action | 840 | **0.857** | 0.017 | $0.000018 |
 | [`support-triage`](packs/support-triage) | refund intent, queue, urgency | 1,290 | **0.843** | 0.059 | $0.000027 |
 
