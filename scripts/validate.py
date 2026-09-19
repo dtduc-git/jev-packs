@@ -266,6 +266,13 @@ def validate_results(packs: dict[str, dict]) -> int:
                 err(f"{rel}/backend.json", f"`{key}` must be a non-empty string")
         if meta.get("provider") not in ("openai", "anthropic", "bedrock", "typesafe"):
             err(f"{rel}/backend.json", f"provider must be openai | anthropic | bedrock | typesafe, got {meta.get('provider')!r}")
+        endpoint = str(meta.get("endpoint") or "")
+        if meta.get("provider") != "typesafe" and "typesafe" in endpoint:
+            err(f"{rel}/backend.json", "non-typesafe backend must not point at the TypeSafe endpoint")
+        if meta.get("provider") == "anthropic" and "anthropic" not in endpoint:
+            err(f"{rel}/backend.json", "anthropic backend endpoint should be https://api.anthropic.com")
+        if meta.get("provider") == "bedrock" and "bedrock" not in endpoint.lower():
+            err(f"{rel}/backend.json", "bedrock backend endpoint should name AWS Bedrock")
         pricing = meta.get("pricing_usd_per_mtok")
         if not isinstance(pricing, dict):
             err(f"{rel}/backend.json", "pricing_usd_per_mtok must be an object")

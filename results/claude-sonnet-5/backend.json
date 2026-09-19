@@ -4,7 +4,7 @@
   "name": "Claude Sonnet 5 (Anthropic API)",
   "provider": "anthropic",
   "model": "claude-sonnet-5",
-  "endpoint": "https://api.typesafe.ai",
+  "endpoint": "https://api.anthropic.com",
   "license": "proprietary (Anthropic)",
   "submitted_by": "dtduc-git",
   "created": "2026-09-19",

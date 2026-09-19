@@ -33,6 +33,11 @@ PACKS_DIR = ROOT / "packs"
 RESULTS_DIR = ROOT / "results"
 INDEX = ROOT / "index.json"
 SLUG_RE = re.compile(r"^[a-z0-9]+(?:[.-][a-z0-9]+)*$")
+DEFAULT_ENDPOINTS = {
+    "typesafe": "https://api.typesafe.ai",
+    "anthropic": "https://api.anthropic.com",
+    "bedrock": "AWS Bedrock (global inference profiles)",
+}
 SCHEMA = 0
 SETTINGS = {
     "structured_outputs": True,
@@ -68,7 +73,7 @@ def write_backend_metadata(slug_dir: Path, args: argparse.Namespace, created: st
         "name": args.name,
         "provider": args.backend,
         "model": args.model,
-        "endpoint": args.base_url or "https://api.typesafe.ai",
+        "endpoint": args.base_url or DEFAULT_ENDPOINTS.get(args.backend, ""),
         "license": args.license,
         "submitted_by": args.submitted_by,
         "created": created,
@@ -117,6 +122,9 @@ def main() -> int:
 
     if not SLUG_RE.match(args.slug):
         print(f"--slug must be lowercase letters/digits with - or .: {args.slug!r}", file=sys.stderr)
+        return 2
+    if args.backend == "openai" and not args.base_url:
+        print("--backend openai requires --base-url (the OpenAI-compatible endpoint)", file=sys.stderr)
         return 2
 
     slug_dir = RESULTS_DIR / args.slug
