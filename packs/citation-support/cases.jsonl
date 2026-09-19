@@ -198,3 +198,203 @@
 {"id": "cs-0198", "state": {"claim": "The road will widen to four lanes.", "quote": "[figure unavailable]"}, "expect": {"supports": false, "coverage": "unknown"}}
 {"id": "cs-0199", "state": {"claim": "The bank raised its prime rate.", "quote": "...."}, "expect": {"supports": false, "coverage": "unknown"}}
 {"id": "cs-0200", "state": {"claim": "The island is a nature reserve.", "quote": "[content removed]"}, "expect": {"supports": false, "coverage": "unknown"}}
+{"id": "cs-0201", "state": {"claim": "The discount is 20 percent for students.", "quote": "Students receive a 20 percent discount."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0202", "state": {"claim": "The flight was cancelled due to a strike.", "quote": "A strike caused the flight cancellation."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0203", "state": {"claim": "The museum charges 15 euros admission.", "quote": "Admission costs 15 euros."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0204", "state": {"claim": "The survey had 1,200 respondents.", "quote": "Twelve hundred people responded to the survey."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0205", "state": {"claim": "The park closes at sunset.", "quote": "The park is open until sunset."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0206", "state": {"claim": "The committee will meet on Thursday.", "quote": "Thursday is the committee's meeting day."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0207", "state": {"claim": "The software update fixes three bugs.", "quote": "Three bugs are fixed in the update."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0208", "state": {"claim": "The river flooded three villages.", "quote": "Three villages were flooded by the river."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0209", "state": {"claim": "The vaccine requires refrigeration.", "quote": "The vaccine must be kept refrigerated."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0210", "state": {"claim": "The team trains six days a week.", "quote": "Training runs six days per week."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0211", "state": {"claim": "The bank charges no monthly fee.", "quote": "There is no monthly bank fee."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0212", "state": {"claim": "The novel has 480 pages.", "quote": "The novel runs to 480 pages."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0213", "state": {"claim": "The hotel offers free breakfast.", "quote": "Breakfast is complimentary at the hotel."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0214", "state": {"claim": "The plant produces 200 cars daily.", "quote": "Daily output reaches 200 cars."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0215", "state": {"claim": "The bridge toll is 4 dollars.", "quote": "Crossing the bridge costs 4 dollars."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0216", "state": {"claim": "The professor cancelled the lecture.", "quote": "The lecture was cancelled by the professor."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0217", "state": {"claim": "The company donated 50,000 dollars to the charity.", "quote": "The charity received a 50,000 dollar donation from the company."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0218", "state": {"claim": "The train arrives at 8:45.", "quote": "Arrival is scheduled for 8:45."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0219", "state": {"claim": "The app tracks 10 metrics.", "quote": "Ten metrics are tracked by the app."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0220", "state": {"claim": "The forest covers 3,000 hectares.", "quote": "The forest spans 3,000 hectares."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0221", "state": {"claim": "The study was published in Nature.", "quote": "Nature published the study."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0222", "state": {"claim": "The airport handles 40 million passengers yearly.", "quote": "Yearly passenger traffic reaches 40 million."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0223", "state": {"claim": "The drug was tested on 500 volunteers.", "quote": "Five hundred volunteers took part in the drug trial."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0224", "state": {"claim": "The school has 30 teachers.", "quote": "Thirty teachers work at the school."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0225", "state": {"claim": "The fund charges no entry fee.", "quote": "There is no entry fee for the fund."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0226", "state": {"claim": "The lake is stocked with carp.", "quote": "Carp populate the lake."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0227", "state": {"claim": "The factory runs three shifts.", "quote": "Three shifts operate at the factory."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0228", "state": {"claim": "The book was translated into 12 languages.", "quote": "Twelve translations of the book exist."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0229", "state": {"claim": "The storm damaged the pier.", "quote": "The pier was damaged by the storm."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0230", "state": {"claim": "The law requires helmets.", "quote": "Helmets are required by law."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0231", "state": {"claim": "The grant covers tuition.", "quote": "Tuition is covered by the grant."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0232", "state": {"claim": "The plane landed in heavy fog.", "quote": "Heavy fog was present during the landing."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0233", "state": {"claim": "The committee rejected the proposal.", "quote": "The proposal was rejected by the committee."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0234", "state": {"claim": "The recipe calls for two eggs.", "quote": "Two eggs are needed for the recipe."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0235", "state": {"claim": "The battery lasts 10 hours.", "quote": "Ten hours of battery life."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0236", "state": {"claim": "The ship carries 2,000 containers.", "quote": "Capacity is 2,000 containers."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0237", "state": {"claim": "The report warns of drought.", "quote": "The report contains a drought warning."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0238", "state": {"claim": "The clinic opens at 7 am.", "quote": "The clinic's doors open at 07:00."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0239", "state": {"claim": "The film runs 135 minutes.", "quote": "The film's runtime is 135 minutes."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0240", "state": {"claim": "The code passes all tests.", "quote": "All tests pass on the code."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0241", "state": {"claim": "The study found benefits and risks.", "quote": "The study found benefits."}, "expect": {"supports": false, "coverage": "partial"}}
+{"id": "cs-0242", "state": {"claim": "The plan includes insurance and roadside assistance.", "quote": "The plan includes insurance."}, "expect": {"supports": false, "coverage": "partial"}}
+{"id": "cs-0243", "state": {"claim": "The hotel has a pool and gym.", "quote": "The hotel has a pool."}, "expect": {"supports": false, "coverage": "partial"}}
+{"id": "cs-0244", "state": {"claim": "The device is fast and quiet.", "quote": "The device is fast."}, "expect": {"supports": false, "coverage": "partial"}}
+{"id": "cs-0245", "state": {"claim": "The course covers grammar and vocabulary.", "quote": "The course covers grammar."}, "expect": {"supports": false, "coverage": "partial"}}
+{"id": "cs-0246", "state": {"claim": "The deal includes shares and cash.", "quote": "The deal includes cash."}, "expect": {"supports": false, "coverage": "partial"}}
+{"id": "cs-0247", "state": {"claim": "The team signed a coach and two players.", "quote": "The team signed two players."}, "expect": {"supports": false, "coverage": "partial"}}
+{"id": "cs-0248", "state": {"claim": "The city built schools and hospitals.", "quote": "The city built schools."}, "expect": {"supports": false, "coverage": "partial"}}
+{"id": "cs-0249", "state": {"claim": "The buffet offers vegetarian and vegan options.", "quote": "The buffet offers vegetarian options."}, "expect": {"supports": false, "coverage": "partial"}}
+{"id": "cs-0250", "state": {"claim": "The package supports Windows and Linux.", "quote": "The package supports Windows."}, "expect": {"supports": false, "coverage": "partial"}}
+{"id": "cs-0251", "state": {"claim": "The event features music and food.", "quote": "The event features music."}, "expect": {"supports": false, "coverage": "partial"}}
+{"id": "cs-0252", "state": {"claim": "The kit contains a battery and charger.", "quote": "The kit contains a charger."}, "expect": {"supports": false, "coverage": "partial"}}
+{"id": "cs-0253", "state": {"claim": "The report covers costs and timelines.", "quote": "The report covers costs."}, "expect": {"supports": false, "coverage": "partial"}}
+{"id": "cs-0254", "state": {"claim": "The insurance covers theft and fire.", "quote": "The insurance covers fire."}, "expect": {"supports": false, "coverage": "partial"}}
+{"id": "cs-0255", "state": {"claim": "The airline serves lunch and dinner.", "quote": "The airline serves dinner."}, "expect": {"supports": false, "coverage": "partial"}}
+{"id": "cs-0256", "state": {"claim": "The apartment has heating and air conditioning.", "quote": "The apartment has heating."}, "expect": {"supports": false, "coverage": "partial"}}
+{"id": "cs-0257", "state": {"claim": "The contract includes training and support.", "quote": "The contract includes training."}, "expect": {"supports": false, "coverage": "partial"}}
+{"id": "cs-0258", "state": {"claim": "The museum displays paintings and sculptures.", "quote": "The museum displays sculptures."}, "expect": {"supports": false, "coverage": "partial"}}
+{"id": "cs-0259", "state": {"claim": "The app offers chat and email support.", "quote": "The app offers chat support."}, "expect": {"supports": false, "coverage": "partial"}}
+{"id": "cs-0260", "state": {"claim": "The farm grows wheat and barley.", "quote": "The farm grows wheat."}, "expect": {"supports": false, "coverage": "partial"}}
+{"id": "cs-0261", "state": {"claim": "The seminar covers taxes and retirement.", "quote": "The seminar covers retirement."}, "expect": {"supports": false, "coverage": "partial"}}
+{"id": "cs-0262", "state": {"claim": "The router supports 2.4 and 5 GHz.", "quote": "The router supports 5 GHz."}, "expect": {"supports": false, "coverage": "partial"}}
+{"id": "cs-0263", "state": {"claim": "The tour visits Rome and Florence.", "quote": "The tour visits Florence."}, "expect": {"supports": false, "coverage": "partial"}}
+{"id": "cs-0264", "state": {"claim": "The phone includes earbuds and a case.", "quote": "The phone includes a case."}, "expect": {"supports": false, "coverage": "partial"}}
+{"id": "cs-0265", "state": {"claim": "The bridge is closed for a year.", "quote": "The bridge reopens next month."}, "expect": {"supports": false, "coverage": "full"}}
+{"id": "cs-0266", "state": {"claim": "The study found a large effect.", "quote": "The study found no effect."}, "expect": {"supports": false, "coverage": "full"}}
+{"id": "cs-0267", "state": {"claim": "The city approved the budget.", "quote": "The city rejected the budget."}, "expect": {"supports": false, "coverage": "full"}}
+{"id": "cs-0268", "state": {"claim": "The team won the final.", "quote": "The team lost the final."}, "expect": {"supports": false, "coverage": "full"}}
+{"id": "cs-0269", "state": {"claim": "The drug is available over the counter.", "quote": "The drug requires a prescription."}, "expect": {"supports": false, "coverage": "full"}}
+{"id": "cs-0270", "state": {"claim": "The event is free.", "quote": "Tickets for the event cost 50 dollars."}, "expect": {"supports": false, "coverage": "full"}}
+{"id": "cs-0271", "state": {"claim": "The museum allows photography.", "quote": "Photography is banned in the museum."}, "expect": {"supports": false, "coverage": "full"}}
+{"id": "cs-0272", "state": {"claim": "The fund gained 10 percent.", "quote": "The fund lost 10 percent."}, "expect": {"supports": false, "coverage": "full"}}
+{"id": "cs-0273", "state": {"claim": "The law applies nationwide.", "quote": "The law applies only in the capital."}, "expect": {"supports": false, "coverage": "full"}}
+{"id": "cs-0274", "state": {"claim": "The airline allows pets in the cabin.", "quote": "Pets are not allowed in the cabin."}, "expect": {"supports": false, "coverage": "full"}}
+{"id": "cs-0275", "state": {"claim": "The app is available for iOS.", "quote": "The app is Android-only."}, "expect": {"supports": false, "coverage": "full"}}
+{"id": "cs-0276", "state": {"claim": "The restaurant takes reservations.", "quote": "The restaurant does not take reservations."}, "expect": {"supports": false, "coverage": "full"}}
+{"id": "cs-0277", "state": {"claim": "The train stops here daily.", "quote": "The train no longer stops here."}, "expect": {"supports": false, "coverage": "full"}}
+{"id": "cs-0278", "state": {"claim": "The plant will expand capacity.", "quote": "The plant will cut capacity."}, "expect": {"supports": false, "coverage": "full"}}
+{"id": "cs-0279", "state": {"claim": "The vaccine is free for residents.", "quote": "Residents must pay for the vaccine."}, "expect": {"supports": false, "coverage": "full"}}
+{"id": "cs-0280", "state": {"claim": "The office is open to the public.", "quote": "The office is staff-only."}, "expect": {"supports": false, "coverage": "full"}}
+{"id": "cs-0281", "state": {"claim": "The bank raised mortgage rates.", "quote": "A new species of frog was discovered in Brazil."}, "expect": {"supports": false, "coverage": "none"}}
+{"id": "cs-0282", "state": {"claim": "The festival added a second stage.", "quote": "The factory ordered new lathes."}, "expect": {"supports": false, "coverage": "none"}}
+{"id": "cs-0283", "state": {"claim": "The council banned plastic bags.", "quote": "The novel won a translation prize."}, "expect": {"supports": false, "coverage": "none"}}
+{"id": "cs-0284", "state": {"claim": "The satellite transmitted images.", "quote": "The bakery introduced sourdough."}, "expect": {"supports": false, "coverage": "none"}}
+{"id": "cs-0285", "state": {"claim": "The clinic hired two nurses.", "quote": "The film premiered in Venice."}, "expect": {"supports": false, "coverage": "none"}}
+{"id": "cs-0286", "state": {"claim": "The ferry added a night crossing.", "quote": "The startup hired a CTO."}, "expect": {"supports": false, "coverage": "none"}}
+{"id": "cs-0287", "state": {"claim": "The orchestra replaced its conductor.", "quote": "The vineyard harvested early."}, "expect": {"supports": false, "coverage": "none"}}
+{"id": "cs-0288", "state": {"claim": "The team unveiled a new jersey.", "quote": "The bank opened a branch in Leeds."}, "expect": {"supports": false, "coverage": "none"}}
+{"id": "cs-0289", "state": {"claim": "The park installed solar lights.", "quote": "The museum acquired a Rembrandt etching."}, "expect": {"supports": false, "coverage": "none"}}
+{"id": "cs-0290", "state": {"claim": "The airline retired its oldest plane.", "quote": "The zoo announced a penguin birth."}, "expect": {"supports": false, "coverage": "none"}}
+{"id": "cs-0291", "state": {"claim": "The company moved its headquarters.", "quote": "The chef published a cookbook."}, "expect": {"supports": false, "coverage": "none"}}
+{"id": "cs-0292", "state": {"claim": "The university opened a new campus.", "quote": "The mine reopened after repairs."}, "expect": {"supports": false, "coverage": "none"}}
+{"id": "cs-0293", "state": {"claim": "The navy commissioned a frigate.", "quote": "The choir released a holiday album."}, "expect": {"supports": false, "coverage": "none"}}
+{"id": "cs-0294", "state": {"claim": "The observatory detected a signal.", "quote": "The bakery won a pie contest."}, "expect": {"supports": false, "coverage": "none"}}
+{"id": "cs-0295", "state": {"claim": "The merger closed in June.", "quote": "\ufffd\ufffd\ufffd"}, "expect": {"supports": false, "coverage": "unknown"}}
+{"id": "cs-0296", "state": {"claim": "The team set a national record.", "quote": "[photo of the scoreboard]"}, "expect": {"supports": false, "coverage": "unknown"}}
+{"id": "cs-0297", "state": {"claim": "The bill passed the senate.", "quote": "[text unavailable]"}, "expect": {"supports": false, "coverage": "unknown"}}
+{"id": "cs-0298", "state": {"claim": "The storm weakened overnight.", "quote": "...."}, "expect": {"supports": false, "coverage": "unknown"}}
+{"id": "cs-0299", "state": {"claim": "The vaccine arrived by plane.", "quote": "[caption removed]"}, "expect": {"supports": false, "coverage": "unknown"}}
+{"id": "cs-0300", "state": {"claim": "The company recalled the batch.", "quote": "[image omitted]"}, "expect": {"supports": false, "coverage": "unknown"}}
+{"id": "cs-0301", "state": {"claim": "The ferry holds 300 cars.", "quote": "Car capacity is 300."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0302", "state": {"claim": "The clinic accepts walk-ins.", "quote": "Walk-in patients are accepted at the clinic."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0303", "state": {"claim": "The battery is recyclable.", "quote": "The battery can be recycled."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0304", "state": {"claim": "The train has wifi.", "quote": "Wifi is available on the train."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0305", "state": {"claim": "The park allows dogs.", "quote": "Dogs are permitted in the park."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0306", "state": {"claim": "The hotel has 24-hour reception.", "quote": "Reception is staffed around the clock."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0307", "state": {"claim": "The course starts in September.", "quote": "September is when the course begins."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0308", "state": {"claim": "The meal contains nuts.", "quote": "Nuts are present in the meal."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0309", "state": {"claim": "The office is in Berlin.", "quote": "The office is now located in Berlin."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0310", "state": {"claim": "The museum is free on Fridays.", "quote": "Friday admission is free."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0311", "state": {"claim": "The film has subtitles.", "quote": "Subtitles are provided for the film."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0312", "state": {"claim": "The loan requires collateral.", "quote": "Collateral is required for the loan."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0313", "state": {"claim": "The app supports 12 languages.", "quote": "Twelve languages are supported by the app."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0314", "state": {"claim": "The bridge has two lanes.", "quote": "Two lanes cross the bridge."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0315", "state": {"claim": "The recipe is vegan.", "quote": "The recipe contains no animal products."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0316", "state": {"claim": "The bus stops at the hospital.", "quote": "The hospital is a stop on the bus route."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0317", "state": {"claim": "The printer is out of toner.", "quote": "The printer has no toner left."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0318", "state": {"claim": "The game supports four players.", "quote": "Four players can join the game."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0319", "state": {"claim": "The trial lasts six months.", "quote": "The trial period is six months."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0320", "state": {"claim": "The alarm sounds at 6 am.", "quote": "The alarm rings at 06:00."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0321", "state": {"claim": "The plant needs indirect light.", "quote": "Indirect light suits the plant."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0322", "state": {"claim": "The software is open source.", "quote": "The software's source code is open."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0323", "state": {"claim": "The trail is marked.", "quote": "Markers line the trail."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0324", "state": {"claim": "The simulator costs 2,000 dollars.", "quote": "The simulator's price is 2,000 dollars."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0325", "state": {"claim": "The fund is index-tracking.", "quote": "The fund tracks an index."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0326", "state": {"claim": "The lab tests water quality.", "quote": "Water quality testing is done by the lab."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0327", "state": {"claim": "The ferry route is seasonal.", "quote": "The ferry operates seasonally."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0328", "state": {"claim": "The vaccine requires two doses.", "quote": "Two doses of the vaccine are required."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0329", "state": {"claim": "The park has accessible paths.", "quote": "The park's paths are accessible."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0330", "state": {"claim": "The code is deprecated.", "quote": "The codebase marks this code as deprecated."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0331", "state": {"claim": "The hotel allows late checkout.", "quote": "Late checkout is available at the hotel."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0332", "state": {"claim": "The tour includes lunch.", "quote": "Lunch is included in the tour."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0333", "state": {"claim": "The engine runs on diesel.", "quote": "The engine is diesel-powered."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0334", "state": {"claim": "The exam is open book.", "quote": "Students may use books during the exam."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0335", "state": {"claim": "The dataset is anonymized.", "quote": "Identifying details are removed from the dataset."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0336", "state": {"claim": "The building has solar panels.", "quote": "Solar panels are installed on the building."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0337", "state": {"claim": "The subscription renews monthly.", "quote": "The subscription bills every month."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0338", "state": {"claim": "The road is closed on Sundays.", "quote": "Sunday traffic is prohibited on the road."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0339", "state": {"claim": "The essay won first prize.", "quote": "First prize went to the essay."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0340", "state": {"claim": "The clinic offers telehealth.", "quote": "Telehealth appointments are available at the clinic."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0341", "state": {"claim": "The package includes a manual and a warranty card.", "quote": "The package includes a manual."}, "expect": {"supports": false, "coverage": "partial"}}
+{"id": "cs-0342", "state": {"claim": "The city added bike lanes and pedestrian zones.", "quote": "The city added bike lanes."}, "expect": {"supports": false, "coverage": "partial"}}
+{"id": "cs-0343", "state": {"claim": "The plan covers dental and vision.", "quote": "The plan covers dental."}, "expect": {"supports": false, "coverage": "partial"}}
+{"id": "cs-0344", "state": {"claim": "The seminar teaches pitching and negotiation.", "quote": "The seminar teaches pitching."}, "expect": {"supports": false, "coverage": "partial"}}
+{"id": "cs-0345", "state": {"claim": "The camp offers swimming and archery.", "quote": "The camp offers archery."}, "expect": {"supports": false, "coverage": "partial"}}
+{"id": "cs-0346", "state": {"claim": "The report reviews revenue and expenses.", "quote": "The report reviews revenue."}, "expect": {"supports": false, "coverage": "partial"}}
+{"id": "cs-0347", "state": {"claim": "The tool supports CSV and JSON exports.", "quote": "The tool supports CSV exports."}, "expect": {"supports": false, "coverage": "partial"}}
+{"id": "cs-0348", "state": {"claim": "The tour includes flights and hotels.", "quote": "The tour includes hotels."}, "expect": {"supports": false, "coverage": "partial"}}
+{"id": "cs-0349", "state": {"claim": "The course grants a certificate and CPD credits.", "quote": "The course grants a certificate."}, "expect": {"supports": false, "coverage": "partial"}}
+{"id": "cs-0350", "state": {"claim": "The lease covers utilities and parking.", "quote": "The lease covers parking."}, "expect": {"supports": false, "coverage": "partial"}}
+{"id": "cs-0351", "state": {"claim": "The workshop covers resumes and interviews.", "quote": "The workshop covers interviews."}, "expect": {"supports": false, "coverage": "partial"}}
+{"id": "cs-0352", "state": {"claim": "The phone has NFC and wireless charging.", "quote": "The phone has wireless charging."}, "expect": {"supports": false, "coverage": "partial"}}
+{"id": "cs-0353", "state": {"claim": "The software includes backups and monitoring.", "quote": "The software includes monitoring."}, "expect": {"supports": false, "coverage": "partial"}}
+{"id": "cs-0354", "state": {"claim": "The menu features tacos and burritos.", "quote": "The menu features tacos."}, "expect": {"supports": false, "coverage": "partial"}}
+{"id": "cs-0355", "state": {"claim": "The summit hosts speakers and workshops.", "quote": "The summit hosts workshops."}, "expect": {"supports": false, "coverage": "partial"}}
+{"id": "cs-0356", "state": {"claim": "The museum offers guided tours and audio guides.", "quote": "The museum offers audio guides."}, "expect": {"supports": false, "coverage": "partial"}}
+{"id": "cs-0357", "state": {"claim": "The bundle includes antivirus and a VPN.", "quote": "The bundle includes a VPN."}, "expect": {"supports": false, "coverage": "partial"}}
+{"id": "cs-0358", "state": {"claim": "The fund invests in stocks and bonds.", "quote": "The fund invests in bonds."}, "expect": {"supports": false, "coverage": "partial"}}
+{"id": "cs-0359", "state": {"claim": "The cabin has a fireplace and a sauna.", "quote": "The cabin has a sauna."}, "expect": {"supports": false, "coverage": "partial"}}
+{"id": "cs-0360", "state": {"claim": "The training covers safety and compliance.", "quote": "The training covers safety."}, "expect": {"supports": false, "coverage": "partial"}}
+{"id": "cs-0361", "state": {"claim": "The app syncs contacts and calendars.", "quote": "The app syncs calendars."}, "expect": {"supports": false, "coverage": "partial"}}
+{"id": "cs-0362", "state": {"claim": "The garden grows tomatoes and peppers.", "quote": "The garden grows peppers."}, "expect": {"supports": false, "coverage": "partial"}}
+{"id": "cs-0363", "state": {"claim": "The festival includes film and music events.", "quote": "The festival includes film events."}, "expect": {"supports": false, "coverage": "partial"}}
+{"id": "cs-0364", "state": {"claim": "The device ships with a charger and cable.", "quote": "The device ships with a cable."}, "expect": {"supports": false, "coverage": "partial"}}
+{"id": "cs-0365", "state": {"claim": "The ferry is running today.", "quote": "The ferry is suspended today."}, "expect": {"supports": false, "coverage": "full"}}
+{"id": "cs-0366", "state": {"claim": "The team qualified for the playoffs.", "quote": "The team was eliminated from the playoffs."}, "expect": {"supports": false, "coverage": "full"}}
+{"id": "cs-0367", "state": {"claim": "The law bans smoking indoors.", "quote": "The law permits smoking indoors."}, "expect": {"supports": false, "coverage": "full"}}
+{"id": "cs-0368", "state": {"claim": "The bridge is structurally sound.", "quote": "The bridge has structural cracks."}, "expect": {"supports": false, "coverage": "full"}}
+{"id": "cs-0369", "state": {"claim": "The study found the drug effective.", "quote": "The study found the drug ineffective."}, "expect": {"supports": false, "coverage": "full"}}
+{"id": "cs-0370", "state": {"claim": "The museum is open daily.", "quote": "The museum is closed on Mondays."}, "expect": {"supports": false, "coverage": "full"}}
+{"id": "cs-0371", "state": {"claim": "The company is profitable.", "quote": "The company reported a loss."}, "expect": {"supports": false, "coverage": "full"}}
+{"id": "cs-0372", "state": {"claim": "The flight is on time.", "quote": "The flight is delayed three hours."}, "expect": {"supports": false, "coverage": "full"}}
+{"id": "cs-0373", "state": {"claim": "The rent includes heating.", "quote": "Heating is billed separately."}, "expect": {"supports": false, "coverage": "full"}}
+{"id": "cs-0374", "state": {"claim": "The course is beginner-friendly.", "quote": "The course requires prior experience."}, "expect": {"supports": false, "coverage": "full"}}
+{"id": "cs-0375", "state": {"claim": "The park permits camping.", "quote": "Camping is prohibited in the park."}, "expect": {"supports": false, "coverage": "full"}}
+{"id": "cs-0376", "state": {"claim": "The airline offers refunds.", "quote": "The airline does not offer refunds."}, "expect": {"supports": false, "coverage": "full"}}
+{"id": "cs-0377", "state": {"claim": "The vaccine is recommended for seniors.", "quote": "The vaccine is not recommended for seniors."}, "expect": {"supports": false, "coverage": "full"}}
+{"id": "cs-0378", "state": {"claim": "The library lends e-books.", "quote": "The library does not lend e-books."}, "expect": {"supports": false, "coverage": "full"}}
+{"id": "cs-0379", "state": {"claim": "The road has street lighting.", "quote": "The road has no street lighting."}, "expect": {"supports": false, "coverage": "full"}}
+{"id": "cs-0380", "state": {"claim": "The software is free for students.", "quote": "Students must pay for the software."}, "expect": {"supports": false, "coverage": "full"}}
+{"id": "cs-0381", "state": {"claim": "The zoo added a new exhibit.", "quote": "The bakery raised its prices."}, "expect": {"supports": false, "coverage": "none"}}
+{"id": "cs-0382", "state": {"claim": "The firm merged with a competitor.", "quote": "The orchestra toured Japan."}, "expect": {"supports": false, "coverage": "none"}}
+{"id": "cs-0383", "state": {"claim": "The village built a new well.", "quote": "The airline added a route to Cairo."}, "expect": {"supports": false, "coverage": "none"}}
+{"id": "cs-0384", "state": {"claim": "The ship delivered aid.", "quote": "The novel's sequel was announced."}, "expect": {"supports": false, "coverage": "none"}}
+{"id": "cs-0385", "state": {"claim": "The council repaved the road.", "quote": "The startup launched a mobile game."}, "expect": {"supports": false, "coverage": "none"}}
+{"id": "cs-0386", "state": {"claim": "The farm installed irrigation.", "quote": "The bank launched a savings product."}, "expect": {"supports": false, "coverage": "none"}}
+{"id": "cs-0387", "state": {"claim": "The company launched a satellite.", "quote": "The chef opened a second restaurant."}, "expect": {"supports": false, "coverage": "none"}}
+{"id": "cs-0388", "state": {"claim": "The choir won the competition.", "quote": "The mine extended its permit."}, "expect": {"supports": false, "coverage": "none"}}
+{"id": "cs-0389", "state": {"claim": "The city planted an urban forest.", "quote": "The insurance firm posted earnings."}, "expect": {"supports": false, "coverage": "none"}}
+{"id": "cs-0390", "state": {"claim": "The lab discovered a compound.", "quote": "The ferry changed its schedule."}, "expect": {"supports": false, "coverage": "none"}}
+{"id": "cs-0391", "state": {"claim": "The team drafted a quarterback.", "quote": "The bakery closed its second store."}, "expect": {"supports": false, "coverage": "none"}}
+{"id": "cs-0392", "state": {"claim": "The university founded a research center.", "quote": "The airline rebranded its livery."}, "expect": {"supports": false, "coverage": "none"}}
+{"id": "cs-0393", "state": {"claim": "The port expanded its terminal.", "quote": "The film won a screenplay award."}, "expect": {"supports": false, "coverage": "none"}}
+{"id": "cs-0394", "state": {"claim": "The army conducted exercises.", "quote": "The publisher signed a new author."}, "expect": {"supports": false, "coverage": "none"}}
+{"id": "cs-0395", "state": {"claim": "The court issued a ruling.", "quote": "[text unavailable]"}, "expect": {"supports": false, "coverage": "unknown"}}
+{"id": "cs-0396", "state": {"claim": "The probe reached orbit.", "quote": "\ufffd\ufffd"}, "expect": {"supports": false, "coverage": "unknown"}}
+{"id": "cs-0397", "state": {"claim": "The bill was amended.", "quote": "[attachment missing]"}, "expect": {"supports": false, "coverage": "unknown"}}
+{"id": "cs-0398", "state": {"claim": "The team changed captains.", "quote": "...."}, "expect": {"supports": false, "coverage": "unknown"}}
+{"id": "cs-0399", "state": {"claim": "The dam released water.", "quote": "[video only]"}, "expect": {"supports": false, "coverage": "unknown"}}
+{"id": "cs-0400", "state": {"claim": "The study was retracted.", "quote": "[content removed]"}, "expect": {"supports": false, "coverage": "unknown"}}

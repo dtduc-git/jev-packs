@@ -36,12 +36,12 @@ the full report and `predictions.jsonl` for the raw recording.
 
 | Pack | Questions | Items | Accuracy | ECE | Cost/case |
 |---|---|---|---|---|---|
-| [`citation-support`](packs/citation-support) | supports, coverage | 400 | **0.905** | 0.032 | $0.000017 |
-| [`rag-passage-relevance`](packs/rag-passage-relevance) | relevance, passage quality | 400 | **0.895** | 0.044 | $0.000018 |
-| [`entity-merge`](packs/entity-merge) | same entity?, resolution action | 420 | **0.879** | 0.059 | $0.000018 |
-| [`rag-answerability`](packs/rag-answerability) | answerable-from-context, missing info | 400 | **0.877** | 0.037 | $0.000020 |
-| [`support-triage`](packs/support-triage) | refund intent, queue, urgency | 600 | **0.815** | 0.089 | $0.000023 |
-| [`moderation`](packs/moderation) | action, severity, targeted group | 600 | **0.795** | 0.080 | $0.000022 |
+| [`citation-support`](packs/citation-support) | supports, coverage | 800 | **0.919** | 0.022 | $0.000017 |
+| [`rag-passage-relevance`](packs/rag-passage-relevance) | relevance, passage quality | 800 | **0.899** | 0.035 | $0.000018 |
+| [`rag-answerability`](packs/rag-answerability) | answerable-from-context, missing info | 800 | **0.861** | 0.051 | $0.000020 |
+| [`entity-merge`](packs/entity-merge) | same entity?, resolution action | 840 | **0.857** | 0.017 | $0.000018 |
+| [`support-triage`](packs/support-triage) | refund intent, queue, urgency | 1,200 | **0.797** | 0.095 | $0.000023 |
+| [`moderation`](packs/moderation) | action, severity, targeted group | 1,200 | **0.791** | 0.087 | $0.000022 |
 
 `provisional` = cases are curated but no `jevassert` evidence exists yet;
 `verified` requires a recorded `evidence.md`. See [index.json](index.json).

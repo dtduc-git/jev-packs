@@ -208,3 +208,213 @@
 {"id": "em-0208", "state": {"a": "Sawtooth Software — Boise", "b": "Sawtooth Systems — Boise; software"}, "expect": {"same_entity": true, "action": "curator"}}
 {"id": "em-0209", "state": {"a": "Lakeshore Realty — Chicago; 80 agents", "b": "Lakeshore Properties — Chicago; 82 agents"}, "expect": {"same_entity": true, "action": "curator"}}
 {"id": "em-0210", "state": {"a": "M. Dubois — pastry chef, Lyon", "b": "Marc Dubois — chocolatier, Lyon; same guild"}, "expect": {"same_entity": true, "action": "curator"}}
+{"id": "em-0211", "state": {"a": "Cobalt Analytics — Toronto; founded 2016", "b": "Cobalt Analytics Inc. — Toronto, Canada; est. 2016"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0212", "state": {"a": "Dr. Ana Duarte — pediatrician, Porto", "b": "Ana Duarte, MD — pediatrics, Porto, Portugal"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0213", "state": {"a": "Highline Coffee — roastery, Denver; 3 cafes", "b": "Highline Coffee Roasters — Denver, CO; three cafes"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0214", "state": {"a": "Kestrel Security — Tel Aviv; founded 2014; 70 staff", "b": "Kestrel Security Ltd. — Tel Aviv, Israel; founded 2014; 70 employees"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0215", "state": {"a": "Miu Tanaka — ceramicist, Kyoto", "b": "M. Tanaka — Kyoto potter, ceramics"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0216", "state": {"a": "Yellowstone Cabins — 40 cabins, Montana", "b": "Yellowstone Cabins — MT; 40 cabins"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0217", "state": {"a": "Nordfjord Ferries — Oslo; 6 routes", "b": "Nordfjord Ferries AS — Oslo, Norway; six routes"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0218", "state": {"a": "San Marco Trattoria — Venice; since 1987", "b": "Trattoria San Marco — Venice, Italy; est. 1987"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0219", "state": {"a": "Everest Base Camp Treks — Kathmandu; licensed", "b": "Everest Base Camp Trekking — Kathmandu, Nepal; licensed guides"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0220", "state": {"a": "Andrade & Filhos — construction, Lisbon; founded 1972", "b": "Andrade and Filhos — Lisbon, Portugal; est. 1972"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0221", "state": {"a": "Sakura Confectionery — Osaka; 3 shops", "b": "Sakura Confectionery — Osaka, Japan; three stores"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0222", "state": {"a": "Dr. Omar Haddad — cardiologist, Amman", "b": "O. Haddad, MD — cardiology, Amman, Jordan"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0223", "state": {"a": "Bluebird Montessori — Copenhagen; 120 children", "b": "Bluebird Montessori School — Copenhagen, DK; 120 pupils"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0224", "state": {"a": "Pinnacle Climbing Gym — Boulder; 2 locations", "b": "Pinnacle Climbing — Boulder, CO; two locations"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0225", "state": {"a": "Silver Pine Distillery — Portland; founded 2013", "b": "Silver Pine Distilling — Portland, OR; est. 2013"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0226", "state": {"a": "Nnamdi Okeke — sculptor, Lagos", "b": "N. Okeke — Lagos sculptor"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0227", "state": {"a": "Harborview Dental — Seattle; 4 dentists", "b": "Harborview Dental Clinic — Seattle, WA; four dentists"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0228", "state": {"a": "Atlas Language Institute — Cairo; founded 1998", "b": "Atlas Language Institute — Cairo, Egypt; est. 1998"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0229", "state": {"a": "Lille Bakery — Copenhagen; 2 shops", "b": "Lille Bageri — Copenhagen, Denmark; two shops"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0230", "state": {"a": "Marta Kowalski — architect, Warsaw; studio MK", "b": "M. Kowalski — principal, MK Architektura, Warsaw"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0231", "state": {"a": "Cascade Trail Gear — Bend, Oregon; founded 2011", "b": "Cascade Trail Gear Co. — Bend, OR; est. 2011"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0232", "state": {"a": "Grand Bazaar Textiles — Istanbul; 30 years", "b": "Grand Bazaar Textile Shop — Istanbul, Turkey; three decades"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0233", "state": {"a": "Corvus Analytics — Helsinki; 25 staff", "b": "Corvus Analytics Oy — Helsinki, Finland; 25 employees"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0234", "state": {"a": "Dr. Sofia Lindqvist — dermatologist, Stockholm", "b": "S. Lindqvist — dermatology, Stockholm, Sweden"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0235", "state": {"a": "Red Rock Climbing — Moab; guided tours", "b": "Red Rock Climbing Guides — Moab, UT; guided climbs"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0236", "state": {"a": "Osaka Ramen House — 2 locations, Osaka", "b": "Osaka Ramen — Osaka, Japan; two locations"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0237", "state": {"a": "Kalahari Diamonds — Windhoek; founded 2005", "b": "Kalahari Diamond Co. — Windhoek, Namibia; est. 2005"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0238", "state": {"a": "Vale Verde Organics — Sao Paulo; founded 2009", "b": "Vale Verde Organic Farm — Sao Paulo, Brazil; est. 2009"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0239", "state": {"a": "Hanne Nielsen — photographer, Aarhus", "b": "H. Nielsen — Aarhus photographer"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0240", "state": {"a": "Summit Legal — Denver; 40 attorneys", "b": "Summit Legal Group — Denver, CO; 40 lawyers"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0241", "state": {"a": "Geysir Spa — Reykjavik; founded 1992", "b": "Geysir Spa — Iceland; est. 1992"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0242", "state": {"a": "Tundra Outfitters — Anchorage; gear and tours", "b": "Tundra Outfitters — Anchorage, AK; gear and guided tours"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0243", "state": {"a": "Pilar Gomez — flamenco dancer, Seville", "b": "P. Gomez — Seville flamenco performer"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0244", "state": {"a": "Lighthouse Insurance — Halifax; founded 1961", "b": "Lighthouse Insurance Co. — Halifax, NS; est. 1961"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0245", "state": {"a": "Kite & String — music shop, Nashville", "b": "Kite and String Music — Nashville, TN; instrument shop"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0246", "state": {"a": "Dr. Ravi Menon — neurologist, Chennai", "b": "R. Menon, MD — neurology, Chennai, India"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0247", "state": {"a": "Alpine Cheese Co. — Bern; 12 dairies", "b": "Alpine Cheese — Bern, Switzerland; 12 dairy partners"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0248", "state": {"a": "Copper Fox Brewery — Vancouver; taproom", "b": "Copper Fox Brewing — Vancouver, BC; taproom"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0249", "state": {"a": "Zeynep Kaya — translator, Istanbul", "b": "Z. Kaya — Istanbul translator, Turkish-English"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0250", "state": {"a": "Willow & Vine — flower shop, Dublin", "b": "Willow and Vine Florists — Dublin, Ireland"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0251", "state": {"a": "Great Barrier Diving — Cairns; certified", "b": "Great Barrier Diving Co. — Cairns, Australia; PADI certified"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0252", "state": {"a": "Hiroshi Sato — ramen chef, Tokyo; shop Menya Sato", "b": "H. Sato — owner of Menya Sato, Tokyo"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0253", "state": {"a": "Baltic Woodworks — Riga; furniture; founded 2003", "b": "Baltic Woodworks SIA — Riga, Latvia; est. 2003"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0254", "state": {"a": "Cornerstone Books — Boston; 2 stores", "b": "Cornerstone Bookshop — Boston, MA; two stores"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0255", "state": {"a": "Desert Rose Perfumes — Dubai; founded 2010", "b": "Desert Rose Perfumery — Dubai, UAE; est. 2010"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0256", "state": {"a": "Cobalt Analytics — Toronto; data", "b": "Cobalt Accounting — Toronto; tax services"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0257", "state": {"a": "Highline Coffee — Denver; cafes", "b": "Highline Roasters — Denver; wholesale only"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0258", "state": {"a": "Kestrel Security — Tel Aviv; guards", "b": "Kestrel Systems — Tel Aviv; IT support"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0259", "state": {"a": "Miu Tanaka — ceramicist, Kyoto", "b": "Miu Tanaka — glassblower, Kanazawa"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0260", "state": {"a": "Yellowstone Cabins — Montana", "b": "Yellowstone Lodge — Wyoming"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0261", "state": {"a": "Nordfjord Ferries — Oslo", "b": "Nordfjord Cruises — Bergen"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0262", "state": {"a": "San Marco Trattoria — Venice", "b": "San Marco Pizzeria — Verona"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0263", "state": {"a": "Everest Base Camp Treks — Kathmandu", "b": "Everest Airlines — Kathmandu"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0264", "state": {"a": "Andrade & Filhos — construction, Lisbon", "b": "Andrade & Irmaos — construction, Porto"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0265", "state": {"a": "Sakura Confectionery — Osaka", "b": "Sakura Bakery — Osaka"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0266", "state": {"a": "Dr. Omar Haddad — cardiologist, Amman", "b": "Omar Haddad — pharmacist, Amman"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0267", "state": {"a": "Bluebird Montessori — Copenhagen", "b": "Bluebird Kindergarten — Aarhus"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0268", "state": {"a": "Pinnacle Climbing Gym — Boulder", "b": "Pinnacle Fitness — Boulder"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0269", "state": {"a": "Silver Pine Distillery — Portland", "b": "Silver Pine Brewery — Portland"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0270", "state": {"a": "Nnamdi Okeke — sculptor, Lagos", "b": "Nnamdi Okeke — painter, Abuja"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0271", "state": {"a": "Harborview Dental — Seattle", "b": "Harborview Medical — Seattle"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0272", "state": {"a": "Atlas Language Institute — Cairo", "b": "Atlas Translation Services — Cairo"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0273", "state": {"a": "Lille Bakery — Copenhagen", "b": "Lille Cafe — Copenhagen"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0274", "state": {"a": "Marta Kowalski — architect, Warsaw", "b": "Marta Kowalski — urban planner, Krakow"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0275", "state": {"a": "Cascade Trail Gear — Bend", "b": "Cascade Outfitters — Portland; rafting"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0276", "state": {"a": "Grand Bazaar Textiles — Istanbul", "b": "Grand Bazaar Jewelry — Istanbul"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0277", "state": {"a": "Corvus Analytics — Helsinki", "b": "Corvus Software — Helsinki"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0278", "state": {"a": "Dr. Sofia Lindqvist — dermatologist, Stockholm", "b": "Sofia Lindqvist — veterinarian, Uppsala"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0279", "state": {"a": "Red Rock Climbing — Moab", "b": "Red Rock Jeep Tours — Moab"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0280", "state": {"a": "Osaka Ramen House — Osaka", "b": "Osaka Sushi House — Osaka"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0281", "state": {"a": "Kalahari Diamonds — Windhoek", "b": "Kalahari Uranium — Windhoek"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0282", "state": {"a": "Vale Verde Organics — Sao Paulo", "b": "Vale Verde Wines — Mendoza"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0283", "state": {"a": "Hanne Nielsen — photographer, Aarhus", "b": "Hanne Nielsen — illustrator, Copenhagen"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0284", "state": {"a": "Summit Legal — Denver", "b": "Summit Accounting — Denver"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0285", "state": {"a": "Geysir Spa — Reykjavik", "b": "Geysir Tours — Reykjavik"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0286", "state": {"a": "Tundra Outfitters — Anchorage", "b": "Tundra Air — Anchorage"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0287", "state": {"a": "Pilar Gomez — flamenco dancer, Seville", "b": "Pilar Gomez — flamenco guitarist, Madrid"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0288", "state": {"a": "Lighthouse Insurance — Halifax", "b": "Lighthouse Bank — Halifax"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0289", "state": {"a": "Kite and String Music — Nashville", "b": "Kite and String Records — Nashville"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0290", "state": {"a": "Dr. Ravi Menon — neurologist, Chennai", "b": "Ravi Menon — physiotherapist, Chennai"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0291", "state": {"a": "Alpine Cheese Co. — Bern", "b": "Alpine Chocolate — Zurich"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0292", "state": {"a": "Copper Fox Brewery — Vancouver", "b": "Copper Fox Restaurant — Vancouver"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0293", "state": {"a": "Zeynep Kaya — translator, Istanbul", "b": "Zeynep Kaya — tour guide, Izmir"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0294", "state": {"a": "Willow and Vine Florists — Dublin", "b": "Willow and Vine Interiors — Dublin"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0295", "state": {"a": "Great Barrier Diving — Cairns", "b": "Great Barrier Ferries — Cairns"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0296", "state": {"a": "Great Barrier Diving — Cairns; PADI", "b": "Great Barrier Reef Dive Centre — Cairns; PADI"}, "expect": {"same_entity": true, "action": "curator"}}
+{"id": "em-0297", "state": {"a": "Argus Investigations — Athens", "b": "Argus Detective Agency — Piraeus; investigators"}, "expect": {"same_entity": true, "action": "curator"}}
+{"id": "em-0298", "state": {"a": "P. Anders — blacksmith, Odense", "b": "Peter Anders — metalworker, Odense; forge since 1998"}, "expect": {"same_entity": true, "action": "curator"}}
+{"id": "em-0299", "state": {"a": "Casa Azul — guesthouse, Lisbon; 8 rooms", "b": "Casa Azul Guest House — Lisbon; nine rooms"}, "expect": {"same_entity": true, "action": "curator"}}
+{"id": "em-0300", "state": {"a": "Falcon Courier — Nairobi; same-day", "b": "Falcon Couriers — Nairobi; express"}, "expect": {"same_entity": true, "action": "curator"}}
+{"id": "em-0301", "state": {"a": "M. Ivanova — translator, Sofia; certified", "b": "Maria Ivanova — court interpreter, Sofia"}, "expect": {"same_entity": true, "action": "curator"}}
+{"id": "em-0302", "state": {"a": "GreenLeaf Grocers — Dublin; 3 stores", "b": "Green Leaf Grocery — Dublin; three shops"}, "expect": {"same_entity": true, "action": "curator"}}
+{"id": "em-0303", "state": {"a": "Orion Software — Ljubljana", "b": "Orion Systems — Ljubljana; software"}, "expect": {"same_entity": true, "action": "curator"}}
+{"id": "em-0304", "state": {"a": "Blue Harbor Fish — Bergen; 12 boats", "b": "Blue Harbour Seafood — Bergen; 12 vessels"}, "expect": {"same_entity": true, "action": "curator"}}
+{"id": "em-0305", "state": {"a": "K. Yamamoto — sushi chef, Sapporo", "b": "Kenji Yamamoto — chef, Sapporo; sushi"}, "expect": {"same_entity": true, "action": "curator"}}
+{"id": "em-0306", "state": {"a": "Sunstone Jewelry — Jaipur; founded 1990", "b": "Sunstone Jewellers — Jaipur; est. 1990"}, "expect": {"same_entity": true, "action": "curator"}}
+{"id": "em-0307", "state": {"a": "Northside Fitness — Dublin; 5 gyms", "b": "Northside Gym — Dublin; five clubs"}, "expect": {"same_entity": true, "action": "curator"}}
+{"id": "em-0308", "state": {"a": "R. Silva — electrician, Braga", "b": "Ricardo Silva — electrician, Porto; license 8814"}, "expect": {"same_entity": true, "action": "curator"}}
+{"id": "em-0309", "state": {"a": "Coral Coast Diving — Mombasa", "b": "Coral Coast Divers — Diani; dive shop"}, "expect": {"same_entity": true, "action": "curator"}}
+{"id": "em-0310", "state": {"a": "Zenith Pharma — Basel", "b": "Zenith Pharmaceuticals — Zurich"}, "expect": {"same_entity": true, "action": "curator"}}
+{"id": "em-0311", "state": {"a": "T. Nguyen — tailor, Hanoi", "b": "Thanh Nguyen — tailor, Ho Chi Minh City"}, "expect": {"same_entity": true, "action": "curator"}}
+{"id": "em-0312", "state": {"a": "Redwood Analytics — Vancouver; founded 2015", "b": "Redwood Data — Vancouver; est. 2016"}, "expect": {"same_entity": true, "action": "curator"}}
+{"id": "em-0313", "state": {"a": "M. Rossi — gondolier, Venice; license 4471", "b": "Marco Rossi — gondolier, Venice; license 4472"}, "expect": {"same_entity": true, "action": "curator"}}
+{"id": "em-0314", "state": {"a": "Aurora Glass — Helsinki; founded 2001", "b": "Aurora Glassworks — Espoo; est. 2001"}, "expect": {"same_entity": true, "action": "curator"}}
+{"id": "em-0315", "state": {"a": "S. Chen — chef, Singapore; restaurant Jade", "b": "Sasha Chen — chef, Singapore; Jade Kitchen"}, "expect": {"same_entity": true, "action": "curator"}}
+{"id": "em-0316", "state": {"a": "WHO — Geneva; health agency", "b": "World Health Organization — Geneva, Switzerland"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0317", "state": {"a": "MIT — Cambridge, Massachusetts", "b": "Massachusetts Institute of Technology — Cambridge, MA"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0318", "state": {"a": "NASA — Washington DC", "b": "National Aeronautics and Space Administration — Washington, D.C."}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0319", "state": {"a": "IBM — Armonk, NY", "b": "International Business Machines — Armonk, New York"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0320", "state": {"a": "BMW AG — Munich", "b": "Bayerische Motoren Werke AG — Munich, Germany"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0321", "state": {"a": "VW Group — Wolfsburg", "b": "Volkswagen Group — Wolfsburg, Germany"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0322", "state": {"a": "Lufthansa — Cologne; IATA LH", "b": "Deutsche Lufthansa AG — Cologne, Germany; IATA LH"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0323", "state": {"a": "ITA Airways — Rome; IATA AZ", "b": "Italia Trasporto Aereo — Rome, Italy; IATA AZ"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0324", "state": {"a": "Siemens AG — Munich; founded 1847", "b": "Siemens — Munich, Germany; est. 1847"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0325", "state": {"a": "Michelin — Clermont-Ferrand; founded 1889", "b": "Compagnie Michelin — Clermont-Ferrand, France; est. 1889"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0326", "state": {"a": "Nestle — Vevey; founded 1866", "b": "Nestle S.A. — Vevey, Switzerland; est. 1866"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0327", "state": {"a": "Samsung Electronics — Suwon", "b": "Samsung Electronics Co. Ltd. — Suwon, South Korea"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0328", "state": {"a": "TSMC — Hsinchu", "b": "Taiwan Semiconductor Manufacturing Company — Hsinchu, Taiwan"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0329", "state": {"a": "ASML — Veldhoven", "b": "ASML Holding N.V. — Veldhoven, Netherlands"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0330", "state": {"a": "Maersk — Copenhagen", "b": "A.P. Moller-Maersk — Copenhagen, Denmark"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0331", "state": {"a": "IKEA — Almhult; founded 1943", "b": "IKEA — Almhult, Sweden; est. 1943"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0332", "state": {"a": "Lego Group — Billund", "b": "LEGO A/S — Billund, Denmark"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0333", "state": {"a": "Ferrari — Maranello", "b": "Ferrari N.V. — Maranello, Italy"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0334", "state": {"a": "ICRC — Geneva; founded 1863", "b": "International Committee of the Red Cross — Geneva, Switzerland; est. 1863"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0335", "state": {"a": "Amnesty International — London; founded 1961", "b": "Amnesty International — London, UK; est. 1961"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0336", "state": {"a": "Greenpeace — Amsterdam", "b": "Greenpeace International — Amsterdam, Netherlands"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0337", "state": {"a": "WWF — Gland; founded 1961", "b": "World Wide Fund for Nature — Gland, Switzerland; est. 1961"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0338", "state": {"a": "UNESCO — Paris; founded 1945", "b": "United Nations Educational, Scientific and Cultural Organization — Paris, France; est. 1945"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0339", "state": {"a": "Interpol — Lyon", "b": "International Criminal Police Organization — Lyon, France"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0340", "state": {"a": "CERN — Meyrin; founded 1954", "b": "European Organization for Nuclear Research — Meyrin, Switzerland; est. 1954"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0341", "state": {"a": "FIFA — Zurich; founded 1904", "b": "Federation Internationale de Football Association — Zurich, Switzerland; est. 1904"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0342", "state": {"a": "IOC — Lausanne", "b": "International Olympic Committee — Lausanne, Switzerland"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0343", "state": {"a": "Boeing — Arlington, VA; founded 1916", "b": "The Boeing Company — Arlington, Virginia; est. 1916"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0344", "state": {"a": "Airbus — Toulouse", "b": "Airbus SE — Toulouse, France"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0345", "state": {"a": "Pfizer — New York; founded 1849", "b": "Pfizer Inc. — New York, NY; est. 1849"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0346", "state": {"a": "Roche — Basel; founded 1896", "b": "F. Hoffmann-La Roche — Basel, Switzerland; est. 1896"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0347", "state": {"a": "Novartis — Basel", "b": "Novartis AG — Basel, Switzerland"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0348", "state": {"a": "Shell — London; founded 1907", "b": "Shell plc — London, UK; est. 1907"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0349", "state": {"a": "BP — London", "b": "British Petroleum — London, UK"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0350", "state": {"a": "TotalEnergies — Courbevoie", "b": "TotalEnergies SE — Courbevoie, France"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0351", "state": {"a": "Sony — Tokyo; founded 1946", "b": "Sony Group Corporation — Tokyo, Japan; est. 1946"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0352", "state": {"a": "Nintendo — Kyoto; founded 1889", "b": "Nintendo Co., Ltd. — Kyoto, Japan; est. 1889"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0353", "state": {"a": "Toyota — Toyota City; founded 1937", "b": "Toyota Motor Corporation — Toyota, Aichi, Japan; est. 1937"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0354", "state": {"a": "Honda — Tokyo; founded 1948", "b": "Honda Motor Co. — Tokyo, Japan; est. 1948"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0355", "state": {"a": "Unilever — London", "b": "Unilever plc — London, UK"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0356", "state": {"a": "P&G — Cincinnati", "b": "Procter & Gamble — Cincinnati, Ohio"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0357", "state": {"a": "3M — Saint Paul; founded 1902", "b": "Minnesota Mining and Manufacturing — Saint Paul, MN; est. 1902"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0358", "state": {"a": "LG — Seoul", "b": "LG Corporation — Seoul, South Korea"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0359", "state": {"a": "Panasonic — Osaka", "b": "Panasonic Holdings — Osaka, Japan"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0360", "state": {"a": "Philips — Amsterdam", "b": "Koninklijke Philips N.V. — Amsterdam, Netherlands"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0361", "state": {"a": "WHO — Geneva; health agency", "b": "WHO Foundation — Geneva; fundraising"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0362", "state": {"a": "MIT — Cambridge, MA", "b": "MIT Media Lab — Cambridge, MA; research lab"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0363", "state": {"a": "NASA — Washington", "b": "NASA JPL — Pasadena; laboratory"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0364", "state": {"a": "IBM — Armonk", "b": "IBM Consulting — Armonk; services"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0365", "state": {"a": "BMW AG — Munich; cars", "b": "BMW Financial Services — Munich; leasing"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0366", "state": {"a": "VW Group — Wolfsburg; vehicles", "b": "VW Bank — Braunschweig; banking"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0367", "state": {"a": "Lufthansa — Cologne; passengers", "b": "Lufthansa Cargo — Frankfurt; freight"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0368", "state": {"a": "ITA Airways — Rome; airline", "b": "ITA Travel — Rome; travel agency"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0369", "state": {"a": "Siemens — Munich; industrial", "b": "Siemens Healthineers — Erlangen; medical"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0370", "state": {"a": "Michelin — Clermont-Ferrand; tires", "b": "Michelin Guide — Paris; restaurant guide"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0371", "state": {"a": "Nestle — Vevey; food", "b": "Nestle Waters — Vevey; bottling"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0372", "state": {"a": "Samsung Electronics — Suwon", "b": "Samsung Life Insurance — Seoul"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0373", "state": {"a": "TSMC — Hsinchu; semiconductors", "b": "TSMC Foundation — Hsinchu; charity"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0374", "state": {"a": "ASML — Veldhoven", "b": "ASML Alumni — Eindhoven; network"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0375", "state": {"a": "Maersk — Copenhagen; shipping", "b": "Maersk Training — Svendborg; courses"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0376", "state": {"a": "IKEA — Almhult; retail", "b": "IKEA Foundation — Leiden; philanthropy"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0377", "state": {"a": "Lego Group — Billund", "b": "Lego Education — Billund; school products"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0378", "state": {"a": "Ferrari — Maranello; automaker", "b": "Ferrari Owners Club — Modena; enthusiasts"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0379", "state": {"a": "ICRC — Geneva; aid agency", "b": "Red Cross Museum — Geneva; museum"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0380", "state": {"a": "Amnesty International — London; global", "b": "Amnesty UK — London; national section"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0381", "state": {"a": "Greenpeace — Amsterdam; global", "b": "Greenpeace Nordic — Stockholm; regional office"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0382", "state": {"a": "WWF — Gland; conservation", "b": "WWF Panda Shop — Gland; merchandise"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0383", "state": {"a": "UNESCO — Paris; agency", "b": "UNESCO Heritage Tours — Paris; private tours"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0384", "state": {"a": "Interpol — Lyon; police org", "b": "Interpol Watch — Lyon; security company"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0385", "state": {"a": "CERN — Meyrin; research", "b": "CERN Courier — Meyrin; magazine"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0386", "state": {"a": "FIFA — Zurich; governing body", "b": "FIFA Museum — Zurich; museum"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0387", "state": {"a": "IOC — Lausanne; committee", "b": "IOC Sports — Lausanne; equipment store"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0388", "state": {"a": "Boeing — Arlington; aerospace", "b": "Boeing Employees CU — Tukwila; credit union"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0389", "state": {"a": "Airbus — Toulouse; aircraft", "b": "Airbus Foundation — Toulouse; charity"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0390", "state": {"a": "Pfizer — New York; pharma", "b": "Pfizer Labs — Mumbai; generics"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0391", "state": {"a": "Roche — Basel; pharma", "b": "Roche Diagnostics — Rotkreuz; diagnostics"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0392", "state": {"a": "Novartis — Basel; pharma", "b": "Novartis Foundation — Basel; philanthropy"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0393", "state": {"a": "Shell — London; energy", "b": "Shell Museum — Cheshire; heritage"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0394", "state": {"a": "BP — London; energy", "b": "BP Pension Fund — London; pension"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0395", "state": {"a": "TotalEnergies — Courbevoie; energy", "b": "Total Foundation — Paris; charity"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0396", "state": {"a": "Sony — Tokyo; electronics", "b": "Sony Music — New York; music"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0397", "state": {"a": "Nintendo — Kyoto; games", "b": "Nintendo Museum — Uji; museum"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0398", "state": {"a": "Toyota — Toyota City; automaker", "b": "Toyota Foundation — Tokyo; grants"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0399", "state": {"a": "Honda — Tokyo; automaker", "b": "Honda Racing — Sakura; motorsport"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0400", "state": {"a": "Unilever — London; consumer goods", "b": "Unilever Foundation — London; charity"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0401", "state": {"a": "P&G — Cincinnati; parent", "b": "P and G Italia — Rome; consumer goods"}, "expect": {"same_entity": true, "action": "curator"}}
+{"id": "em-0402", "state": {"a": "3M — Saint Paul; parent", "b": "3M EMEA — Neuss; regional HQ"}, "expect": {"same_entity": true, "action": "curator"}}
+{"id": "em-0403", "state": {"a": "LG — Seoul; group", "b": "LG Display — Seoul; panels"}, "expect": {"same_entity": true, "action": "curator"}}
+{"id": "em-0404", "state": {"a": "Panasonic — Osaka; group", "b": "Panasonic Connect — Tokyo; B2B unit"}, "expect": {"same_entity": true, "action": "curator"}}
+{"id": "em-0405", "state": {"a": "Philips — Amsterdam; parent", "b": "Philips Domestic Appliances — Amsterdam; spinoff"}, "expect": {"same_entity": true, "action": "curator"}}
+{"id": "em-0406", "state": {"a": "Siemens — Munich; parent", "b": "Siemens Energy — Munich; spinoff"}, "expect": {"same_entity": true, "action": "curator"}}
+{"id": "em-0407", "state": {"a": "Shell — London; parent", "b": "Shell Energy Retail — Coventry; utilities"}, "expect": {"same_entity": true, "action": "curator"}}
+{"id": "em-0408", "state": {"a": "Michelin — Clermont-Ferrand; parent", "b": "Michelin North America — Greenville; regional"}, "expect": {"same_entity": true, "action": "curator"}}
+{"id": "em-0409", "state": {"a": "Nestle — Vevey; parent", "b": "Nestle Health Science — Lausanne; unit"}, "expect": {"same_entity": true, "action": "curator"}}
+{"id": "em-0410", "state": {"a": "TSMC — Hsinchu; parent", "b": "TSMC Arizona — Phoenix; fab"}, "expect": {"same_entity": true, "action": "curator"}}
+{"id": "em-0411", "state": {"a": "Maersk — Copenhagen; group", "b": "Maersk Line — Copenhagen; ocean carrier"}, "expect": {"same_entity": true, "action": "curator"}}
+{"id": "em-0412", "state": {"a": "IKEA — Almhult; brand", "b": "IKEA Retail — Delft; franchisee"}, "expect": {"same_entity": true, "action": "curator"}}
+{"id": "em-0413", "state": {"a": "Boeing — Arlington; parent", "b": "Boeing Defence UK — Bristol; defense unit"}, "expect": {"same_entity": true, "action": "curator"}}
+{"id": "em-0414", "state": {"a": "Airbus — Toulouse; parent", "b": "Airbus Helicopters — Marignane; helicopters"}, "expect": {"same_entity": true, "action": "curator"}}
+{"id": "em-0415", "state": {"a": "Pfizer — New York; parent", "b": "Pfizer UK — Tadworth; subsidiary"}, "expect": {"same_entity": true, "action": "curator"}}
+{"id": "em-0416", "state": {"a": "Roche — Basel; parent", "b": "Roche Products Ltd — Welwyn; UK arm"}, "expect": {"same_entity": true, "action": "curator"}}
+{"id": "em-0417", "state": {"a": "Toyota — Toyota City; parent", "b": "Toyota Motor Europe — Brussels; regional"}, "expect": {"same_entity": true, "action": "curator"}}
+{"id": "em-0418", "state": {"a": "Honda — Tokyo; parent", "b": "Honda Europe — Frankfurt; regional"}, "expect": {"same_entity": true, "action": "curator"}}
+{"id": "em-0419", "state": {"a": "WHO — Geneva; global", "b": "WHO Europe — Copenhagen; regional office"}, "expect": {"same_entity": true, "action": "curator"}}
+{"id": "em-0420", "state": {"a": "UNESCO — Paris; global", "b": "UNESCO Bangkok — Bangkok; regional office"}, "expect": {"same_entity": true, "action": "curator"}}

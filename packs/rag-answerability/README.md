@@ -31,7 +31,7 @@ decides whether the surviving context is enough.
 
 ## Provenance
 
-All 200 cases were written for this pack (CC0-1.0). Contexts are synthetic.
+All 400 cases were written for this pack (CC0-1.0). Contexts are synthetic.
 
 ## Thresholds
 
@@ -40,6 +40,6 @@ the worst RAG failure. 0.7+ per missing-info class; `unknown` has no floor.
 
 ## Evidence
 
-Recorded 2026-09-19 against `jev-1.13.0`: accuracy **0.877**, ECE 0.037,
+Recorded 2026-09-19 against `jev-1.13.0`: accuracy **0.861**, ECE 0.051,
 $0.000020/case. Full report: [evidence.md](evidence.md); raw recording:
 [predictions.jsonl](predictions.jsonl).

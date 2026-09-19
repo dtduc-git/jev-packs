@@ -26,3 +26,8 @@ Repo-level changes; per-pack history lives in each pack's `CHANGELOG.md`.
   total)** and re-recorded: accuracy 0.795–0.905, ECE 0.032–0.089,
   ~$0.00002/case. Ordinal questions remain the weak spot (`urgency` 0.59,
   `severity` 0.69, `missing_info` 0.82, `quality` 0.82).
+- **Packs doubled to 400+ cases (v0.4.0; 2,420 cases, 5,640 items total)**
+  and re-recorded: accuracy 0.791–0.919, ECE 0.017–0.095. Citation-support
+  climbed to 0.919; triage urgency (0.56), moderation action (0.68) and
+  answerability missing-info (0.78) are now the clearest improvement targets.
+  Statistical margin at this size: CI95 ≈ ±5pp per question.

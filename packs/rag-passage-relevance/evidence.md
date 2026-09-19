@@ -1,33 +1,33 @@
-# jevassert report — rag-passage-relevance v0.3.0
+# jevassert report — rag-passage-relevance v0.4.0
 
 - model: `jev-1.13.0` (recorded against `jev-1.13.0`)
-- cases: 200 (0 errors, 0 missing answers)
-- items: 400 — accuracy **0.895**, ECE **0.044**
-- bootstrap 95%: accuracy CI 0.863–0.925, ECE CI 0.024–0.072
-- cost: $0.000018/case ($0.0035 total)
-- latency: p50 309ms, p95 377ms
+- cases: 400 (0 errors, 0 missing answers)
+- items: 800 — accuracy **0.899**, ECE **0.035**
+- bootstrap 95%: accuracy CI 0.879–0.920, ECE CI 0.020–0.053
+- cost: $0.000018/case ($0.0070 total)
+- latency: p50 313ms, p95 390ms
 
 ## Per question
 
 | question | type | n | missing | accuracy | mean p(decision) | ECE | Brier |
 |---|---|---|---|---|---|---|---|
-| relevant | noul | 200 | 0 | 0.965 | 0.955 | 0.016 | 0.028 |
-| quality | score | 200 | 0 | 0.825 | 0.906 | 0.081 | — |
+| relevant | noul | 400 | 0 | 0.968 | 0.957 | 0.017 | 0.024 |
+| quality | score | 400 | 0 | 0.830 | 0.895 | 0.065 | — |
 
 ## Coverage at decision probability
 
 | accept if p >= | coverage | precision |
 |---|---|---|
-| 0.50 | 1.000 | 0.895 |
-| 0.60 | 0.973 | 0.902 |
-| 0.70 | 0.912 | 0.932 |
-| 0.80 | 0.875 | 0.940 |
-| 0.90 | 0.815 | 0.951 |
-| 0.95 | 0.723 | 0.972 |
+| 0.50 | 0.999 | 0.900 |
+| 0.60 | 0.956 | 0.918 |
+| 0.70 | 0.914 | 0.932 |
+| 0.80 | 0.861 | 0.946 |
+| 0.90 | 0.802 | 0.960 |
+| 0.95 | 0.720 | 0.972 |
 
 ## Author thresholds (pack threshold floors)
 
-- auto-accepted 348/400 (0.870), precision 0.931
+- auto-accepted 697/800 (0.871), precision 0.931
 - labels without a floor (usually `unknown`) always route to review
 
 ## Gates
