@@ -16,7 +16,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - id: list
-        run: echo "packs=$(ls packs | jq -R -s -c 'split(\"\n\")[:-1]')" >> "$GITHUB_OUTPUT"
+        run: |
+          packs=$(ls packs | jq -R -s -c 'split("\n")[:-1]')
+          echo "packs=$packs" >> "$GITHUB_OUTPUT"
 
   verify:
     needs: list
