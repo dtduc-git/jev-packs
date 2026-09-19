@@ -2,7 +2,7 @@ spec: 0
 id: entity-merge
 version: 0.1.0
 license: CC0-1.0
-tested: null
+tested: jev-1.13.0
 description: >-
   Decide whether two entity records describe the same real-world entity and
   what the resolution pipeline should do. Non-goals: canonical name selection,

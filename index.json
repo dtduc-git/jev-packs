@@ -7,48 +7,48 @@
       "version": "0.1.0",
       "path": "packs/support-triage",
       "license": "CC0-1.0",
-      "status": "provisional",
-      "evidence": null
+      "status": "verified",
+      "evidence": "packs/support-triage/evidence.md"
     },
     {
       "id": "rag-passage-relevance",
       "version": "0.1.0",
       "path": "packs/rag-passage-relevance",
       "license": "CC0-1.0",
-      "status": "provisional",
-      "evidence": null
+      "status": "verified",
+      "evidence": "packs/rag-passage-relevance/evidence.md"
     },
     {
       "id": "rag-answerability",
       "version": "0.1.0",
       "path": "packs/rag-answerability",
       "license": "CC0-1.0",
-      "status": "provisional",
-      "evidence": null
+      "status": "verified",
+      "evidence": "packs/rag-answerability/evidence.md"
     },
     {
       "id": "citation-support",
       "version": "0.1.0",
       "path": "packs/citation-support",
       "license": "CC0-1.0",
-      "status": "provisional",
-      "evidence": null
+      "status": "verified",
+      "evidence": "packs/citation-support/evidence.md"
     },
     {
       "id": "moderation",
       "version": "0.1.0",
       "path": "packs/moderation",
       "license": "CC0-1.0",
-      "status": "provisional",
-      "evidence": null
+      "status": "verified",
+      "evidence": "packs/moderation/evidence.md"
     },
     {
       "id": "entity-merge",
       "version": "0.1.0",
       "path": "packs/entity-merge",
       "license": "CC0-1.0",
-      "status": "provisional",
-      "evidence": null
+      "status": "verified",
+      "evidence": "packs/entity-merge/evidence.md"
     }
   ]
 }

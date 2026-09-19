@@ -2,7 +2,7 @@ spec: 0
 id: citation-support
 version: 0.1.0
 license: CC0-1.0
-tested: null
+tested: jev-1.13.0
 description: >-
   Check whether a quote cited for a generated claim actually supports it, and
   how much of the claim the quote contains. Non-goals: judging real-world
@@ -18,6 +18,11 @@ questions:
     type: score
     instructions: "How much of `claim`'s key content appears in `quote`?"
     levels: [none, partial, full, unknown]
+    level_descriptions:
+      none: "None of the claim's key details appear in the quote."
+      partial: "Some key details appear; others are absent."
+      full: "Every key detail (numbers, names, direction) appears."
+      unknown: "Quote is empty, garbled or redacted beyond use."
 thresholds:
   supports: {true: 0.85, false: 0.85}
   coverage: {none: 0.7, partial: 0.7, full: 0.7}

@@ -39,4 +39,6 @@ synthetic.
 
 ## Evidence
 
-None yet (`tested: null`).
+Recorded 2026-09-19 against `jev-1.13.0`: accuracy **0.910**, ECE 0.054,
+$0.000017/case. Full report: [evidence.md](evidence.md); raw recording:
+[predictions.jsonl](predictions.jsonl).

@@ -39,4 +39,6 @@ so it is deliberately strict. 0.7 per `quality` level; `unknown` has no floor.
 
 ## Evidence
 
-None yet (`tested: null`).
+Recorded 2026-09-19 against `jev-1.13.0`: accuracy **0.880**, ECE 0.058,
+$0.000018/case. Full report: [evidence.md](evidence.md); raw recording:
+[predictions.jsonl](predictions.jsonl).

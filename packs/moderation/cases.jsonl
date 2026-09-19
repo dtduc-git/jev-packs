@@ -39,11 +39,11 @@
 {"id": "mod-0039", "state": {"text": "I found your IP address and will take you offline tonight."}, "expect": {"action": "remove", "severity": "high", "targeted_group": false}}
 {"id": "mod-0040", "state": {"text": "The election was stolen by that ethnic group and they must be stopped."}, "expect": {"action": "remove", "severity": "high", "targeted_group": true}}
 {"id": "mod-0041", "state": {"text": "Get out of my country, immigrant scum."}, "expect": {"action": "remove", "severity": "high", "targeted_group": true}}
-{"id": "mod-0042", "state": {"text": "You know what you did."}, "expect": {"action": "unknown", "severity": "unknown", "targeted_group": false}}
-{"id": "mod-0043", "state": {"text": "\ud83d\ude21\ud83d\ude21\ud83d\ude21"}, "expect": {"action": "unknown", "severity": "unknown", "targeted_group": false}}
-{"id": "mod-0044", "state": {"text": "Nice one, as always \ud83d\ude44"}, "expect": {"action": "unknown", "severity": "unknown", "targeted_group": false}}
-{"id": "mod-0045", "state": {"text": "Meet me at the usual place, bring it."}, "expect": {"action": "unknown", "severity": "unknown", "targeted_group": false}}
-{"id": "mod-0046", "state": {"text": "That was... interesting."}, "expect": {"action": "unknown", "severity": "unknown", "targeted_group": false}}
+{"id": "mod-0042", "state": {"text": "������ ���� ������"}, "expect": {"action": "unknown", "severity": "unknown", "targeted_group": false}}
+{"id": "mod-0043", "state": {"text": "[redacted by upstream filter — content unavailable]"}, "expect": {"action": "unknown", "severity": "unknown", "targeted_group": false}}
+{"id": "mod-0044", "state": {"text": ""}, "expect": {"action": "unknown", "severity": "unknown", "targeted_group": false}}
+{"id": "mod-0045", "state": {"text": "Ã¿Ã¿Ã¿ ÃžÃžÃž"}, "expect": {"action": "unknown", "severity": "unknown", "targeted_group": false}}
+{"id": "mod-0046", "state": {"text": "\u0000\u0000\u0000\u0000"}, "expect": {"action": "unknown", "severity": "unknown", "targeted_group": false}}
 {"id": "mod-0047", "state": {"text": "Nobody wants your opinion, loser."}, "expect": {"action": "review", "severity": "medium", "targeted_group": false}}
 {"id": "mod-0048", "state": {"text": "Your article is trash and so are you."}, "expect": {"action": "review", "severity": "medium", "targeted_group": false}}
 {"id": "mod-0049", "state": {"text": "I hope your next flight crashes."}, "expect": {"action": "remove", "severity": "medium", "targeted_group": false}}

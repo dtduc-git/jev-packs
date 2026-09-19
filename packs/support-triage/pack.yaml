@@ -2,7 +2,7 @@ spec: 0
 id: support-triage
 version: 0.1.0
 license: CC0-1.0
-tested: null
+tested: jev-1.13.0
 description: >-
   First-line triage of an inbound customer support message: refund intent,
   owning queue and urgency. Non-goals: drafting replies, sentiment analysis,
@@ -28,6 +28,12 @@ questions:
     type: score
     instructions: "How soon does this message need a human response, considering stated impact and time pressure?"
     levels: [low, normal, high, critical, unknown]
+    level_descriptions:
+      low: "Feedback, pre-sales or cosmetic issues; no impact stated."
+      normal: "A standard request; the sender is not blocked."
+      high: "Work is blocked, money is at stake, or access is lost."
+      critical: "Ongoing outage or data loss; damage is happening right now."
+      unknown: "Cannot tell from the message."
 thresholds:
   refund_request: {true: 0.8, false: 0.8}
   queue: {billing: 0.6, technical: 0.6, shipping: 0.6, account: 0.6, other: 0.6}

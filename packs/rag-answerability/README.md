@@ -40,4 +40,6 @@ the worst RAG failure. 0.7+ per missing-info class; `unknown` has no floor.
 
 ## Evidence
 
-None yet (`tested: null`).
+Recorded 2026-09-19 against `jev-1.13.0`: accuracy **0.940**, ECE 0.044,
+$0.000020/case. Full report: [evidence.md](evidence.md); raw recording:
+[predictions.jsonl](predictions.jsonl).

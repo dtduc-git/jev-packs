@@ -2,7 +2,7 @@ spec: 0
 id: moderation
 version: 0.1.0
 license: CC0-1.0
-tested: null
+tested: jev-1.13.0
 description: >-
   First-pass moderation of user-generated text under a standard platform policy:
   action, severity, and whether a protected group is targeted. Non-goals: legal
@@ -23,6 +23,12 @@ questions:
     type: score
     instructions: "How severe is the harm this text could cause if left visible?"
     levels: [none, low, medium, high, unknown]
+    level_descriptions:
+      none: "No harm: criticism, disagreement or a neutral comment."
+      low: "Mild: rudeness, profanity not aimed at a person, or spam."
+      medium: "Harassment or insults aimed at a person; demeaning generalization."
+      high: "Threats, doxxing, hate with targeting, or fraud."
+      unknown: "Cannot judge severity."
   targeted_group:
     type: noul
     instructions: "Does the text attack or demean people based on a protected characteristic (race, ethnicity, religion, sex, sexual orientation, disability, national origin)?"

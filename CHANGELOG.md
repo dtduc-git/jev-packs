@@ -10,3 +10,11 @@ Repo-level changes; per-pack history lives in each pack's `CHANGELOG.md`.
 - Spec v0 clarified to match the jevassert loader: `choice` needs ≥2 options,
   `score` needs 2–10 levels, and `score` questions may carry optional
   `level_descriptions` (label → situational text). Additive; no `spec` bump.
+- All six packs recorded against `jev-1.13.0` with jevassert (accuracy
+  0.787–0.940, ECE 0.044–0.095, ~$0.00002/case); `evidence.md` +
+  `predictions.jsonl` committed, `index.json` flipped to `verified`.
+- Pre-evidence quality pass: `level_descriptions` anchors added to all ordinal
+  questions; 14 `support-triage` urgency labels realigned to the anchors;
+  5 `moderation` unknown cases rewritten as unreadable input. Stability
+  spot-check: two independent recordings of `support-triage` were identical
+  (0 discordant of 150 items).

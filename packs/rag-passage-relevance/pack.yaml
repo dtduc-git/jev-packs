@@ -2,7 +2,7 @@ spec: 0
 id: rag-passage-relevance
 version: 0.1.0
 license: CC0-1.0
-tested: null
+tested: jev-1.13.0
 description: >-
   Judge whether one retrieved passage helps answer a question, and how useful
   it is. Non-goals: answering the question, faithfulness checking, ranking
@@ -18,6 +18,12 @@ questions:
     type: score
     instructions: "How useful is `passage` for answering `question`?"
     levels: [junk, weak, ok, strong, unknown]
+    level_descriptions:
+      junk: "Different subject; nothing about the question's topic."
+      weak: "Same subject, but nothing usable to answer the question."
+      ok: "Useful partial information: a piece, a pointer or a range."
+      strong: "Contains the answer or everything needed to answer."
+      unknown: "Passage unusable or unreadable."
 thresholds:
   relevant: {true: 0.85, false: 0.85}
   quality: {junk: 0.7, weak: 0.7, ok: 0.7, strong: 0.7}

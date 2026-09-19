@@ -14,14 +14,19 @@ this repo except the CI validator.
 
 ## Current state (2026-09-19)
 
-- Spec v0 + validator + CI + 6 seed packs (50 cases each, all self-authored,
+- Spec v0 + validator + CI + 6 seed packs (50–55 cases each, self-authored,
   CC0-1.0): support-triage, rag-passage-relevance, rag-answerability,
   citation-support, moderation, entity-merge.
-- All packs `provisional` (`tested: null`, no `evidence.md`) — `jevassert`
-  does not exist yet, so no evidence can be recorded. That is the honest state;
-  do not set `tested` by hand.
-- index.json has a strict invariant: `verified` requires `evidence.md`; CI
-  fails otherwise.
+- **All 6 packs `verified`**: recorded against `jev-1.13.0` (accuracy
+  0.787–0.940, ECE 0.044–0.095, ~$0.00002/case). Each pack has `tested`,
+  `evidence.md` (jevassert-generated) and `predictions.jsonl` (raw recording).
+- Stability spot-check: `support-triage` recorded twice, identical (0/150
+  discordant). Full `--repeat` stability runs are P1.
+- No gates.yaml yet — packs pass no declared minimum. Add gates from measured
+  baselines when the numbers are stable enough to gate (see Next steps).
+- Recordings are single-run; re-record with
+  `uvx jevassert record packs/<id> -o /tmp/p.jsonl` (needs `TYPESAFE_API_KEY`)
+  then regenerate `evidence.md` with `check --report`.
 
 ## Layout
 
@@ -44,6 +49,9 @@ this repo except the CI validator.
 
 ## Next steps
 
+- Gates: add `gates.yaml` per pack from the recorded baselines (e.g.
+  `min_accuracy`, `max_ece`, `max_cost_per_case_usd`) once another recording
+  confirms stability, so CI can fail on regressions.
 - When `jevassert` is published: add an evidence workflow
   (`workflow_dispatch`) that runs `jevassert record`, regenerates `evidence.md`,
   flips `index.json` to `verified`, and opens a PR (never pushes to master).

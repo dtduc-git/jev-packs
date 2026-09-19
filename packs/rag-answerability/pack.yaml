@@ -2,7 +2,7 @@ spec: 0
 id: rag-answerability
 version: 0.1.0
 license: CC0-1.0
-tested: null
+tested: jev-1.13.0
 description: >-
   Decide whether a question is answerable from the retrieved context alone and,
   when it is not, what kind of information is missing. Non-goals: answering the

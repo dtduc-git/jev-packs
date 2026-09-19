@@ -41,4 +41,6 @@ merge decisions need confidence. 0.8 for `merge`/`keep_separate`, 0.6 for
 
 ## Evidence
 
-None yet (`tested: null`).
+Recorded 2026-09-19 against `jev-1.13.0`: accuracy **0.882**, ECE 0.046,
+$0.000018/case. Full report: [evidence.md](evidence.md); raw recording:
+[predictions.jsonl](predictions.jsonl).

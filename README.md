@@ -29,16 +29,21 @@ on which model version?" This repo is the place that answers with numbers:
 
 ## Packs
 
-| Pack | Questions | Status |
-|---|---|---|
-| [`support-triage`](packs/support-triage) | refund intent, queue, urgency | provisional |
-| [`rag-passage-relevance`](packs/rag-passage-relevance) | relevance, passage quality | provisional |
-| [`rag-answerability`](packs/rag-answerability) | answerable-from-context, missing info | provisional |
-| [`citation-support`](packs/citation-support) | supports, coverage | provisional |
-| [`moderation`](packs/moderation) | action, severity, targeted group | provisional |
-| [`entity-merge`](packs/entity-merge) | same entity?, resolution action | provisional |
+All six packs are **verified**: recorded against `jev-1.13.0` with
+[`jevassert`](https://github.com/dtduc-git/jevassert). Numbers are single-run
+measurements over the pack's golden cases — see each pack's `evidence.md` for
+the full report and `predictions.jsonl` for the raw recording.
 
-`provisional` = cases are curated but no `jevassert` evidence exists yet.
+| Pack | Questions | Items | Accuracy | ECE | Cost/case |
+|---|---|---|---|---|---|
+| [`rag-answerability`](packs/rag-answerability) | answerable-from-context, missing info | 100 | **0.940** | 0.044 | $0.000020 |
+| [`citation-support`](packs/citation-support) | supports, coverage | 100 | **0.910** | 0.054 | $0.000017 |
+| [`entity-merge`](packs/entity-merge) | same entity?, resolution action | 110 | **0.882** | 0.046 | $0.000018 |
+| [`rag-passage-relevance`](packs/rag-passage-relevance) | relevance, passage quality | 100 | **0.880** | 0.058 | $0.000018 |
+| [`support-triage`](packs/support-triage) | refund intent, queue, urgency | 150 | **0.840** | 0.062 | $0.000023 |
+| [`moderation`](packs/moderation) | action, severity, targeted group | 150 | **0.787** | 0.095 | $0.000022 |
+
+`provisional` = cases are curated but no `jevassert` evidence exists yet;
 `verified` requires a recorded `evidence.md`. See [index.json](index.json).
 
 ## Format v0

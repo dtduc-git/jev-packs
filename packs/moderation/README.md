@@ -23,6 +23,10 @@ own policy text.
   politics, job or behavior are `false` even when harsh.
 - `severity`: `none` (no harm), `low` (rudeness, spam), `medium` (harassment,
   demeaning generalization), `high` (threats, doxxing, hate with targeting).
+  The pack.yaml `level_descriptions` mirror these anchors.
+- `unknown` action is for input that cannot be classified at all: empty,
+  garbled, redacted or encoding-damaged text. Ambiguity elsewhere resolves to
+  `review`, which is what `review` is for.
 - Expected consistency: `allow` pairs with `severity: none` or `low`; `remove`
   pairs with `medium` or `high`; `unknown` action pairs with `unknown` severity.
 
@@ -40,4 +44,7 @@ floor.
 
 ## Evidence
 
-None yet (`tested: null`).
+Recorded 2026-09-19 against `jev-1.13.0`: accuracy **0.787**, ECE 0.095,
+$0.000022/case. `targeted_group` is the strongest question (1.00); `severity`
+the weakest (0.66) — ordinal gradations are the hard part. Full report:
+[evidence.md](evidence.md); raw recording: [predictions.jsonl](predictions.jsonl).
