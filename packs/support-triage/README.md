@@ -9,7 +9,7 @@ refund requests and rank urgency.
 |---|---|---|
 | `refund_request` | noul | true / false |
 | `queue` | choice | billing, technical, shipping, account, other, unknown |
-| `urgency` | score | low, normal, high, critical, unknown |
+| `urgency` | score | normal, high, critical, unknown |
 
 ### Labeling rules
 
@@ -19,11 +19,13 @@ refund requests and rank urgency.
 - `queue` follows the fix, not the symptom: anything that ends in money moving
   back goes to `billing` (including returns and fee reversals); delivery and
   address issues go to `shipping`.
-- `urgency` follows the ordered anchors in `level_descriptions`: `critical` =
-  ongoing outage, active data loss, or a live security incident; `high` = work
-  blocked, access lost, or money at stake (an explicit refund request counts);
-  `normal` = standard request without impact; `low` = feedback, pre-sales,
-  cosmetic. Tone alone never sets urgency.
+- `urgency` uses three operational levels: `critical` = a capability the
+  sender depends on is completely unavailable right now, data is being lost,
+  or a live security incident; `high` = something is not working, failing,
+  delayed, missing or costing money (bugs, delivery problems, stuck requests,
+  refunds); `normal` = requests, questions, feedback, feature requests. Tone
+  never changes the level. (The former `low` level was removed: feedback has
+  the same operational urgency as any other request.)
 - Gold cases are labeled from `message` alone, with no ticket history.
 
 ## Provenance
@@ -39,7 +41,7 @@ to review.
 
 ## Evidence
 
-Recorded 2026-09-19 against `jev-1.13.0`: accuracy **0.843**, ECE 0.059,
-$0.000027/case. The 0.5.0 ordered-rule rewrite lifted `urgency` from 0.56 to
-0.69. Full report: [evidence.md](evidence.md); raw recording:
-[predictions.jsonl](predictions.jsonl).
+Recorded 2026-09-19 against `jev-1.13.0`: accuracy **0.887**, ECE 0.059,
+$0.000028/case. The 0.6.0 redesign (three operational urgency levels; bugs and
+delivery problems are `high`) lifted `urgency` from 0.69 to 0.83. Full report:
+[evidence.md](evidence.md); raw recording: [predictions.jsonl](predictions.jsonl).

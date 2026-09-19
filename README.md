@@ -43,7 +43,7 @@ the full report and `predictions.jsonl` for the raw recording.
 | [`moderation`](packs/moderation) | action, severity, targeted group | 1,350 | **0.906** | 0.027 | $0.000031 |
 | [`rag-passage-relevance`](packs/rag-passage-relevance) | relevance, passage quality | 800 | **0.899** | 0.035 | $0.000018 |
 | [`entity-merge`](packs/entity-merge) | same entity?, resolution action | 840 | **0.857** | 0.017 | $0.000018 |
-| [`support-triage`](packs/support-triage) | refund intent, queue, urgency | 1,290 | **0.843** | 0.059 | $0.000027 |
+| [`support-triage`](packs/support-triage) | refund intent, queue, urgency | 1,350 | **0.887** | 0.059 | $0.000028 |
 
 ### Dataset-derived packs (upstream license, attribution in each README)
 
@@ -51,7 +51,7 @@ the full report and `predictions.jsonl` for the raw recording.
 |---|---|---|---|---|---|
 | [`sms-spam`](packs/sms-spam) | SMS Spam Collection (CC BY 4.0) | 150 | **0.967** | 0.053 | $0.000014 |
 | [`boolq-yes-no`](packs/boolq-yes-no) | BoolQ (CC BY-SA 3.0) | 150 | **0.887** | 0.063 | $0.000018 |
-| [`banking-intent`](packs/banking-intent) | Banking77 (CC BY 4.0) | 150 | **0.853** | 0.077 | $0.000028 |
+| [`banking-intent`](packs/banking-intent) | Banking77 (CC BY 4.0) | 150 | **0.840** | 0.090 | $0.000029 |
 
 `provisional` = cases are curated but no `jevassert` evidence exists yet;
 `verified` requires a recorded `evidence.md`. See [index.json](index.json).

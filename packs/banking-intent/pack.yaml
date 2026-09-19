@@ -1,6 +1,6 @@
 spec: 0
 id: banking-intent
-version: 0.1.0
+version: 0.2.0
 license: CC-BY-4.0
 tested: jev-1.13.0
 description: >-
@@ -14,19 +14,19 @@ questions:
     type: choice
     instructions: "Which intent best matches the customer's request?"
     options:
-      card_arrival: "Where the card is; card has not arrived."
-      card_not_working: "The card is declined, blocked or not working."
+      card_arrival: "Where the card is; the card has not arrived yet."
+      card_not_working: "The card is declined or does not work at a terminal or online."
       lost_or_stolen_card: "The card was lost or stolen."
       pending_card_payment: "A card payment is pending or stuck."
       transaction_charged_twice: "The same transaction appears twice."
-      transfer_timing: "How long a transfer takes."
-      transfer_not_received_by_recipient: "The recipient has not received the transfer."
+      transfer_timing: "Asking how long a transfer takes or when it will arrive; nothing is settled yet."
+      transfer_not_received_by_recipient: "The transfer shows as sent or completed but the recipient has not received it."
       declined_transfer: "A transfer was declined or failed."
       topping_up_by_card: "Topping up the account with a card."
       exchange_rate: "Exchange rates or currency conversion."
       cash_withdrawal_not_recognised: "An unrecognised cash withdrawal."
-      balance_not_updated_after_bank_transfer: "Balance did not update after a transfer."
-      pin_blocked: "The PIN is blocked or the card needs a PIN reset."
+      balance_not_updated_after_bank_transfer: "A transfer completed but the account balance still shows the old amount."
+      pin_blocked: "The PIN is blocked or needs a reset."
       extra_charge_on_statement: "An unexpected or extra charge on a statement."
       request_refund: "Asking for a refund."
       unknown: "None of the above, or cannot tell."

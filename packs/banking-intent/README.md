@@ -29,6 +29,8 @@ Regenerate: `python scripts/build-banking-intent.py`.
 
 ## Evidence
 
-Recorded 2026-09-19 against `jev-1.13.0`: accuracy **0.853**, ECE 0.077,
-$0.000028/case. Full report: [evidence.md](evidence.md); raw recording:
-[predictions.jsonl](predictions.jsonl).
+Recorded 2026-09-19 against `jev-1.13.0`: accuracy **0.840**, ECE 0.090,
+$0.000029/case. (150 cases: run-to-run swings of ±4pp are expected; the
+confusable trio transfer_timing / transfer_not_received /
+balance_not_updated is deliberately kept.) Full report:
+[evidence.md](evidence.md); raw recording: [predictions.jsonl](predictions.jsonl).

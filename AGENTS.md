@@ -17,10 +17,10 @@ this repo except the CI validator.
 - Spec v0 + validator + CI + 6 seed packs (50–55 cases each, self-authored,
   CC0-1.0): support-triage, rag-passage-relevance, rag-answerability,
   citation-support, moderation, entity-merge.
-- **9 packs · 2,970 cases / 6,370 items, all `verified` against `jev-1.13.0`**
-  (accuracy 0.843–0.967, ECE 0.017–0.077). Six hand-written packs (moderation
-  v0.6.0, support-triage and rag-answerability v0.5.0 with ordered-rule
-  criteria) plus three dataset-derived packs (sms-spam, banking-intent,
+- **9 packs · 2,990 cases / 6,370 items, all `verified` against `jev-1.13.0`**
+  (accuracy 0.840–0.967, ECE 0.017–0.090). Six hand-written packs (support-triage
+  v0.6.0 three-level urgency, moderation v0.6.0, rag-answerability v0.5.0 with
+  ordered-rule criteria) plus three dataset-derived packs (sms-spam, banking-intent,
   boolq-yes-no v0.1.0). Each pack has `tested`, `evidence.md` and
   `predictions.jsonl`.
 - Stability spot-check: `support-triage` recorded twice, identical (0/150

@@ -4,7 +4,7 @@
   "packs": [
     {
       "id": "support-triage",
-      "version": "0.5.0",
+      "version": "0.6.0",
       "path": "packs/support-triage",
       "license": "CC0-1.0",
       "status": "verified",
@@ -60,7 +60,7 @@
     },
     {
       "id": "banking-intent",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "path": "packs/banking-intent",
       "license": "CC-BY-4.0",
       "status": "verified",

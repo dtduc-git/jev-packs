@@ -44,5 +44,9 @@ Repo-level changes; per-pack history lives in each pack's `CHANGELOG.md`.
   (`missing_info` 0.78 → 0.86, McNemar p < 0.0001 — concise-but-sufficient
   rule, cross-question consistency, procedure-vs-availability); `moderation`
   severity criteria tightened, 41 mislabeled complaint cases reclassified
-  (`severity` 0.70 → 0.81, overall 0.906). Running total: 9 packs, 2,950
-  cases, 6,370 items, all verified against `jev-1.13.0`.
+  (`severity` 0.70 → 0.81, overall 0.906).
+- **Third pass**: `support-triage` urgency redesigned to three operational
+  levels (dropping `low`), 92 labels realigned, 20 boundary cases — accuracy
+  0.843 → 0.887 (`urgency` 0.69 → 0.83). `banking-intent` option descriptions
+  sharpened (0.840; ±4pp run-to-run noise at n=150). Running total: 9 packs,
+  2,990 cases, 6,370 items, all verified against `jev-1.13.0`.

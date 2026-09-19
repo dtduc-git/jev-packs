@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.6.0 — 2026-09-19
+
+- `urgency` redesigned to three operational levels (`normal`, `high`,
+  `critical`; `low` removed — feedback has the same operational urgency as a
+  request). `high` now covers anything not working/failing/delayed/missing or
+  costing money (bugs, delivery problems, stuck requests, refunds); `critical`
+  is complete unavailability, active data loss or a live security incident.
+  92 gold labels realigned to the new rule, 20 boundary cases added; evidence
+  re-recorded: accuracy 0.843 → 0.887 (`urgency` 0.69 → 0.83).
+
 ## 0.5.0 — 2026-09-19
 
 - `urgency` criteria rewritten as an ordered decision rule (ongoing

@@ -1,6 +1,6 @@
 spec: 0
 id: support-triage
-version: 0.5.0
+version: 0.6.0
 license: CC0-1.0
 tested: jev-1.13.0
 description: >-
@@ -26,15 +26,14 @@ questions:
       unknown: "Cannot tell from the message."
   urgency:
     type: score
-    instructions: "How soon does this message need a human response? Apply the first matching level: critical for an ongoing outage, active data loss, or a live security incident; high when work is blocked, access is lost, or money is at stake (an explicit refund or money-back request counts as money at stake); normal for a standard request with no stated impact; low for feedback, questions, pre-sales or cosmetics."
-    levels: [low, normal, high, critical, unknown]
+    instructions: "How soon does this message need a human response? critical when a capability the sender depends on is completely unavailable right now, data is being lost right now, or a live security incident is ongoing (unauthorized access, leaked credentials, a data breach); high when the message reports something that is not working, failing, delayed, missing, or costing money (bugs, defects, delivery problems, stuck requests and explicit refund requests all count); normal for requests, questions, feedback, feature requests and everything else with no malfunction; unknown when the message is unreadable. Calm phrasing never lowers urgency and dramatic phrasing never raises it."
+    levels: [normal, high, critical, unknown]
     level_descriptions:
-      critical: "Ongoing outage, active data loss, or a live security incident (unauthorized access, leaked credentials, a data breach)."
-      high: "Work blocked, access lost, or money at stake, including any explicit refund or money-back request. Nothing is actively broken."
-      normal: "A standard request with no stated impact."
-      low: "Feedback, a question, pre-sales or cosmetic: nothing depends on the outcome."
-      unknown: "Cannot tell from the message. Tone alone never sets urgency."
+      critical: "A needed capability is completely unavailable right now, data is being lost right now, or a live security incident is ongoing."
+      high: "Something is not working, failing, delayed, missing or costing money."
+      normal: "A request, question, feedback or feature request with no malfunction."
+      unknown: "Cannot tell from the message."
 thresholds:
   refund_request: {true: 0.8, false: 0.8}
   queue: {billing: 0.6, technical: 0.6, shipping: 0.6, account: 0.6, other: 0.6}
-  urgency: {low: 0.7, normal: 0.7, high: 0.7, critical: 0.7}
+  urgency: {normal: 0.7, high: 0.7, critical: 0.7}
