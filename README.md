@@ -30,7 +30,7 @@ committed, every number reproducible offline.
   questions, cases and recording protocol.
 - First full matrix (2,990 cases): **Jev and Sonnet 5 are a statistical tie on
   accuracy across all nine packs** (deltas ≤ 0.018, inside overlapping 95%
-  CIs), while Jev is **better calibrated on 7/9 packs** (e.g. citation-support
+  CIs), while Jev is **better calibrated on 8/9 packs** (e.g. citation-support
   ECE 0.022 vs 0.081) and costs **~250× less per case** ($0.000014–0.000031 vs
   ~$0.0036). The local 7B trails far behind (0.533–0.813). Numbers, recordings
   and per-pack reports live in [`results/`](results/).

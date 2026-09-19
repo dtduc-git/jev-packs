@@ -67,7 +67,7 @@ alternative backends, published as `docs/index.html` (Jev Bench).
   CI job can go green (it pins 0.2.0).
 - Benchmark matrix complete: 3 backends × 9 packs (Jev 1.13.0, Claude Sonnet 5,
   qwen2.5:7b local). Result: Jev ≈ Sonnet 5 accuracy, better calibration on
-  7/9, ~250× cheaper; local 7B far behind. One deterministic case error on
+  8/9, ~250× cheaper; local 7B far behind. One deterministic case error on
   `moderation` (mod-0279) is recorded honestly.
 - Next: commit + push both repos, enable GitHub Pages (master `/docs`), publish
   the matrix. If more budget appears: Opus 5 / Fable 5.1 columns; Bedrock access

@@ -54,6 +54,12 @@ def money(value: float | None) -> str:
     return f"${value:.6f}"
 
 
+def latency(value: float | None) -> str:
+    if not isinstance(value, (int, float)):
+        return "—"
+    return f"{value / 1000:.1f}s" if value >= 1000 else f"{value:.0f}ms"
+
+
 def accuracy_cell(result: dict[str, Any], slug: str) -> str:
     accuracy = result.get("accuracy")
     if not isinstance(accuracy, (int, float)) or result.get("n_items", 0) == 0:
@@ -66,6 +72,7 @@ def accuracy_cell(result: dict[str, Any], slug: str) -> str:
     if isinstance(ece, (int, float)):
         cell += f"<br><span class='sub'>ECE {ece:.3f}</span>"
     cell += f"<br><span class='sub'>{money(result.get('cost_per_case_usd'))}/case</span>"
+    cell += f"<br><span class='sub'>p95 {latency(result.get('p95_latency_ms'))}</span>"
     report = result.get("report") or f"results/{slug}/{result['pack']}.md"
     cell += f"<br><span class='sub'><a href='{REPO}/{html.escape(report)}'>report</a>"
     cell += f" · <a href='{REPO}/results/{slug}/{result['pack']}.json'>json</a></span>"
@@ -138,7 +145,8 @@ def render() -> str:
         lines.append(
             "<p class='note'>Accuracy over all labeled items with bootstrap 95% CI; "
             "ECE is expected calibration error (lower is better); cost is per case at the "
-            "prices in each backend.json. Click through for per-question breakdowns.</p>")
+            "prices in each backend.json; p95 latency is wall-clock in the recording "
+            "session (order of magnitude only). Click through for per-question breakdowns.</p>")
 
     lines.append("<h2>Backends</h2>")
     lines.append(
