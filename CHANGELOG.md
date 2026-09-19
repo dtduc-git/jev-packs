@@ -18,3 +18,7 @@ Repo-level changes; per-pack history lives in each pack's `CHANGELOG.md`.
   5 `moderation` unknown cases rewritten as unreadable input. Stability
   spot-check: two independent recordings of `support-triage` were identical
   (0 discordant of 150 items).
+- **All packs expanded to 100+ cases (v0.2.0; 605 cases, 1,410 items total)**
+  and re-recorded against `jev-1.13.0`: accuracy 0.793–0.905, ECE 0.040–0.088,
+  ~$0.00002/case. Larger, harder sets replaced the seed evidence — numbers are
+  lower and more trustworthy (e.g. `rag-answerability` 0.940 → 0.905).

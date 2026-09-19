@@ -29,7 +29,7 @@ or truncate it.
 
 ## Provenance
 
-All 50 cases were written for this pack (CC0-1.0). Passages are synthetic and
+All 100 cases were written for this pack (CC0-1.0). Passages are synthetic and
 do not quote any real source.
 
 ## Thresholds
@@ -39,6 +39,6 @@ so it is deliberately strict. 0.7 per `quality` level; `unknown` has no floor.
 
 ## Evidence
 
-Recorded 2026-09-19 against `jev-1.13.0`: accuracy **0.880**, ECE 0.058,
+Recorded 2026-09-19 against `jev-1.13.0`: accuracy **0.860**, ECE 0.071,
 $0.000018/case. Full report: [evidence.md](evidence.md); raw recording:
 [predictions.jsonl](predictions.jsonl).

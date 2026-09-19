@@ -48,3 +48,53 @@
 {"id": "cs-0048", "state": {"claim": "The committee meets quarterly.", "quote": "The committee convenes four times a year."}, "expect": {"supports": true, "coverage": "full"}}
 {"id": "cs-0049", "state": {"claim": "The app stores data locally by default.", "quote": "By default, the app keeps all data on the device."}, "expect": {"supports": true, "coverage": "full"}}
 {"id": "cs-0050", "state": {"claim": "The ferry crossing takes 45 minutes.", "quote": "The ferry takes 45 minutes to cross the strait."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0051", "state": {"claim": "The dam generates 800 MW at peak.", "quote": "At peak the dam generates 800 megawatts."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0052", "state": {"claim": "The museum houses 12,000 artifacts.", "quote": "More than 12,000 artifacts are held in the museum's collection."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0053", "state": {"claim": "The author was born in 1948 in Nairobi.", "quote": "Born in Nairobi in 1948, the author rose from a newspaper desk to international fame."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0054", "state": {"claim": "The patch fixes the memory leak and the login crash.", "quote": "This patch addresses both the memory leak and the login crash."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0055", "state": {"claim": "The company laid off 400 employees in June.", "quote": "In June the company cut 400 jobs."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0056", "state": {"claim": "The vaccine trial enrolled 30,000 participants across four countries.", "quote": "The trial enrolled 30,000 volunteers in four countries."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0057", "state": {"claim": "The tunnel is 8.5 km long and took six years to build.", "quote": "Construction of the 8.5-kilometer tunnel took six years."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0058", "state": {"claim": "The app is free and has no ads.", "quote": "The app is free of charge and shows no advertisements."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0059", "state": {"claim": "Sales in Asia grew 22 percent last quarter.", "quote": "Asian sales rose 22 percent in the last quarter."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0060", "state": {"claim": "The volcano last erupted in 1922.", "quote": "Its most recent eruption occurred in 1922."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0061", "state": {"claim": "The train journey takes 2 hours 40 minutes.", "quote": "The train covers the route in 2 hours and 40 minutes."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0062", "state": {"claim": "The drug was approved for adults but not children.", "quote": "Approval covers adults; pediatric use is not approved."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0063", "state": {"claim": "The team raised 5 million dollars in seed funding.", "quote": "The seed round raised 5 million dollars."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0064", "state": {"claim": "The fire destroyed the warehouse but spared the offices.", "quote": "The warehouse was destroyed; the offices were spared."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0065", "state": {"claim": "The probe will reach Jupiter in 2031.", "quote": "Arrival at Jupiter is scheduled for 2031."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0066", "state": {"claim": "The recipe serves four and takes 30 minutes.", "quote": "Serves four; total time 30 minutes."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0067", "state": {"claim": "The university raised tuition by 3 percent this year.", "quote": "Tuition increased 3 percent for the current year."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0068", "state": {"claim": "The battery charges to 80 percent in 30 minutes.", "quote": "An 80 percent charge takes 30 minutes."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0069", "state": {"claim": "The law bans single-use plastics from January.", "quote": "Single-use plastics are banned starting in January."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0070", "state": {"claim": "The population fell for the third year in a row.", "quote": "The population declined for a third consecutive year."}, "expect": {"supports": true, "coverage": "full"}}
+{"id": "cs-0071", "state": {"claim": "The report found costs rose 5 percent and delays doubled.", "quote": "Costs rose 5 percent, the report found."}, "expect": {"supports": false, "coverage": "partial"}}
+{"id": "cs-0072", "state": {"claim": "The phone has a 6.7-inch screen and a 5,000 mAh battery.", "quote": "The phone features a 6.7-inch screen."}, "expect": {"supports": false, "coverage": "partial"}}
+{"id": "cs-0073", "state": {"claim": "The storm closed the airport and canceled 200 flights.", "quote": "The storm canceled 200 flights."}, "expect": {"supports": false, "coverage": "partial"}}
+{"id": "cs-0074", "state": {"claim": "The study followed patients for ten years and found no recurrence.", "quote": "Patients were followed for ten years."}, "expect": {"supports": false, "coverage": "partial"}}
+{"id": "cs-0075", "state": {"claim": "The city plans 50 km of new bike lanes by 2028.", "quote": "The city plans 50 kilometers of new bike lanes."}, "expect": {"supports": false, "coverage": "partial"}}
+{"id": "cs-0076", "state": {"claim": "The discovery was made by a team in Tokyo and confirmed in Berlin.", "quote": "The discovery was made by a team in Tokyo."}, "expect": {"supports": false, "coverage": "partial"}}
+{"id": "cs-0077", "state": {"claim": "The contract runs five years and covers maintenance.", "quote": "The contract runs for five years."}, "expect": {"supports": false, "coverage": "partial"}}
+{"id": "cs-0078", "state": {"claim": "The summit will host 40 leaders and 200 journalists.", "quote": "The summit will host 40 heads of state."}, "expect": {"supports": false, "coverage": "partial"}}
+{"id": "cs-0079", "state": {"claim": "The fund returned 8 percent annually for a decade.", "quote": "The fund returned 8 percent last year."}, "expect": {"supports": false, "coverage": "partial"}}
+{"id": "cs-0080", "state": {"claim": "The satellite weighs 1.2 tons and orbits at 600 km.", "quote": "The satellite orbits at 600 kilometers."}, "expect": {"supports": false, "coverage": "partial"}}
+{"id": "cs-0081", "state": {"claim": "The novel won the Booker and the Women's Prize.", "quote": "The novel won the Booker Prize."}, "expect": {"supports": false, "coverage": "partial"}}
+{"id": "cs-0082", "state": {"claim": "The settlement includes 10 million in cash and a public apology.", "quote": "The settlement pays 10 million in cash."}, "expect": {"supports": false, "coverage": "partial"}}
+{"id": "cs-0083", "state": {"claim": "The bridge reopened after two years of repairs.", "quote": "Repairs to the bridge are expected to take four years."}, "expect": {"supports": false, "coverage": "full"}}
+{"id": "cs-0084", "state": {"claim": "The defendant was found guilty on all counts.", "quote": "The defendant was acquitted on all counts."}, "expect": {"supports": false, "coverage": "full"}}
+{"id": "cs-0085", "state": {"claim": "The population grew in every district.", "quote": "Three districts recorded population decline."}, "expect": {"supports": false, "coverage": "full"}}
+{"id": "cs-0086", "state": {"claim": "The committee approved the plan unanimously.", "quote": "The committee approved the plan by a 7-2 vote."}, "expect": {"supports": false, "coverage": "full"}}
+{"id": "cs-0087", "state": {"claim": "The airport is the busiest in Europe.", "quote": "The airport is among the ten busiest in Europe."}, "expect": {"supports": false, "coverage": "full"}}
+{"id": "cs-0088", "state": {"claim": "The treatment eliminates the need for insulin.", "quote": "The treatment may reduce insulin requirements in some patients."}, "expect": {"supports": false, "coverage": "full"}}
+{"id": "cs-0089", "state": {"claim": "The species is no longer found in the wild.", "quote": "The species remains widespread in the wild."}, "expect": {"supports": false, "coverage": "full"}}
+{"id": "cs-0090", "state": {"claim": "The app works fully offline.", "quote": "Offline mode supports only draft editing."}, "expect": {"supports": false, "coverage": "full"}}
+{"id": "cs-0091", "state": {"claim": "The comet will be visible in April.", "quote": "The museum opens a new wing in April."}, "expect": {"supports": false, "coverage": "none"}}
+{"id": "cs-0092", "state": {"claim": "The chip is manufactured on a 3 nm process.", "quote": "Egg prices fell sharply in March."}, "expect": {"supports": false, "coverage": "none"}}
+{"id": "cs-0093", "state": {"claim": "The treaty was signed in Vienna.", "quote": "The band recorded its debut album in Vienna."}, "expect": {"supports": false, "coverage": "none"}}
+{"id": "cs-0094", "state": {"claim": "The vaccine requires two doses.", "quote": "The stadium roof was replaced in 2019."}, "expect": {"supports": false, "coverage": "none"}}
+{"id": "cs-0095", "state": {"claim": "The glacier retreated 500 meters in a decade.", "quote": "The new tax applies to sugared drinks."}, "expect": {"supports": false, "coverage": "none"}}
+{"id": "cs-0096", "state": {"claim": "The pilot ejected safely before the crash.", "quote": "The airline ordered 40 new aircraft."}, "expect": {"supports": false, "coverage": "none"}}
+{"id": "cs-0097", "state": {"claim": "The manuscript was found in a monastery archive.", "quote": "The painting was authenticated by experts in 2021."}, "expect": {"supports": false, "coverage": "none"}}
+{"id": "cs-0098", "state": {"claim": "The reactor was shut down after the alarm.", "quote": "\ufffd\ufffd\ufffd\ufffd"}, "expect": {"supports": false, "coverage": "unknown"}}
+{"id": "cs-0099", "state": {"claim": "The team set a new world record.", "quote": "[content removed by moderator]"}, "expect": {"supports": false, "coverage": "unknown"}}
+{"id": "cs-0100", "state": {"claim": "The merger will close in Q2.", "quote": "The merger [redacted] closing [redacted]."}, "expect": {"supports": false, "coverage": "unknown"}}

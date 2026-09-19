@@ -1,32 +1,33 @@
-# jevassert report — rag-answerability v0.1.0
+# jevassert report — rag-answerability v0.2.0
 
 - model: `jev-1.13.0` (recorded against `jev-1.13.0`)
-- cases: 50 (0 errors, 0 missing answers)
-- items: 100 — accuracy **0.940**, ECE **0.044**
-- cost: $0.000020/case ($0.0010 total)
-- latency: p50 308ms, p95 744ms
+- cases: 100 (0 errors, 0 missing answers)
+- items: 200 — accuracy **0.905**, ECE **0.040**
+- bootstrap 95%: accuracy CI 0.860–0.945, ECE CI 0.025–0.078
+- cost: $0.000020/case ($0.0020 total)
+- latency: p50 306ms, p95 753ms
 
 ## Per question
 
 | question | type | n | missing | accuracy | mean p(decision) | ECE | Brier |
 |---|---|---|---|---|---|---|---|
-| answerable | noul | 50 | 0 | 0.980 | 0.947 | 0.033 | 0.016 |
-| missing_info | choice | 50 | 0 | 0.900 | 0.904 | 0.054 | — |
+| answerable | noul | 100 | 0 | 0.970 | 0.925 | 0.045 | 0.028 |
+| missing_info | choice | 100 | 0 | 0.840 | 0.882 | 0.073 | — |
 
 ## Coverage at decision probability
 
 | accept if p >= | coverage | precision |
 |---|---|---|
-| 0.50 | 1.000 | 0.940 |
-| 0.60 | 0.950 | 0.958 |
-| 0.70 | 0.920 | 0.967 |
-| 0.80 | 0.890 | 0.989 |
-| 0.90 | 0.790 | 0.987 |
-| 0.95 | 0.720 | 1.000 |
+| 0.50 | 0.975 | 0.913 |
+| 0.60 | 0.940 | 0.926 |
+| 0.70 | 0.885 | 0.949 |
+| 0.80 | 0.830 | 0.970 |
+| 0.90 | 0.725 | 0.986 |
+| 0.95 | 0.665 | 1.000 |
 
 ## Author thresholds (pack threshold floors)
 
-- auto-accepted 90/100 (0.900), precision 0.978
+- auto-accepted 165/200 (0.825), precision 0.958
 - labels without a floor (usually `unknown`) always route to review
 
 ## Gates

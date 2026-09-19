@@ -30,7 +30,7 @@ part of an overreaching claim.
 
 ## Provenance
 
-All 50 cases were written for this pack (CC0-1.0). Claims and quotes are
+All 100 cases were written for this pack (CC0-1.0). Claims and quotes are
 synthetic.
 
 ## Thresholds
@@ -39,6 +39,6 @@ synthetic.
 
 ## Evidence
 
-Recorded 2026-09-19 against `jev-1.13.0`: accuracy **0.910**, ECE 0.054,
+Recorded 2026-09-19 against `jev-1.13.0`: accuracy **0.890**, ECE 0.076,
 $0.000017/case. Full report: [evidence.md](evidence.md); raw recording:
 [predictions.jsonl](predictions.jsonl).

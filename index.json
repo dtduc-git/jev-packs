@@ -4,7 +4,7 @@
   "packs": [
     {
       "id": "support-triage",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "path": "packs/support-triage",
       "license": "CC0-1.0",
       "status": "verified",
@@ -12,7 +12,7 @@
     },
     {
       "id": "rag-passage-relevance",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "path": "packs/rag-passage-relevance",
       "license": "CC0-1.0",
       "status": "verified",
@@ -20,7 +20,7 @@
     },
     {
       "id": "rag-answerability",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "path": "packs/rag-answerability",
       "license": "CC0-1.0",
       "status": "verified",
@@ -28,7 +28,7 @@
     },
     {
       "id": "citation-support",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "path": "packs/citation-support",
       "license": "CC0-1.0",
       "status": "verified",
@@ -36,7 +36,7 @@
     },
     {
       "id": "moderation",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "path": "packs/moderation",
       "license": "CC0-1.0",
       "status": "verified",
@@ -44,7 +44,7 @@
     },
     {
       "id": "entity-merge",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "path": "packs/entity-merge",
       "license": "CC0-1.0",
       "status": "verified",

@@ -53,3 +53,53 @@
 {"id": "em-0053", "state": {"a": "Metro Hospital — 500 beds, Chicago", "b": "Metro Hospital — Chicago; 500 beds; Level I trauma center"}, "expect": {"same_entity": true, "action": "merge"}}
 {"id": "em-0054", "state": {"a": "Ocean View Apartments — Miami, FL; 200 units", "b": "Ocean View Condos — Miami Beach, FL; 200 units"}, "expect": {"same_entity": true, "action": "curator"}}
 {"id": "em-0055", "state": {"a": "Zenith Fitness — yoga studio, Austin", "b": "Zenith Gym — CrossFit box, Dallas"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0056", "state": {"a": "Lighthouse Books — bookstore, Portland; 2 locations", "b": "Lighthouse Bookshop — Portland, OR; two stores"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0057", "state": {"a": "Kai Nakamura — chef at Sora, Seattle", "b": "K. Nakamura — head chef, Sora restaurant, Seattle"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0058", "state": {"a": "Helios Solar GmbH — Berlin; founded 2011; 60 staff", "b": "Helios Solar — Berlin, Germany; founded 2011; 60 employees"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0059", "state": {"a": "Swiftliner Bus Co. — Dallas; founded 1914", "b": "Swiftliner Bus Company — Dallas, Texas; est. 1914"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0060", "state": {"a": "Dr. Amara Osei — pediatrician, Accra", "b": "Amara Osei, MD — pediatrics, Accra, Ghana"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0061", "state": {"a": "Pinewood Academy — private school, Vermont; 400 students", "b": "Pinewood Academy — VT; enrollment 400"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0062", "state": {"a": "Vela Coffee Roasters — Rotterdam; opened 2016", "b": "Vela Coffee — Rotterdam, NL; est. 2016"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0063", "state": {"a": "Captain L. Ferreira — vessel Aldebaran; port registry Lisbon", "b": "Luis Ferreira — master of the Aldebaran; Lisbon"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0064", "state": {"a": "Northwind Analytics — Toronto; founded 2013", "b": "Northwind Analytics Inc. — Toronto, Canada; founded 2013"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0065", "state": {"a": "Maya Delacroix — food writer, Lyon; born 1980", "b": "M. Delacroix — Lyon food critic; born 1980"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0066", "state": {"a": "Summit Gear Co. — outdoor equipment, Denver; est. 2008", "b": "Summit Gear Company — Denver, CO; founded 2008; outdoor gear"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0067", "state": {"a": "Meridian Hospital — 400 beds, Kuala Lumpur", "b": "Hospital Meridian — Kuala Lumpur; 400 beds"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0068", "state": {"a": "Bao Tran — architect, Ho Chi Minh City; firm Tran & Partners", "b": "T. Bao — principal, Tran and Partners, HCMC"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0069", "state": {"a": "Aurora Heights Elementary — 500 pupils, Reykjavik", "b": "Aurora Heights School — Reykjavik; 500 students"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0070", "state": {"a": "The Copper Kettle — tearoom, Bath; opened 1998", "b": "Copper Kettle Tea Room — Bath, UK; est. 1998"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0071", "state": {"a": "Falcon Ridge Winery — Napa Valley; cabernet focus", "b": "Falcon Ridge Vineyards — Napa, CA; known for cabernet"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0072", "state": {"a": "Orion Freight Ltd. — Southampton; 300 containers/week", "b": "Orion Freight — Southampton, UK; handles 300 containers weekly"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0073", "state": {"a": "Sanjay Mehta — civil engineer, Mumbai; project lead at RiverLink", "b": "S. Mehta — RiverLink project lead; Mumbai"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0074", "state": {"a": "Bluewater Sailing Club — Annapolis; founded 1954", "b": "Bluewater Sailing — Annapolis, Maryland; est. 1954"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0075", "state": {"a": "Taika Studio — animation, Wellington; founded 2019", "b": "Taika Animation Studio — Wellington, NZ; est. 2019"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0076", "state": {"a": "Fairmont Clinic — family practice, Calgary; 3 doctors", "b": "Fairmont Medical Clinic — Calgary; three physicians"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0077", "state": {"a": "Zephyr Airlines — Iceland; IATA ZP", "b": "Zephyr Air — Reykjavik; IATA: ZP"}, "expect": {"same_entity": true, "action": "merge"}}
+{"id": "em-0078", "state": {"a": "Orion Freight Ltd. — Southampton; containers", "b": "Orion Logistics — Dover; parcel delivery"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0079", "state": {"a": "Summit Gear Co. — Denver; retail", "b": "Summit Adventures — Boulder; hiking tours"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0080", "state": {"a": "Meridian Hospital — Kuala Lumpur", "b": "Meridian Clinic — Singapore"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0081", "state": {"a": "Lighthouse Books — Portland", "b": "Lighthouse Brewing — Portland"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0082", "state": {"a": "Vela Coffee Roasters — Rotterdam", "b": "Vela Ceramics — Delft"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0083", "state": {"a": "Aurora Heights Elementary — Reykjavik", "b": "Aurora Heights Hotel — Reykjavik"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0084", "state": {"a": "The Copper Kettle — Bath; tearoom", "b": "Copper Kettle Pub — Bristol"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0085", "state": {"a": "Falcon Ridge Winery — Napa", "b": "Falcon Ridge Ranch — Sonoma; horses"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0086", "state": {"a": "Kai Nakamura — chef, Seattle", "b": "Kenji Nakamura — sushi chef, Tokyo"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0087", "state": {"a": "Maya Delacroix — food writer, Lyon", "b": "Maya Delacroix — violinist, Paris"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0088", "state": {"a": "Bluewater Sailing Club — Annapolis", "b": "Bluewater Marina — Annapolis"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0089", "state": {"a": "Taika Studio — animation, Wellington", "b": "Taika Pictures — film studio, Auckland"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0090", "state": {"a": "Fairmont Clinic — Calgary; family practice", "b": "Fairmont Dental — Calgary"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0091", "state": {"a": "Zephyr Airlines — Reykjavik; passenger", "b": "Zephyr Rail — Oslo; freight rail"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0092", "state": {"a": "Pinewood Academy — Vermont", "b": "Pinewood College — Ohio"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0093", "state": {"a": "Swiftliner Bus Co. — Dallas", "b": "Swiftline Couriers — Dallas; bicycle couriers"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0094", "state": {"a": "Northwind Analytics — Toronto; data consultancy", "b": "Northwind Trading — Toronto; commodities"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0095", "state": {"a": "Helios Solar GmbH — Berlin", "b": "Helios Wind — Hamburg; wind farms"}, "expect": {"same_entity": false, "action": "keep_separate"}}
+{"id": "em-0096", "state": {"a": "Acme Realty — Chicago; 40 agents", "b": "ACME Real Estate — Chicago; 42 agents"}, "expect": {"same_entity": true, "action": "curator"}}
+{"id": "em-0097", "state": {"a": "L. Ferreira — Lisbon; merchant marine captain", "b": "Luis Ferreira — Porto; retired captain"}, "expect": {"same_entity": true, "action": "curator"}}
+{"id": "em-0098", "state": {"a": "Nova Health — Dublin; clinics", "b": "Nova Healthcare — Dublin; diagnostic centers"}, "expect": {"same_entity": true, "action": "curator"}}
+{"id": "em-0099", "state": {"a": "Ravenwood Press — Oxford; academic publisher", "b": "Ravenwood Publishing House — Cambridge; academic publisher"}, "expect": {"same_entity": true, "action": "curator"}}
+{"id": "em-0100", "state": {"a": "T. Bao — architect, Ho Chi Minh City", "b": "Bao Tran — architect, Hanoi; born 1985"}, "expect": {"same_entity": true, "action": "curator"}}
+{"id": "em-0101", "state": {"a": "Silverline Bank — Zurich", "b": "Silverline Bank AG — Zug; private banking"}, "expect": {"same_entity": true, "action": "curator"}}
+{"id": "em-0102", "state": {"a": "Orion Freight — Southampton; 300 containers/week", "b": "Orion Freight Services — Portsmouth; 300 containers weekly"}, "expect": {"same_entity": true, "action": "curator"}}
+{"id": "em-0103", "state": {"a": "Clara Nguyen — VP Engineering, Berlin", "b": "Clara Nguyen — engineering manager, Berlin; joined 2023"}, "expect": {"same_entity": true, "action": "curator"}}
+{"id": "em-0104", "state": {"a": "Redwood Capital — San Francisco; venture capital", "b": "Redwood Capital Partners — Palo Alto; VC firm"}, "expect": {"same_entity": true, "action": "curator"}}
+{"id": "em-0105", "state": {"a": "Delta Diagnostics — Warsaw; lab network", "b": "Delta Labs — Krakow; diagnostics"}, "expect": {"same_entity": true, "action": "curator"}}

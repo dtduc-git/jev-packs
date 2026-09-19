@@ -48,3 +48,53 @@
 {"id": "rpr-0048", "state": {"question": "Where can I find the source code?", "passage": "The source code is hosted on GitHub under an Apache-2.0 license."}, "expect": {"relevant": true, "quality": "strong"}}
 {"id": "rpr-0049", "state": {"question": "What is the meaning of life according to the Hitchhiker's Guide?", "passage": "Star Wars was released in 1977 and became a cultural phenomenon."}, "expect": {"relevant": false, "quality": "junk"}}
 {"id": "rpr-0050", "state": {"question": "Is the device waterproof?", "passage": ""}, "expect": {"relevant": false, "quality": "unknown"}}
+{"id": "rpr-0051", "state": {"question": "What is the return window for furniture?", "passage": "Furniture may be returned within 21 days in original packaging."}, "expect": {"relevant": true, "quality": "strong"}}
+{"id": "rpr-0052", "state": {"question": "Who painted the Mona Lisa?", "passage": "Leonardo da Vinci painted the Mona Lisa between 1503 and 1519."}, "expect": {"relevant": true, "quality": "strong"}}
+{"id": "rpr-0053", "state": {"question": "How do I change the SIM card in the router?", "passage": "Slide the SIM tray open with the pin tool, swap the card, then push the tray back."}, "expect": {"relevant": true, "quality": "strong"}}
+{"id": "rpr-0054", "state": {"question": "What is the GDP of Brazil?", "passage": "Brazil has the largest economy in Latin America."}, "expect": {"relevant": false, "quality": "weak"}}
+{"id": "rpr-0055", "state": {"question": "When does support end for version 3?", "passage": "Version 3 support ended on 31 December 2025."}, "expect": {"relevant": true, "quality": "strong"}}
+{"id": "rpr-0056", "state": {"question": "How much protein is in an egg?", "passage": "A large egg contains about 6 grams of protein."}, "expect": {"relevant": true, "quality": "strong"}}
+{"id": "rpr-0057", "state": {"question": "What is the headquarters address of the company?", "passage": "The company is headquartered in Lisbon."}, "expect": {"relevant": false, "quality": "weak"}}
+{"id": "rpr-0058", "state": {"question": "Which planet has the most moons?", "passage": "Saturn overtook Jupiter in 2023 with 145 confirmed moons."}, "expect": {"relevant": true, "quality": "strong"}}
+{"id": "rpr-0059", "state": {"question": "How do I request a certificate of residence?", "passage": "Certificates of residence can be requested at the town hall or online."}, "expect": {"relevant": true, "quality": "ok"}}
+{"id": "rpr-0060", "state": {"question": "What is the failure rate of the disk drive?", "passage": "The drive carries a three-year warranty."}, "expect": {"relevant": false, "quality": "weak"}}
+{"id": "rpr-0061", "state": {"question": "What time does the pharmacy close on Saturday?", "passage": "The pharmacy opens at 08:00 on weekdays."}, "expect": {"relevant": false, "quality": "weak"}}
+{"id": "rpr-0062", "state": {"question": "What is the shelf life of the vaccine?", "passage": "The vaccine is stored at 2-8 C and must be used within 30 days after opening."}, "expect": {"relevant": true, "quality": "strong"}}
+{"id": "rpr-0063", "state": {"question": "What cron expression runs every five minutes?", "passage": "A cron expression of */5 * * * * runs a job every five minutes."}, "expect": {"relevant": true, "quality": "strong"}}
+{"id": "rpr-0064", "state": {"question": "Who won the Nobel Prize in Physics in 2024?", "passage": "\ufffd\ufffd\ufffd\ufffd \ufffd\ufffd"}, "expect": {"relevant": false, "quality": "unknown"}}
+{"id": "rpr-0065", "state": {"question": "How many kilometers is a marathon?", "passage": "The marathon distance is 42.195 kilometers."}, "expect": {"relevant": true, "quality": "strong"}}
+{"id": "rpr-0066", "state": {"question": "What is the refund policy for flights?", "passage": "Flight refunds depend on the fare class and are described in the fare rules."}, "expect": {"relevant": false, "quality": "weak"}}
+{"id": "rpr-0067", "state": {"question": "What is the boiling point of ethanol?", "passage": "Ethanol boils at 78.37 degrees Celsius at standard pressure."}, "expect": {"relevant": true, "quality": "strong"}}
+{"id": "rpr-0068", "state": {"question": "How do I factory reset the watch?", "passage": "Open Settings, choose System, then Reset, and confirm."}, "expect": {"relevant": true, "quality": "strong"}}
+{"id": "rpr-0069", "state": {"question": "What are the opening hours of the museum?", "passage": "The museum welcomes visitors from Tuesday to Sunday."}, "expect": {"relevant": false, "quality": "weak"}}
+{"id": "rpr-0070", "state": {"question": "What is the weight of the package?", "passage": "The router model was discontinued in 2019."}, "expect": {"relevant": false, "quality": "junk"}}
+{"id": "rpr-0071", "state": {"question": "Who is the author of the report?", "passage": "The report was published in 2018."}, "expect": {"relevant": false, "quality": "weak"}}
+{"id": "rpr-0072", "state": {"question": "What encryption does the backup use?", "passage": "Backups are encrypted with AES-256 before leaving the device."}, "expect": {"relevant": true, "quality": "strong"}}
+{"id": "rpr-0073", "state": {"question": "What is the recipe for pesto?", "passage": "Traditional pesto blends basil, pine nuts, garlic, parmesan and olive oil."}, "expect": {"relevant": true, "quality": "ok"}}
+{"id": "rpr-0074", "state": {"question": "How long does the visa take to process?", "passage": "Visa processing usually takes 15 working days."}, "expect": {"relevant": true, "quality": "strong"}}
+{"id": "rpr-0075", "state": {"question": "What is the maximum score in the game?", "passage": "The game was released in March."}, "expect": {"relevant": false, "quality": "junk"}}
+{"id": "rpr-0076", "state": {"question": "What does HTTP status 500 mean?", "passage": "A 500 response indicates the server encountered an unexpected condition."}, "expect": {"relevant": true, "quality": "strong"}}
+{"id": "rpr-0077", "state": {"question": "What is the price of the annual subscription?", "passage": "The subscription renews automatically every year."}, "expect": {"relevant": false, "quality": "weak"}}
+{"id": "rpr-0078", "state": {"question": "How do I join the wifi network?", "passage": "The wifi password is printed on the back of the router."}, "expect": {"relevant": false, "quality": "weak"}}
+{"id": "rpr-0079", "state": {"question": "What are the side effects of this medication in children?", "passage": "The medication is not recommended for children under 12."}, "expect": {"relevant": true, "quality": "ok"}}
+{"id": "rpr-0080", "state": {"question": "Which countries border France?", "passage": "France is the largest country in the European Union by area."}, "expect": {"relevant": false, "quality": "weak"}}
+{"id": "rpr-0081", "state": {"question": "What is the temperature limit for the server room?", "passage": "Keep the server room between 18 and 27 degrees Celsius."}, "expect": {"relevant": true, "quality": "strong"}}
+{"id": "rpr-0082", "state": {"question": "How do I cancel my gym membership?", "passage": "Membership cancellations require 30 days written notice."}, "expect": {"relevant": true, "quality": "ok"}}
+{"id": "rpr-0083", "state": {"question": "What is the tallest building in the world?", "passage": "The Burj Khalifa in Dubai stands 828 meters tall."}, "expect": {"relevant": true, "quality": "strong"}}
+{"id": "rpr-0084", "state": {"question": "What is the salary range for the role?", "passage": "The role is based in the London office."}, "expect": {"relevant": false, "quality": "weak"}}
+{"id": "rpr-0085", "state": {"question": "How many liters of water should I drink daily?", "passage": "Water needs vary with activity, climate and health."}, "expect": {"relevant": false, "quality": "weak"}}
+{"id": "rpr-0086", "state": {"question": "What protocol does the camera use?", "passage": "The camera streams over RTSP and supports ONVIF profiles."}, "expect": {"relevant": true, "quality": "strong"}}
+{"id": "rpr-0087", "state": {"question": "When was the bridge opened?", "passage": "The bridge opened to traffic in 1973."}, "expect": {"relevant": true, "quality": "strong"}}
+{"id": "rpr-0088", "state": {"question": "What is the legality of recording calls?", "passage": "Some jurisdictions require all-party consent for call recording."}, "expect": {"relevant": true, "quality": "ok"}}
+{"id": "rpr-0089", "state": {"question": "How do I get a refund for a canceled event?", "passage": "Refunds for canceled events are processed automatically to the original card."}, "expect": {"relevant": true, "quality": "strong"}}
+{"id": "rpr-0090", "state": {"question": "What is the formula for compound interest?", "passage": "Compound interest is calculated as A = P(1 + r/n)^(nt)."}, "expect": {"relevant": true, "quality": "strong"}}
+{"id": "rpr-0091", "state": {"question": "What is the address of the embassy?", "passage": "The embassy handles visa appointments on weekdays."}, "expect": {"relevant": false, "quality": "weak"}}
+{"id": "rpr-0092", "state": {"question": "Which driver version fixes the startup crash?", "passage": "Driver 5.2.1 resolves the startup crash on Windows 11."}, "expect": {"relevant": true, "quality": "strong"}}
+{"id": "rpr-0093", "state": {"question": "What is the capacity of the stadium?", "passage": "The stadium hosted the 1998 final."}, "expect": {"relevant": false, "quality": "weak"}}
+{"id": "rpr-0094", "state": {"question": "How do I report a lost passport?", "passage": "Report a lost passport to the police and then to the consulate."}, "expect": {"relevant": true, "quality": "ok"}}
+{"id": "rpr-0095", "state": {"question": "What is the company's return on equity?", "passage": "Revenue grew 12 percent year over year."}, "expect": {"relevant": false, "quality": "weak"}}
+{"id": "rpr-0096", "state": {"question": "What soil acidity do blueberries need?", "passage": "Blueberries prefer acidic soil with a pH between 4.5 and 5.5."}, "expect": {"relevant": true, "quality": "strong"}}
+{"id": "rpr-0097", "state": {"question": "What is the adult dosage?", "passage": "The adult dosage is 500 mg every 8 hours."}, "expect": {"relevant": true, "quality": "strong"}}
+{"id": "rpr-0098", "state": {"question": "How do I enable dark mode in the app?", "passage": "Dark mode is currently in beta."}, "expect": {"relevant": false, "quality": "weak"}}
+{"id": "rpr-0099", "state": {"question": "What is the speed limit on the highway?", "passage": ""}, "expect": {"relevant": false, "quality": "unknown"}}
+{"id": "rpr-0100", "state": {"question": "What does the warranty cover?", "passage": "The warranty covers manufacturing defects but not accidental damage."}, "expect": {"relevant": true, "quality": "strong"}}

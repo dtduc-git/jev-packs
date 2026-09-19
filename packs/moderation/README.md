@@ -32,7 +32,7 @@ own policy text.
 
 ## Provenance
 
-All 50 cases were written for this pack (CC0-1.0). All texts are synthetic;
+All 100 cases were written for this pack (CC0-1.0). All texts are synthetic;
 none quotes a real user or a real slur. Sensitive scenarios are abstracted on
 purpose.
 
@@ -44,7 +44,7 @@ floor.
 
 ## Evidence
 
-Recorded 2026-09-19 against `jev-1.13.0`: accuracy **0.787**, ECE 0.095,
+Recorded 2026-09-19 against `jev-1.13.0`: accuracy **0.793**, ECE 0.088,
 $0.000022/case. `targeted_group` is the strongest question (1.00); `severity`
-the weakest (0.66) — ordinal gradations are the hard part. Full report:
+the weakest (0.67) — ordinal gradations are the hard part. Full report:
 [evidence.md](evidence.md); raw recording: [predictions.jsonl](predictions.jsonl).
