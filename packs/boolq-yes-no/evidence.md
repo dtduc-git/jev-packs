@@ -31,4 +31,4 @@
 
 ## Gates
 
-No gates declared in pack.yaml.
+No gates declared in gates.yaml.
