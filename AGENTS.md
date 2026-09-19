@@ -36,7 +36,10 @@ this repo except the CI validator.
 - `packs/<id>/pack.yaml` — questions (noul | choice | score) + thresholds.
 - `packs/<id>/cases.jsonl` — golden cases; `expect` covers every question.
 - `packs/<id>/README.md` — purpose, provenance, rationale.
-- `scripts/validate.py` — the only executable; stdlib + PyYAML.
+- `scripts/validate.py` — CI entry point; stdlib + PyYAML.
+- `scripts/refresh.py` — re-records selected packs, regenerates `evidence.md`,
+  sets `tested:`, flips `index.json` to verified, then validates. Called by the
+  Refresh evidence workflow; requires `TYPESAFE_API_KEY` + the `jevassert` CLI.
 - `index.json` — registry listing; must exactly match `packs/`.
 
 ## Conventions
@@ -55,11 +58,15 @@ this repo except the CI validator.
 - Gates: add `gates.yaml` per pack from the recorded baselines (e.g.
   `min_accuracy`, `max_ece`, `max_cost_per_case_usd`) once another recording
   confirms stability, so CI can fail on regressions.
-- When `jevassert` is published: add an evidence workflow
-  (`workflow_dispatch`) that runs `jevassert record`, regenerates `evidence.md`,
-  flips `index.json` to `verified`, and opens a PR (never pushes to master).
-- Then: scheduled re-record on new Jev versions → publish the pack × version
-  table (content flywheel).
+- Evidence workflows **added** (2026-09-19):
+  - `verify-evidence.yml` — runs the published `dtduc-git/jevassert@v0.1.0`
+    Action over every pack (matrix), diffs the regenerated `evidence.md`
+    against the committed one, uploads artifacts; monthly schedule + dispatch.
+  - `refresh-evidence.yml` — `workflow_dispatch`, records against a chosen
+    model via `scripts/refresh.py`, then opens a PR (never pushes to master).
+  First real use: dispatch Refresh when a new Jev version ships.
+- Then: publish the pack × version table from refreshed evidence (content
+  flywheel).
 - Candidate pack 7: table column recipes for jev-table (spec reuse, needs
   cases before listing).
 - Dataset-derived packs (SMS Spam, BoolQ, AG News, banking77) are P1 — only

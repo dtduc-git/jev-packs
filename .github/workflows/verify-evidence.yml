@@ -1,0 +1,50 @@
+name: Verify evidence
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 6 1 * *" # monthly safety net: evidence must stay reproducible
+
+permissions:
+  contents: read
+
+jobs:
+  list:
+    runs-on: ubuntu-latest
+    outputs:
+      packs: ${{ steps.list.outputs.packs }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: list
+        run: echo "packs=$(ls packs | jq -R -s -c 'split(\"\n\")[:-1]')" >> "$GITHUB_OUTPUT"
+
+  verify:
+    needs: list
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        pack: ${{ fromJSON(needs.list.outputs.packs) }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check this pack with the jevassert Action
+        uses: dtduc-git/jevassert@v0.1.0
+        with:
+          pack: packs/${{ matrix.pack }}
+          predictions: packs/${{ matrix.pack }}/predictions.jsonl
+          junit: ${{ matrix.pack }}-junit.xml
+          report: ${{ matrix.pack }}-evidence.md
+          version: "0.1.0"
+      - name: Evidence must be reproducible
+        run: |
+          if ! diff -u packs/${{ matrix.pack }}/evidence.md ${{ matrix.pack }}-evidence.md; then
+            echo "::error::evidence.md for ${{ matrix.pack }} is stale — run the 'Refresh evidence' workflow (workflow_dispatch) and merge the PR"
+            exit 1
+          fi
+      - name: Upload evidence artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ matrix.pack }}-evidence
+          path: |
+            ${{ matrix.pack }}-evidence.md
+            ${{ matrix.pack }}-junit.xml
