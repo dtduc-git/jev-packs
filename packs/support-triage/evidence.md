@@ -33,4 +33,7 @@
 
 ## Gates
 
-No gates declared in gates.yaml.
+- **PASS** `min_accuracy` — accuracy 0.898 >= 0.870
+- **PASS** `max_ece` — ece 0.057 <= 0.090
+- **PASS** `max_cost_per_case_usd` — cost/case $0.000031 <= $0.000062
+- **PASS** `max_p95_latency_ms` — p95 391ms <= 586ms

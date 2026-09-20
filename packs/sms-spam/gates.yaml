@@ -1,0 +1,7 @@
+# Quality gates for this pack (format owned by jevassert).
+# Derived from evidence.md by scripts/derive_gates.py — re-run after a
+# re-record, review the diff, and keep the baseline honest.
+min_accuracy: 0.900000
+max_ece: 0.070000
+max_cost_per_case_usd: 0.000028
+max_p95_latency_ms: 537

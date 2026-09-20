@@ -133,6 +133,29 @@ uvx jevassert record packs/rag-passage-relevance -o new.jsonl --base-url http://
 Structure is validated in CI by `scripts/validate.py`; any YAML/JSONL parser can
 also load a pack.
 
+## Gates
+
+Every pack ships a `gates.yaml` — a quality contract the runner enforces on
+every replay (exit 1 when a gate fails). They are derived from the committed
+evidence, not hand-tuned, so the contract can only move when a re-record moves
+the baseline:
+
+| Gate | Rule |
+| --- | --- |
+| `min_accuracy` | 95% bootstrap CI lower bound of the recorded baseline, minus 1pp |
+| `max_ece` | baseline ECE + 3pp, never below 0.05 |
+| `max_cost_per_case_usd` | baseline cost per case × 2 |
+| `max_p95_latency_ms` | baseline p95 × 1.5 |
+
+```bash
+# the same check CI runs, gates included
+uvx jevassert check packs/entity-merge -p packs/entity-merge/predictions.jsonl
+```
+
+Re-derive after a re-record with `python scripts/derive_gates.py`, review the
+diff, and treat a gate failure as a regression to explain — not a number to
+lower.
+
 ## Non-goals
 
 - No hosted registry or API — this repo *is* the registry.
