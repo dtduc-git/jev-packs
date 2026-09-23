@@ -30,13 +30,13 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Check this pack with the jevassert Action
-        uses: dtduc-git/jevassert@v0.1.0
+        uses: dtduc-git/jevassert@v0.2.0
         with:
           pack: packs/${{ matrix.pack }}
           predictions: packs/${{ matrix.pack }}/predictions.jsonl
           junit: ${{ matrix.pack }}-junit.xml
           report: ${{ matrix.pack }}-evidence.md
-          version: "0.1.0"
+          version: "0.2.0"
       - name: Evidence must be reproducible
         run: |
           if ! diff -u packs/${{ matrix.pack }}/evidence.md ${{ matrix.pack }}-evidence.md; then
