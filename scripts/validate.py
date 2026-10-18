@@ -304,7 +304,7 @@ def validate_results(packs: dict[str, dict]) -> int:
                 "record_model", "tested", "accuracy_ci", "ece_ci", "suggestion",
                 "mean_decision_prob", "cost_per_case_usd", "total_cost_usd",
                 "p50_latency_ms", "p95_latency_ms", "per_question", "coverage",
-                "threshold_coverage", "gates", "pricing", "case_errors", "missing_items",
+                "threshold_coverage", "gates", "gates_skipped", "pricing", "case_errors", "missing_items",
                 "report",
             }
             check_keys(

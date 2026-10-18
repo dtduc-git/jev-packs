@@ -30,13 +30,13 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Check this pack with the jevassert Action
-        uses: dtduc-git/jevassert@v0.2.0
+        uses: dtduc-git/jevassert@v0.2.1
         with:
           pack: packs/${{ matrix.pack }}
           predictions: packs/${{ matrix.pack }}/predictions.jsonl
           junit: ${{ matrix.pack }}-junit.xml
           report: ${{ matrix.pack }}-evidence.md
-          version: "0.2.0"
+          version: "0.2.1"
       - name: Evidence must be reproducible
         run: |
           if ! diff -u packs/${{ matrix.pack }}/evidence.md ${{ matrix.pack }}-evidence.md; then
@@ -52,13 +52,13 @@ jobs:
             ${{ matrix.pack }}-junit.xml
 
   verify-results:
-    # Needs jevassert 0.2.0+ (--input-price/--output-price). Release jevassert
-    # before merging result columns recorded with it.
+    # Needs jevassert 0.2.1+ (--no-gates/--input-price/--output-price). Release
+    # jevassert before merging result columns recorded with it.
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: astral-sh/setup-uv@v5
       - name: Install jevassert
-        run: uv tool install jevassert==0.2.0
+        run: uv tool install jevassert==0.2.1
       - name: Replay committed benchmark results offline
         run: python3 scripts/verify_results.py

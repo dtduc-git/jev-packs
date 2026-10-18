@@ -135,8 +135,9 @@ also load a pack.
 
 ## Gates
 
-Every pack ships a `gates.yaml` — a quality contract the runner enforces on
-every replay (exit 1 when a gate fails). They are derived from the committed
+Every pack ships a `gates.yaml` — a quality contract enforced on every
+reference replay (exit 1 when a gate fails); alternate-backend replays in
+`results/` run gate-free. They are derived from the committed
 evidence, not hand-tuned, so the contract can only move when a re-record moves
 the baseline:
 

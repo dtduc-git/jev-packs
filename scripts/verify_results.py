@@ -25,21 +25,6 @@ def current_versions() -> dict[str, str]:
     return {entry["id"]: entry["version"] for entry in index["packs"]}
 
 
-def gate_free_pack(pack: str, tmp: str) -> Path:
-    """A view of the pack without gates.yaml.
-
-    Gates are the reference recording's contract; benchmark replays of other
-    backends must reproduce their reports without being judged by it.
-    """
-    dst = Path(tmp) / pack  # jevassert requires id == directory name
-    if not dst.exists():
-        dst.mkdir()
-        for item in (ROOT / "packs" / pack).iterdir():
-            if item.name != "gates.yaml":
-                (dst / item.name).symlink_to(item)
-    return dst
-
-
 def main() -> int:
     if not RESULTS_DIR.is_dir():
         print("no results/ directory — nothing to verify")
@@ -70,17 +55,10 @@ def main() -> int:
                     else backend_dir / f"{pack}.md"
                 )
                 regenerated = Path(tmp) / f"{backend_dir.name}-{pack}.md"
-                # The reference backend's report IS the pack's evidence.md, so
-                # it must see gates.yaml; other backends replay gate-free.
-                pack_dir = (
-                    ROOT / "packs" / pack
-                    if result.get("report")
-                    else gate_free_pack(pack, tmp)
-                )
                 cmd = [
                     "jevassert",
                     "check",
-                    str(pack_dir),
+                    str(ROOT / "packs" / pack),
                     "-p",
                     str(predictions),
                     "--report",
@@ -90,6 +68,10 @@ def main() -> int:
                     "--output-price",
                     str(pricing.get("output", 0.0)),
                 ]
+                # The reference backend's report IS the pack's evidence.md, so
+                # it must see gates.yaml; other backends replay gate-free.
+                if not result.get("report"):
+                    cmd.append("--no-gates")
                 print("$ " + " ".join(cmd), flush=True)
                 completed = subprocess.run(cmd, text=True, capture_output=True)
                 if completed.returncode != 0:

@@ -2,6 +2,18 @@
 
 Repo-level changes; per-pack history lives in each pack's `CHANGELOG.md`.
 
+## 2026-10-18 (jevassert 0.2.1, gate-free replays)
+
+- Pins bumped to `jevassert` 0.2.1 (Action tag, `version:`, both CLI installs).
+  v0.2.1's `check --no-gates` skips `gates.yaml` entirely; the 9 evidence
+  reports reproduce byte-identical, so no evidence regeneration was needed.
+- `scripts/verify_results.py` drops the symlink gate-free pack view and
+  `scripts/record-backend.py` records with `--no-gates` — record and replay stay
+  in sync, gates stay the reference recording's contract. `validate.py` accepts
+  the new `gates_skipped` result key. `results/*.md` for claude-sonnet-5 and
+  qwen2.5-7b-ollama regenerated (`No gates declared in gates.yaml.` →
+  `Gates skipped (--no-gates).`).
+
 ## 2026-09-19 (disagreement harvest)
 
 - `scripts/disagreements.py` — harvest case-level disagreements between two

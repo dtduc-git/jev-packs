@@ -25,10 +25,12 @@ alternative backends, published as `docs/index.html` (Jev Bench).
   `scripts/build_scoreboard.py`, `scripts/record-backend.py` (TypeSafe or any
   LLM via the official `system-one-adapter`), `scripts/verify_results.py`
   (offline replay of committed results), METHODOLOGY.md.
-- jevassert 0.2.0 required for recording/verifying results (adapter backends +
-  `--input-price/--output-price`); release it before merging result PRs.
-- No gates.yaml yet — packs pass no declared minimum. Add gates from measured
-  baselines when the numbers are stable enough to gate (see Next steps).
+- jevassert 0.2.1 required for recording/verifying results (adapter backends,
+  `--input-price/--output-price`, `--no-gates`); release it before merging
+  result PRs.
+- Gates ship for all 9 packs (`gates.yaml`, derived by `scripts/derive_gates.py`
+  from committed evidence) — they are the reference recording's contract;
+  alternate-backend replays run `--no-gates`.
 
 ## Layout
 
@@ -63,8 +65,9 @@ alternative backends, published as `docs/index.html` (Jev Bench).
 
 ## Next steps
 
-- Release `jevassert` 0.2.0 (adapter backends + prices), then the verify-results
-  CI job can go green (it pins 0.2.0).
+- `jevassert` pins live in `verify-evidence.yml` (Action tag + `version` + CLI
+  install) and `refresh-evidence.yml` (CLI install) — bump them together when
+  jevassert releases (now 0.2.1).
 - Benchmark matrix complete: 3 backends × 9 packs (Jev 1.13.0, Claude Sonnet 5,
   qwen2.5:7b local). After five criteria passes from the disagreement harvest:
   both-wrong 55 → 18; Jev ahead on citation-support (0.979, p<0.001) and

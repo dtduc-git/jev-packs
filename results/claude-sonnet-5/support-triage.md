@@ -33,4 +33,4 @@
 
 ## Gates
 
-No gates declared in gates.yaml.
+Gates skipped (`--no-gates`).

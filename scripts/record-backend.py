@@ -199,14 +199,13 @@ def main() -> int:
             str(args.input_price),
             "--output-price",
             str(args.output_price),
+            # gates are the reference recording's contract
+            "--no-gates",
         ]
         check = subprocess.run(check_cmd, text=True, capture_output=True)
         sys.stderr.write(check.stderr)
         if check.returncode == 2:
             return 2
-        if check.returncode == 1:
-            print(f"{pack_id}: a gate failed — baselines must not ship red", file=sys.stderr)
-            return 1
         payload = json.loads(check.stdout)
         payload["pack_version"] = payload.pop("version", None)
         payload.update(
